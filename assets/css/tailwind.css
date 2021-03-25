@@ -1,0 +1,773 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+
+
+
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+
+    *, :hover, :focus, :active, :visited {
+        outline: none;
+    }
+
+
+    body {
+
+
+        height: 100%;
+        /*     overflow-y: hidden;*/
+        width: 100%;
+        background-color: antiquewhite;
+        background-image: url('~assets/graphic/exclusive-paper.png');
+        background-repeat: repeat;
+        background-size: initial;
+        background-attachment: scroll;
+        background-position: 0 0;
+        word-spacing: 0.06em;
+        letter-spacing: 0.04em;
+        font-size: 10px;
+
+    }
+
+    html {
+
+        scroll-behavior: smooth;
+
+    }
+
+
+    .bg-white {
+
+        --tw-bg-opacity: 1;
+        background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+
+    }
+
+    figcaption {
+
+        color: white;
+
+    }
+
+    .bottom-1 {
+
+        bottom: 0.25rem
+
+    }
+
+    .bottom-4 {
+
+        bottom: 1rem
+
+    }
+
+    .top-2 {
+
+        top: 0.5rem;
+
+    }
+
+
+    .top-4 {
+
+        top: 1rem;
+
+    }
+
+
+
+
+    .top-20 {
+
+        top: 5.25rem;
+
+    }
+
+    .top-24 {
+
+        top: 5.75rem;
+
+    }
+
+    .top-28 {
+
+        top: 7.25rem;
+
+    }
+
+
+    .left-2\/4 {
+
+        left: 50%;
+
+    }
+
+    .left-4 {
+
+        left: 1rem;
+    }
+
+
+    .right-1 {
+
+        right: 0.25rem
+
+    }
+
+    .right-4 {
+
+        right: 1rem;
+
+    }
+
+    .right-12 {
+
+        right: 3rem;
+
+    }
+
+    .right-28 {
+
+        right: 6.5rem;
+
+    }
+
+
+    .h-0\.5 {
+
+        height: 0.25rem;
+
+    }
+
+
+    .h-44 {
+
+        height: 11rem;
+
+    }
+
+    .h-48 {
+
+        height: 12rem;
+
+    }
+
+    .h-72 {
+
+        height: 18rem;
+
+    }
+
+    .h-108 {
+
+        height: 28rem
+    }
+
+    .h-112 {
+
+        height: 30rem
+    }
+
+
+    .h-132 {
+
+        height: 36rem;
+
+    }
+
+
+    .h-3\/4 {
+
+        height: 75%;
+
+    }
+
+    .max-h-0 {
+
+        max-height: 0;
+
+    }
+
+    .w-36 {
+
+        width: 9rem;
+
+    }
+
+    .w-52 {
+
+        width: 13rem;
+
+    }
+
+
+    .w-72 {
+
+
+        width: 18rem;
+    }
+
+
+    .w-80 {
+
+
+        width: 20rem;
+    }
+
+    .w-116 {
+
+        width: 32rem;
+
+    }
+
+
+
+
+
+
+
+    *:focus {
+        outline: 0 !important;
+    }
+
+    button:focus {
+        outline: 0 !important;
+    }
+
+
+    .text-white {
+
+        --tw-text-opacity: 1;
+        color: rgba(255, 255, 255, var(--tw-text-opacity));
+
+    }
+
+
+    .text-8xl {
+
+        font-size: 6rem;
+
+    }
+
+
+    .text-9xl {
+
+        font-size: 8rem;
+
+    }
+
+    .text-10xl {
+
+        font-size: 12rem;
+    }
+
+
+    .border-12 {
+
+        border-width: 12px;
+
+    }
+
+    .cursor-pointer {
+
+        cursor: pointer;
+    }
+
+
+
+    @media (max-width: 639px) {
+
+
+
+
+
+
+
+    }
+
+    #fp-nav ul li a span, .fp-slidesNav ul li a span {
+
+        height: 12px !important;
+        width: 12px !important;
+        margin: -2px 0 0 -7px !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+
+
+    #fp-nav ul li, .fp-slidesNav ul li {
+        display: block;
+        width: 25px;
+        height: 65px !important;
+        margin: 5px !important;
+        position: relative;
+    }
+
+    #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+        height: 30px !important;
+        width: 30px !important;
+        margin: -16px 0 0 -16px !important;
+        border-radius: 100%;
+    }
+
+    #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
+        width: 20px !important;
+        height: 20px !important;
+        margin: -7px 0 0 -11px !important;
+        background: #a1362b !important;
+
+    }
+
+
+    #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+
+        background: #a1362b !important;
+    }
+
+
+    #fp-nav ul li:focus::before {
+        border-top-color: blue;
+        border-right-color: blue;
+        border-bottom-color: blue;
+        display: inline-table;
+
+        transition: border-top-color 0.15s linear,
+        border-right-color 0.15s linear 0.10s,
+        border-bottom-color 0.15s linear 0.20s;
+        background: green !important;
+    }
+
+
+    .fp-slidesNav ul li:focus::after {
+        border-top: 2px solid blue;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        transform: rotate(270deg);
+        transition: transform 0.4s linear 0s,
+        border-left-width 0s linear 0.35s;
+        background: green !important;
+    }
+
+
+    @font-face {
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/BarlowCondensed-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/BarlowCondensed-Bold.ttf) format('truetype');
+    }
+
+
+    @font-face {
+        font-family: Helvetica Neue;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/HelveticaNeueMed.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Helvetica Neue;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/HelveticaNeueBd.ttf) format('truetype');
+    }
+
+
+
+
+    @font-face {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/Mulish-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/Mulish-Bold.ttf) format('truetype');
+    }
+
+
+    @font-face {
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/Merriweather-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/Merriweather-Bold.ttf) format('truetype');
+    }
+
+
+
+    @font-face {
+        font-family: Satisfy;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('~assets/fonts/Satisfy-Regular.ttf') format('truetype');
+    }
+
+
+
+
+    @screen sm {
+
+
+
+
+
+        @media (orientation: portrait) {
+
+
+
+            #fp-nav {
+
+                display: none;
+
+            }
+
+
+            .logo {
+
+                top: 1rem;
+
+
+
+            }
+
+
+
+            .circle1 {
+
+                left: 60%;
+                top: 25%;
+
+            }
+
+
+            .circle2 {
+
+                left: 53%;
+                top: 28%;
+
+            }
+
+
+            .circle3 {
+
+                left: 48%;
+                top: 31%;
+
+            }
+
+            .hat {
+
+                position: relative;
+                top: 2rem;
+
+            }
+
+            .scumbag h2 {
+
+                font-size: 1rem;
+            }
+
+            .scumbag p, li  {
+
+                font-size: 0.7rem;
+
+            }
+
+            .scumbag img {
+
+                left: 10%;
+                top: 17%;
+            }
+
+            .bg_stars h2 {
+
+                font-size: 1.2rem;
+
+            }
+            .bg_stars p {
+
+                font-size: 0.8rem;
+
+            }
+
+            .bg_stars section img {
+
+                left: 10%;
+            }
+
+            .bg_stars .button_red {
+
+                width: 8.5rem;
+
+            }
+
+
+            [data-anchor="page4"] figure figcaption {
+
+
+                left: 1rem;
+                letter-spacing: 5px;
+            }
+
+            [data-anchor="page4"] p {
+
+                font-size: 0.9rem;
+
+            }
+
+
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+    @screen md {
+
+        #fp-nav {
+
+            display: none;
+
+        }
+
+        .circle1 {
+
+            left: 54%;
+            top: 22%;
+
+        }
+
+
+        .circle2 {
+
+            left: 50%;
+            top: 25%;
+
+        }
+
+
+        .circle3 {
+
+            left: 48%;
+            top: 31%;
+
+        }
+
+
+        .classic {
+
+
+            left: 5%;
+            bottom: 26%;
+        }
+
+
+        .vintage__container {
+
+
+            left: 1%;
+            bottom: 20%;
+
+    }
+
+        .intro--num {
+
+            left: 20%;
+            bottom: 5%;
+
+        }
+
+        .hat {
+
+            height: 11rem;
+        }
+
+
+        [data-anchor="page4"] p {
+
+            font-size: 0.9rem;
+
+        }
+
+        .button_red {
+
+            font-size: 0.9rem;
+
+        }
+
+    }
+
+
+    @screen lg {
+
+
+        .circle1 {
+
+            left: 54%;
+            top: 25%;
+
+        }
+
+
+        .circle2 {
+
+            left: 50%;
+            top: 28%;
+
+        }
+
+
+        .circle3 {
+
+            left: 48%;
+            top: 30%;
+
+        }
+
+
+        .intro {
+
+            position: absolute;
+            bottom: 5%;
+
+        }
+
+
+        .vintage {
+
+
+            bottom: 5%;
+            right: 15%;
+
+        }
+    }
+
+
+
+    @screen xl {
+
+
+        .logo {
+
+
+        }
+
+
+    }
+
+
+    @screen 2xl {
+
+
+        .logo {
+
+
+            top: 40%;
+
+        }
+
+        .hat {
+
+            top: 25%;
+
+        }
+
+        .circle1 {
+
+            left: 53%;
+            top: 29%;
+
+        }
+
+
+        .circle2 {
+
+            left: 51%;
+            top: 31%;
+
+        }
+
+
+        .circle3 {
+
+            left: 50%;
+            top: 33%;
+
+        }
+
+
+        .vintage__container {
+
+            right: 15%;
+            bottom: 100%;
+
+        }
+
+        .classic {
+
+            right: 33%;
+            bottom: 200%;
+
+        }
+
+    }
+
+
+
+
+}
+
+
+@layer utilities {
+
+    .filter-shadow-black {
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    }
+
+    .filter-shadow-green {
+
+        filter: drop-shadow(5px 6px 0 #487d79);
+    }
+
+}
+
+

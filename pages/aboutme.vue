@@ -1,0 +1,706 @@
+<template>
+
+  <section class="h-screen w-full absolute z-10">
+
+
+    <header class="container px-16 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
+      <div
+          class="w-full h-112 grid grid-cols-1 justify-items-center header_img_wrap"
+      >
+
+        <div class="flex flex-col justify-center">
+          <div class="title uppercase top-2">
+            <h1 class="text-8xl font-semibold text-center uppercase">About Me
+            </h1>
+          </div>
+          <div class="title_dividers w-1/2 h-4 mx-auto my-10 relative inline-block">
+            <span class="w-full h-0.5 absolute left-2/4 transform -translate-x-1/2"></span>
+            <span class="w-full h-0.5 top-2 absolute left-2/4 transform -translate-x-1/2"></span>
+            <span class="w-full h-0.5 top-4 absolute left-2/4 transform -translate-x-1/2"></span>
+          </div>
+
+          <figure class="relative flex items-center justify-center filter-shadow-black z-10">
+
+
+            <img src="~assets/graphic/ribbon.png" alt="Trulli"
+                 class="w-full h-20 my-auto z-1 filter-shadow-black">
+            <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
+              <NuxtLink to="/">Home</NuxtLink>
+              > About Me
+            </figcaption>
+          </figure>
+        </div>
+
+
+        <img class="header_image w-full h-112 absolute flex opacity-70"
+             alt="header_image">
+      </div>
+
+
+    </header>
+
+    <div
+        class="page-spacing w-full h-20 absolute left-0 bg-repeat bg-center"
+    ></div>
+
+    <section class="section w-full h-108 bg-black rounded-4xl relative">
+
+      <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-20">
+        <span class="w-full inline-block relative"></span>
+        <h4 class="w-3/12 font-bold text-3xl mt-4 text-center"
+
+        >WHAT I DO</h4>
+        <span class="w-full inline-block relative"></span>
+
+
+      </div>
+
+      <div>
+        <h1
+            class="text-10xl font-bold text-center leading-tight uppercase "
+
+        >WINNING DESIGN</h1>
+
+      </div>
+
+
+    </section>
+
+    <section class="section h-full future rounded-4xl">
+      <div class="about_gallery grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-4 justify-items-center">
+        <article class="h-full w-full mb-4 bg-center bg-no-repeat">
+
+          <div class="pic">
+            <img src="~assets/graphic/about_gallery_1.jpg"
+                 alt="website design">
+
+
+            <h2 class="w-1/3 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+              Website Design
+            </h2>
+
+          </div>
+
+        </article>
+        <article class="bg-center bg-no-repeat">
+          <div class="pic">
+            <img src="~assets/graphic/about_gallery_2.jpg"
+                 alt="digital design">
+
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+              Digital Design
+            </h2>
+          </div>
+
+        </article>
+        <article class="bg-center bg-no-repeat">
+          <div class="pic">
+            <img src="~assets/graphic/about_gallery_3.jpg"
+                 alt="branding">
+
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+              Branding
+            </h2>
+          </div>
+
+        </article>
+        <article class="bg-center bg-no-repeat">
+          <div class="pic">
+            <img src="~assets/graphic/about_gallery_4.jpg"
+                 alt="graphic design">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+              Graphic Design
+            </h2>
+
+          </div>
+
+        </article>
+        <article class="bg-center bg-no-repeat">
+          <div class="pic">
+            <img src="~assets/graphic/about_gallery_5.jpg"
+                 alt="mobile apps">
+
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+              Mobile Apps
+            </h2>
+          </div>
+
+        </article>
+        <article class="bg-center bg-no-repeat">
+          <div class="pic">
+            <img src="~assets/graphic/about_gallery_6.jpg"
+                 alt="design concept">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+              Design Concept
+            </h2>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <section class="mission h-full flex mt-32 pb-12">
+
+      <div class="mission_left  w-1/2 pl-24 pt-16">
+        <div class="flex">
+          <h4 class="w-1/3 font-bold text-3xl mt-4 ml-2 text-left"
+
+          >CORE PRINCIPLES</h4>
+          <span class="w-10/12 inline-block relative self-center"></span>
+        </div>
+        <h1 class="text-10xl font-semibold leading-none uppercase">MISSION</h1>
+        <p class="w-10/12 text-2xl text-left mt-12 mb-8">Das Internet ist groß und bunt. Hier gibt es keine Standard-Lösung, sondern es sind immer individuelle Ansätze gefragt. Ich finde für meine Kunden neue Ideen und Konzepte, die wir engagiert und mit dem nötigen Know-how umsetzen.Websites, die nicht auf Smartphones oder Tablets angezeigt werden können, sperren sich einem stetig wachsenden Markt. Mit Responsive Design mache ich Webseiten fit für den Einsatz immer und überall.</p>
+
+        <a href="#"
+           class="button_red fade"
+        >MY APPROACH</a>
+      </div>
+
+      <div class="mission_right w-1/2 grid grid-cols-2 grid-rows-2 gap-x-0">
+        <div class="h-72 w-72 m-auto cursor-pointer">
+          <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lightbulb"
+               class="svg-inline--fa fa-lightbulb fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 352 512">
+            <path fill="#e9e4dc"
+                  d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z"></path>
+          </svg>
+          <h2 class="w-full relative justify-center m-auto top-4 p-1 text-4xl text-center font-semibold uppercase z-0 ">
+            DRIVEN CREATIVE
+          </h2>
+        </div>
+        <div class="h-72 w-72 m-auto cursor-pointer">
+          <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="handshake"
+               class="h-3/5 svg-inline--fa fa-handshake fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 640 512">
+            <path fill="#e9e4dc"
+                  d="M519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8 12.5 10.8 26 15.9 41.1 15.9 18.2 0 35.3-7.4 48.8-24 22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3 14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5 108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4 12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16z"></path>
+          </svg>
+          <h2 class="w-full relative justify-center m-auto top-4 p-1 text-4xl text-center font-semibold uppercase z-0 ">
+            HONEST WORK
+          </h2>
+        </div>
+        <div class="h-72 w-72 m-auto cursor-pointer">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="laptop-house"
+               class="svg-inline--fa fa-laptop-house fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 24 695 537">
+            <path fill="#e9e4dc"
+                  d="M272,288H208a16,16,0,0,1-16-16V208a16,16,0,0,1,16-16h64a16,16,0,0,1,16,16v37.12C299.11,232.24,315,224,332.8,224H469.74l6.65-7.53A16.51,16.51,0,0,0,480,207a16.31,16.31,0,0,0-4.75-10.61L416,144V48a16,16,0,0,0-16-16H368a16,16,0,0,0-16,16V87.3L263.5,8.92C258,4,247.45,0,240.05,0s-17.93,4-23.47,8.92L4.78,196.42A16.15,16.15,0,0,0,0,207a16.4,16.4,0,0,0,3.55,9.39L22.34,237.7A16.22,16.22,0,0,0,33,242.48,16.51,16.51,0,0,0,42.34,239L64,219.88V384a32,32,0,0,0,32,32H272ZM629.33,448H592V288c0-17.67-12.89-32-28.8-32H332.8c-15.91,0-28.8,14.33-28.8,32V448H266.67A10.67,10.67,0,0,0,256,458.67v10.66A42.82,42.82,0,0,0,298.6,512H597.4A42.82,42.82,0,0,0,640,469.33V458.67A10.67,10.67,0,0,0,629.33,448ZM544,448H352V304H544Z"></path>
+          </svg>
+          <h2 class="w-full relative justify-center m-auto top-4 p-1 text-4xl text-center font-semibold uppercase z-0 ">
+            MAKE AN IMPACT
+          </h2>
+        </div>
+        <div class="h-72 w-72 m-auto cursor-pointer">
+          <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="save"
+               class="svg-inline--fa fa-save fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 -15 420 585">
+            <path fill="#e9e4dc"
+                  d="M433.941 129.941l-83.882-83.882A48 48 0 0 0 316.118 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V163.882a48 48 0 0 0-14.059-33.941zM272 80v80H144V80h128zm122 352H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h42v104c0 13.255 10.745 24 24 24h176c13.255 0 24-10.745 24-24V83.882l78.243 78.243a6 6 0 0 1 1.757 4.243V426a6 6 0 0 1-6 6zM224 232c-48.523 0-88 39.477-88 88s39.477 88 88 88 88-39.477 88-88-39.477-88-88-88zm0 128c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z"></path>
+          </svg>
+          <h2 class="w-full relative justify-center m-auto top-4 p-1 text-4xl text-center font-semibold uppercase z-0 ">
+            HUMBLE COURAGE
+          </h2></div>
+
+      </div>
+
+
+    </section>
+
+
+    <section class="section h-full ">
+
+
+      <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8">
+        <span class="w-full inline-block relative"></span>
+        <h4 class="w-1/2 font-bold text-3xl mt-4 text-center"
+
+        >WHAT I'M WORKING ON</h4>
+        <span class="w-full inline-block relative"></span>
+
+
+      </div>
+
+      <div>
+        <h1
+            class="text-9xl font-bold text-center leading-tight mb-20 "
+
+        >CORE PRINCIPLES</h1>
+
+      </div>
+      <div class="principles flex flex-col text-center mb-8">
+
+        <div class="w-full flex pb-12 items-end">
+          <article class="h-full w-1/3  ">
+
+            <h2 class="w-1/3 relative m-auto p-1 flex justify-center text-3xl font-semibold uppercase">
+              Verstehen
+            </h2>
+            <img class="m-auto" src="~assets/graphic/principles_01.png">
+            <p class="w-2/3 m-auto text-2xl">Mein erster Schritt in jedem Projekt: Ihre Bedürfnisse, Wünsche und Erwartungen nachvollziehen – und die Ihrer User.</p>
+            <a href="#"
+               class="button_red fade uppercase"
+            >Lern Mehr</a>
+
+          </article>
+          <article class="h-full w-1/3 ">
+
+            <h2 class="w-1/3 relative m-auto p-1 flex justify-center text-3xl font-semibold uppercase">
+              Entwickeln
+            </h2>
+            <img class="m-auto" src="~assets/graphic/principles_02.png">
+            <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
+            <a href="#"
+               class="button_red fade uppercase"
+            >Lern Mehr</a>
+
+          </article>
+          <article class="h-full w-1/3">
+
+            <h2 class="w-1/3 relative m-auto p-1 flex justify-center text-3xl font-semibold uppercase">
+              Umsetzen
+            </h2>
+            <img class="m-auto" src="~assets/graphic/principles_03.png">
+            <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
+            <a href="#"
+               class="button_red fade uppercase"
+            >Lern Mehr</a>
+
+          </article>
+        </div>
+      </div>
+      <stickyFooter/>
+
+    </section>
+  </section>
+
+</template>
+
+<script>
+
+import stickyFooter from "@/components/stickyFooter";
+
+
+export default {
+
+  components: {stickyFooter},
+  head: {
+    title: 'aboutme',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
+  },
+
+  layout: 'desktop',
+
+  transition: {
+
+
+
+    name: 'spotlight',
+    mode: 'out-in',
+
+
+
+
+  },
+
+  mounted() {
+
+   fullpage_api.destroy('all')
+
+  },
+
+
+
+
+}
+</script>
+
+<style  scoped lang="scss">
+
+
+.button_red {
+
+  background-color: transparent;
+  color: #e53e26;
+  border-color: #e53e26;
+  width: 15rem;
+  margin-top: 30px;
+  display: inline-block;
+  border-width: 4px 0;
+  border-style: solid;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 10px;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+
+  font-family: Barlow Condensed, sans-serif;
+  transition: all 0.2s ease;
+
+
+  &:before, &:after {
+    background-color: #e53e26;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: background-color .2s ease, transform .2s ease;
+    transition: background-color .2s ease, transform .2s ease;
+
+  }
+
+
+  &:before {
+
+
+    left: 0;
+  }
+
+  &:after {
+
+
+    right: 0;
+  }
+
+  &:hover {
+
+    color: #e6c8a0
+
+  }
+}
+
+h1 {
+  color: #224a49;
+  filter: drop-shadow(5px 6px 0 #a9c9bb);
+  font-family: Barlow Condensed, sans-serif;
+
+}
+
+
+.about_gallery {
+
+
+  article {
+
+
+    .pic {
+
+      border-radius: 50%;
+
+      img {
+
+        border: 25px solid rgb(194, 213, 180);
+        padding: 5px;
+        border-image: url(~assets/graphic/portfolio-points.png) 20% round;
+        margin: 15px auto;
+      }
+    }
+
+
+    h2 {
+
+      background-image: url(~assets/graphic/green-dust-and-scratches.png);
+      background-color: #4f7b70;
+      color: #f7ebd5;
+      box-shadow: -10px 0 0 #4f7b70;
+      white-space: revert;
+
+    }
+
+  }
+}
+
+
+.title {
+
+  font-family: Barlow Condensed, sans-serif;
+  color: #4f7b70;
+  line-height: initial;
+
+  h1 {
+
+    -webkit-text-stroke-width: 3px;
+    filter: drop-shadow(4px 5px 0 #224a49);
+    -webkit-text-stroke-color: #e4ddd3;
+
+    background-image: url('~assets/graphic/green-dust-and-scratches.png');
+    background-color: #4f7b70;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+}
+
+
+.title_dividers {
+
+
+  span {
+
+
+
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+    background: -o-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+    background: linear-gradient(to left, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+
+  }
+
+
+}
+
+figure {
+
+
+  figcaption {
+
+
+    font-family: Satisfy, sans-serif;
+    letter-spacing: 10px;
+
+
+    a {
+      transition: all 0.2s ease;
+      &:hover {
+
+
+        color: #224a49;
+
+      }
+
+    }
+
+
+  }
+
+}
+
+
+.header_image {
+  display: flex;
+  content: "";
+  width: 250%;
+  height: 400%;
+  top: -145%;
+  left: 0;
+  z-index: 5;
+  background-image: url('~assets/graphic/light_background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: rotation 200s infinite linear;
+
+}
+
+
+.page-spacing {
+
+
+  background-image: url(~assets/graphic/15percent.png);
+  background-color: #f7ebd5;
+}
+
+
+.about_me {
+
+  color: #224a49;
+
+  span {
+
+
+    &:before {
+
+      background-color: #224a49;
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      top: 0;
+    }
+
+    &:after {
+      top: 14px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      content: "";
+      display: block;
+      background: url('~assets/graphic/star.svg') repeat-x top left;
+    }
+
+  }
+
+
+  h4 {
+
+    font-family: Barlow Condensed, sans-serif;
+
+
+  }
+}
+
+
+article {
+
+  background-size: 115% 250%;
+}
+
+.mission {
+  background-image: url('~assets/graphic/green-dust-and-scratches.png');
+  background-color: #da7f58;
+
+
+  .mission_left {
+
+    h1 {
+
+      filter: drop-shadow(5px 6px 0 #b3603b);
+      color: #e9e4dd;
+    }
+
+    p {
+      font-family: monospace, sans-serif;
+      color: #e9e4dd;
+
+    }
+
+    span {
+
+
+      &:before {
+
+        background-color: #224a49;
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 85%;
+        height: 3px;
+        top: 0;
+      }
+
+      &:after {
+        top: 14px;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        width: 85%;
+        content: "";
+        display: block;
+        background: url('~assets/graphic/star.svg') repeat-x top left;
+      }
+
+
+    }
+
+  }
+
+  .mission_right {
+
+
+    div {
+
+      background-color: rgba(218, 127, 88, 0.9);
+      border-radius: 50%;
+      border: 15px solid white;
+      transition: all .25s linear;
+
+      &:hover {
+
+        background-color: #4f7b70;
+
+
+        svg {
+
+          background-color: #e9e4dd;
+
+          path {
+
+            fill: #4f7b70;
+          }
+
+        }
+      }
+
+      svg {
+        height: 60%;
+        width: 60%;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #4f7b70;
+        border-radius: 50%;
+        transition: all .25s linear;
+
+      }
+
+
+    }
+
+    h2 {
+
+
+      background-image: url(~assets/graphic/green-dust-and-scratches.png);
+      background-color: #e53e26;
+      box-shadow: -6px 0 0 #e53e26;
+      color: #f7ebd5;
+      white-space: revert;
+
+    }
+
+  }
+
+
+  h4 {
+
+    font-family: Barlow Condensed, sans-serif;
+    color: #224a49;
+  }
+
+
+}
+
+.principles {
+
+  h2 {
+
+    background-image: url(~assets/graphic/green-dust-and-scratches.png);
+    background-color: #4f7b70;
+    color: #f7ebd5;
+    white-space: revert;
+  }
+
+  p {
+
+    color: #333333;
+
+  }
+
+
+  .button_red {
+
+
+
+    &:hover {
+
+
+      color: #224a49;
+
+    }
+
+  }
+}
+
+</style>
+
