@@ -19,12 +19,12 @@
 
           ></div>-->
 
-   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full w-11/12 h-1/4  sm:w-2/5 sm:h-full sm:relative z-50 "
+   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full w-9/12 h-1/5  sm:w-2/5 sm:h-full sm:relative z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
           <img src="~assets/graphic/hat.png"
-               class="hat h-auto w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5 sm:top-4   filter-shadow-black z-20"
+               class="hat h-64 w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5 sm:top-4   filter-shadow-black z-20"
                style="animation: matrix 3s infinite ease-in"
           >
 
@@ -370,6 +370,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+
+
 
 
 
