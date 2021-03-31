@@ -5,6 +5,93 @@
 
 
 
+    @font-face {
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/BarlowCondensed-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/BarlowCondensed-Bold.ttf) format('truetype');
+    }
+
+
+    @font-face {
+        font-family: Helvetica Neue;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/HelveticaNeueMed.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Helvetica Neue;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/HelveticaNeueBd.ttf) format('truetype');
+    }
+
+
+
+
+    @font-face {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/Mulish-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/Mulish-Bold.ttf) format('truetype');
+    }
+
+
+    @font-face {
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/Merriweather-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/Merriweather-Bold.ttf) format('truetype');
+    }
+
+
+
+    @font-face {
+        font-family: Satisfy;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('~assets/fonts/Satisfy-Regular.ttf') format('truetype');
+    }
+
+
+
+
+
+
+
+
+
     * {
 
         margin: 0;
@@ -69,6 +156,12 @@
 
     }
 
+    .bottom-8 {
+
+        bottom: 2rem
+
+    }
+
 
     .bottom-12 {
 
@@ -86,6 +179,14 @@
     .top-4 {
 
         top: 1rem;
+
+    }
+
+
+    .top-12 {
+
+
+        top: 3rem;
 
     }
 
@@ -335,6 +436,9 @@
 
 
 
+
+
+
     #fp-nav ul li a span, .fp-slidesNav ul li a span {
 
         height: 12px !important;
@@ -398,106 +502,24 @@
     }
 
 
-    @font-face {
-        font-family: Barlow Condensed;
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(~assets/fonts/BarlowCondensed-Regular.ttf) format('truetype');
-    }
-
-    @font-face {
-        font-family: Barlow Condensed;
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(~assets/fonts/BarlowCondensed-Bold.ttf) format('truetype');
-    }
-
-
-    @font-face {
-        font-family: Helvetica Neue;
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(~assets/fonts/HelveticaNeueMed.ttf) format('truetype');
-    }
-
-    @font-face {
-        font-family: Helvetica Neue;
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(~assets/fonts/HelveticaNeueBd.ttf) format('truetype');
-    }
-
-
-
-
-    @font-face {
-        font-family: Mulish;
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(~assets/fonts/Mulish-Regular.ttf) format('truetype');
-    }
-
-    @font-face {
-        font-family: Mulish;
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(~assets/fonts/Mulish-Bold.ttf) format('truetype');
-    }
-
-
-    @font-face {
-        font-family: Merriweather;
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(~assets/fonts/Merriweather-Regular.ttf) format('truetype');
-    }
-
-    @font-face {
-        font-family: Merriweather;
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(~assets/fonts/Merriweather-Bold.ttf) format('truetype');
-    }
-
-
-
-    @font-face {
-        font-family: Satisfy;
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url('~assets/fonts/Satisfy-Regular.ttf') format('truetype');
-    }
-
-
-
 
     @screen sm {
 
 
 
-             .hat {
+        .hat {
+
+            top: 0;
+
+        }
+
+        .section-1 img:first-child {
 
 
-                 top: 4rem;
+            top: 0.5rem;
 
-             }
+        }
 
-
-             .ribbon {
-
-                 top: 5rem;
-
-
-             }
 
            #form input,textarea {
 
@@ -596,6 +618,80 @@
     @screen 2xl {
 
 
+
+
+        #fp-nav {
+
+
+            display: block;
+        }
+
+
+        #fp-nav ul li a span, .fp-slidesNav ul li a span {
+
+            height: 12px !important;
+            width: 12px !important;
+            margin: -2px 0 0 -7px !important;
+            transition: all 0.3s ease-in-out !important;
+        }
+
+
+        #fp-nav ul li, .fp-slidesNav ul li {
+            display: block;
+            width: 25px;
+            height: 65px !important;
+            margin: 5px !important;
+            position: relative;
+        }
+
+        #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+            height: 30px !important;
+            width: 30px !important;
+            margin: -16px 0 0 -16px !important;
+            border-radius: 100%;
+        }
+
+        #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
+            width: 20px !important;
+            height: 20px !important;
+            margin: -7px 0 0 -11px !important;
+            background: #a1362b !important;
+
+        }
+
+
+        #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+
+            background: #a1362b !important;
+        }
+
+
+        #fp-nav ul li:focus::before {
+            border-top-color: blue;
+            border-right-color: blue;
+            border-bottom-color: blue;
+            display: inline-table;
+
+            transition: border-top-color 0.15s linear,
+            border-right-color 0.15s linear 0.10s,
+            border-bottom-color 0.15s linear 0.20s;
+            background: green !important;
+        }
+
+
+        .fp-slidesNav ul li:focus::after {
+            border-top: 2px solid blue;
+            border-left-width: 2px;
+            border-right-width: 2px;
+            transform: rotate(270deg);
+            transition: transform 0.4s linear 0s,
+            border-left-width 0s linear 0.35s;
+            background: green !important;
+        }
+
+
+
+
      /*   .logo {
 
 
@@ -608,6 +704,9 @@
             top: 25%;
 
         }
+
+
+
 
         .circle1 {
 

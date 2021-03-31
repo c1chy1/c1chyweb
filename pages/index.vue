@@ -19,25 +19,25 @@
 
           ></div>-->
 
-   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full h-full relative  top-4 sm:w-2/5 z-50 "
+   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full w-11/12 h-1/4  sm:w-2/5 sm:h-full sm:relative z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
           <img src="~assets/graphic/hat.png"
-               class="hat w-2/3 h-auto relative top-24 self-center sm:w-1/5 sm:top-2   filter-shadow-black z-10"
+               class="hat h-auto w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5 sm:top-4   filter-shadow-black z-20"
                style="animation: matrix 3s infinite ease-in"
           >
 
-          <figure class="ribbon relative top-28 flex items-center justify-center z-10 filter-shadow-black">
+          <figure class="absolute bottom-8 flex items-center justify-center z-10 sm:top-20 filter-shadow-black ">
 
 
             <img src="~assets/graphic/ribbon.png" alt="Trulli"
-                 class="w-full my-auto  sm:w-1/2 z-1 filter-shadow-black">
+                 class="w-max-w-full w-11/12 my-auto  sm:w-1/2 z-1 filter-shadow-black">
             <figcaption class="mx-auto mt-3 absolute block text-xl text-white text-center my-auto tracking-widest">
               Visually Striking Design </figcaption>
           </figure>
           <img src="~assets/graphic/body.png"
-               class="h-full w-max-w-full sm:w-2/5 filter-shadow-black ">
+               class="h-1/2 w-max-w-full w-11/12 sm:w-2/5 filter-shadow-black ">
         </div>
 
 
@@ -113,7 +113,7 @@
 
             <div
                 class="leading-loose p-1">
-              <p>Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
+              <p class="sm:hidden">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
               <ul class="mb-16">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
