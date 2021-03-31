@@ -1,5 +1,5 @@
 <template>
-<footer id="site-footer" class="w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:h-20 lg:w-full">
+<footer id="site-footer" class="hidden w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:h-20 lg:w-full">
 
 
 <div class="w-1/5 h-full sm:w-3/5 ">
