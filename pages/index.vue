@@ -149,7 +149,7 @@
                 class="text-xl">
               Strategie, Technologie, Design & Content </h2>
 
-            <p class="text-xs">
+            <p class="hidden text-xs">
               An der Schnittstelle von Design und Technik entwickeln wir digitale Anwendungen,
               die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
               auf welchem Gerät. Dazu erproben wir kontinuierlich neuartige Methoden, beschäftigen uns intensiv mit aufregenden Technologien,
