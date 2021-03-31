@@ -1,12 +1,12 @@
 <template>
 
-<no-ssr>
+<client-only>
     <main class="w-full h-full relative">
       <navigation />
       <Nuxt keep-alive />
 
     </main>
-  </no-ssr>
+  </client-only>
 
 </template>
 

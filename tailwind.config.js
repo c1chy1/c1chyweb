@@ -13,15 +13,6 @@ module.exports = {
     config: {}
   },
 
-
-
-
-  corePlugins: {
-
-    cursor: false,
-
-},
-
   future: {
    removeDeprecatedGapUtilities: true,
   purgeLayersByDefault: true,
@@ -37,13 +28,14 @@ module.exports = {
       'nuxt.config.js',
     ]
   },
+
   theme: {
 
     screens: {
-      'sm': {'min': '320px', 'max': '639px'},
-      'md': {'min': '640px', 'max': '1023px'},
-      'lg': {'min': '1024px', 'max': '1279px'},
-      'xl': {'min': '1280px', 'max': '1535px'},
+      'sm': { 'min': '480px'},
+      'md': {'min': '768px'},
+      'lg': {'min': '1024px'},
+      'xl': {'min': '1280px'},
       '2xl': {'min': '1536px'},
 
     },

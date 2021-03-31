@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="fixed z-20 mt-3 sm:hidden md:hidden lg:hidden">
+  <nav class="fixed z-20 mt-3 hidden md:visible lg:visible">
 
     <button class="toggle m-2 absolute">
 

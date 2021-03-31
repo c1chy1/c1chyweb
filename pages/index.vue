@@ -1,16 +1,15 @@
 <template>
   <section class="h-screen w-full absolute z-10">
 
-    <full-page class="cursor-default container px-16 sm:px-0 md:px-0 max-w-full lg:max-w-max  mx-auto " :options="options">
+    <full-page class="cursor-default container px-0 md:px-0 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
-      <section class="fp-section w-full h-full relative overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  rounded-4xl  filter-shadow-black">
+      <section class="fp-section w-full h-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  rounded-4xl  filter-shadow-black">
         <div
-            class="h-full w-full grid grid-cols-1 justify-items-center items-end relative"
-            style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
+            class="section-1 h-full w-full absolute grid fill-40 justify-items-center items-end ">
 
 
-          <div
+<!--          <div
               class="circle1 w-20 sm:w-20 md:w-16  p-5 absolute  bg-white z-40"
            ></div>
           <div class="circle2 w-16 sm:w-16  md:w-12 p-4 absolute bg-white z-30"
@@ -18,31 +17,32 @@
           ></div>
           <div class="circle3 w-8 sm:w-12 md:w-8 p-2 absolute bg-white z-20"
 
-          ></div>
+          ></div>-->
 
-   <img src="~assets/graphic/logo_c1chy3.png" class="logo sm:w-10/12 md:w-4/12 top-10 relative z-50 "
+   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full h-full relative  top-4 sm:w-2/5 z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
           <img src="~assets/graphic/hat.png"
-               class="hat w-80 sm:h-full sm:w-3/5 sm:h-1/2 md:w-3/12 md:h-44 2xl:relative  z-10 filter-shadow-black"
+               class="hat w-2/3 h-auto relative top-24 self-center sm:w-1/5 sm:top-2   filter-shadow-black z-10"
                style="animation: matrix 3s infinite ease-in"
           >
-          <figure class=" relative top-28 flex items-center justify-center z-10 filter-shadow-black">
+
+          <figure class="ribbon relative top-28 flex items-center justify-center z-10 filter-shadow-black">
 
 
             <img src="~assets/graphic/ribbon.png" alt="Trulli"
-                 class="w-full my-auto z-1 filter-shadow-black">
-            <figcaption class="mt-5 mx-auto absolute block text-4xl text-white text-center sm:text-xl sm:mt-3 sm:my-auto sm:tracking-widest">
+                 class="w-full my-auto  sm:w-1/2 z-1 filter-shadow-black">
+            <figcaption class="mx-auto mt-3 absolute block text-xl text-white text-center my-auto tracking-widest">
               Visually Striking Design </figcaption>
           </figure>
           <img src="~assets/graphic/body.png"
-               class="h-64 w-1/2 sm:h-full sm:w-5/6 filter-shadow-black md:h-24 md:absolute lg:absolute lg:w-1/2 lg:h-32">
+               class="h-full w-max-w-full sm:w-2/5 filter-shadow-black ">
         </div>
 
 
-        <div class=" md:left-0 md:bottom-0 lg:right-0 lg:bottom-0 lg:absolute lg:pr-2 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-5 2xl:mr-5 text-center tracking-widest md:text-left">
-          <div class="classic md:absolute lg:hidden 2xl:absolute">
+        <div class="hidden sm:block bottom-0 right-2 absolute lg:pr-2 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-5 2xl:mr-5 text-center tracking-widest md:text-left">
+          <div class="classic  md:absolute lg:hidden 2xl:absolute">
             <span class="intro intro--the block text-3xl">The</span>
             <span class="intro intro--num block text inline-block absolute font-semibold">first #1</span>
             <span class="intro block text-3xl">classic style</span>
@@ -66,9 +66,9 @@
       <div class="section w-full h-full relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 rounded-4xl  ">
 
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
-          <div class="w-full h-28  items-center flex  mx-auto mt-16 sm:mt-0 md:mt-0 lg:mt-0">
+          <div class="w-full h-28  items-center flex  mx-auto ">
             <span class="w-11/12 inline-block relative"></span>
-            <h1 class="w-1/2 font-bold text-3xl mt-4 sm:w-full sm:text-2xl md:w-full md:mt-0 "
+            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0 "
 
             >WELCOME TO STUDIO</h1>
             <span class="w-11/12 inline-block relative"></span>
@@ -78,7 +78,7 @@
           <div>
 <article class="bg-center bg-no-repeat">
             <h1
-                class="inline text-9xl font-bold uppercase sm:text-5xl md:hidden"
+                class="hidden inline text-5xl font-bold uppercase "
                 :class="{'animate__animated animate__swing animate__delay-3s animate' : animate}"
 
             >c1chy's studio</h1>
@@ -88,9 +88,10 @@
               <img
                   src="~assets/graphic/ribbon.png" alt="Trulli"
 
-                  class="h-16 max-h-12 w-full z-1 filter-shadow-black sm:h-12">
+                  class="h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto filter-shadow-black z-1" >
               <figcaption
-                  class="w-full my-auto mt-5 block absolute text-3xl text-center text-white sm:text-xl sm:tracking-widest">✪ ✪ ✪ ✪ ✪ ✪ ✪
+                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest">
+                ✪ ✪ ✪ ✪ ✪ ✪ ✪
               </figcaption>
             </figure>
           </div>
@@ -102,16 +103,16 @@
         <section
             class="scumbag w-full h-full flex justify-around bg-repeat bg-auto bg-center z-2 rounded-4xl">
           <div
-              class="w-1/4 sm:w-1/2 sm:pl-3 lg:w-1/2 ">
+              class="text-center mt-3 p-1 ">
 
             <div
-                class="mb-5 sm:mt-5 md:mt-8 lg:w-1/2">
+                class="">
               <h2
-                  class="pt-1 pl-0 pb-1 pr-4 relative inline text-4xl leading-tight font-semibold uppercase sm:text-xl md:text-xl lg:text-2xl">
+                  class="text-xl">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="leading-loose text-xl sm:text-center md:hidden lg:text-xl">
+                class="leading-loose p-1">
               <p>Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
               <ul class="mb-16">
                 <li><h3>APP-Entwicklung</h3></li>
@@ -121,20 +122,19 @@
 
 
               <a href="#"
-                 class="button_red fade sm:hidden lg:hidden 2xl:w-1/2 2xl:text-3xl"
+                 class="button_red fade hidden sm:hidden lg:hidden 2xl:w-1/2 2xl:text-3xl"
                  :class="{'animate__animated animate__bounceInLeft show' : animate}"
               >MY STORY</a>
             </div>
 
           </div>
-          <div class="h-3/4 sm:w-2/3 md:w-1/3 md:transform md:rotate-45 lg:w-1/3">
+          <div class="h-full flex items-end    sm:w-1/3  lg:w-1/3">
 
             <img src="~assets/graphic/vintage_wolf.jpg"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
-                 class=" z-1 rounded-t-4xl fade sm:h-full sm:w-11/12 md:w-11/12 relative">
-
+                 class="fade w-full relative bottom-1/2 rounded-t-4xl z-1">
           </div>
-          <div class="background h-2/5 absolute right-0 top-3/4 opacity-70">
+          <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
         </section>
       </div>
@@ -146,46 +146,52 @@
 
 <div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8">
             <h2
-                class="pt-1 pl-2 pb-1 pr-4 relative inline text-6xl font-semibold leading-tight md:text-2xl lg:text-4xl">
+                class="text-xl">
               Strategie, Technologie, Design & Content </h2>
 
-            <p class="text-xl sm:text-xl sm:leading-4 sm:text-center md:hidden">An der Schnittstelle von Design und Technik entwickeln wir digitale Anwendungen, die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal, auf welchem Gerät. Dazu erproben wir kontinuierlich neuartige Methoden, beschäftigen uns intensiv mit aufregenden Technologien, experimentieren mit neuen Herangehensweisen.</p>
+            <p class="text-xs">
+              An der Schnittstelle von Design und Technik entwickeln wir digitale Anwendungen,
+              die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
+              auf welchem Gerät. Dazu erproben wir kontinuierlich neuartige Methoden, beschäftigen uns intensiv mit aufregenden Technologien,
+              experimentieren mit neuen Herangehensweisen.</p>
 
 
             <a href="#"
-               class="button_red sm:hidden lg:hidden 2xl:w-1/2 2xl:text-3xl"
+               class="button_red hidden lg:hidden 2xl:w-1/2 2xl:text-3xl"
             >MY STORY</a>
 </div>
           </section>
 
-          <section class="w-1/2 p-20 sm:px-2 sm:py-40 sm:pl-6 relative">
+          <section class="w-1/2 h-full p-20 px-2 pl-6 flex">
 
             <img
-                class=" relative mx-auto  rounded-3xl sm:w-full sm:h-full sm:left-2 md:h-full md:w-9/12"
+                class="w-max-w-full h-4/5 relative left-2 mx-auto self-center sm:h-full rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
                  src="~assets/graphic/vintage_music.jpg">
           </section>
 
         </div>
       </div>
-      <div class="section relative box-content bg-cover overflow-hidden flex rounded-4xl z-0  sm:flex-col">
+      <div class="section relative box-content flex-col bg-cover overflow-hidden flex rounded-4xl z-0 sm:flex-row ">
 
-        <article class="w-1/2 show sm:w-full sm:h-1/3"
+        <article class="w-full show h-1/3"
 
                  :class="{'animate__animated animate__bounceInLeft animate__delay-2s animate__slow fade' : animate}">
 
           <div
-              class="w-3/4 h-28 items-center flex  mx-auto mt-16 sm:mt-0 md:mt-0">
+              class="w-full h-28 items-center flex mx-auto ">
 
             <h2
-                class="w-3/5 font-bold text-3xl mt-4 sm:text-xl sm:w-5/6 md:text-2xl  md:w-full lg:w-full">LET'S WORK TOGETHER</h2>
+                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl w-5/6 ">
+              LET'S WORK TOGETHER
+            </h2>
             <span
                 class="w-full inline-block relative"></span>
 
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="filter-shadow-green font-bold text-10xl sm:hidden">HIRE ME</h1>
+  <h1 class="hidden font-bold text-10xl filter-shadow-green ">HIRE ME</h1>
 
 
   <figure
@@ -195,45 +201,46 @@
 
         class=" md:h-12 md:w-full  md:w-full  z-1 filter-shadow-black">
     <figcaption
-        class="w-full absolute block my-auto mt-4 bg-no-repeat text-4xl text-center text-white z-0 sm:text-2xl sm:left-0 md:ml-3 md:text-3xl">Let Me Know!
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white z-0  md:ml-3 md:text-3xl">
+      Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-full mt-10 text-xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
+  <p class="w-full mt-5 text-xs ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
 
 
         </article>
 
-        <div class="w-1/2 h-full z-0 sm:w-full"
+        <div class="w-full h-full z-0 "
 
              :class="{'animate__animated animate__bounceInRight animate__delay-2s animate__slow animate show' : fade}"
 
         >
           <form
               id="form"
-              class="w-full h-full flex flex-col justify-center  sm:justify-start sm:items-center sm:text-2xl md:justify-start lg:justify-start lg:mt-20 lg:text-3xl 2xl:text-xl"
+              class="w-full h-full flex flex-col justify-start items-center text-xl "
               v-on:submit.prevent={getFormValues}
           >
             <label for="name" class="w-full text-center">
             <input
                 type="text"
                 id="name"
-                class="w-3/4 h-12 mt-3 md:h-8 lg:mb-5"
+                class="w-3/4 h-12 mt-3 pl-1 sm:h-8 "
                 placeholder="name"
             >
           </label>
             <label for="email" class="w-full text-center">
             <input type="email" id="email" placeholder="email"
-                   class="w-3/4 h-12 mt-3 md:h-8 lg:mb-5" >
+                   class="w-3/4 h-12 mt-3 pl-1 sm:h-8 lg:mb-5" >
            </label>
             <label for="message" class="w-full text-center">
             <textarea id="message" placeholder="message"
-                      class="w-3/4 h-32 mt-3 resize-none lg:mb-5"> </textarea>
+                      class="w-3/4 h-32 mt-3 pl-1 resize-none sm:h-24 lg:mb-5"> </textarea>
             </label>
 
-            <button type = "submit" form ="form" value="submit" class="button_red md:w-1/2 md:text-2xl md:ml-10 lg:w-1/2 lg:mx-auto 2xl:w-1/2 2xl:text-3xl 2xl:mx-auto">SEND</button>
+            <button type = "submit" form ="form" value="submit" class="button_red  mt-4 sm:mt-2 sm:ml-10 sm:self-start">SEND</button>
 
           </form>
           <button
@@ -356,9 +363,6 @@ export default {
 },
 
   mounted() {
-
-    fullpage_api.reBuild('all')
-
 
   }
 }
@@ -844,7 +848,6 @@ div p, li, a {
 }
 
 [data-anchor="page4"] {
-
 
 
   background-image: url("~assets/graphic/bg_bottom_home.jpg");

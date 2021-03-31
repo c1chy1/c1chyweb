@@ -69,6 +69,13 @@
 
     }
 
+
+    .bottom-12 {
+
+        bottom: 3rem
+
+    }
+
     .top-2 {
 
         top: 0.5rem;
@@ -81,8 +88,6 @@
         top: 1rem;
 
     }
-
-
 
 
     .top-20 {
@@ -103,11 +108,24 @@
 
     }
 
+    .bottom-1\/2 {
+
+        bottom: 18%;
+
+    }
+
+
 
     .left-2\/4 {
 
         left: 50%;
 
+    }
+
+
+    .left-2 {
+
+        left: 0.5rem;
     }
 
     .left-4 {
@@ -119,6 +137,12 @@
     .right-1 {
 
         right: 0.25rem
+
+    }
+
+    .right-2 {
+
+        right: 0.5rem
 
     }
 
@@ -230,8 +254,33 @@
 
 
 
+    #fp-nav {
+
+        display: none;
+
+    }
 
 
+    .section-1 {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(25% ,1fr)) ;
+
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+
+    }
+/*
+    .section-1 > img:nth-child(2) {
+
+        margin: 0 auto;
+        width: 65vw;
+        height: 50vh;
+
+
+    }*/
 
 
     *:focus {
@@ -249,6 +298,9 @@
         color: rgba(255, 255, 255, var(--tw-text-opacity));
 
     }
+
+
+
 
 
     .text-8xl {
@@ -282,16 +334,6 @@
     }
 
 
-
-    @media (max-width: 639px) {
-
-
-
-
-
-
-
-    }
 
     #fp-nav ul li a span, .fp-slidesNav ul li a span {
 
@@ -442,118 +484,35 @@
 
 
 
+             .hat {
 
 
-        @media (orientation: portrait) {
+                 top: 4rem;
+
+             }
 
 
+             .ribbon {
 
-            #fp-nav {
-
-                display: none;
-
-            }
+                 top: 5rem;
 
 
-            .logo {
+             }
 
-                top: 1rem;
-
-
-
-            }
+           #form input,textarea {
 
 
-
-            .circle1 {
-
-                left: 60%;
-                top: 25%;
-
-            }
+               font-size: 1rem;
 
 
-            .circle2 {
+           }
 
-                left: 53%;
-                top: 28%;
-
-            }
+        #site-footer .icon:hover {
 
 
-            .circle3 {
-
-                left: 48%;
-                top: 31%;
-
-            }
-
-            .hat {
-
-                position: relative;
-                top: 2rem;
-
-            }
-
-            .scumbag h2 {
-
-                font-size: 1rem;
-            }
-
-            .scumbag p, li  {
-
-                font-size: 0.7rem;
-
-            }
-
-            .scumbag img {
-
-                left: 10%;
-                top: 17%;
-            }
-
-            .bg_stars h2 {
-
-                font-size: 1.2rem;
-
-            }
-            .bg_stars p {
-
-                font-size: 0.8rem;
-
-            }
-
-            .bg_stars section img {
-
-                left: 10%;
-            }
-
-            .bg_stars .button_red {
-
-                width: 8.5rem;
-
-            }
-
-
-            [data-anchor="page4"] figure figcaption {
-
-
-                left: 1rem;
-                letter-spacing: 5px;
-            }
-
-            [data-anchor="page4"] p {
-
-                font-size: 0.9rem;
-
-            }
-
-
-
+            display: none
 
         }
-
-
 
 
 
@@ -563,76 +522,15 @@
 
     @screen md {
 
-        #fp-nav {
 
-            display: none;
-
-        }
-
-        .circle1 {
-
-            left: 54%;
-            top: 22%;
-
-        }
-
-
-        .circle2 {
-
-            left: 50%;
-            top: 25%;
-
-        }
-
-
-        .circle3 {
-
-            left: 48%;
-            top: 31%;
-
-        }
-
-
-        .classic {
-
-
-            left: 5%;
-            bottom: 26%;
-        }
-
-
-        .vintage__container {
-
-
-            left: 1%;
-            bottom: 20%;
-
-    }
-
-        .intro--num {
-
-            left: 20%;
-            bottom: 5%;
-
-        }
 
         .hat {
 
-            height: 11rem;
-        }
 
-
-        [data-anchor="page4"] p {
-
-            font-size: 0.9rem;
+            top: 3rem;
 
         }
 
-        .button_red {
-
-            font-size: 0.9rem;
-
-        }
 
     }
 
@@ -640,7 +538,7 @@
     @screen lg {
 
 
-        .circle1 {
+     /*   .circle1 {
 
             left: 54%;
             top: 25%;
@@ -678,7 +576,7 @@
             bottom: 5%;
             right: 15%;
 
-        }
+        }*/
     }
 
 
@@ -698,7 +596,7 @@
     @screen 2xl {
 
 
-        .logo {
+     /*   .logo {
 
 
             top: 40%;
@@ -748,7 +646,7 @@
             bottom: 200%;
 
         }
-
+*/
     }
 
 
