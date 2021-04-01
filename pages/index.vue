@@ -121,11 +121,6 @@
                 <li><h3>SEO + Sichtbarkeit</h3></li>
               </ul>
 
-
-              <a href="#"
-                 class="button_red fade hidden sm:hidden lg:hidden xl:block xl:mx-auto 2xl:w-1/2 2xl:text-3xl"
-                 :class="{'animate__animated animate__bounceInLeft show' : animate}"
-              >MY STORY</a>
             </div>
 
           </div>
