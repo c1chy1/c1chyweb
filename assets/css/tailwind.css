@@ -165,7 +165,7 @@
 
     .bottom-12 {
 
-        bottom: 3rem
+        bottom: 3rem;
 
     }
 
@@ -308,6 +308,14 @@
 
     }
 
+    .h-164 {
+
+        height: 44rem;
+
+    }
+
+
+
 
     .h-3\/4 {
 
@@ -352,6 +360,7 @@
         width: 32rem;
 
     }
+
 
     .section-1 {
         display: grid;
@@ -425,12 +434,6 @@
         cursor: pointer;
     }
 
-    #fp-nav {
-
-
-        display: none!important;
-    }
-
 
 
     @screen sm {
@@ -439,8 +442,7 @@
 
         .hat {
 
-            top: 0;
-
+            top: 1rem;
         }
 
         .section-1 img:first-child {
@@ -451,7 +453,7 @@
         }
 
 
-           #form input,textarea {
+        /*   #form input,textarea {
 
 
                font-size: 1rem;
@@ -459,20 +461,26 @@
 
            }
 
-        #site-footer .icon:hover {
+*/
+    }
 
 
-            display: none
+    @screen md {
+
+
+
+        .hat {
+
+
+            top: 1rem;
 
         }
-
-
 
 
     }
 
 
-    @screen md {
+    @screen lg {
 
 
 
@@ -484,51 +492,48 @@
         }
 
 
-    }
 
 
-    @screen lg {
+
+        /*   .circle1 {
+
+               left: 54%;
+               top: 25%;
+
+           }
 
 
-     /*   .circle1 {
+           .circle2 {
 
-            left: 54%;
-            top: 25%;
+               left: 50%;
+               top: 28%;
 
-        }
-
-
-        .circle2 {
-
-            left: 50%;
-            top: 28%;
-
-        }
+           }
 
 
-        .circle3 {
+           .circle3 {
 
-            left: 48%;
-            top: 30%;
+               left: 48%;
+               top: 30%;
 
-        }
-
-
-        .intro {
-
-            position: absolute;
-            bottom: 5%;
-
-        }
+           }
 
 
-        .vintage {
+           .intro {
+
+               position: absolute;
+               bottom: 5%;
+
+           }
 
 
-            bottom: 5%;
-            right: 15%;
+           .vintage {
 
-        }*/
+
+               bottom: 5%;
+               right: 15%;
+
+           }*/
     }
 
 
@@ -536,10 +541,12 @@
     @screen xl {
 
 
-        .logo {
+        /*
 
-
+        #form input, textarea {
+            font-size: 1.5rem;
         }
+        */
 
 
     }
@@ -547,6 +554,21 @@
 
     @screen 2xl {
 
+
+
+        .hat {
+
+            top:6rem
+
+        }
+
+
+        .welcome_studio article h1 {
+
+
+
+            font-size: 8rem
+        }
 
 
 
