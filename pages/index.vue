@@ -112,7 +112,7 @@
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="leading-loose p-1 xl:text-xl xl:mt-10">
+                class="leading-loose p-1 xl:text-xl xl:mt-2 xl2:mt-10">
               <p class="sm:hidden xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
               <ul class="mb-16">
                 <li><h3>APP-Entwicklung</h3></li>
@@ -141,10 +141,10 @@
 
 <div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 xl:mr-10">
             <h2
-                class="text-xl  xl:leading-tight xl:text-6xl">
+                class="text-xl  xl:leading-tight  xl:text-4xl 2xl:text-6xl">
               Strategie, Technologie, Design & Content </h2>
 
-            <p class="hidden text-xs xl:block xl:text-2xl ">
+            <p class="hidden text-xs xl:block xl:text-xl 2xl:text-2xl ">
               An der Schnittstelle von Design und Technik entwickeln wir digitale Anwendungen,
               die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
               auf welchem Gerät. Dazu erproben wir kontinuierlich neuartige Methoden, beschäftigen uns intensiv mit aufregenden Technologien,
@@ -152,7 +152,7 @@
 
 
             <a href="#"
-               class="button_red hidden lg:hidden   xl:block 2xl:w-1/2 2xl:text-3xl"
+               class="button_red hidden lg:hidden xl:block 2xl:w-1/2 2xl:text-3xl"
             >MY STORY</a>
 </div>
           </section>
@@ -186,7 +186,7 @@
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="hidden font-bold text-10xl filter-shadow-green xl:block ">HIRE ME</h1>
+  <h1 class="hidden font-bold text-10xl filter-shadow-green xl:block lg:text-6xl ">HIRE ME</h1>
 
 
   <figure
@@ -201,7 +201,7 @@
     </figcaption>
   </figure>
 
-  <p class="w-full mt-5 text-xs xl:text-4xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
+  <p class="w-full mt-5 text-xs  lg:text-3xl xl:text-3xl 2xl:text-4xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
 

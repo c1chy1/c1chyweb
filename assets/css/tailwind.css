@@ -513,58 +513,7 @@
 
 
 
-        .wolf {
 
-            bottom: 4rem;
-
-        }
-
-
-    }
-
-
-    @screen 2xl {
-
-
-
-        .hat {
-
-            top:6rem
-
-        }
-
-
-        .welcome_studio article h1 {
-
-
-
-            font-size: 8rem
-        }
-
-
-
-
-        .circle1 {
-
-            left: 52%;
-            top: 31%;
-
-        }
-
-        .circle2 {
-
-            left: 51%;
-            top: 34%;
-
-        }
-
-
-        .circle3 {
-
-            left: 50%;
-            top: 36%;
-
-        }
 
 
         #fp-nav {
@@ -635,6 +584,63 @@
             border-left-width 0s linear 0.35s;
             background: green !important;
         }
+
+
+        .wolf {
+
+            bottom: 4rem;
+
+        }
+
+
+    }
+
+
+    @screen 2xl {
+
+
+
+        .hat {
+
+            top:6rem
+
+        }
+
+
+        .welcome_studio article h1 {
+
+
+
+            font-size: 8rem
+        }
+
+
+
+
+        .circle1 {
+
+            left: 52%;
+            top: 31%;
+
+        }
+
+        .circle2 {
+
+            left: 51%;
+            top: 34%;
+
+        }
+
+
+        .circle3 {
+
+            left: 50%;
+            top: 36%;
+
+        }
+
+
+
 
 
 

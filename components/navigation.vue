@@ -12,7 +12,7 @@
          :class="open ? 'open' : ''">
 
 
-      <ul class="w-full h-12 flex justify-evenly self-center flex-wrap ">
+      <ul class="w-full h-12 px-16 flex justify-evenly self-center flex-wrap ">
         <li @click.prevent="toTop">
           <NuxtLink to="/" class="text-2xl spin circle">Home</NuxtLink>
         </li>
