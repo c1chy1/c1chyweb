@@ -19,11 +19,13 @@
 
           ></div>
 
-   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full w-9/12 h-1/5  sm:w-2/5 sm:h-full sm:relative md:w-7/12 md:h-48 lg:w-3/5 lg:h-48 xl:w-1/2 xl:h-56 2xl:w-1/4 2xl:h-auto z-50 "
+   <img       :src="require('~/assets/graphic/logo_c1chy3.png').src" class="w-max-w-full w-9/12 h-1/5  sm:w-2/5 sm:h-full sm:relative md:w-7/12 md:h-48 lg:w-3/5 lg:h-48 xl:w-1/2 xl:h-56 2xl:w-1/4 2xl:h-auto z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
-          <img src="~assets/graphic/hat.png"
+          <img
+
+               :src="require('~/assets/graphic/hat.png').src"
                class="hat h-auto w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5 sm:h-40  md:w-2/5 md:h-full  lg:w-1/3 xl:w-1/3 xl:h-72 2xl:w-1/5 2xl:h-auto  filter-shadow-black z-20"
                style="animation: matrix 3s infinite ease-in"
           >
@@ -36,7 +38,7 @@
             <figcaption class="mx-auto mt-3 absolute block text-xl text-white text-center my-auto  md:text-2xl lg:text-4xl  tracking-widest">
               Visually Striking Design </figcaption>
           </figure>
-          <img src="~assets/graphic/body.png"
+          <img       :src="require('~/assets/graphic/body.png').src"
                class="h-1/2 w-max-w-full w-11/12 sm:w-2/5 sm:h-24 md:w-9/12 md:h-56 lg:w-4/5 lg:h-36 2xl:w-1/2 2xl:h-48  filter-shadow-black ">
         </div>
 
@@ -125,7 +127,7 @@
           </div>
           <div class="flex items-end    sm:w-1/3  lg:w-1/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
 
-            <img src="~assets/graphic/vintage_wolf.jpg"
+            <img       :src="require('~/assets/graphic/vintage_wolf.jpg').src"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
                  class="wolf fade w-full relative bottom-1/2 rounded-t-4xl ">
           </div>
@@ -162,7 +164,7 @@
             <img
                 class="w-max-w-full h-4/5 relative left-2 mx-auto self-center sm:h-full rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
-                 src="~assets/graphic/vintage_music.jpg">
+                :src="require('~/assets/graphic/vintage_music.jpg').src">
           </section>
 
         </div>
@@ -186,7 +188,7 @@
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl xl:hidden 2xl:block ">HIRE ME</h1>
+  <h1 class="hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl xl:hidden 2xl:block 2xl:text-9xl ">HIRE ME</h1>
 
 
   <figure
@@ -201,7 +203,7 @@
     </figcaption>
   </figure>
 
-  <p class="w-full mt-5 text-xs  md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
+  <p class="w-full mt-5 text-xs  md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
         </article>
