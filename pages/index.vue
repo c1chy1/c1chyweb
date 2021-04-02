@@ -1,7 +1,7 @@
 <template>
   <section class="h-screen w-full absolute z-10">
 
-    <full-page class="cursor-default container px-0 md:px-0 2xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
+    <full-page class="cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
       <section class="fp-section w-full h-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  rounded-4xl  filter-shadow-black">
@@ -108,7 +108,7 @@
             <div
                 class="">
               <h2
-                  class="text-xl 2xl:text-4xl 2xl:font-bold 2xl:text-left">
+                  class="text-xl 2xl:text-3xl 2xl:font-bold 2xl:text-left">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
@@ -152,7 +152,7 @@
 
 
             <a href="#"
-               class="button_red hidden lg:hidden xl:block 2xl:w-1/2 2xl:text-3xl"
+               class="button_red hidden lg:hidden xl:block xl:w-1/3 2xl:w-1/2 2xl:text-3xl"
             >MY STORY</a>
 </div>
           </section>
@@ -167,9 +167,9 @@
 
         </div>
       </div>
-      <div class="section relative box-content flex-col bg-cover overflow-hidden flex rounded-4xl z-0 sm:flex-row ">
+      <div class="section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-row  ">
 
-        <article class="w-full show h-1/3"
+        <article class="w-full h-max-h-full show h-1/3"
 
                  :class="{'animate__animated animate__bounceInLeft animate__delay-2s animate__slow fade' : animate}">
 
@@ -177,16 +177,16 @@
               class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4">
 
             <h2
-                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  xl:w-2/5  ">
+                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-5xl  xl:w-2/5  ">
               LET'S WORK TOGETHER
             </h2>
             <span
-                class="w-full inline-block relative"></span>
+                class="w-full inline-block relative "></span>
 
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="hidden font-bold text-10xl filter-shadow-green xl:block lg:text-6xl ">HIRE ME</h1>
+  <h1 class="hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl xl:hidden 2xl:block ">HIRE ME</h1>
 
 
   <figure
@@ -194,18 +194,16 @@
     <img
         src="~assets/graphic/ribbon.png" alt="Trulli"
 
-        class=" md:h-12 md:w-full  md:w-full  z-1 filter-shadow-black">
+        class=" md:h-12 md:w-full   z-1 filter-shadow-black">
     <figcaption
-        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white z-0  md:ml-3 md:text-3xl xl:text-4xl 2xl:tracking-widest">
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white z-0  md:ml-3 md:text-4xl md:tracking-widest lg:text-5xl xl:text-4xl 2xl:tracking-widest">
       Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-full mt-5 text-xs  lg:text-3xl xl:text-3xl 2xl:text-4xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
+  <p class="w-full mt-5 text-xs  md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
-
-
         </article>
 
         <div class="w-full h-full z-0 "
@@ -222,20 +220,20 @@
             <input
                 type="text"
                 id="name"
-                class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8  xl:h-12 xl:text-2xl"
+                class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl xl:h-12 xl:text-2xl"
                 placeholder="name"
             >
           </label>
             <label for="email" class="w-full text-center">
             <input type="email" id="email" placeholder="email"
-                   class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8 lg:mb-5 xl:h-12 xl:text-2xl" >
+                   class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl lg:mb-5 xl:h-12 xl:text-2xl" >
            </label>
             <label for="message" class="w-full text-center">
             <textarea id="message" placeholder="message"
-                      class="w-4/5 h-32 mt-3 pl-1 resize-none border-2 rounded-xl sm:h-24 lg:mb-5 xl:h-48 xl:text-2xl " > </textarea>
+                      class="w-4/5 h-32 mt-3 pl-1 resize-none border-2 rounded-xl sm:h-24  md:h-64 md:text-4xl lg:mb-5 xl:h-48 xl:text-2xl " > </textarea>
             </label>
 
-            <button type = "submit" form ="form" value="submit" class="button_red  mt-4 sm:mt-2 sm:ml-10 sm:self-start xl:ml-24">SEND</button>
+            <button type = "submit" form ="form" value="submit" class="button_red  mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl xl:ml-24">SEND</button>
 
           </form>
           <button
@@ -419,8 +417,6 @@ div p, li, a {
   line-height: 1;
   text-align: center;
   position: relative;
-  padding-left: 27px;
-  padding-right: 27px;
   font-family: Barlow Condensed,sans-serif;
   transition: all 0.2s ease;
 

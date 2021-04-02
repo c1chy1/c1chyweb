@@ -1,14 +1,14 @@
 <template>
-<footer id="site-footer" class="hidden w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:h-20 lg:w-full xl:flex xl:h-48">
+<footer id="site-footer" class="hidden w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:block md:h-24 lg:w-full xl:flex xl:h-40 2xl:h-48">
 
 
-<div class="w-1/5 h-full sm:w-3/5 xl:w-2/5">
+<div class="w-1/5 h-full sm:w-3/5 md:w-1/12 md:ml-3  xl:w-2/5">
 
 
   <img
       src="../assets/graphic/footer_logo.png"
 
-      class="h-16 w-full mt-4 ml-2 mx-auto sm:h-20 sm:w-1/2 sm:mt-2 sm:ml-5 md:h-16 md:w-full md:ml-3 md:mt-3 lg:w-full lg:ml-5 xl:h-40 xl:w-7/12 xl:mt-5 xl:ml-20"
+      class="h-16 w-full mt-4 ml-2 mx-auto sm:h-20 sm:w-1/2 sm:mt-2 sm:ml-5 md:h-16 md:w-full md:ml-3 md:mt-4 lg:w-full lg:ml-5 xl:h-40 xl:w-7/12 xl:mt-5 xl:ml-20"
       :class="{'animate__animated animate__pulse animate__infinite  animate__delay-2s ' : animate}"
   >
 
@@ -16,7 +16,7 @@
 
 
 
-  <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden md:hidden lg:hidden xl:flex xl:block xl:w-full">
+  <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:w-full">
     <li class="flex" @click.prevent="toTop">
       <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer">
         Home</NuxtLink>

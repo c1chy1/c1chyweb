@@ -84,6 +84,8 @@
         src: url('~assets/fonts/Satisfy-Regular.ttf') format('truetype');
     }
 
+
+
     * {
 
         margin: 0;
@@ -96,6 +98,7 @@
     *, :hover, :focus, :active, :visited {
         outline: none;
     }
+
 
 
     body {
@@ -112,8 +115,6 @@
         background-position: 0 0;
         word-spacing: 0.06em;
         letter-spacing: 0.04em;
-        font-size: 10px;
-
     }
 
     html {
