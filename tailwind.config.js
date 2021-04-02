@@ -32,11 +32,11 @@ module.exports = {
   theme: {
 
     screens: {
-      'sm': { 'min': '479px'},
-      'md': {'min': '767px'},
-      'lg': {'min': '1023px'},
-      'xl': {'min': '1279px'},
-      '2xl': {'min': '1535px'},
+      'sm': { 'min': '480px'},
+      'md': {'min': '768px'},
+      'lg': {'min': '1024px'},
+      'xl': {'min': '1280px'},
+      '2xl': {'min': '1536px'},
 
     },
     colors: {

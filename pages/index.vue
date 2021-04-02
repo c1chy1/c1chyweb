@@ -19,7 +19,7 @@
 
           ></div>
 
-   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full w-9/12 h-1/5  sm:w-2/5 sm:h-full sm:relative md:w-7/12 md:h-48 lg:w-3/5 lg:h-48 xl:w-1/2 2xl:w-1/4 2xl:h-auto z-50 "
+   <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full w-9/12 h-1/5  sm:w-2/5 sm:h-full sm:relative md:w-7/12 md:h-48 lg:w-3/5 lg:h-48 xl:w-1/2 xl:h-56 2xl:w-1/4 2xl:h-auto z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
