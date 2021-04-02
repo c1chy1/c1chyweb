@@ -424,16 +424,20 @@
 
         }
 
+        #fp-nav {
 
-        /*   #form input,textarea {
+            display: none;
+
+        }
+
+        .circle1,.circle2, .circle3 {
+
+       display: none;
+
+        }
 
 
-               font-size: 1rem;
 
-
-           }
-
-*/
     }
 
 
@@ -448,6 +452,17 @@
 
         }
 
+        #fp-nav {
+
+            display: none;
+
+        }
+
+        .circle1,.circle2, .circle3 {
+
+            display: none;
+
+        }
 
     }
 
