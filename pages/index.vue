@@ -9,16 +9,15 @@
             class="section-1 h-full w-full absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
-
-<!--          <div
-              class="circle1 w-20 sm:w-20 md:w-16  p-5 absolute  bg-white z-40"
+          <div
+              class="circle1 w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
            ></div>
-          <div class="circle2 w-16 sm:w-16  md:w-12 p-4 absolute bg-white z-30"
+          <div class="circle2 w-16 sm:w-16  md:w-12 2xl:w-16 p-4 absolute bg-white z-40"
 
           ></div>
-          <div class="circle3 w-8 sm:w-12 md:w-8 p-2 absolute bg-white z-20"
+          <div class="circle3 w-8 sm:w-12 md:w-8 p-2 absolute bg-white z-30"
 
-          ></div>-->
+          ></div>
 
    <img src="~assets/graphic/logo_c1chy3.png" class="w-max-w-full w-9/12 h-1/5  sm:w-2/5 sm:h-full sm:relative md:w-7/12 md:h-48 lg:w-3/5 lg:h-48 xl:w-1/2 2xl:w-1/4 2xl:h-auto z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
@@ -77,9 +76,9 @@
           </div>
 
           <div>
-<article class="bg-center bg-no-repeat">
+<article class="bg-center bg-no-repeat ">
             <h1
-                class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-9xl"
+                class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-9xl "
                 :class="{'animate__animated animate__swing animate__delay-3s animate' : animate}"
 
             >c1chy's studio</h1>
@@ -124,11 +123,11 @@
             </div>
 
           </div>
-          <div class="flex items-end    sm:w-1/3  lg:w-1/3 xl:h-full xl:w-1/4">
+          <div class="flex items-end    sm:w-1/3  lg:w-1/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
 
             <img src="~assets/graphic/vintage_wolf.jpg"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
-                 class="fade w-full relative bottom-1/2 rounded-t-4xl z-1 xl:bottom-12">
+                 class="wolf fade w-full relative bottom-1/2 rounded-t-4xl ">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
@@ -223,17 +222,17 @@
             <input
                 type="text"
                 id="name"
-                class="w-4/5 h-12 mt-3 pl-1 border-2 sm:h-8  xl:h-12 xl:text-2xl"
+                class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8  xl:h-12 xl:text-2xl"
                 placeholder="name"
             >
           </label>
             <label for="email" class="w-full text-center">
             <input type="email" id="email" placeholder="email"
-                   class="w-4/5 h-12 mt-3 pl-1 border-2 sm:h-8 lg:mb-5 xl:h-12 xl:text-2xl" >
+                   class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8 lg:mb-5 xl:h-12 xl:text-2xl" >
            </label>
             <label for="message" class="w-full text-center">
             <textarea id="message" placeholder="message"
-                      class="w-4/5 h-32 mt-3 pl-1 resize-none border-2 sm:h-24 lg:mb-5 xl:h-48 xl:text-2xl " > </textarea>
+                      class="w-4/5 h-32 mt-3 pl-1 resize-none border-2 rounded-xl sm:h-24 lg:mb-5 xl:h-48 xl:text-2xl " > </textarea>
             </label>
 
             <button type = "submit" form ="form" value="submit" class="button_red  mt-4 sm:mt-2 sm:ml-10 sm:self-start xl:ml-24">SEND</button>
@@ -369,7 +368,17 @@ export default {
 
 
 
+.section-1 {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(25% ,1fr)) ;
 
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+
+}
 
 
 .animate__delay-10s {
