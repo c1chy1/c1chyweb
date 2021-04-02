@@ -406,6 +406,18 @@
         cursor: pointer;
     }
 
+    #fp-nav {
+
+        display: none;
+
+    }
+
+
+    .circle1 ,.circle2 ,.circle3 {
+
+        display: none;
+
+    }
 
 
     @screen sm {
@@ -424,17 +436,9 @@
 
         }
 
-        #fp-nav {
 
-            display: none;
 
-        }
 
-        .circle1,.circle2, .circle3 {
-
-       display: none;
-
-        }
 
 
 
@@ -452,11 +456,7 @@
 
         }
 
-        #fp-nav {
 
-            display: none;
-
-        }
 
         .circle1,.circle2, .circle3 {
 

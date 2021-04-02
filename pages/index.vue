@@ -1,7 +1,7 @@
 <template>
-  <section class="h-screen w-full absolute z-10">
 
-    <full-page class="cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
+
+    <full-page class="h-screen w-full absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
       <section class="fp-section w-full h-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  rounded-4xl  filter-shadow-black">
@@ -115,8 +115,8 @@
 
             <div
                 class="leading-loose p-1 xl:text-xl xl:mt-2 xl2:mt-10">
-              <p class="sm:hidden xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class="mb-16">
+              <p class="hidden sm:hidden xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
+              <ul class=" mb-16 text-xs text-left">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -235,7 +235,7 @@
                       class="w-4/5 h-32 mt-3 pl-1 resize-none border-2 rounded-xl sm:h-24  md:h-64 md:text-4xl lg:mb-5 xl:h-48 xl:text-2xl " > </textarea>
             </label>
 
-            <button type = "submit" form ="form" value="submit" class="button_red  mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl xl:ml-24">SEND</button>
+            <button type = "submit" form ="form" value="submit" class="button_red  pl-5 pr-5 mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl xl:ml-24">SEND</button>
 
           </form>
           <button
@@ -250,8 +250,6 @@
       </div>
 
     </full-page>
-
-  </section>
 
 </template>
 

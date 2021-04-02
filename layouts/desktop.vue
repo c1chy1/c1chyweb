@@ -1,11 +1,11 @@
 <template>
 
 <client-only>
-    <main class="w-full h-full relative">
+    <section class="h-full w-full relative">
       <navigation />
       <Nuxt keep-alive />
 
-    </main>
+    </section>
   </client-only>
 
 </template>
@@ -43,11 +43,10 @@ export default {
 
 <style scoped>
 
+section  {
 
-
-main {
-  background-image: url('~assets/graphic/exclusive-paper.png');
-
+  background-color: transparent;
 
 }
+
 </style>
