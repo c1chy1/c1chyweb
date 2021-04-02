@@ -304,11 +304,9 @@ export default {
 
         sectionsColor: ['#40E0D0', '#e4ddd3', '#1c1716', '#fec401'],
         controlArrows: true,
-        autoScrolling: true,
-        animateAnchor: true,
-        passive: true,
         verticalCentered: false,
-        lazyLoading: true,
+        css3: true,
+        slidesNavigation:false
       },
     }
   },
