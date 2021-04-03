@@ -26,7 +26,7 @@
           <img
 
                :src="require('~/assets/graphic/hat.png').src"
-               class="hat h-auto w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5 sm:h-40  md:w-2/5 md:h-full md:mt-20  lg:w-1/3 xl:w-1/3 xl:h-72 2xl:w-1/5 2xl:h-auto  filter-shadow-black z-20"
+               class="hat w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5   md:w-2/5  md:mt-20  md:max-h-md lg:w-1/3 lg:max-h-xl xl:w-1/4 xl:max-h-2xl xl:mt-0 2xl:w-1/5  filter-shadow-black z-20"
                style="animation: matrix 3s infinite ease-in"
           >
 
@@ -70,7 +70,7 @@
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
             <span class="w-11/12 inline-block relative"></span>
-            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0   2xl:text-3xl   "
+            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0  xl:text-2xl  2xl:text-3xl   "
 
             >WELCOME TO STUDIO</h1>
             <span class="w-11/12 inline-block relative"></span>
@@ -115,8 +115,8 @@
 
             <div
                 class="leading-loose px-1 pt-5  md:w-full xl:text-xl xl:mt-2 xl2:mt-10">
-              <p class="text-xs sm:hidden md:block  md:text-2xl lg:text-3xl xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xs md:text-xl lg:text-2xl text-center">
+              <p class="text-xs sm:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
+              <ul class=" mb-16 text-xs md:text-xl lg:text-2xl xl:text-xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
