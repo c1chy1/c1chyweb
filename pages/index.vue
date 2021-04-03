@@ -1,12 +1,12 @@
 <template>
 
 
-    <full-page class="h-screen w-full absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
+    <full-page class="h-full w-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
       <section class="fp-section w-full h-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  rounded-4xl  filter-shadow-black">
         <div
-            class="section-1 h-full w-full absolute grid fill-40 justify-items-center items-end "
+            class="section-1 w-screen h-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
           <div
@@ -26,7 +26,7 @@
           <img
 
                :src="require('~/assets/graphic/hat.png').src"
-               class="hat h-auto w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5 sm:h-40  md:w-2/5 md:h-full  lg:w-1/3 xl:w-1/3 xl:h-72 2xl:w-1/5 2xl:h-auto  filter-shadow-black z-20"
+               class="hat h-auto w-max-w-full w-7/12 relative top-12 self-center sm:w-1/5 sm:h-40  md:w-2/5 md:h-full md:mt-20  lg:w-1/3 xl:w-1/3 xl:h-72 2xl:w-1/5 2xl:h-auto  filter-shadow-black z-20"
                style="animation: matrix 3s infinite ease-in"
           >
 
@@ -44,9 +44,9 @@
 
 
         <div class="hidden sm:block bottom-0 right-2 absolute lg:pr-2 2xl:block 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-5 2xl:mr-5 text-center tracking-widest md:text-left">
-          <div class="classic  md:absolute lg:hidden 2xl:block 2xl:relative 2xl:right-1/3 2xl:text-center">
+          <div class="classic sm:mb-3 md:absolute lg:hidden 2xl:block 2xl:relative 2xl:right-1/3 2xl:text-center">
             <span class="intro intro--the block text-3xl">The</span>
-            <span class="intro intro--num block text inline-block absolute font-semibold">first #1</span>
+            <span class="intro intro--num block text inline-block absolute font-semibold sm:hidden">first #1</span>
             <span class="intro block text-3xl">classic style</span>
           </div>
           <div class="vintage__container block md:absolute lg:relative 2xl:relative ">
@@ -55,9 +55,9 @@
 
           </div>
           <div class="sm:hidden md:hidden 2xl:block 2xl:right-0 2xl:mt-2">
-            <span class="outro pt-4 text-white text-1xl ">NO.01</span>
-            <span class="outro outro--big text-white text-3xl font-sans">OLDSCHOOL RECREATED</span>
-            <span class="outro text-white text-1xl">BEST</span>
+            <span class="outro pt-4 text-white text-xl md:hidden 2xl:block">NO.01</span>
+            <span class="outro outro--big text-white text-3xl font-sans xl:text-2xl">OLDSCHOOL RECREATED</span>
+            <span class="outro text-white text-xl  md:hidden  2xl:block">BEST</span>
             <span class="outro block text-white text-xl 2xl:text-center">c1chy.web</span>
           </div>
         </div>
@@ -70,14 +70,14 @@
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
             <span class="w-11/12 inline-block relative"></span>
-            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0 2xl:text-3xl   "
+            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0   2xl:text-3xl   "
 
             >WELCOME TO STUDIO</h1>
             <span class="w-11/12 inline-block relative"></span>
 
           </div>
 
-          <div>
+          <div >
 <article class="bg-center bg-no-repeat ">
             <h1
                 class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-9xl "
@@ -86,7 +86,7 @@
             >c1chy's studio</h1>
 </article>
             <figure
-                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 2xl:w-8/12">
+                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-8/12">
               <img
                   src="~assets/graphic/ribbon.png" alt="Trulli"
 
@@ -105,18 +105,18 @@
         <section
             class="scumbag w-full h-full flex justify-around bg-repeat bg-auto bg-center z-2 rounded-4xl">
           <div
-              class="text-center mt-3 p-1 2xl:w-1/4">
+              class="text-center mt-3 p-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
 
             <div
                 class="">
               <h2
-                  class="text-xl 2xl:text-3xl 2xl:font-bold 2xl:text-left">
+                  class="text-xl lg:text-5xl 2xl:text-3xl 2xl:font-bold 2xl:text-left">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="leading-loose p-1 xl:text-xl xl:mt-2 xl2:mt-10">
-              <p class="hidden sm:hidden xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xs text-left">
+                class="leading-loose px-1 pt-5  md:w-full xl:text-xl xl:mt-2 xl2:mt-10">
+              <p class="text-xs sm:hidden md:block  md:text-2xl lg:text-3xl xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
+              <ul class=" mb-16 text-xs md:text-xl lg:text-2xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -125,11 +125,11 @@
             </div>
 
           </div>
-          <div class="flex items-end    sm:w-1/3  lg:w-1/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
+          <div class="flex items-end  sm:justify-center  sm:w-1/3  md:w-full lg:w-2/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
 
             <img       :src="require('~/assets/graphic/vintage_wolf.jpg').src"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
-                 class="wolf fade w-full relative bottom-1/2 rounded-t-4xl ">
+                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md:w-full lg:w-full rounded-t-4xl ">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
@@ -143,7 +143,7 @@
 
 <div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 xl:mr-10">
             <h2
-                class="text-xl  xl:leading-tight  xl:text-4xl 2xl:text-6xl">
+                class="text-xl sm:text-2xl  lg:text-5xl xl:leading-tight  xl:text-4xl 2xl:text-6xl">
               Strategie, Technologie, Design & Content </h2>
 
             <p class="hidden text-xs xl:block xl:text-xl 2xl:text-2xl ">
@@ -159,10 +159,10 @@
 </div>
           </section>
 
-          <section class="w-1/2 h-full p-20 px-2 pl-6 flex">
+          <section class="w-4/12 h-1/2 p-20 px-2 flex justify-center md-portrait:h-1/2">
 
             <img
-                class="w-max-w-full h-4/5 relative left-2 mx-auto self-center sm:h-full rounded-3xl  "
+                class="w-max-w-full h-4/5 relative   self-center sm:h-1/2  rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
                 :src="require('~/assets/graphic/vintage_music.jpg').src">
           </section>
@@ -171,7 +171,7 @@
       </div>
       <div class="section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-row  ">
 
-        <article class="w-full h-max-h-full show h-1/3"
+        <article class="show w-full h-full flex flex-col h-1/3 sm:self-center "
 
                  :class="{'animate__animated animate__bounceInLeft animate__delay-2s animate__slow fade' : animate}">
 
@@ -179,7 +179,7 @@
               class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4">
 
             <h2
-                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-5xl  xl:w-2/5  ">
+                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-3xl  lg:w-full lg:text-5xl xl:w-2/5  ">
               LET'S WORK TOGETHER
             </h2>
             <span
@@ -188,7 +188,8 @@
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl xl:hidden 2xl:block 2xl:text-9xl ">HIRE ME</h1>
+  <h1 class="hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl   md-landscape:hidden  md-portrait:text-5xl lg:block lg:text-10xl xl:block 2xl:block 2xl:text-9xl ">
+    HIRE ME</h1>
 
 
   <figure
@@ -198,54 +199,50 @@
 
         class=" md:h-12 md:w-full   z-1 filter-shadow-black">
     <figcaption
-        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white z-0  md:ml-3 md:text-4xl md:tracking-widest lg:text-5xl xl:text-4xl 2xl:tracking-widest">
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white z-0  md:ml-3 md:text-4xl md:tracking-widest lg:text-4xl  2xl:tracking-widest">
       Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-full mt-5 text-xs  md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
+  <p class="w-full mt-5 text-xs  md:text-2xl md-landscape:hidden  lg:text-3xl xl:text-3xl 2xl:text-3xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
         </article>
 
-        <div class="w-full h-full z-0 "
+        <div class="w-full h-full sm:self-center z-0  "
 
              :class="{'animate__animated animate__bounceInRight animate__delay-2s animate__slow animate show' : fade}"
 
         >
           <form
               id="form"
-              class="w-full h-full flex flex-col justify-start items-center text-xl xl:justify-center xl:text-2xl"
+              class="w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center xl:justify-center xl:text-2xl"
               v-on:submit.prevent={getFormValues}
           >
             <label for="name" class="w-full text-center">
             <input
                 type="text"
                 id="name"
-                class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl xl:h-12 xl:text-2xl"
+                class="w-4/5 h-8 mt-3 pl-1 border-2  text-xl rounded-xl sm:h-8  md:h-16 md:text-4xl  md-landscape:h-12  md-landscape:text-xl lg:text-3xl  xl:h-12 xl:text-2xl"
                 placeholder="name"
             >
           </label>
             <label for="email" class="w-full text-center">
             <input type="email" id="email" placeholder="email"
-                   class="w-4/5 h-12 mt-3 pl-1 border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl lg:mb-5 xl:h-12 xl:text-2xl" >
+                   class="w-4/5 h-8 mt-3 pl-1 text-xl  border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl  lg:mb-5 lg:text-3xl xl:h-12 xl:text-2xl" >
            </label>
             <label for="message" class="w-full text-center">
             <textarea id="message" placeholder="message"
-                      class="w-4/5 h-32 mt-3 pl-1 resize-none border-2 rounded-xl sm:h-24  md:h-64 md:text-4xl lg:mb-5 xl:h-48 xl:text-2xl " > </textarea>
+                      class="w-4/5 h-auto mt-3 pl-1  text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-2xl " > </textarea>
             </label>
 
-            <button type = "submit" form ="form" value="submit" class="button_red  pl-5 pr-5 mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl xl:ml-24">SEND</button>
+            <button type = "submit" form ="form" value="submit" class="button_red  px-4 mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl ">SEND</button>
 
           </form>
-          <button
-              class="next fade "
-              :class="{'animate__animated animate__backInRight show' : fade}"
-          >Next
-          </button>
+
         </div>
 
-        <stickyFooter class="absolute bottom-0"/>
+        <stickyFooter class="bottom-0 absolute"/>
 
       </div>
 
@@ -372,6 +369,7 @@ export default {
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
+
 
 
 }

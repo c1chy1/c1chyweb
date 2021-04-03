@@ -1,7 +1,7 @@
 <template>
 
 <client-only>
-    <section class="h-full w-full relative">
+    <section class="h-screen w-screen relative">
       <navigation />
       <Nuxt keep-alive />
 
@@ -46,6 +46,8 @@ export default {
 section  {
 
   background-color: transparent;
+  width: 100vw;
+  height: 100vh;
 
 }
 

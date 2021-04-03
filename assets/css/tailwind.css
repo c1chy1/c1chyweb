@@ -101,6 +101,7 @@
 
 
 
+
     body {
 
 
@@ -204,7 +205,7 @@
 
     .bottom-1\/2 {
 
-        bottom: 18%;
+        bottom: 50%;
 
     }
 
@@ -277,6 +278,7 @@
         height: 12rem;
 
     }
+
 
     .h-72 {
 
@@ -373,9 +375,6 @@
     }
 
 
-
-
-
     .text-8xl {
 
         font-size: 6rem;
@@ -418,6 +417,8 @@
         display: none;
 
     }
+
+
 
 
     @screen sm {
@@ -476,6 +477,12 @@
 
             top: 3rem;
 
+        }
+
+        .welcome_studio h1 {
+
+
+            font-size: 5rem;
         }
 
 
