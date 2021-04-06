@@ -296,7 +296,7 @@ nav {
       li {
 
         align-self: center;
-        width: 12rem;
+        width: 10vw;
         height: 100%;
         display: flex;
         align-items: center;
