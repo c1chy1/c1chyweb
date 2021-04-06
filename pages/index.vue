@@ -65,7 +65,7 @@
 
       </section>
 
-      <div class="section w-full h-full relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 rounded-4xl  ">
+      <div class="section w-full h-screen relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 rounded-4xl  ">
 
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
@@ -103,12 +103,11 @@
 
         </div>
         <section
-            class="scumbag w-full h-full flex justify-around bg-repeat bg-auto bg-center z-2 rounded-4xl">
+            class="scumbag w-full h-screen flex justify-around bg-repeat bg-auto bg-center z-2 rounded-4xl">
           <div
               class="text-center mt-3 p-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
 
-            <div
-                class="">
+            <div>
               <h2
                   class="text-xl lg:text-5xl 2xl:text-3xl 2xl:font-bold 2xl:text-left">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
@@ -139,7 +138,7 @@
       <div class="section h-full w-full relative overflow-hidden box-content rounded-4xl z-0 "  >
         <div class="bg_stars h-full w-full flex flex-row-reverse text-white z-0 ">
 
-          <section class="w-1/2">
+          <section class="w-1/2 h-screen">
 
 <div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 xl:mr-10">
             <h2
@@ -188,7 +187,7 @@
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl   md-landscape:hidden  md-portrait:text-5xl lg:block lg:text-10xl xl:block 2xl:block 2xl:text-9xl ">
+  <h1 class="hire hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl   md-landscape:hidden  md-portrait:text-5xl lg:block lg:text-10xl xl:block 2xl:block 2xl:text-9xl ">
     HIRE ME</h1>
 
 
