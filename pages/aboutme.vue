@@ -67,7 +67,7 @@
     </section>
 
     <section class="section h-full future rounded-4xl">
-      <div class="about_gallery grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-4 justify-items-center">
+      <div class="about_gallery h-full grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center">
         <article class="h-full w-full mb-4 bg-center bg-no-repeat">
 
           <div class="pic">

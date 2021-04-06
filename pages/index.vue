@@ -19,14 +19,14 @@
 
           ></div>
 
-   <img       :src="require('~/assets/graphic/logo_c1chy3.png').src" class="logo  z-50 "
+   <img       :src="require('~/assets/graphic/logo_c1chy3.png').src" class="logo relative 2xl:w-1/5   z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
           <img
 
                :src="require('~/assets/graphic/hat.png').src"
-               class="hat md:self-center z-20"
+               class="hat md:self-center 2xl:w-1/5  2xl:mt-10 z-20"
                style="animation: matrix 3s infinite ease-in"
           >
 
@@ -841,7 +841,7 @@ div p, li, a {
 
   p {
 
-   font-family:Helvetica Neue, sans-serif;
+   font-family: Mulish, sans-serif;
   color:rgba(233,228,221,0.7)
 
   }

@@ -23,25 +23,6 @@
 
 
     @font-face {
-        font-family: Helvetica Neue;
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(~assets/fonts/HelveticaNeueMed.ttf) format('truetype');
-    }
-
-    @font-face {
-        font-family: Helvetica Neue;
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(~assets/fonts/HelveticaNeueBd.ttf) format('truetype');
-    }
-
-
-
-
-    @font-face {
         font-family: Mulish;
         font-style: normal;
         font-weight: 400;
@@ -708,6 +689,12 @@
 
             top:6rem
 
+        }
+
+        .logo {
+
+
+            top: 2rem;
         }
 
 
