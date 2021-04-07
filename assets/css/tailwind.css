@@ -544,6 +544,49 @@
         }
 
 
+        [data-anchor="page2"] .welcome_studio div span:after {
+
+
+
+            height: 18px;
+        }
+
+        [data-anchor="page4"] article div span:after {
+            height: 18px!important;
+
+
+        }
+
+
+
+
+        #form {
+
+            --ratio: 9 / 16;
+            --width: 98vmin;
+            --height: calc(var(--width) * var(--ratio));
+
+            margin: 0 auto;
+            width: 90vmin;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #form input {
+
+
+            height: 5vh ;
+
+        }
+
+
+        #form textarea {
+
+            height: 20vh ;
+
+        }
+
 
 
         .circle1,.circle2, .circle3 {
@@ -581,11 +624,6 @@
 
         }
 
-        .hire {
-
-            font-size: 10rem!important;
-
-        }
 
 
     }
@@ -596,7 +634,11 @@
 
 
 
+   #form {
 
+
+       height: 100vh;
+   }
 
 
 
@@ -702,6 +744,12 @@
             font-size: 8rem
         }
 
+
+
+        #form {
+            height: 90vh;
+
+        }
 
         .circle1 {
 

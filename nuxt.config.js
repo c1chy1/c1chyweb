@@ -11,10 +11,7 @@ export default {
        { src: '~/plugins/fullpage', mode: 'client' }
     ],
 
-    css: ['~/assets/css/animations'],
-
-
-  loading: '~/components/loading.vue',
+    loading: '~/components/loading.vue',
 
     responsiveLoader: {
         name: 'img/[hash:7]-[width].[ext]',

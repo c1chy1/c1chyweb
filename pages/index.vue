@@ -70,7 +70,7 @@
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
             <span class="w-11/12 inline-block relative"></span>
-            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0  xl:text-2xl  2xl:text-3xl   "
+            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0 md:text-5xl  xl:text-2xl  2xl:text-3xl   "
 
             >WELCOME TO STUDIO</h1>
             <span class="w-11/12 inline-block relative"></span>
@@ -109,13 +109,14 @@
 
             <div>
               <h2
-                  class="text-xl lg:text-5xl 2xl:text-3xl 2xl:font-bold 2xl:text-left">
+                  class="text-xl md:text-4xl lg:text-5xl 2xl:text-3xl 2xl:font-bold 2xl:text-left">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
                 class="h-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2 xl2:mt-10">
-              <p class="text-xs sm:hidden md:hidden  md:text-2xl lg:text-3xl xl:text-xl xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xs md:text-xs lg:text-2xl xl:text-xl text-center">
+              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl xl:block">
+                Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
+              <ul class=" mb-16 text-xs  md:text-2xl lg:text-2xl xl:text-xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -128,7 +129,7 @@
 
             <img       :src="require('~/assets/graphic/vintage_wolf.jpg').src"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
-                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md:w-1/2 lg:w-full rounded-t-4xl ">
+                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:h-1/2 lg:w-full rounded-t-4xl ">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
@@ -140,9 +141,9 @@
 
           <section class="w-1/2 h-screen">
 
-<div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 xl:mr-10">
+<div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 md:mx-auto xl:mr-10">
             <h2
-                class="text-xl sm:text-2xl  lg:text-5xl xl:leading-tight  xl:text-4xl 2xl:text-6xl">
+                class="text-xl sm:text-2xl md:text-5xl  lg:text-5xl xl:leading-tight  xl:text-4xl 2xl:text-6xl">
               Strategie, Technologie, Design & Content </h2>
 
             <p class="hidden text-xs xl:block xl:text-xl 2xl:text-2xl ">
@@ -158,19 +159,19 @@
 </div>
           </section>
 
-          <section class="w-1/3 h-1/2 p-20 px-2 flex justify-center md-portrait:h-1/2">
+          <section class="w-1/3 h-1/2 p-20 px-2 flex justify-center md-portrait:h-1/2  md-portrait:w-1/2 md-portrait:p-0">
 
             <img
-                class="w-max-w-full h-4/5 relative   self-center sm:h-1/2 md:w-3/4 md:h-3/4   rounded-3xl  "
+                class="w-max-w-full h-4/5 relative   self-center sm:h-1/2 md:w-3/4 md:h-3/4 md-portrait:h-3/4 md-portrait:w-full md-landscape:w-1/2 md-portrait:pl-12 lg:w-1/2 rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
-                :src="require('~/assets/graphic/vintage_music.jpg').src">
+                :src="require('~/assets/graphic/vintage_music.jpg').src" alt="vintage">
           </section>
 
         </div>
       </div>
-      <div class="section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-row  ">
+      <div class="section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
-        <article class="show w-full h-full flex flex-col h-1/3 sm:self-center "
+        <article class="show w-full h-full flex flex-col sm:self-center md:h-1/3 2xl:"
 
                  :class="{'animate__animated animate__bounceInLeft animate__delay-2s animate__slow fade' : animate}">
 
@@ -178,7 +179,7 @@
               class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4">
 
             <h2
-                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-3xl  lg:w-full lg:text-5xl xl:w-2/5 2xl:text-4xl ">
+                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-6xl  lg:w-full lg:text-5xl xl:w-2/5 2xl:text-4xl ">
               LET'S WORK TOGETHER
             </h2>
             <span
@@ -187,7 +188,7 @@
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="hire hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl   md-landscape:hidden  md-portrait:text-5xl lg:block lg:text-10xl xl:block 2xl:block 2xl:text-9xl ">
+  <h1 class="hire hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl   md-landscape:hidden  md-portrait:text-5xl lg:block lg:text-10xl xl:hidden xl:text-4xl 2xl:block 2xl:text-9xl ">
     HIRE ME</h1>
 
 
@@ -196,14 +197,14 @@
     <img
         src="~assets/graphic/ribbon.png" alt="Trulli"
 
-        class=" md:h-12 md:w-full lg:w-3/4  filter-shadow-black  z-1 ">
+        class=" md:h-12 md:w-full lg:w-3/4  xl:w-full filter-shadow-black  z-1 ">
     <figcaption
-        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-4xl md:tracking-widest  lg:text-4xl  2xl:tracking-widest   z-0 ">
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-4xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest   z-0 ">
       Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-full h-full mt-5 text-xs  md:text-2xl md:hidden  lg:text-3xl xl:text-3xl 2xl:block 2xl:text-3xl 2xl:mt-10 ">
+  <p class="w-full h-full mt-5 text-xs  md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:block 2xl:text-3xl 2xl:mt-10 ">
     Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
@@ -216,8 +217,8 @@
         >
           <form
               id="form"
-              class="w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center xl:justify-center xl:text-2xl"
-              v-on:submit.prevent={getFormValues}
+              class="w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"
+              v-on:submit={getFormValues}
           >
             <label for="name" class="w-full text-center">
             <input
@@ -236,7 +237,7 @@
                       class="w-4/5 h-auto mt-3 pl-1  text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-2xl " > </textarea>
             </label>
 
-            <button type = "submit" form ="form" value="submit" class="button_red  px-4 mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl ">SEND</button>
+            <button type = "submit" form ="form" value="submit" class="button_red  px-4 mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:self-stretch 2xl:ml-24 ">SEND</button>
 
           </form>
 
@@ -292,11 +293,10 @@ export default {
       options: {
         ref: true,
         dragAndMove: true,
-        scrollingSpeed: 1500,
         afterLoad: this.afterLoad,
         navigation: true,
         anchors: ['page1', 'page2', 'page3', 'page4'],
-
+        scrollingSpeed: 1500,
         sectionsColor: ['#40E0D0', '#e4ddd3', '#1c1716', '#fec401'],
         controlArrows: true,
         verticalCentered: false,
@@ -329,25 +329,13 @@ export default {
       console.log("After load....");
       console.log(destination.index);
 
-/*    var fullPage = document.getElementsByClassName('fp-enabled')*/
-
-
     },
-
 
     getFormValues (submitEvent) {
       this.name = submitEvent.target.elements.name.value
     },
 
 
-
-
- /*   toTop() {
-
-
-      fullpage_api.moveTo('page1',2)
-
-    }*/
 },
 
   mounted() {
@@ -373,6 +361,7 @@ export default {
 
 
 }
+
 
 
 .animate__delay-10s {
