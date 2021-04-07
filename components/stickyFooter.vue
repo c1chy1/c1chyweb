@@ -16,26 +16,26 @@
 
 
 
-  <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:w-2/3 2xl:w-full">
+  <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:w-full 2xl:w-full">
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-24 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl ">
+      <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl ">
         Home</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/aboutme" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-24 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
+      <NuxtLink to="/aboutme" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
         About Me</NuxtLink>
     </li>
 
 
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/portfolio" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-24 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
+      <NuxtLink to="/portfolio" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
         Portfolio</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
       <NuxtLink
 
           to="/contact"
-          class="box curmudgeon p-4 w-36 h-16 relative text-xl text-center text-white align-middle cursor-pointer xl:w-24 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
+          class="box curmudgeon p-4 w-36 h-16 relative text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
         Contact
 
       </NuxtLink>

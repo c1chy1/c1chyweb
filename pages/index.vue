@@ -178,7 +178,7 @@
               class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4">
 
             <h2
-                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-3xl  lg:w-full lg:text-5xl xl:w-2/5  ">
+                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-3xl  lg:w-full lg:text-5xl xl:w-2/5 2xl:text-4xl ">
               LET'S WORK TOGETHER
             </h2>
             <span
@@ -192,18 +192,19 @@
 
 
   <figure
-      class="h-full w-full relative m-auto flex items-center filter-shadow-black ">
+      class="h-full w-full relative m-auto flex items-center filter-shadow-black 2xl:h-auto ">
     <img
         src="~assets/graphic/ribbon.png" alt="Trulli"
 
-        class=" md:h-12 md:w-full lg:w-3/4 filter-shadow-black  z-1 ">
+        class=" md:h-12 md:w-full lg:w-3/4  filter-shadow-black  z-1 ">
     <figcaption
-        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-4xl md:tracking-widest  lg:text-4xl  2xl:tracking-widest  z-0 ">
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-4xl md:tracking-widest  lg:text-4xl  2xl:tracking-widest   z-0 ">
       Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-full mt-5 text-xs  md:text-2xl md-landscape:hidden  lg:text-3xl xl:text-3xl 2xl:text-3xl ">Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
+  <p class="w-full h-full mt-5 text-xs  md:text-2xl md:hidden  lg:text-3xl xl:text-3xl 2xl:block 2xl:text-3xl 2xl:mt-10 ">
+    Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
         </article>
@@ -842,7 +843,8 @@ div p, li, a {
   p {
 
    font-family: Mulish, sans-serif;
-  color:rgba(233,228,221,0.7)
+  color:rgba(233,228,221,0.7);
+    font-size: 1.4vw;
 
   }
 

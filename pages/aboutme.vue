@@ -66,16 +66,16 @@
 
     </section>
 
-    <section class="section h-full future rounded-4xl">
-      <div class="about_gallery h-full grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center">
-        <article class="h-full w-full mb-4 bg-center bg-no-repeat">
+    <section class="about_gallery h-full grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center">
 
-          <div class="pic">
+        <article class="bg-center bg-no-repeat">
+
+          <div class="pic w-11/12">
             <img src="~assets/graphic/about_gallery_1.jpg"
                  alt="website design">
 
 
-            <h2 class="w-1/3 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-2xl font-semibold uppercase">
               Website Design
             </h2>
 
@@ -83,32 +83,32 @@
 
         </article>
         <article class="bg-center bg-no-repeat">
-          <div class="pic">
+          <div class="pic w-11/12">
             <img src="~assets/graphic/about_gallery_2.jpg"
                  alt="digital design">
 
-            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-2xl font-semibold uppercase">
               Digital Design
             </h2>
           </div>
 
         </article>
         <article class="bg-center bg-no-repeat">
-          <div class="pic">
+          <div class="pic w-11/12">
             <img src="~assets/graphic/about_gallery_3.jpg"
                  alt="branding">
 
-            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-2xl font-semibold uppercase">
               Branding
             </h2>
           </div>
 
         </article>
         <article class="bg-center bg-no-repeat">
-          <div class="pic">
+          <div class="pic w-11/12">
             <img src="~assets/graphic/about_gallery_4.jpg"
                  alt="graphic design">
-            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-2xl font-semibold uppercase">
               Graphic Design
             </h2>
 
@@ -116,28 +116,27 @@
 
         </article>
         <article class="bg-center bg-no-repeat">
-          <div class="pic">
+          <div class="pic w-11/12">
             <img src="~assets/graphic/about_gallery_5.jpg"
                  alt="mobile apps">
 
-            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-2xl font-semibold uppercase">
               Mobile Apps
             </h2>
           </div>
 
         </article>
         <article class="bg-center bg-no-repeat">
-          <div class="pic">
+          <div class="pic w-11/12">
             <img src="~assets/graphic/about_gallery_6.jpg"
                  alt="design concept">
-            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-3xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 flex justify-center text-2xl font-semibold uppercase">
               Design Concept
             </h2>
 
           </div>
         </article>
 
-      </div>
     </section>
     <section class="mission h-full flex mt-32 pb-12">
 
@@ -397,13 +396,22 @@ h1 {
     .pic {
 
       border-radius: 50%;
+      --ratio: 9 / 16;
+      --width: 98vmin;
+      --height: calc(var(--width) * var(--ratio));
 
+
+      display: block;
+      width:50vmin;
+      height: var(--height);
       img {
 
         border: 25px solid rgb(194, 213, 180);
         padding: 5px;
         border-image: url(~assets/graphic/portfolio-points.png) 20% round;
-        margin: 15px auto;
+
+      margin: 1.5vmin auto;
+
       }
     }
 
@@ -574,6 +582,7 @@ article {
     p {
       font-family: monospace, sans-serif;
       color: #e9e4dd;
+      font-size: 1.3vw;
 
     }
 

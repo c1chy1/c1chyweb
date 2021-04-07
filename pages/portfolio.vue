@@ -56,9 +56,9 @@
 
 
       </div>
-      <h1 class="leading-none mt-16 mb-24 text-10xl font-semibold text-center">CASE STUDIES</h1>
+      <h1 class="leading-none mt-16 mb-24 text-10xl font-semibold text-center xl:text-7xl xl:mt-2 xl:mb-5 2xl:text-10xl 2xl:mt-16 2xl:mb-24 ">CASE STUDIES</h1>
 
-      <div class="w-full h-132 flex flex-col justify-center items-center overflow-hidden">
+      <div class="w-full  flex flex-col justify-center items-center overflow-hidden">
         <transition :name="currentTransition" mode="out-in">
           <component class="w-1/2 h-3/4  flex items-center justify-center bg-repeat-round  bg-cover text-3xl text-white font-sans" :is="slides[currentSlide]"></component>
         </transition>
@@ -616,7 +616,14 @@ $blue: #2b26c3;
   border: 3px solid darken(rebeccapurple, 25);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   background-position: initial;
+  --ratio: 7 / 16;
+  --width: 98vmin;
+  --height: calc(var(--width) * var(--ratio));
 
+
+  display: block;
+  width: 80vmin;
+  height: var(--height);
 }
 
 
