@@ -113,7 +113,7 @@
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="leading-loose px-1 pt-5  md:w-full xl:text-xl xl:mt-2 xl2:mt-10">
+                class="h-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2 xl2:mt-10">
               <p class="text-xs sm:hidden md:hidden  md:text-2xl lg:text-3xl xl:text-xl xl:block">Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
               <ul class=" mb-16 text-xs md:text-xs lg:text-2xl xl:text-xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>

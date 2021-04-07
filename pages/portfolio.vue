@@ -63,7 +63,7 @@
           <component class="w-1/2 h-3/4  flex items-center justify-center bg-repeat-round  bg-cover text-3xl text-white font-sans" :is="slides[currentSlide]"></component>
         </transition>
 
-        <div id="panel" class="w-full flex justify-center items-center font-sans text-white">
+        <div id="panel" class="w-full h-1/3 flex justify-center items-center font-sans text-white">
           <button class="btn draw-border m-4 px-12 py-6  inline bg-none border-none text-2xl font-bold font-sans uppercase cursor-pointer leading-normal"  :class="{disabled: currentSlide === 0}" @click="changeSlide('prev')">prev
           </button>
 
