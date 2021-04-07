@@ -151,7 +151,7 @@
         <p class="w-10/12 text-2xl text-left mt-12 mb-8">Das Internet ist groß und bunt. Hier gibt es keine Standard-Lösung, sondern es sind immer individuelle Ansätze gefragt. Ich finde für meine Kunden neue Ideen und Konzepte, die wir engagiert und mit dem nötigen Know-how umsetzen.Websites, die nicht auf Smartphones oder Tablets angezeigt werden können, sperren sich einem stetig wachsenden Markt. Mit Responsive Design mache ich Webseiten fit für den Einsatz immer und überall.</p>
 
         <a href="#"
-           class="button_red fade"
+           class="button_red fade lg:hidden 2xl:block"
         >MY APPROACH</a>
       </div>
 
@@ -237,7 +237,7 @@
             <img class="m-auto" src="~assets/graphic/principles_01.png">
             <p class="w-2/3 m-auto text-2xl">Mein erster Schritt in jedem Projekt: Ihre Bedürfnisse, Wünsche und Erwartungen nachvollziehen – und die Ihrer User.</p>
             <a href="#"
-               class="button_red fade uppercase"
+               class="button_red inline-block fade uppercase"
             >Lern Mehr</a>
 
           </article>
@@ -249,7 +249,7 @@
             <img class="m-auto" src="~assets/graphic/principles_02.png">
             <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
             <a href="#"
-               class="button_red fade uppercase"
+               class="button_red inline-block fade uppercase"
             >Lern Mehr</a>
 
           </article>
@@ -261,7 +261,7 @@
             <img class="m-auto" src="~assets/graphic/principles_03.png">
             <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
             <a href="#"
-               class="button_red fade uppercase"
+               class="button_red inline-block fade uppercase"
             >Lern Mehr</a>
 
           </article>
@@ -329,7 +329,6 @@ export default {
   border-color: #e53e26;
   width: 15rem;
   margin-top: 30px;
-  display: inline-block;
   border-width: 4px 0;
   border-style: solid;
   font-weight: 700;
@@ -338,7 +337,6 @@ export default {
   line-height: 1;
   text-align: center;
   position: relative;
-
   font-family: Barlow Condensed, sans-serif;
   transition: all 0.2s ease;
 
