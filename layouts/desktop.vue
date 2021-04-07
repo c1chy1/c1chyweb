@@ -21,12 +21,6 @@ export default {
   components:  {navigation},
 
 
-  transition(to, from) {
-    if (!from) {
-      return 'polygon'
-    }
-    return +to.query.page < +from.query.page ? 'box-wipe' : 'polygon'
-  },
 
   mounted() {
     this.$nextTick(() => {

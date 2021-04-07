@@ -188,8 +188,8 @@ export default {
 
 
   transition: {
-    name: 'shutters',
-    mode: 'out-in'
+    name: 'slots',
+    mode: 'out-in',
   },
 
 

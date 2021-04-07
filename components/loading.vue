@@ -1,6 +1,6 @@
 <template>
 
-  <section class="loading-page relative flex items-center justify-center" v-if="loading">
+  <section class="relative flex items-center justify-center" v-if="loading">
 
 
     <div class="loading">
@@ -9,18 +9,15 @@
 
 
   <svg width="300" height="120" id="clackers" class="mt-20">
-    <!-- Left arc path -->
     <svg>
       <path id="arc-left-up" fill="none" d="M 90 90 A 90 90 0 0 1 0 0"/>
     </svg>
-    <!-- Right arc path -->
     <svg>
       <path id="arc-right-up" fill="none" d="M 100 90 A 90 90 0 0 0 190 0"/>
     </svg>
 
 
     <circle cx="15" cy="15" r="15">
-      <!-- I used a python script to calculate the keyPoints and keyTimes based on a quadratic function. -->
       <animateMotion dur="1.5s" repeatCount="indefinite"
                      calcMode="linear"
                      keyPoints="0.0;0.19;0.36;0.51;0.64;0.75;0.84;0.91;0.96;0.99;1.0;0.99;0.96;0.91;0.84;0.75;0.64;0.51;0.36;0.19;0.0;0.0;0.05;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0"
@@ -78,7 +75,7 @@ section {
   z-index: 10000;
   position: absolute;
   background: #231f20;
-  transition: all .35s ease-in;
+  transition: all .5s ease-in;
   animation: spiral 3s ease-in;
   animation-delay: 4s;
 }
@@ -156,26 +153,9 @@ circle:nth-of-type(3) { fill: #f9a11f; }
 circle:nth-of-type(4) { fill: #f27c21; }
 
 #clackers {
-  /*   border: 1px solid white; */
   display: block;
 
 
-}
-
-
-
-@keyframes star {
-  0% {
-    clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
-  }
-  80% {
-    clip-path: polygon(0% 0%, 50% 100%, 100% 0%, 0% 50%, 100% 100%, 50% 0%, 0% 100%, 100% 50%);
-    opacity: 1;
-  }
-  100% {
-    clip-path: polygon(50% 50%, 50% 100%, 50% 50%, 0% 50%, 50% 50%, 50% 0%, 50% 50%, 100% 50%);
-    opacity: 0;
-  }
 }
 
 
@@ -191,22 +171,6 @@ circle:nth-of-type(4) { fill: #f27c21; }
 }
 
 
-
-/*
-
-@keyframes fade {
-
-
-  80%{
-
-    opacity: 1;
-
-  }
-  100% {
-    opacity: 0;
-  }
-}
-*/
 
 
 

@@ -1,5 +1,5 @@
 <template>
-<footer id="site-footer" class="hidden w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:block md:h-24 md-landscape:hidden lg:w-full xl:hidden 2xl:h-48">
+<footer id="site-footer" class="hidden w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:block md:h-24 md-landscape:hidden lg:w-full xl:hidden  2xl:flex 2xl:h-48">
 
 
 <div class="w-1/5 h-full sm:w-3/5 md:w-1/12 md:ml-3 lg:w-full  lg:ml-0   xl:w-2/5 " >
