@@ -37,8 +37,8 @@
 
 
             <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
-                 class="w-max-w-full w-11/12 my-auto  sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
-            <figcaption class="mx-auto mt-3 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  tracking-widest">
+                 class="w-max-w-full  w-11/12 h-8 relative bottom-1/20 sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
+            <figcaption class="mx-auto mt-6 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  tracking-widest">
               Visually Striking Design </figcaption>
           </figure>
           <img       :src="require('~/assets/graphic/body.png').src" alt="vintage body"
@@ -119,7 +119,7 @@
                 class="h-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2 xl2:mt-10">
               <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl xl:block">
                 Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xs  md:text-2xl lg:text-2xl xl:text-xl text-center">
+              <ul class=" mb-16 text-xl  md:text-2xl lg:text-2xl xl:text-xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -196,18 +196,18 @@
 
 
   <figure
-      class="h-full w-full relative m-auto flex items-center filter-shadow-black 2xl:h-auto ">
+      class="h-full w-full relative top-12 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
     <img
         :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
 
         class=" md:h-12 md:w-full lg:w-3/4  xl:w-full filter-shadow-black  z-1 ">
     <figcaption
-        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-4xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest   z-0 ">
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-4xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest 2xl:text-4xl   z-0 ">
       Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-full h-full mt-5 text-xs  md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:block 2xl:text-3xl 2xl:mt-10 ">
+  <p class="w-full h-full mt-5 text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:block 2xl:text-3xl 2xl:mt-5 ">
     Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
@@ -670,7 +670,7 @@ div p, li, a {
 
     h3 {
 
-      font-size: 2vh;
+      font-size: 2.5vw;
 
       &:before {
 

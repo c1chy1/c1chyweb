@@ -132,7 +132,7 @@ section {
   margin:auto;
   opacity:.5;
 
-  animation:2s loadingAfter 8s ease-in-out;
+  animation:3s loadingAfter infinite ease-in-out;
 }
 
 @keyframes loadingAfter {

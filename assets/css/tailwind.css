@@ -88,12 +88,6 @@
 
         height: 100%;
         width: 100%;
-        background-color: antiquewhite;
-        background-image: url('~assets/graphic/exclusive-paper.png');
-        background-repeat: repeat;
-        background-size: initial;
-        background-attachment: scroll;
-        background-position: 0 0;
         word-spacing: 0.06em;
         letter-spacing: 0.04em;
     }
@@ -742,6 +736,12 @@
         .hat {
 
             top: 6rem
+
+        }
+
+        .hire {
+
+            font-size: 10vw!important;
 
         }
 
