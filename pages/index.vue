@@ -112,14 +112,14 @@
 
             <div>
               <h2
-                  class="text-xl md:text-4xl lg:text-5xl 2xl:text-3xl 2xl:font-bold 2xl:text-left">
+                  class="text-xl md:text-4xl lg:text-5xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="h-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2 xl2:mt-10">
-              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl xl:block">
+                class="h-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2   2xl:mt-5">
+              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl  xl:block 2xl:text-xl">
                 Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xl  md:text-2xl lg:text-2xl xl:text-xl text-center">
+              <ul class=" mb-16 text-xl  md:text-2xl lg:text-2xl xl:text-xl  2xl:text-3xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -666,11 +666,7 @@ div p, li, a {
     background-size: 8px 2px;
     background-repeat: repeat-x;
 
-
-
     h3 {
-
-      font-size: 2.5vw;
 
       &:before {
 

@@ -55,7 +55,7 @@
 
 
             <a href="#"
-               class="button_red w-4/12 uppercase  lg:hidden 2xl:block"
+               class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3"
             >Lern Mehr</a>
           </div>
         </section>
@@ -71,9 +71,9 @@
       </div>
     </section>
 
-    <section class="w-full h-full bg-black rounded-4xl relative pb-5">
+    <section class="w-full h-auto bg-black rounded-4xl relative">
 
-      <div class="contact_me w-3/4 h-28  items-center flex  mx-auto mt-20">
+      <div class="contact_me w-3/4 h-28  items-center flex  mx-auto pt-20 ">
         <span class="w-full inline-block relative"></span>
         <h4 class="w-7/12 font-bold text-3xl mt-4 text-center"
 
@@ -151,7 +151,7 @@
           class="page-spacing"
       ></div>
 
-      <stickyFooter class="mt-10"/>
+      <stickyFooter />
     </section>
 
 
@@ -208,6 +208,15 @@ h1 {
   color: #224a49;
   filter: drop-shadow(5px 6px 0 #a9c9bb);
   font-family: Barlow Condensed, sans-serif;
+
+}
+
+
+section section:nth-child(4) {
+
+
+  background-color: antiquewhite;
+  background-image: url('~assets/graphic/exclusive-paper.png');
 
 }
 

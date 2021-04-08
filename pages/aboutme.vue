@@ -142,7 +142,7 @@
         </article>
 
     </section>
-    <section class="mission h-auto flex   lg:pt-12 lg:mt-16  lg:pb-32  2xl:mt-32 2xl:pb-12">
+    <section class="mission h-auto flex   lg:pt-12 lg:mt-16  lg:pb-32  2xl:mt-0  2xl:pb-12">
 
       <div class="mission_left  w-1/2  lg:pl-16  2xl:pl-24 2xl:pt-16 ">
         <div class="flex">
@@ -212,8 +212,7 @@
 
     <section class="section h-full ">
 
-
-      <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8">
+      <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8 2xl:mt-0">
         <span class="w-full inline-block relative"></span>
         <h4 class="w-1/2 font-bold text-3xl mt-4 text-center"
 
@@ -230,7 +229,7 @@
         >CORE PRINCIPLES</h1>
 
       </div>
-      <div class="principles flex flex-col text-center mb-8 ">
+      <div class="principles flex flex-col text-center mb-8 2xl:mb-0 ">
 
         <div class="w-full flex pb-16 items-end">
           <article class="h-full w-1/3  ">
@@ -394,7 +393,15 @@ h1 {
 }
 
 
+section {
+
+  background-color: antiquewhite;
+  background-image: url('~assets/graphic/exclusive-paper.png');
+}
+
 .about_gallery {
+
+
 
 
   article {

@@ -78,9 +78,9 @@
 
     </section>
 
-    <section class="min-h-screen">
+    <section class="min-h-screen lg:-mb-8">
 
-      <div class="title-container flex flex-col justify-center items-center mt-5">
+      <div class="title-container flex flex-col justify-center items-center mt-0">
         <div>
           <h1 class="title text-9xl font-semibold text-center uppercase mb-8">My Projects
           </h1>
@@ -155,7 +155,7 @@
         </transition-group>
       </div>
     </section>
-    <stickyFooter style="margin-top: 3rem"/>
+    <stickyFooter/>
   </section>
 
 
@@ -324,6 +324,14 @@ export default {
 $bg-color: #E6E5E1;
 $orange: #DA4D1D;
 $blue: #2b26c3;
+
+
+section {
+
+  background-color: antiquewhite;
+  background-image: url('~assets/graphic/exclusive-paper.png');
+
+}
 
 
 .transition {
