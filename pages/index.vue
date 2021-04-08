@@ -157,7 +157,7 @@
 
 
             <a href="#"
-               class="button_red hidden lg:hidden xl:block xl:w-1/3 2xl:w-1/2 2xl:text-3xl"
+               class="button_red hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
             >MY STORY</a>
 </div>
           </section>
