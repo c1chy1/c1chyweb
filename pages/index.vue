@@ -112,7 +112,7 @@
 
             <div>
               <h2
-                  class="text-xl md:text-4xl lg:text-5xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
+                  class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
