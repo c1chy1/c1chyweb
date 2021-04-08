@@ -65,7 +65,7 @@
 
       </section>
 
-      <div class="section w-full h-screen relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 rounded-4xl  ">
+      <div class="section w-full h-full relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 rounded-4xl  ">
 
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
@@ -620,6 +620,13 @@ div p, li, a {
         top: 5px;
         left: 6px;
       }
+
+
+      p {
+
+        font-size: 2vh;
+
+      }
     }
 
       .button_red {
@@ -659,6 +666,8 @@ div p, li, a {
 
 
     h3 {
+
+      font-size: 2vh;
 
       &:before {
 

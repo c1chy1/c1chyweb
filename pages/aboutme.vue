@@ -66,7 +66,7 @@
 
     </section>
 
-    <section class="about_gallery h-full grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center">
+    <section class="about_gallery h-auto grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center">
 
         <article class="bg-center bg-no-repeat">
 
@@ -138,7 +138,7 @@
         </article>
 
     </section>
-    <section class="mission h-full flex mt-32 pb-12">
+    <section class="mission h-auto flex mt-32 pb-12">
 
       <div class="mission_left  w-1/2 pl-24 pt-16">
         <div class="flex">

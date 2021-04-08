@@ -45,7 +45,7 @@
 
     </div>
 
-    <section class="portfolio h-full">
+    <section class="portfolio h-auto">
 
       <div class="portfolio_case w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative"></span>
@@ -616,14 +616,7 @@ $blue: #2b26c3;
   border: 3px solid darken(rebeccapurple, 25);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   background-position: initial;
-  --ratio: 7 / 16;
-  --width: 98vmin;
-  --height: calc(var(--width) * var(--ratio));
-
-
-  display: block;
-  width: 80vmin;
-  height: var(--height);
+  height: 60vh;
 }
 
 

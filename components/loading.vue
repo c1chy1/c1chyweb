@@ -111,7 +111,7 @@ section {
   top:0;left:0;right:0;bottom:0;
   margin:auto;
 
-  animation:2s loadingBefore infinite ease-in-out;
+  animation:2s loadingBefore 8s ease-in-out;
 }
 
 @keyframes loadingBefore {
@@ -132,7 +132,7 @@ section {
   margin:auto;
   opacity:.5;
 
-  animation:2s loadingAfter infinite ease-in-out;
+  animation:2s loadingAfter 8s ease-in-out;
 }
 
 @keyframes loadingAfter {

@@ -794,7 +794,7 @@
 
 
     .slots-enter-active { animation: 1s slots reverse; }
-    .slots-leave-active { animation: 1s slots; }
+    .slots-leave-active { animation: 1s slots 1.5s; }
 
     @keyframes slots {
         0% {
@@ -816,8 +816,7 @@
 
 
     }
-    .spotlight-leave-active { animation: 2s spotlight;
-        animation-delay: 1s;
+    .spotlight-leave-active { animation: 2s spotlight 1.5s;
     }
 
     @keyframes spotlight {

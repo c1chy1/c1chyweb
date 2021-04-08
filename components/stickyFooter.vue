@@ -16,26 +16,26 @@
 
 
 
-  <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:w-full 2xl:w-full">
+  <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:10/12 2xl:w-10/12">
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl ">
+      <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5  2xl:text-xl ">
         Home</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/aboutme" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
+      <NuxtLink to="/aboutme" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5 2xl:text-xl">
         About Me</NuxtLink>
     </li>
 
 
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/portfolio" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
+      <NuxtLink to="/portfolio" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5  2xl:text-xl">
         Portfolio</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
       <NuxtLink
 
           to="/contact"
-          class="box curmudgeon p-4 w-36 h-16 relative text-xl text-center text-white align-middle cursor-pointer xl:w-20 xl:text-xs xl:pt-5 2xl:w-40 2xl:text-xl">
+          class="box curmudgeon p-4 w-36 h-16 relative text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5 2xl:text-xl">
         Contact
 
       </NuxtLink>
@@ -319,6 +319,11 @@ footer {
 
     > li {
 
+
+      width: 7vmax;
+
+
+
     }
 
     &:first-of-type li > {
@@ -326,6 +331,9 @@ footer {
       align-self: center;
       text-transform: uppercase;
     a {
+
+      font-size: 0.8vw;
+
 
      &::after {
 
@@ -355,21 +363,22 @@ footer {
     text-align: center;
     background-color:#1e1e1e;
 
-  }
-  .icon:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    content: '';
-    box-sizing: content-box;
+
+    &:after {
+
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      content: '';
+      box-sizing: content-box;
+
+    }
+
   }
 
   .icon-effect .icon {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
     transition: all 0.5s;
   }
   .icon-effect .icon:after {
@@ -377,10 +386,6 @@ footer {
     left: -7px;
     padding: 7px;
     box-shadow: 0 0 0 4px #a1362b;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
     transition: all 0.5s;
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
@@ -394,10 +399,6 @@ footer {
     color: #faebd7;
   }
   .icon-effect-1a .icon:hover:after {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }

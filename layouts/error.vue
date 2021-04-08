@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen w-screen">
 
     <header class="container px-16 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
       <div

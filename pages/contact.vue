@@ -55,7 +55,7 @@
 
 
             <a href="#"
-               class="button_red w-4/12 uppercase"
+               class="button_red w-4/12 uppercase lg:hidden 2xl:block"
             >Lern Mehr</a>
           </div>
         </section>
@@ -214,7 +214,6 @@ h1 {
   color: #e53e26;
   border-color: #e53e26;
   margin-top: 30px;
-  display: inline-block;
   border-width: 4px 0;
   border-style: solid;
   font-weight: 700;
@@ -507,6 +506,7 @@ aside {
 
   background-image: url("~assets/graphic/bg_black.png");
   background-color: rgb(28, 23, 22);
+
 
 
   &:before {
