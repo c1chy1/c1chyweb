@@ -19,26 +19,26 @@
 
           ></div>
 
-   <img       :src="require('~/assets/graphic/logo_c1chy3.png').src" class="logo relative 2xl:w-1/5   z-50 "
+   <img       :src="require('~/assets/graphic/logo_c1chy3.png').src" alt="c1chy" class="logo relative 2xl:w-1/5   z-50 "
         :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
           <img
 
-               :src="require('~/assets/graphic/hat.png').src"
+               :src="require('~/assets/graphic/hat.png').src" alt="colour hat"
                class="hat md:self-center 2xl:w-1/5  2xl:mt-10 z-20"
                style="animation: matrix 3s infinite ease-in"
           >
 
-          <figure class="absolute bottom-8 flex items-center justify-center z-10 sm:top-20 filter-shadow-black ">
+          <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
 
 
-            <img src="~assets/graphic/ribbon.png" alt="Trulli"
+            <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
                  class="w-max-w-full w-11/12 my-auto  sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
             <figcaption class="mx-auto mt-3 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  tracking-widest">
               Visually Striking Design </figcaption>
           </figure>
-          <img       :src="require('~/assets/graphic/body.png').src"
+          <img       :src="require('~/assets/graphic/body.png').src" alt="vintage body"
                class="body  filter-shadow-black ">
         </div>
 
@@ -88,7 +88,7 @@
             <figure
                 class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-8/12">
               <img
-                  src="~assets/graphic/ribbon.png" alt="Trulli"
+                  :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
 
                   class="h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black z-1   " >
               <figcaption
@@ -195,7 +195,7 @@
   <figure
       class="h-full w-full relative m-auto flex items-center filter-shadow-black 2xl:h-auto ">
     <img
-        src="~assets/graphic/ribbon.png" alt="Trulli"
+        :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
 
         class=" md:h-12 md:w-full lg:w-3/4  xl:w-full filter-shadow-black  z-1 ">
     <figcaption

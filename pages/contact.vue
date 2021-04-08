@@ -19,7 +19,7 @@
           <figure class="relative flex items-center justify-center filter-shadow-black z-10">
 
 
-            <img src="~assets/graphic/ribbon.png" alt="Trulli"
+            <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>
@@ -55,7 +55,7 @@
 
 
             <a href="#"
-               class="button_red w-4/12 uppercase lg:hidden 2xl:block"
+               class="button_red w-4/12 uppercase  lg:hidden 2xl:block"
             >Lern Mehr</a>
           </div>
         </section>
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section class="w-full h-full bg-black rounded-4xl relative">
+    <section class="w-full h-full bg-black rounded-4xl relative pb-5">
 
       <div class="contact_me w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative"></span>
@@ -91,14 +91,14 @@
       </div>
 
 
-      <aside class="w-2/3 flex justify-center m-auto">
+      <aside class="w-2/3 flex justify-center m-auto pb-5">
 
 
         <article class="w-1/3 p-10 mb-10">
-          <h3 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center text-3xl font-semibold uppercase">CONTACT ME</h3>
+          <h3 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">CONTACT ME</h3>
           <img src="~assets/graphic/woman-phone.png" class="m-auto">
           <span class="w-full"></span>
-          <ul class="mt-6 text-3xl text-center ">
+          <ul class="mt-6  lg:text-xl 2xl:text-3xl text-center ">
             <li>58511 Lüdenscheid,</li>
             <li>Märkischer Kreis, NRW</li>
             <li><a href="mailto:cichy08081987pp@gmail.com" class="inline">cichy08081987pp@gmail.com</a></li>
@@ -108,8 +108,8 @@
 
 
         <article class="h-full flex w-1/3 flex-col p-10 p mb-10 bg-repeat bg-auto border-12 border-solid">
-          <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center text-3xl font-semibold uppercase">LET ME KNOW!</h3>
-          <p class="text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
+          <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center  lg:text-xl 2xl:text-3xl font-semibold uppercase">LET ME KNOW!</h3>
+          <p class="            lg:text-xl   2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
           <form class="flex flex-col">
             <label>
               <input placeholder="Name*" class="w-full h-12 mt-2 pl-1 text-2xl">
@@ -123,18 +123,18 @@
           </form>
 
           <a href="#"
-             class="button_red w-1/3 self-center"
+             class="button_red w-1/3 self-center xl:w-1/2 xl:p-2 "
           >SEND</a>
         </article>
 
         <article class="w-1/3 p-10 mb-10">
-          <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center text-3xl font-semibold uppercase">OPEN HOURS</h3>
+          <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">OPEN HOURS</h3>
           <img
               src="~assets/graphic/clocks.png"
               class="m-auto">
           <span></span>
 
-          <ul class="mt-6 text-3xl text-center">
+          <ul class="mt-6 lg:text-xl   2xl:text-3xl text-center">
             <li>Monday - Sunday</li>
             <li>00:00 - 23:59</li>
             <li>Cheers (:</li>
@@ -218,7 +218,6 @@ h1 {
   border-style: solid;
   font-weight: 700;
   font-size: 30px;
-  padding: 10px;
   line-height: 1;
   text-align: center;
   position: relative;

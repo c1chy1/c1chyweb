@@ -143,6 +143,22 @@
 
     }
 
+
+    .bottom-1\/20 {
+
+        bottom: 5%;
+
+    }
+
+
+
+    .bottom-1\/2 {
+
+        bottom: 50%;
+
+    }
+
+
     .top-2 {
 
         top: 0.5rem;
@@ -183,11 +199,6 @@
 
     }
 
-    .bottom-1\/2 {
-
-        bottom: 50%;
-
-    }
 
 
 
@@ -465,11 +476,10 @@
    .body {
 
             --ratio: 9 / 16;
-            --width: 98vmin;
-            --height: calc(var(--width) * var(--ratio));
 
 
-            display: block;
+
+
             margin: 0 auto;
             width: 60vmin;
             max-height: 50vh;
@@ -480,11 +490,11 @@
         .logo {
 
             --ratio: 9 / 16;
-            --width: 98vmin;
-            --height: calc(var(--width) * var(--ratio));
 
 
-            display: block;
+
+
+
             margin: 0 auto;
             width: 60vmin;
             height: 25vh;
@@ -495,10 +505,7 @@
         .hat {
 
             --ratio: 9 / 16;
-            --width: 98vmin;
-            --height: calc(var(--width) * var(--ratio));
 
-            display: block;
             width: 40vmin;
             height: 45vh;
 
@@ -513,15 +520,23 @@
 
 
 
+        .logo {
+
+            --ratio: 9 / 16;
+
+
+
+            margin: 0 auto;
+            width: 60vmin;
+            height: 20vh;
+
+        }
 
         .hat {
 
             --ratio: 12 / 16;
-            --width: 98vmin;
-            --height: calc(var(--width) * var(--ratio));
 
 
-            display: block;
             margin: auto;
             width: 60vmin;
             height: 45vh;
@@ -532,11 +547,8 @@
         .body {
 
             --ratio: 12 / 16;
-            --width: 98vmin;
-            --height: calc(var(--width) * var(--ratio));
 
 
-            display: block;
             margin: 0 auto;
             width: 75vmin;
             height: 20vh;
@@ -604,17 +616,19 @@
         .hat {
 
             --ratio: 12 / 16;
-            --width: 98vmin;
-            --height: calc(var(--width) * var(--ratio));
 
-
-            display: block;
             margin: auto;
             width: 50vmin;
             height: 45vh;
 
         }
 
+
+        .slide {
+
+
+            height: 50vh;
+        }
 
 
 

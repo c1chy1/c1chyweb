@@ -19,7 +19,7 @@
           <figure class="relative flex items-center justify-center filter-shadow-black z-10">
 
 
-            <img src="~assets/graphic/ribbon.png" alt="Trulli"
+            <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>
@@ -45,11 +45,11 @@
 
     </div>
 
-    <section class="portfolio h-auto">
+    <section class="portfolio h-auto pb-8">
 
       <div class="portfolio_case w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative"></span>
-        <h4 class="w-9/12 font-bold text-3xl mt-4 text-center"
+        <h4 class=" lg:w-full 2xl:w-9/12 font-bold text-3xl mt-4 text-center"
 
         >MEANINGFUL CREATIVE WORK</h4>
         <span class="w-full inline-block relative"></span>
@@ -82,7 +82,7 @@
 
       <div class="title-container flex flex-col justify-center items-center mt-5">
         <div>
-          <h1 class="title text-9xl font-semibold text-center uppercase">My Projects
+          <h1 class="title text-9xl font-semibold text-center uppercase mb-8">My Projects
           </h1>
         </div>
         <div>
@@ -102,9 +102,9 @@
       </div>
 
 
-      <div class="container_projects w-full h-full flex justify-center items-center flex-col">
+      <div class="container_projects w-full h-full mt-8 pb-10 flex justify-center items-center flex-col">
         <transition-group class="projects w-11/12  mb-8 mt-1 flex flex-wrap justify-around" name="projects">
-          <div class="card w-116 h-52 mb-1 mt-2 flex-wrap justify-center overflow-hidden" v-if="currentFilter === project.category || currentFilter === 'ALL'"
+          <div class="card w-116 h-52 mb-1 mt-5 flex-wrap justify-center overflow-hidden" v-if="currentFilter === project.category || currentFilter === 'ALL'"
                v-bind:key="project.title" v-for="project in projects">
 
             <div class="project-image-wrapper relative">
@@ -792,8 +792,7 @@ $blue: #2b26c3;
       margin-left: 32px;
       margin-top: -10px;
       border-radius: 16px;
-      background-color: #e4d8c7;
-      background-image: url("~assets/graphic/exclusive-paper.png");
+      background-color: #e9ddcc;
     }
 
     &:after {
@@ -806,8 +805,8 @@ $blue: #2b26c3;
       width: 16px;
       height: 16px;
       border-radius: 16px;
-      background-color: #e4d8c7;
-      background-image: url("~assets/graphic/exclusive-paper.png");
+      background-color: #e9ddcc;
+
     }
 
     .card-arrow {
