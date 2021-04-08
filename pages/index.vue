@@ -132,7 +132,8 @@
 
             <img       :src="require('~/assets/graphic/vintage_wolf.jpg').src"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
-                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:h-1/2 lg:w-full rounded-t-4xl ">
+                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:h-1/2 lg:w-full rounded-t-4xl "
+            alt="vintage wolf">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
