@@ -72,6 +72,7 @@
 
           <div class="pic w-11/12">
             <img src="~assets/graphic/about_gallery_1.jpg"
+                 :src="require('~assets/graphic/about_gallery_1.jpg').src"
                  alt="website design">
 
 
@@ -84,7 +85,8 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img src="~assets/graphic/about_gallery_2.jpg"
+            <img
+                :src="require('~assets/graphic/about_gallery_2.jpg').src"
                  alt="digital design">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -95,7 +97,8 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img src="~assets/graphic/about_gallery_3.jpg"
+            <img
+                :src="require('~assets/graphic/about_gallery_3.jpg').src"
                  alt="branding">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -106,7 +109,7 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img src="~assets/graphic/about_gallery_4.jpg"
+            <img   :src="require('~assets/graphic/about_gallery_4.jpg').src"
                  alt="graphic design">
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
               Graphic Design
@@ -117,7 +120,7 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img src="~assets/graphic/about_gallery_5.jpg"
+            <img   :src="require('~assets/graphic/about_gallery_5.jpg').src"
                  alt="mobile apps">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -128,7 +131,7 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img src="~assets/graphic/about_gallery_6.jpg"
+            <img   :src="require('~assets/graphic/about_gallery_6.jpg').src"
                  alt="design concept">
             <h2 class="w-1/2 relative m-auto p-2  mt-6 flex justify-center text-2xl font-semibold uppercase">
               Design Concept
@@ -234,7 +237,8 @@
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Verstehen
             </h2>
-            <img class="m-auto" src="~assets/graphic/principles_01.png">
+            <img class="m-auto"
+                 :src="require('~assets/graphic/principles_01.png').src">
             <p class="w-2/3 m-auto text-2xl">Mein erster Schritt in jedem Projekt: Ihre Bedürfnisse, Wünsche und Erwartungen nachvollziehen – und die Ihrer User.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"
@@ -246,7 +250,10 @@
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Entwickeln
             </h2>
-            <img class="m-auto" src="~assets/graphic/principles_02.png">
+            <img class="m-auto" :src="require('~assets/graphic/principles_02.png').src"
+
+
+            >
             <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
             <a href="#"
                class="button_red inline-block fade uppercase"
@@ -258,7 +265,8 @@
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Umsetzen
             </h2>
-            <img class="m-auto" src="~assets/graphic/principles_03.png">
+            <img class="m-auto"
+                 :src="require('~assets/graphic/principles_03.png').src">
             <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"
