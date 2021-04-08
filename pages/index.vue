@@ -112,14 +112,14 @@
 
             <div>
               <h2
-                  class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
+                  class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-3xl 2xl:font-bold 2xl:text-center">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
                 class="h-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2   2xl:mt-5">
-              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl  xl:block 2xl:text-xl">
+              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl  xl:hidden 2xl:block 2xl:text-xl">
                 Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xl  md:text-2xl lg:text-2xl xl:text-xl  2xl:text-3xl text-center">
+              <ul class=" mb-16 text-xl  md:text-2xl lg:text-2xl xl:text-xl  2xl:text-2xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -207,7 +207,7 @@
     </figcaption>
   </figure>
 
-  <p class="w-full h-full mt-5 text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:block 2xl:text-3xl 2xl:mt-5 ">
+  <p class="w-full h-full mt-5 text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:block 2xl:text-2xl 2xl:mt-5 ">
     Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>

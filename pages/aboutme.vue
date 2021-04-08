@@ -66,7 +66,7 @@
 
     </section>
 
-    <section class="about_gallery h-auto grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center pb-10">
+    <section class="about_gallery h-auto grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center  2xl:pb-20">
 
         <article class="bg-center bg-no-repeat">
 
