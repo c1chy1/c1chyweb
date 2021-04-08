@@ -71,7 +71,8 @@
         <article class="bg-center bg-no-repeat">
 
           <div class="pic w-11/12">
-            <img src="~assets/graphic/about_gallery_1.jpg"
+            <img
+
                  :src="require('~assets/graphic/about_gallery_1.jpg').src"
                  alt="website design">
 
