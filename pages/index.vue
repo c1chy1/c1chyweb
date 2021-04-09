@@ -9,6 +9,9 @@
             class="section-1 w-screen h-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
+<!--          <img src="~assets/graphic/light_background.png" alt=""
+
+          style="width: 100%;height: 100%;position: relative">-->
           <div
               class="circle1 w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
            ></div>
@@ -918,7 +921,7 @@ div p, li, a {
   }
 
 }
-
+/*
 [data-anchor="page1"]:before {
   content: "";
   position: absolute;
@@ -931,10 +934,10 @@ div p, li, a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  animation: rotation 120s infinite linear;
+  animation:rotate 120s linear infinite;
 
 
-}
+}*/
 
 
 </style>

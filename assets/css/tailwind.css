@@ -796,6 +796,43 @@
 
     }
 
+/*
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    @keyframes matrix {
+        0% {
+            transform: matrix(1, 0, 0, 1, -7, -7)
+        }
+
+        25% {
+            transform: matrix(1, 0, 0, 1, -3, 0)
+
+        }
+
+        50% {
+
+            transform: matrix(1, 0, 0, 1, 3, 5)
+        }
+
+        75% {
+
+            transform: matrix(1, 0, 0, 1, -3, 0)
+
+        }
+
+        100% {
+            transform: matrix(1, 0, 0, 1, -7, -7)
+        }
+    }*/
 
 
     .spiral-enter-active { animation: 1s spiral reverse; }
@@ -830,31 +867,6 @@
 
 
 
-    @keyframes matrix {
-        0% {
-            transform: matrix(1, 0, 0, 1, -7, -7)
-        }
-
-        25% {
-            transform: matrix(1, 0, 0, 1, -3, 0)
-
-        }
-
-        50% {
-
-            transform: matrix(1, 0, 0, 1, 3, 5)
-        }
-
-        75% {
-
-            transform: matrix(1, 0, 0, 1, -3, 0)
-
-        }
-
-        100% {
-            transform: matrix(1, 0, 0, 1, -7, -7)
-        }
-    }
 
 
     .spotlight-enter-active {
