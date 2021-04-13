@@ -19,7 +19,7 @@
           <figure class="relative flex items-center justify-center filter-shadow-black z-10">
 
 
-            <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
+            <img src="~assets/graphic/ribbon.png" alt="ribbon"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>
@@ -64,7 +64,7 @@
 
           <img
               class="mx-auto rounded-3xl"
-              :src="require('~/assets/graphic/spaceman.png').src"
+              src="~assets/graphic/spaceman.png"
           >
         </section>
 
@@ -98,7 +98,7 @@
         <article class="w-1/3 p-10 mb-10">
           <h3 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">CONTACT ME</h3>
           <img  class="m-auto"
-               :src="require('~/assets/graphic/woman-phone.png').src"
+               src="~assets/graphic/woman-phone.png"
           >
           <span class="w-full"></span>
           <ul class="mt-6  lg:text-xl 2xl:text-3xl text-center ">
@@ -134,7 +134,7 @@
           <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">OPEN HOURS</h3>
           <img
 
-              :src="require('~/assets/graphic/clocks.png').src"
+              src="~assets/graphic/clocks.png"
               class="m-auto">
           <span></span>
 

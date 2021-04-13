@@ -24,7 +24,7 @@ ch
           ></div>
 
    <img
-       :src="require('~/assets/graphic/logo_c1chy3.png').src"
+       src="~assets/graphic/logo_c1chy3.png"
        alt="c1chy"
        class="logo relative 2xl:w-1/5   z-50 "
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
@@ -32,19 +32,19 @@ ch
 
           <img
 
-               :src="require('~/assets/graphic/hat.png').src" alt="colourful hat"
+               src="~assets/graphic/hat.png" alt="colourful hat"
                class="hat md:self-center 2xl:w-1/5  2xl:mt-10 z-20"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
 
 
-            <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
+            <img src="~assets/graphic/ribbon.png" alt="ribbon"
                  class="w-max-w-full  w-11/12 h-8 relative bottom-1/20 sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
             <figcaption class="mx-auto mt-6 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  tracking-widest">
               Visually Striking Design </figcaption>
           </figure>
-          <img       :src="require('~/assets/graphic/body.png').src" alt="vintage body"
+          <img       src="~assets/graphic/body.png" alt="vintage body"
                class="body  filter-shadow-black ">
         </div>
 
@@ -94,7 +94,7 @@ ch
             <figure
                 class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-8/12">
               <img
-                  :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
+                  src="~assets/graphic/ribbon.png" alt="ribbon"
 
                   class="h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black z-1   " >
               <figcaption
@@ -133,7 +133,7 @@ ch
           </div>
           <div class="flex items-end  sm:justify-center  sm:w-1/3  md:w-full lg:w-2/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
 
-            <img       :src="require('~/assets/graphic/vintage_wolf.jpg').src"
+            <img       src="~assets/graphic/vintage_wolf.jpg"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
                  class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:h-1/2 lg:w-full rounded-t-4xl "
             alt="vintage wolf">
@@ -171,7 +171,7 @@ ch
             <img
                 class="w-max-w-full h-4/5 relative   self-center sm:h-1/2 md:w-3/4 md:h-3/4 md-portrait:h-3/4 md-portrait:w-full md-landscape:w-1/2 md-portrait:pl-12 lg:w-1/2 rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
-                :src="require('~/assets/graphic/vintage_music.jpg').src" alt="vintage">
+                src="~assets/graphic/vintage_music.jpg" alt="vintage">
           </section>
 
         </div>
@@ -202,7 +202,7 @@ ch
   <figure
       class="h-full w-full relative top-12 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
     <img
-        :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
+        src="~assets/graphic/ribbon.png" alt="ribbon"
 
         class=" md:h-12 md:w-full lg:w-3/4  xl:w-full filter-shadow-black  z-1 ">
     <figcaption

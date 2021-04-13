@@ -19,7 +19,7 @@
           <figure class="relative flex items-center justify-center filter-shadow-black z-10">
 
 
-            <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
+            <img src="~assets/graphic/ribbon.png" alt="ribbon"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>

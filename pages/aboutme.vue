@@ -22,7 +22,7 @@
           <figure class="relative flex items-center justify-center filter-shadow-black z-10">
 
 
-            <img :src="require('~/assets/graphic/ribbon.png').src" alt="ribbon"
+            <img src="~assets/graphic/ribbon.png" alt="ribbon"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>
@@ -73,7 +73,7 @@
           <div class="pic w-11/12">
             <img
 
-                 :src="require('~/assets/graphic/about_gallery_1.jpg').src"
+                 src="~assets/graphic/about_gallery_1.jpg"
                  alt="website design">
 
 
@@ -87,7 +87,7 @@
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
             <img
-                :src="require('~/assets/graphic/about_gallery_2.jpg').src"
+                src="~assets/graphic/about_gallery_2.jpg"
                  alt="digital design">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -99,7 +99,7 @@
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
             <img
-                :src="require('~/assets/graphic/about_gallery_3.jpg').src"
+                src="~assets/graphic/about_gallery_3.jpg"
                  alt="branding">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -110,7 +110,7 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img   :src="require('~/assets/graphic/about_gallery_4.jpg').src"
+            <img   src="~assets/graphic/about_gallery_4.jpg"
                  alt="graphic design">
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
               Graphic Design
@@ -121,7 +121,7 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img   :src="require('~/assets/graphic/about_gallery_5.jpg').src"
+            <img   src="~assets/graphic/about_gallery_5.jpg"
                  alt="mobile apps">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -132,7 +132,7 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img   :src="require('~/assets/graphic/about_gallery_6.jpg').src"
+            <img   src="~assets/graphic/about_gallery_6.jpg"
                  alt="design concept">
             <h2 class="w-1/2 relative m-auto p-2  mt-6 flex justify-center text-2xl font-semibold uppercase">
               Design Concept
@@ -238,7 +238,7 @@
               Verstehen
             </h2>
             <img class="m-auto"
-                 :src="require('~/assets/graphic/principles_01.png').src">
+                 src="~assets/graphic/principles_01.png">
             <p class="w-2/3 m-auto text-2xl">Mein erster Schritt in jedem Projekt: Ihre Bedürfnisse, Wünsche und Erwartungen nachvollziehen – und die Ihrer User.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"
@@ -250,7 +250,7 @@
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Entwickeln
             </h2>
-            <img class="m-auto" :src="require('~/assets/graphic/principles_02.png').src"
+            <img class="m-auto" src="~assets/graphic/principles_02.png"
 
 
             >
@@ -266,7 +266,7 @@
               Umsetzen
             </h2>
             <img class="m-auto"
-                 :src="require('~/assets/graphic/principles_03.png').src">
+                 src="~assets/graphic/principles_03.png">
             <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"
