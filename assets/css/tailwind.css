@@ -420,7 +420,7 @@
         margin: auto;
         width: 70vmin;
         height: 45vh;
-
+        animation: matrix 7s ease infinite;
     }
 
 
@@ -796,43 +796,44 @@
 
     }
 
-/*
+
 
     @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
+
         to {
             transform: rotate(360deg);
         }
     }
 
 
-    @keyframes matrix {
-        0% {
-            transform: matrix(1, 0, 0, 1, -7, -7)
-        }
+  @keyframes matrix {
 
-        25% {
-            transform: matrix(1, 0, 0, 1, -3, 0)
 
-        }
+      0% {
 
-        50% {
+          transform: translateX(5%);
+      }
 
-            transform: matrix(1, 0, 0, 1, 3, 5)
-        }
+     25% {
 
-        75% {
+   transform: translateY(-5%);
+      }
+      50% {
 
-            transform: matrix(1, 0, 0, 1, -3, 0)
+          transform: translateX(-5%);
+      }
 
-        }
+     75% {
 
-        100% {
-            transform: matrix(1, 0, 0, 1, -7, -7)
-        }
-    }*/
+          transform: translateY(5%);
+      }
+      100% {
+
+          transform: translateX(5%);
+      }
+
+
+    }
 
 
     .spiral-enter-active { animation: 1s spiral reverse; }

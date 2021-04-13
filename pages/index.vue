@@ -31,9 +31,8 @@
 
           <img
 
-               :src="require('~/assets/graphic/hat.png').src" alt="colour hat"
+               :src="require('~/assets/graphic/hat.png').src" alt="colourful hat"
                class="hat md:self-center 2xl:w-1/5  2xl:mt-10 z-20"
-               style="animation: matrix 3s infinite ease-in"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
@@ -921,7 +920,7 @@ div p, li, a {
   }
 
 }
-/*
+
 [data-anchor="page1"]:before {
   content: "";
   position: absolute;
@@ -930,14 +929,12 @@ div p, li, a {
   top: -50%;
   left: -50%;
   z-index: -1;
-  background-image: url('~assets/graphic/light_background.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('~assets/graphic/light_background.png') center no-repeat;
   background-size: cover;
   animation:rotate 120s linear infinite;
 
 
-}*/
+}
 
 
 </style>
