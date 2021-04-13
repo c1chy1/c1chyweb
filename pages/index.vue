@@ -10,7 +10,7 @@
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
           <img class="absolute z-0"
-              :src="require('~/assets/graphic/bg_green.png').src">
+              src="~assets/graphic/bg_green.png">
 ch
 
           <div
