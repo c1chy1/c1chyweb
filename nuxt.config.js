@@ -15,6 +15,6 @@ export default {
 
     responsiveLoader: {
         name: 'img/[hash:7]-[width].[ext]',
-        quality: 65 // choose a lower value if you want to reduce filesize further
+        quality: 25 // choose a lower value if you want to reduce filesize further
     }
 }

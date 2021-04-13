@@ -26,7 +26,7 @@ ch
    <img
        :src="require('~/assets/graphic/logo_c1chy3.png').src"
        alt="c1chy"
-       class="logo relative 2xl:w-1/4  z-50 "
+       class="logo relative 2xl:w-1/5   z-50 "
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
