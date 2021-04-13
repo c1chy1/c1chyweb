@@ -9,9 +9,10 @@
             class="section-1 w-screen h-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
-<!--          <img src="~assets/graphic/light_background.png" alt=""
+          <img class="absolute z-0"
+              :src="require('~/assets/graphic/bg_green.png').src">
 
-          style="width: 100%;height: 100%;position: relative">-->
+
           <div
               class="circle1 w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
            ></div>
@@ -469,9 +470,8 @@ div p, li, a {
 [data-anchor="page1"] {
 
 
-  background-image: url("~assets/graphic/bg_green.png");
-  visibility: inherit;
 
+  visibility: inherit;
 
   .circle1 {
     background-image: url('~assets/graphic/exclusive-paper.png');
@@ -928,7 +928,7 @@ div p, li, a {
   height: 200%;
   top: -50%;
   left: -50%;
-  z-index: -1;
+  z-index: 5;
   background: url('~assets/graphic/light_background.png') center no-repeat;
   background-size: cover;
   animation:rotate 120s linear infinite;
