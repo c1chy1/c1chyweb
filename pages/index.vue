@@ -11,7 +11,7 @@
 
           <img class="absolute z-0"
               :src="require('~/assets/graphic/bg_green.png').src">
-
+ch
 
           <div
               class="circle1 w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
