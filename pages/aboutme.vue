@@ -22,7 +22,9 @@
           <figure class="relative flex items-center justify-center filter-shadow-black z-10">
 
 
-            <img src="~assets/graphic/ribbon.png" alt="ribbon"
+            <img
+                :srcSet="require('~/assets/graphic/ribbon.png?webp')" type="image/webp"
+                alt="ribbon"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>
@@ -73,7 +75,8 @@
           <div class="pic w-11/12">
             <img
 
-                 src="~assets/graphic/about_gallery_1.jpg"
+
+                :srcSet="require('~/assets/graphic/about_gallery_1.jpg?webp')" type="image/webp"
                  alt="website design">
 
 
@@ -87,8 +90,9 @@
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
             <img
-                src="~assets/graphic/about_gallery_2.jpg"
-                 alt="digital design">
+                :srcSet="require('~/assets/graphic/about_gallery_2.jpg?webp')" type="image/webp"
+
+                alt="digital design">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
               Digital Design
@@ -99,7 +103,7 @@
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
             <img
-                src="~assets/graphic/about_gallery_3.jpg"
+                :srcSet="require('~/assets/graphic/about_gallery_3.jpg?webp')" type="image/webp"
                  alt="branding">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -110,8 +114,10 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img   src="~assets/graphic/about_gallery_4.jpg"
-                 alt="graphic design">
+            <img
+
+                :srcSet="require('~/assets/graphic/about_gallery_1.jpg?webp')" type="image/webp"
+                alt="graphic design">
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
               Graphic Design
             </h2>
@@ -121,8 +127,9 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img   src="~assets/graphic/about_gallery_5.jpg"
-                 alt="mobile apps">
+            <img
+                :srcSet="require('~/assets/graphic/about_gallery_1.jpg?webp')" type="image/webp"
+                alt="mobile apps">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
               Mobile Apps
@@ -132,8 +139,10 @@
         </article>
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
-            <img   src="~assets/graphic/about_gallery_6.jpg"
-                 alt="design concept">
+            <img
+
+                :srcSet="require('~/assets/graphic/about_gallery_1.jpg?webp')" type="image/webp"
+                alt="design concept">
             <h2 class="w-1/2 relative m-auto p-2  mt-6 flex justify-center text-2xl font-semibold uppercase">
               Design Concept
             </h2>
@@ -238,7 +247,10 @@
               Verstehen
             </h2>
             <img class="m-auto"
-                 src="~assets/graphic/principles_01.png">
+
+
+                 :srcSet="require('~/assets/graphic/principles_01.png?webp')" type="image/webp">
+
             <p class="w-2/3 m-auto text-2xl">Mein erster Schritt in jedem Projekt: Ihre Bedürfnisse, Wünsche und Erwartungen nachvollziehen – und die Ihrer User.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"
@@ -250,9 +262,8 @@
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Entwickeln
             </h2>
-            <img class="m-auto" src="~assets/graphic/principles_02.png"
-
-
+            <img class="m-auto"
+                 :srcSet="require('~/assets/graphic/principles_02.png?webp')" type="image/webp"
             >
             <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
             <a href="#"
@@ -266,7 +277,8 @@
               Umsetzen
             </h2>
             <img class="m-auto"
-                 src="~assets/graphic/principles_03.png">
+                 :srcSet="require('~/assets/graphic/principles_03.png?webp')" type="image/webp"
+            >
             <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"

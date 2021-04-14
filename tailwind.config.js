@@ -6,6 +6,7 @@ module.exports = {
 
   target: 'static',
 
+
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',

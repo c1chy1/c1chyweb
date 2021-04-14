@@ -24,7 +24,10 @@
         </li>
         <li>
 
-          <img src="../assets/graphic/logo_nav.png" class="h-20 w-20 mx-auto">
+          <img
+              :srcSet="require('../assets/graphic/logo_nav.png?webp')" type="image/webp"
+
+              class="h-20 w-20 mx-auto">
 
         </li>
 
