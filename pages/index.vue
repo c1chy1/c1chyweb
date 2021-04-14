@@ -9,9 +9,7 @@
             class="section-1 w-screen h-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
-          <img class="absolute z-0"
-              src="~assets/graphic/bg_green.png">
-ch
+
 
           <div
               class="circle1 w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
@@ -26,7 +24,7 @@ ch
    <img
        src="~assets/graphic/logo_c1chy3.png"
        alt="c1chy"
-       class="logo relative 2xl:w-1/5   z-50 "
+       class="logo relative 2xl:w-1/4   z-50 "
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
@@ -469,9 +467,26 @@ div p, li, a {
 
 [data-anchor="page1"] {
 
-
+  background-image: url("~assets/graphic/bg_green.png");
 
   visibility: inherit;
+
+
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url('~assets/graphic/light_background.png') center no-repeat;
+    background-size: cover;
+    animation:rotate 120s linear infinite;
+  }
+
 
   .circle1 {
     background-image: url('~assets/graphic/exclusive-paper.png');
@@ -542,11 +557,6 @@ div p, li, a {
     transform: rotate(-10deg) translate(18px, -35px);
   }
 
-/*
-  .vintage__container {
-    margin: 5px auto 15px;
-  }
-*/
 
   .vintage {
     font-family: 'Six Caps', sans-serif;
@@ -856,7 +866,7 @@ div p, li, a {
   background-image: url("~assets/graphic/bg_bottom_home.jpg");
   background-position-x: 80%;
 
-  input ,textarea{
+  input, textarea {
 
 
     background-image: url("~assets/graphic/exclusive-paper.png");
@@ -870,7 +880,7 @@ div p, li, a {
     right: 33%;
 
     figcaption {
-      font-family: Satisfy,sans-serif;
+      font-family: Satisfy, sans-serif;
 
     }
   }
@@ -879,60 +889,45 @@ div p, li, a {
 
     span {
 
-    &:before {
+      &:before {
 
-      background-color: #224a49;
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      top: 0;
-    }
+        background-color: #224a49;
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 0;
+      }
 
-    &:after {
+      &:after {
 
-      color: #224a49;
-      top: 14px;
-      height: 8px;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      content: "";
-      display: block;
-      background: url('~assets/graphic/star.svg') repeat-x top left;
-    }
+        color: #224a49;
+        top: 14px;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        content: "";
+        display: block;
+        background: url('~assets/graphic/star.svg') repeat-x top left;
+      }
     }
 
     h1 {
 
-      color:#e9e4dc;
+      color: #e9e4dc;
 
     }
 
     h2 {
       color: #224a49;
-      font-family: Barlow Condensed,sans-serif;
-      filter:drop-shadow(5px 6px 0 #a9c9bb)
+      font-family: Barlow Condensed, sans-serif;
+      filter: drop-shadow(5px 6px 0 #a9c9bb)
 
     }
 
   }
-
-}
-
-[data-anchor="page1"]:before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  z-index: 5;
-  background: url('~assets/graphic/light_background.png') center no-repeat;
-  background-size: cover;
-  animation:rotate 120s linear infinite;
-
 
 }
 

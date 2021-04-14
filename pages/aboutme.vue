@@ -510,7 +510,6 @@ figure {
 
 
 .header_image {
-  display: flex;
   content: "";
   width: 250%;
   height: 400%;
@@ -521,7 +520,7 @@ figure {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  animation: rotation 200s infinite linear;
+  animation: rotate 200s infinite linear;
 
 }
 

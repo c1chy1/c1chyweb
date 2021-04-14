@@ -498,6 +498,7 @@ section {
 
 .header_img_wrap .header_image {
   content: "";
+  position: absolute;
   width: 250%;
   height: 400%;
   top: -145%;
@@ -507,7 +508,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  animation: rotate 200s infinite linear;
 }
 
 .portfolio {

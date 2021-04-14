@@ -5,6 +5,7 @@
 
 
 
+
     @font-face {
         font-family: Barlow Condensed;
         font-style: normal;
@@ -64,6 +65,7 @@
         font-display: swap;
         src: url('~assets/fonts/Satisfy-Regular.ttf') format('truetype');
     }
+
 
 
 
@@ -739,11 +741,7 @@
 
         }
 
-        .logo {
 
-            height: 25vh;
-
-        }
 
         .hire {
 
@@ -754,7 +752,14 @@
         .logo {
 
 
-            top: 2rem;
+            top: 1rem;
+        }
+
+
+        .logo {
+
+            height: 25vh;
+
         }
 
 

@@ -4,7 +4,7 @@
 module.exports = {
 
 
-
+  target: 'static',
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -35,8 +35,8 @@ module.exports = {
 
     },
     fontFamily: {
-      sans: ['Barlow Condensed', 'sans-serif'],
-      serif: ['Mulish', 'serif'],
+      sans: ['Barlow Condensed', 'Mulish','Merriweather','Satisfy'],
+      serif: ['Mulish', 'Merriweather','Satisfy'],
     },
     extend: {
       spacing: {
