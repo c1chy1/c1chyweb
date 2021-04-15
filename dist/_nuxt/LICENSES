@@ -1,5 +1,18 @@
 /*!
- * fullPage 3.0.9 - Extensions 0.1.9
+  * vue-router v3.5.1
+  * (c) 2021 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.6.12
+ * (c) 2014-2020 Evan You
+ * Released under the MIT License.
+ */
+
+
+/*!
+ * fullPage 3.1.0 - Extensions 0.2.2
  * https://github.com/alvarotrigo/fullPage.js
  * @license http://alvarotrigo.com/fullPage/extensions/#license
  *
@@ -13,7 +26,7 @@
  */
 
 /*!
- * vue-fullpage.js v0.1.6
+ * vue-fullpage.js v0.1.7
  * https://github.com/alvarotrigo/vue-fullpage.js
  *
  * @license vue-fullpage is released under the MIT license but notice
@@ -27,18 +40,5 @@
 /*!
  * vue-no-ssr v1.1.1
  * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-
-/*!
-  * vue-router v3.5.1
-  * (c) 2021 Evan You
-  * @license MIT
-  */
-
-/*!
- * Vue.js v2.6.12
- * (c) 2014-2020 Evan You
  * Released under the MIT License.
  */

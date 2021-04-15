@@ -2,7 +2,6 @@
 
 export default {
 
-    target: 'static',
 
     build: {
         extend(config, {isDev, isClient}) {

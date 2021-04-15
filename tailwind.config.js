@@ -8,7 +8,7 @@ module.exports = {
 
 
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
+    cssPath: '~assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
   },
 
