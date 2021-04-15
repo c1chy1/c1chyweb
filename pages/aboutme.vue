@@ -116,7 +116,7 @@
           <div class="pic w-11/12">
             <img
 
-                :srcSet="require('~/assets/graphic/about_gallery_1.jpg?webp')" type="image/webp"
+                :srcSet="require('~/assets/graphic/about_gallery_4.jpg?webp')" type="image/webp"
                 alt="graphic design">
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
               Graphic Design
@@ -128,7 +128,7 @@
         <article class="bg-center bg-no-repeat">
           <div class="pic w-11/12">
             <img
-                :srcSet="require('~/assets/graphic/about_gallery_1.jpg?webp')" type="image/webp"
+                :srcSet="require('~/assets/graphic/about_gallery_5.jpg?webp')" type="image/webp"
                 alt="mobile apps">
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
@@ -141,7 +141,7 @@
           <div class="pic w-11/12">
             <img
 
-                :srcSet="require('~/assets/graphic/about_gallery_1.jpg?webp')" type="image/webp"
+                :srcSet="require('~/assets/graphic/about_gallery_6.jpg?webp')" type="image/webp"
                 alt="design concept">
             <h2 class="w-1/2 relative m-auto p-2  mt-6 flex justify-center text-2xl font-semibold uppercase">
               Design Concept
@@ -408,7 +408,7 @@ h1 {
 section {
 
   background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?webp');
 }
 
 .about_gallery {
@@ -434,7 +434,7 @@ section {
 
         border: 25px solid rgb(194, 213, 180);
         padding: 5px;
-        border-image: url(~assets/graphic/portfolio-points.png) 20% round;
+        border-image: url(~assets/graphic/portfolio-points.png?webp) 20% round;
 
       margin: 1.5vmin auto;
 
@@ -444,7 +444,7 @@ section {
 
     h2 {
 
-      background-image: url(~assets/graphic/green-dust-and-scratches.png);
+      background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
       background-color: #4f7b70;
       color: #f7ebd5;
       box-shadow: -10px 0 0 #4f7b70;
@@ -468,7 +468,7 @@ section {
     filter: drop-shadow(4px 5px 0 #224a49);
     -webkit-text-stroke-color: #e4ddd3;
 
-    background-image: url('~assets/graphic/green-dust-and-scratches.png');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
     background-color: #4f7b70;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;
@@ -528,7 +528,7 @@ figure {
   top: -145%;
   left: 0;
   z-index: 5;
-  background-image: url('~assets/graphic/light_background.png');
+  background-image: url('~assets/graphic/light_background.png?webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -540,7 +540,7 @@ figure {
 .page-spacing {
 
 
-  background-image: url(~assets/graphic/15percent.png);
+  background-image: url(~assets/graphic/15percent.png?webp);
   background-color: #f7ebd5;
 }
 
@@ -571,7 +571,7 @@ figure {
       width: 100%;
       content: "";
       display: block;
-      background: url('~assets/graphic/star.svg') repeat-x top left;
+      background: url('~assets/graphic/star.svg?webp') repeat-x top left;
     }
 
   }
@@ -592,7 +592,7 @@ article {
 }
 
 .mission {
-  background-image: url('~assets/graphic/green-dust-and-scratches.png');
+  background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
   background-color: #da7f58;
 
 
@@ -685,7 +685,7 @@ article {
     h2 {
 
 
-      background-image: url(~assets/graphic/green-dust-and-scratches.png);
+      background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
       background-color: #e53e26;
       box-shadow: -6px 0 0 #e53e26;
       color: #f7ebd5;
@@ -709,7 +709,7 @@ article {
 
   h2 {
 
-    background-image: url(~assets/graphic/green-dust-and-scratches.png);
+    background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
     background-color: #4f7b70;
     color: #f7ebd5;
     white-space: revert;

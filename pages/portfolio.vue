@@ -332,7 +332,7 @@ $blue: #2b26c3;
 section {
 
   background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?webp');
 
 }
 
@@ -355,7 +355,7 @@ section {
     -webkit-text-stroke-width: 3px;
     filter: drop-shadow(4px 5px 0 #224a49);
     -webkit-text-stroke-color: #e4ddd3;
-    background-image: url('~assets/graphic/green-dust-and-scratches.png');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
     background-color: #4f7b70;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;
@@ -446,7 +446,7 @@ section {
       -webkit-text-stroke-width: 3px;
       filter: drop-shadow(4px 5px 0 #224a49);
       -webkit-text-stroke-color: #e4ddd3;
-      background-image: url('~assets/graphic/green-dust-and-scratches.png');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
       background-color: #4f7b70;
       -webkit-font-smoothing: antialiased;
       -webkit-background-clip: text;
@@ -507,7 +507,7 @@ section {
   top: -145%;
   left: 0;
   z-index: 3;
-  background-image: url('~assets/graphic/light_background.png');
+  background-image: url('~assets/graphic/light_background.png?webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -515,7 +515,7 @@ section {
 }
 
 .portfolio {
-  background-image: url('~assets/graphic/green-dust-and-scratches.png');
+  background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
   background-color: #da7f58;
 
   h1 {
@@ -555,7 +555,7 @@ section {
 .page-spacing {
 
 
-  background-image: url(~assets/graphic/15percent.png);
+  background-image: url(~assets/graphic/15percent.png?webp);
   background-color: #f7ebd5;
 
 }
@@ -610,7 +610,7 @@ section {
 
   button {
     background-color: rgba(0, 0, 0, 0.25);
-    background-image: url('~assets/graphic/green-dust-and-scratches.png');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
     background-color: #4f7b70;
 
 

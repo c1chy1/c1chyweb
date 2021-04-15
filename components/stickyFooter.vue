@@ -278,7 +278,7 @@ footer {
 
 
   color: #faebd7;
-  background-image: url(~assets/graphic/bg_footer.jpg);
+  background-image: url(~assets/graphic/bg_footer.jpg?webp);
   background-size: initial;
   background-attachment: scroll;
   background-color: #222222;

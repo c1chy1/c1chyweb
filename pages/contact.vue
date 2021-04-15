@@ -222,7 +222,7 @@ section section:nth-child(4) {
 
 
   background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?webp');
 
 }
 
@@ -284,7 +284,7 @@ section section:nth-child(4) {
 .page-spacing {
 
 
-  background-image: url(~assets/graphic/15percent.png);
+  background-image: url(~assets/graphic/15percent.png?webp);
   background-color: #f7ebd5;
 }
 
@@ -301,7 +301,7 @@ section section:nth-child(4) {
     -webkit-text-stroke-width: 3px;
     filter: drop-shadow(4px 5px 0 #224a49);
     -webkit-text-stroke-color: #e4ddd3;
-    background-image: url('~assets/graphic/green-dust-and-scratches.png');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
     background-color: #4f7b70;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;
@@ -363,7 +363,7 @@ figure {
   opacity: 0.7;
   left: 0;
   z-index: 5;
-  background-image: url('~assets/graphic/light_background.png');
+  background-image: url('~assets/graphic/light_background.png?webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -469,8 +469,8 @@ aside {
     &:nth-child(2) {
 
 
-      border-image: url(~assets/graphic/border_image.png) 12 round;
-      background-image: url("~assets/graphic/bg_border.jpg");
+      border-image: url(~assets/graphic/border_image.png?webp) 12 round;
+      background-image: url("~assets/graphic/bg_border.jpg?webp");
       background-position: left top;
       padding-top: 28px;
 
@@ -489,7 +489,7 @@ aside {
 
     h3 {
 
-      background-image: url(~assets/graphic/green-dust-and-scratches.png);
+      background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
       background-color: #4f7b70;
 
 
@@ -522,7 +522,7 @@ aside {
 .section {
 
 
-  background-image: url("~assets/graphic/bg_black.png");
+  background-image: url("~assets/graphic/bg_black.png?webp");
   background-color: rgb(28, 23, 22);
 
 
@@ -538,9 +538,9 @@ aside {
     position: absolute;
     content: "";
     display: block;
-    background: url(~assets/graphic/star_white.png) bottom repeat-x;
+    background: url(~assets/graphic/star_white.png?webp) bottom repeat-x;
     border-image-width: 3px;
-    border-image-source: url('~assets/graphic/star_white.png');
+    border-image-source: url('~assets/graphic/star_white.png?webp');
     border-image-repeat: round;
     border-style: solid;
 
@@ -557,9 +557,9 @@ aside {
     margin: 0 auto;
     content: "";
     display: block;
-    background: url(~assets/graphic/star_white.png) top repeat-x;
+    background: url(~assets/graphic/star_white.png?webp) top repeat-x;
     border-image-width: 3px;
-    border-image-source: url('~assets/graphic/star_white.png');
+    border-image-source: url('~assets/graphic/star_white.png?webp');
     border-image-repeat: repeat;
     border-style: solid;
   }
@@ -574,7 +574,7 @@ aside {
     h2 {
 
 
-      background-image: url('~assets/graphic/green-dust-and-scratches.png');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
       background-color: #a1362b;
       color: #eae5de;
       box-shadow: -20px 0 0 #a1362b;
@@ -592,9 +592,9 @@ aside {
 
       content: "";
       display: block;
-      background: url(~assets/graphic/star_white.png) left repeat-y;
+      background: url(~assets/graphic/star_white.png?webp) left repeat-y;
       border-image-width: 3px;
-      border-image-source: url('~assets/graphic/star_white.png');
+      border-image-source: url('~assets/graphic/star_white.png?webp');
       border-image-repeat: repeat;
       border-style: solid;
 
@@ -610,9 +610,9 @@ aside {
 
       content: "";
       display: block;
-      background: url(~assets/graphic/star_white.png) right repeat-y;
+      background: url(~assets/graphic/star_white.png?webp) right repeat-y;
       border-image-width: 3px;
-      border-image-source: url('~assets/graphic/star_white.png');
+      border-image-source: url('~assets/graphic/star_white.png?webp');
       border-image-repeat: repeat;
       border-style: solid;
 

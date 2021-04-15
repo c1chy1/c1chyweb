@@ -286,7 +286,7 @@ nav {
   .nav {
 
 
-    background-image: url('~assets/graphic/exclusive-paper.png');
+    background-image: url('~assets/graphic/exclusive-paper.png?webp');
 
     background-color: #faebd7;
 

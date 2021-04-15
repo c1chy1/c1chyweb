@@ -12,12 +12,12 @@
 
 
           <div
-              class="circle1 w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
+              class="circle_bg circle1  d w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
            ></div>
-          <div class="circle2 w-16 sm:w-16  md:w-12 2xl:w-16 p-4 absolute bg-white z-40"
+          <div class="circle_bg circle2 w-16 sm:w-16  md:w-12 2xl:w-16 p-4 absolute bg-white z-40"
 
           ></div>
-          <div class="circle3 w-8 sm:w-12 md:w-8 p-2 absolute bg-white z-30"
+          <div class="circle_bg circle3  w-8 sm:w-12 md:w-8 p-2 absolute bg-white z-30"
 
           ></div>
 
@@ -101,7 +101,8 @@
             <figure
                 class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-8/12">
               <img
-                  src="~assets/graphic/ribbon.png" alt="ribbon"
+                  :srcSet="require('~/assets/graphic/ribbon.png?webp')" type="image/webp"
+                  alt="ribbon"
 
                   class="h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black z-1   " >
               <figcaption
@@ -480,7 +481,7 @@ div p, li, a {
 
 [data-anchor="page1"] {
 
-  background-image: url("~assets/graphic/bg_green.png");
+  background-image: url("~assets/graphic/bg_green.png?webp");
 
   visibility: inherit;
 
@@ -495,35 +496,23 @@ div p, li, a {
     top: -50%;
     left: -50%;
     z-index: -1;
-    background: url('~assets/graphic/light_background.png') center no-repeat;
+    background: url('~assets/graphic/light_background.png?webp') center no-repeat;
     background-size: cover;
     animation:rotate 120s linear infinite;
   }
 
 
-  .circle1 {
-    background-image: url('~assets/graphic/exclusive-paper.png');
+  .circle_bg {
+
+
+    display: block;
+    background-image: url('~assets/graphic/exclusive-paper.png?webp');
     border: 5px solid #000000;
     border-radius: 50%;
 
 
   }
 
-  .circle2 {
-    background-image: url('~assets/graphic/exclusive-paper.png');
-    border: 5px solid #000000;
-    border-radius: 50%;
-
-
-  }
-
-
-  .circle3 {
-    border: 5px solid #000000;
-    background-image: url('~assets/graphic/exclusive-paper.png');
-    border-radius: 50%;
-
-  }
 
   .intro span {
 
@@ -616,7 +605,7 @@ div p, li, a {
 [data-anchor="page2"] {
 
   vertical-align: top !important;
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?webp');
 
   background-position: 0 0;
   visibility: inherit;
@@ -641,7 +630,7 @@ div p, li, a {
 
       h2 {
 
-        background-image: url('~assets/graphic/green-dust-and-scratches.png');
+        background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
         background-color: #4f7b70;
         color: #f7ebd5;
         box-shadow: -20px 0 0 #4f7b70;
@@ -673,7 +662,7 @@ div p, li, a {
     }
 
     .background {
-      background-image: url('~assets/graphic/green-dust-and-scratches.png');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
       z-index: -1;
       background-color: wheat;
       border-radius: 40px;
@@ -713,7 +702,7 @@ div p, li, a {
 
     color: #224a49;
     .background {
-      background-image: url('~assets/graphic/green-dust-and-scratches.png');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
       z-index: -1;
       background-color: wheat;
       border-radius: 40px;
@@ -777,7 +766,7 @@ div p, li, a {
 [data-anchor="page3"] {
 
 
-  background-image: url("~assets/graphic/bg_black.png");
+  background-image: url("~assets/graphic/bg_black.png?webp");
 
   &:before {
 
@@ -789,9 +778,9 @@ div p, li, a {
     position: absolute;
   content: "";
   display: block;
-  background: url(~assets/graphic/star_white.png) bottom  repeat-x ;
+  background: url(~assets/graphic/star_white.png?webp) bottom  repeat-x ;
     border-image-width: 3px;
-    border-image-source: url('~assets/graphic/star_white.png');
+    border-image-source: url('~assets/graphic/star_white.png?webp');
     border-image-repeat: round;
     border-style: solid;
 
@@ -807,9 +796,9 @@ div p, li, a {
     left: 18px;
     content: "";
     display: block;
-    background: url(~assets/graphic/star_white.png) top repeat-x ;
+    background: url(~assets/graphic/star_white.png?webp) top repeat-x ;
     border-image-width: 3px;
-    border-image-source: url('~assets/graphic/star_white.png');
+    border-image-source: url('~assets/graphic/star_white.png?webp');
     border-image-repeat: repeat;
     border-style: solid;
   }
@@ -819,7 +808,7 @@ div p, li, a {
 
     h2 {
 
-      background-image: url('~assets/graphic/green-dust-and-scratches.png');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
       background-color: #a1362b;
       color: #eae5de;
       box-shadow: -20px 0 0 #a1362b;
@@ -837,9 +826,9 @@ div p, li, a {
       height: 95%;
       content: "";
       display: block;
-      background: url(~assets/graphic/star_white.png) left repeat-y ;
+      background: url(~assets/graphic/star_white.png?webp) left repeat-y ;
       border-image-width: 3px;
-      border-image-source: url('~assets/graphic/star_white.png');
+      border-image-source: url('~assets/graphic/star_white.png?webp');
       border-image-repeat: repeat;
       border-style: solid;
 
@@ -854,9 +843,9 @@ div p, li, a {
       height: 95%;
       content: "";
       display: block;
-      background: url(~assets/graphic/star_white.png) right repeat-y ;
+      background: url(~assets/graphic/star_white.png?webp) right repeat-y ;
       border-image-width: 3px;
-      border-image-source: url('~assets/graphic/star_white.png');
+      border-image-source: url('~assets/graphic/star_white.png?webp');
       border-image-repeat: repeat;
       border-style: solid;
 
@@ -876,13 +865,13 @@ div p, li, a {
 [data-anchor="page4"] {
 
 
-  background-image: url("~assets/graphic/bg_bottom_home.jpg");
+  background-image: url("~assets/graphic/bg_bottom_home.jpg?webp");
   background-position-x: 80%;
 
   input, textarea {
 
 
-    background-image: url("~assets/graphic/exclusive-paper.png");
+    background-image: url("~assets/graphic/exclusive-paper.png?webp");
     background-color: #faebd7;
   }
 
