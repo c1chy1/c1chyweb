@@ -40,7 +40,7 @@ export default {
 section  {
 
   background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?webp');
   width: 100%;
   height: 100vh;
 
