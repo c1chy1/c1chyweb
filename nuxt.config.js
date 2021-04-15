@@ -2,8 +2,8 @@
 
 export default {
 
-/*
-    build: {
+
+/*    build: {
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
@@ -33,13 +33,18 @@ export default {
     generate: {
         fallback: '404.html'
     },
-
-    modules : [
-        ['@nuxtjs/tailwindcss'],
-        ['fullpage-nuxt', { animate: true}],
-        ['@neneos/nuxt-animate.css'],
+    buildModules:[
+        ['@nuxtjs/tailwindcss'] ,
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-compress']
+    ],
+
+
+
+    modules : [
+        ['fullpage-nuxt', { animate: true}],
+        ['@neneos/nuxt-animate.css'],
+
     ],
 
     plugins: [
