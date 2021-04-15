@@ -540,7 +540,7 @@ figure {
 .page-spacing {
 
 
-  background-image: url(~assets/graphic/15percent.png);
+  background-image: url(~assets/graphic/15percent.png?webp);
   background-color: #f7ebd5;
 }
 

@@ -10,7 +10,17 @@ export default {
         ['@nuxtjs/tailwindcss'],
         ['fullpage-nuxt', { animate: true}],
         ['@neneos/nuxt-animate.css'],
-        ['@aceforth/nuxt-optimized-images']
+        ['@aceforth/nuxt-optimized-images'],
+        ['nuxt-compress',  {
+            gzip: {
+                threshold: 8192,
+            },
+            brotli: {
+                threshold: 8192,
+            },
+        },
+
+        ]
     ],
 
 

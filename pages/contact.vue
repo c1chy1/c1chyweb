@@ -470,7 +470,7 @@ aside {
 
 
       border-image: url(~assets/graphic/border_image.png?webp) 12 round;
-      background-image: url("~assets/graphic/bg_border.jpg");
+      background-image: url("~assets/graphic/bg_border.jpg?webp");
       background-position: left top;
       padding-top: 28px;
 
@@ -540,7 +540,7 @@ aside {
     display: block;
     background: url(~assets/graphic/star_white.png?webp) bottom repeat-x;
     border-image-width: 3px;
-    border-image-source: url('~assets/graphic/star_white.png');
+    border-image-source: url('~assets/graphic/star_white.png?webp');
     border-image-repeat: round;
     border-style: solid;
 

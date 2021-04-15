@@ -101,7 +101,8 @@
             <figure
                 class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-8/12">
               <img
-                  src="~assets/graphic/ribbon.png" alt="ribbon"
+                  :srcSet="require('~/assets/graphic/ribbon.png?webp')" type="image/webp"
+                  alt="ribbon"
 
                   class="h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black z-1   " >
               <figcaption
@@ -795,9 +796,9 @@ div p, li, a {
     left: 18px;
     content: "";
     display: block;
-    background: url(~assets/graphic/star_white.png) top repeat-x ;
+    background: url(~assets/graphic/star_white.png?webp) top repeat-x ;
     border-image-width: 3px;
-    border-image-source: url('~assets/graphic/star_white.png');
+    border-image-source: url('~assets/graphic/star_white.png?webp');
     border-image-repeat: repeat;
     border-style: solid;
   }
@@ -825,9 +826,9 @@ div p, li, a {
       height: 95%;
       content: "";
       display: block;
-      background: url(~assets/graphic/star_white.png) left repeat-y ;
+      background: url(~assets/graphic/star_white.png?webp) left repeat-y ;
       border-image-width: 3px;
-      border-image-source: url('~assets/graphic/star_white.png');
+      border-image-source: url('~assets/graphic/star_white.png?webp');
       border-image-repeat: repeat;
       border-style: solid;
 
@@ -842,9 +843,9 @@ div p, li, a {
       height: 95%;
       content: "";
       display: block;
-      background: url(~assets/graphic/star_white.png) right repeat-y ;
+      background: url(~assets/graphic/star_white.png?webp) right repeat-y ;
       border-image-width: 3px;
-      border-image-source: url('~assets/graphic/star_white.png');
+      border-image-source: url('~assets/graphic/star_white.png?webp');
       border-image-repeat: repeat;
       border-style: solid;
 
