@@ -2,7 +2,7 @@
 
 export default {
 
-
+/*
     build: {
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
@@ -24,7 +24,10 @@ export default {
                 }
             })
         }
-    },
+    },*/
+
+
+    target: 'static',
 
 
     generate: {
