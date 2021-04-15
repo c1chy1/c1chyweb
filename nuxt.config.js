@@ -1,5 +1,8 @@
+
+
 export default {
 
+    target: 'static',
 
     build: {
         extend(config, {isDev, isClient}) {
@@ -25,7 +28,6 @@ export default {
     },
 
 
-
     generate: {
         fallback: '404.html'
     },
@@ -37,7 +39,6 @@ export default {
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-compress']
     ],
-
 
     plugins: [
        { src: '~/plugins/fullpage', mode: 'client',  } ,

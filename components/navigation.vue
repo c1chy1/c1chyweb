@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="fixed z-20 mt-3 hidden md:visible lg:hidden  xl:block">
+  <nav class="fixed w-full z-20 mt-3 hidden md:visible lg:hidden  xl:block">
 
     <button class="toggle m-2 absolute">
 
@@ -8,7 +8,7 @@
       <label class="bevel " for="button">MENU</label>
     </button>
 
-    <div id="nav" class="slidein h-16 w-full w-max z-10 nav text-center flex fixed bg-center bg-repeat"
+    <div id="nav" class="slidein h-16 w-full w-max z-10 nav text-center flex fixed bg-center bg-repeat 2xl:w-full"
          :class="open ? 'open' : ''">
 
 
