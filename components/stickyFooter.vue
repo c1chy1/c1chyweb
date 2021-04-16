@@ -20,24 +20,24 @@
 
   <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:10/12 2xl:w-10/12">
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-4  2xl:text-xl ">
+      <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-2xl xl:pt-5 2xl:text-xl ">
         Home</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/aboutme" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-4 2xl:text-xl">
+      <NuxtLink to="/aboutme" class="box curmudgeon p-0 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5 2xl:text-xl">
         About Me</NuxtLink>
     </li>
 
 
     <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/portfolio" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-4  2xl:text-xl">
+      <NuxtLink to="/portfolio" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5  2xl:text-xl">
         Portfolio</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
       <NuxtLink
 
           to="/contact"
-          class="box curmudgeon p-4 w-36 h-16 relative text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-4 2xl:text-xl">
+          class="box curmudgeon p-4 w-36 h-16 relative text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5 2xl:text-xl">
         Contact
 
       </NuxtLink>

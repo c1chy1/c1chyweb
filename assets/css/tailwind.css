@@ -451,10 +451,6 @@
         height: var(--height);
     }
 
-
-
-
-
     @screen sm {
 
 
@@ -650,6 +646,27 @@
        height: 100vh;
    }
 
+
+        .circle1 {
+
+
+            top: 31vh;
+            left:50vw
+        }
+
+        .circle2 {
+
+
+            top: 33vh;
+            left:48vw
+        }
+
+        .circle3 {
+
+
+            top: 35vh;
+            left:47vw
+        }
 
 
         #fp-nav {

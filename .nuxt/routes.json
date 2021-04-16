@@ -2,29 +2,29 @@
   {
     "name": "aboutme",
     "path": "/aboutme",
-    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfolio — fullpage\\\\portfolio\\\\pages\\\\aboutme.vue",
+    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\aboutme.vue",
     "chunkName": "pages/aboutme",
-    "_name": "_27520f6e"
+    "_name": "_41d0420c"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfolio — fullpage\\\\portfolio\\\\pages\\\\contact.vue",
+    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_8145c7ae"
+    "_name": "_4c496272"
   },
   {
     "name": "portfolio",
     "path": "/portfolio",
-    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfolio — fullpage\\\\portfolio\\\\pages\\\\portfolio.vue",
+    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\portfolio.vue",
     "chunkName": "pages/portfolio",
-    "_name": "_4d9e9111"
+    "_name": "_7d4ad7a2"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfolio — fullpage\\\\portfolio\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_2294201b"
+    "_name": "_34cb3b8e"
   }
 ]

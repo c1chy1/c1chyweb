@@ -8,17 +8,20 @@ module.exports = {
 
 
   tailwindcss: {
+
+    cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
+
   },
 
-/*  purge: {
+  purge: {
     content: [
       'components/!**!/!*.vue',
       'layouts/!**!/!*.vue',
       'pages/!**!/!*.vue',
       'plugins/!**!/!*.js',
     ]
-  },*/
+  },
 
 
   theme: {
@@ -58,16 +61,16 @@ module.exports = {
       },
 
       maxHeight: {
-        xs: "20rem",
-        sm: "24rem",
-        md: "28rem",
-        lg: "32rem",
-        xl: "36rem",
-        "2xl": "42rem",
-        "3xl": "48rem",
-        "4xl": "56rem",
-        "5xl": "64rem",
-        "6xl": "72rem",
+        xs: "4rem",
+        sm: "8rem",
+        md: "12rem",
+        lg: "16rem",
+        xl: "20rem",
+        "2xl": "24rem",
+        "3xl": "28rem",
+        "4xl": "32rem",
+        "5xl": "36rem",
+        "6xl": "40rem",
       },
 
     }

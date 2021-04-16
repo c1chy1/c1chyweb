@@ -12,12 +12,12 @@
 
 
           <div
-              class="circle_bg circle1  d w-20 sm:w-20 md:w-16 2xl:w-20 p-5 absolute  bg-white z-50"
+              class="circle_bg circle1 hidden w-20   md:w-16  xl:block xl:w-20 2xl:w-20 p-5 absolute  bg-white z-50"
            ></div>
-          <div class="circle_bg circle2 w-16 sm:w-16  md:w-12 2xl:w-16 p-4 absolute bg-white z-40"
+          <div class="circle_bg circle2 hidden w-16  xl:block  md:w-12 xl:w-16  2xl:w-16 p-4 absolute bg-white z-40"
 
           ></div>
-          <div class="circle_bg circle3  w-8 sm:w-12 md:w-8 p-2 absolute bg-white z-30"
+          <div class="circle_bg circle3 hidden  w-8 xl:block md:w-8 p-2 absolute bg-white z-30"
 
           ></div>
 
@@ -43,7 +43,7 @@
                 :srcSet="require('~/assets/graphic/ribbon.png?webp')" type="image/webp"
                 alt="ribbon"
                 class="w-max-w-full  w-11/12 h-8 relative bottom-1/20 sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
-            <figcaption class="mx-auto mt-6 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  tracking-widest">
+            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto sm:mt-6  md:text-3xl lg:text-4xl xl:mt-8 tracking-widest">
               Visually Striking Design </figcaption>
           </figure>
 
@@ -123,14 +123,14 @@
 
             <div>
               <h2
-                  class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-3xl 2xl:font-bold 2xl:text-center">
+                  class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="h-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2   2xl:mt-5">
-              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:text-3xl xl:text-xl  xl:hidden 2xl:block 2xl:text-xl">
+                class="h-full w-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2   2xl:mt-5">
+              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:block 2xl:text-xl">
                 Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xl  md:text-2xl lg:text-2xl xl:text-xl  2xl:text-2xl text-center">
+              <ul class=" mb-16 text-xs md:text-2xl lg:text-2xl xl:text-xl  2xl:text-2xl text-center">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -144,7 +144,7 @@
             <img
                 :srcSet="require('~/assets/graphic/vintage_wolf.jpg?webp')" type="image/webp"
                  :class="{'animate__animated animate__jackInTheBox show' : animate}"
-                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:h-1/2 lg:w-full rounded-t-4xl "
+                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full rounded-t-4xl "
             alt="vintage wolf">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
@@ -175,10 +175,10 @@
 </div>
           </section>
 
-          <section class="w-1/3 h-1/2 p-20 px-2 flex justify-center md-portrait:h-1/2  md-portrait:w-1/2 md-portrait:p-0">
+          <section class="w-1/3 h-1/2 p-20 px-2 flex justify-center  md-portrait:h-1/2  md-portrait:w-1/2 md-portrait:p-0">
 
             <img
-                class="w-max-w-full h-4/5 relative   self-center sm:h-1/2 md:w-3/4 md:h-3/4 md-portrait:h-3/4 md-portrait:w-full md-landscape:w-1/2 md-portrait:pl-12 lg:w-1/2 rounded-3xl  "
+                class="w-full h-4/5 relative   self-center sm:h-1/2  md:w-3/4 md:h-3/4 md-portrait:h-3/4 md-portrait:w-full md-landscape:w-4/5 md-portrait:pl-12 lg:w-1/2 rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
                 :srcSet="require('~/assets/graphic/vintage_music.jpg?webp')" type="image/webp"
                  alt="vintage">
@@ -196,7 +196,7 @@
               class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4">
 
             <h2
-                class="w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-6xl  lg:w-full lg:text-5xl xl:w-2/5 2xl:text-4xl ">
+                class="together w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-4xl  lg:w-full lg:text-5xl xl:w-2/5 2xl:text-4xl ">
               LET'S WORK TOGETHER
             </h2>
             <span
@@ -210,15 +210,15 @@
 
 
   <figure
-      class="h-full w-full relative top-12 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
+      class="h-full w-full relative top-8 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
     <img
 
         :srcSet="require('~/assets/graphic/ribbon.png?webp')" type="image/webp"
         alt="ribbon"
 
-        class=" md:h-12 md:w-full lg:w-3/4  xl:w-full filter-shadow-black  z-1 ">
+        class="  md-landscape:h-12  md-portrait:h-8 md:w-full lg:w-3/4  xl:w-full filter-shadow-black  z-1 ">
     <figcaption
-        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-4xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest 2xl:text-4xl   z-0 ">
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-3xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest 2xl:text-4xl   z-0 ">
       Let Me Know!
     </figcaption>
   </figure>
@@ -493,7 +493,6 @@ div p, li, a {
   .circle_bg {
 
 
-    display: block;
     background-image: url('~assets/graphic/exclusive-paper.png?webp');
     border: 5px solid #000000;
     border-radius: 50%;
