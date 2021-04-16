@@ -8,19 +8,17 @@ module.exports = {
 
 
   tailwindcss: {
-    jit: true
+    configPath: 'tailwind.config.js',
   },
 
-
-  purge: {
+/*  purge: {
     content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'nuxt.config.js',
+      'components/!**!/!*.vue',
+      'layouts/!**!/!*.vue',
+      'pages/!**!/!*.vue',
+      'plugins/!**!/!*.js',
     ]
-  },
+  },*/
 
 
   theme: {

@@ -278,19 +278,7 @@ import stickyFooter from "@/components/stickyFooter";
 export default {
 
   components: {navigation,stickyFooter},
-  head: {
-    title: 'c1chy.web',
-    meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {
-        hid: 'Portfolio',
-        name: 'c1chy.de',
-        content: 'My Frontend experiences'
-      }
-    ],
-    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
-  },
+
 
   layout: 'desktop',
 
