@@ -45,7 +45,9 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(~assets/fonts/Merriweather-Regular.ttf) format('truetype');
+        src: url(~assets/fonts/merriweather-regular-webfont.woff),
+        url(~assets/fonts/merriweather-regular-webfont.woff2)
+        format('truetype');
     }
 
     @font-face {
@@ -904,6 +906,19 @@
         50% { clip-path: circle(20% at 12% 84%); }
         75% { clip-path: circle(20% at 93% 51%); }
         100% { clip-path: circle(20% at -30% 20%); }
+    }
+
+
+
+    @-webkit-keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
     }
 
 

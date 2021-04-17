@@ -411,6 +411,8 @@ section {
   background-image: url('~assets/graphic/exclusive-paper.png?webp');
 }
 
+
+
 .about_gallery {
 
 
@@ -421,23 +423,48 @@ section {
 
     .pic {
 
-      border-radius: 50%;
+      position: relative;
+      display: block;
       --ratio: 9 / 16;
       --width: 98vmin;
       --height: calc(var(--width) * var(--ratio));
 
-
-      display: block;
-      width:50vmin;
+      width:100%;
       height: var(--height);
+      overflow: hidden;
+
+      &:before {
+
+
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 80%;
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+
+
+      }
+
+      &:hover::before {
+
+        animation: shine .75s;
+
+      }
+
+
       img {
 
         border: 25px solid rgb(194, 213, 180);
         padding: 5px;
         border-image: url(~assets/graphic/portfolio-points.png?webp) 20% round;
-
-      margin: 1.5vmin auto;
-
+        cursor: pointer;
       }
     }
 
