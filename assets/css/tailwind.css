@@ -5,21 +5,36 @@
 
 
 
+    @font-face {
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(~assets/fonts/barlowcondensed-regular.woff),
+        url(~assets/fonts/barlowcondensed-regular.woff2)
+        format('truetype');
+    }
+
 
     @font-face {
         font-family: Barlow Condensed;
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(~assets/fonts/BarlowCondensed-Regular.ttf) format('truetype');
+        src: url(~assets/fonts/barlowcondensed-regular.woff),
+        url(~assets/fonts/barlowcondensed-regular.woff2)
+        format('truetype');
     }
+
 
     @font-face {
         font-family: Barlow Condensed;
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url(~assets/fonts/BarlowCondensed-Bold.ttf) format('truetype');
+        src: url(~assets/fonts/barlowcondensed-bold.woff),
+        url(~assets/fonts/barlowcondensed-bold.woff2)
+        format('truetype');
     }
 
 
@@ -28,7 +43,7 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(~assets/fonts/Mulish-Regular.ttf) format('truetype');
+        src: url(~assets/fonts/Mulish-Regular.woff) format('truetype');
     }
 
     @font-face {
@@ -36,8 +51,32 @@
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url(~assets/fonts/Mulish-Bold.ttf) format('truetype');
+        src: url(~assets/fonts/Mulish-Bold.woff) format('truetype');
     }
+
+
+
+
+    @font-face {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(~assets/fonts/HelveticaNeueBd.ttf)
+        format('truetype');
+    }
+
+
+    @font-face {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(~assets/fonts/HelveticaNeueMed.ttf)
+        format('truetype');
+    }
+
+
 
 
     @font-face {
@@ -45,17 +84,19 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(~assets/fonts/merriweather-regular-webfont.woff),
-        url(~assets/fonts/merriweather-regular-webfont.woff2)
+        src: url(~assets/fonts/merriweather-regular.woff),
+        url(~assets/fonts/merriweather-regular.woff2)
         format('truetype');
     }
 
     @font-face {
         font-family: Merriweather;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-display: swap;
-        src: url(~assets/fonts/Merriweather-Bold.ttf) format('truetype');
+        src: url(~assets/fonts/merriweather-bold.woff),
+        url(~assets/fonts/merriweather-bold.woff2)
+        format('truetype');
     }
 
 
@@ -67,6 +108,7 @@
         font-display: swap;
         src: url('~assets/fonts/Satisfy-Regular.ttf') format('truetype');
     }
+
 
 
 

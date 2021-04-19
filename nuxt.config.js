@@ -21,7 +21,7 @@ export default {
     build: {
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
-                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp)$/)) {
+                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf)$/)) {
                     // add a second loader when loading images
                     rule.use.push({
                         loader: 'image-webpack-loader',
