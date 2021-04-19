@@ -77,6 +77,7 @@ export default {
     toTop() {
 
       window.scroll(0,0)
+      fullpage_api.moveTo('page1',2)
 
     }
 

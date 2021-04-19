@@ -471,7 +471,7 @@ section {
 
     h2 {
 
-      background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
+      background-image: url(~assets/graphic/green-dust-and-scratches.png);
       background-color: #4f7b70;
       color: #f7ebd5;
       box-shadow: -10px 0 0 #4f7b70;
@@ -495,7 +495,7 @@ section {
     filter: drop-shadow(4px 5px 0 #224a49);
     -webkit-text-stroke-color: #e4ddd3;
 
-    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png');
     background-color: #4f7b70;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;
@@ -555,9 +555,7 @@ figure {
   top: -145%;
   left: 0;
   z-index: 5;
-  background-image: url('~assets/graphic/light_background.png?webp');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('~assets/graphic/light_background.png?webp') center no-repeat;
   background-size: cover;
   animation: rotate 200s infinite linear;
 
@@ -619,7 +617,7 @@ article {
 }
 
 .mission {
-  background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+  background-image: url('~assets/graphic/green-dust-and-scratches.png');
   background-color: #da7f58;
 
 
@@ -712,7 +710,7 @@ article {
     h2 {
 
 
-      background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
+      background-image: url(~assets/graphic/green-dust-and-scratches.png);
       background-color: #e53e26;
       box-shadow: -6px 0 0 #e53e26;
       color: #f7ebd5;
@@ -736,7 +734,7 @@ article {
 
   h2 {
 
-    background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
+    background-image: url(~assets/graphic/green-dust-and-scratches.png);
     background-color: #4f7b70;
     color: #f7ebd5;
     white-space: revert;

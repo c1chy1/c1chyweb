@@ -19,7 +19,7 @@ export default {
 
 .slide {
 
-  background-image: url('~assets/graphic/portfolio_slide_3.jpg');
+  background-image: url('~assets/graphic/portfolio_slide_3.jpg?webp');
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 
 

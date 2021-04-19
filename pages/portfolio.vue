@@ -355,7 +355,7 @@ section {
     -webkit-text-stroke-width: 3px;
     filter: drop-shadow(4px 5px 0 #224a49);
     -webkit-text-stroke-color: #e4ddd3;
-    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png');
     background-color: #4f7b70;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;
@@ -446,7 +446,7 @@ section {
       -webkit-text-stroke-width: 3px;
       filter: drop-shadow(4px 5px 0 #224a49);
       -webkit-text-stroke-color: #e4ddd3;
-      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png');
       background-color: #4f7b70;
       -webkit-font-smoothing: antialiased;
       -webkit-background-clip: text;
@@ -507,15 +507,13 @@ section {
   top: -145%;
   left: 0;
   z-index: 3;
-  background-image: url('~assets/graphic/light_background.png?webp');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('~assets/graphic/light_background.png?webp') center no-repeat;
   background-size: cover;
   animation: rotate 200s infinite linear;
 }
 
 .portfolio {
-  background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+  background-image: url('~assets/graphic/green-dust-and-scratches.png');
   background-color: #da7f58;
 
   h1 {
@@ -610,7 +608,7 @@ section {
 
   button {
     background-color: rgba(0, 0, 0, 0.25);
-    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png');
     background-color: #4f7b70;
 
 

@@ -365,8 +365,6 @@ export default {
   left: 50%;
   transform: translate(-50%,-50%);
 
-
-
 }
 
 
@@ -617,7 +615,7 @@ div p, li, a {
 
       h2 {
 
-        background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+        background-image: url('~assets/graphic/green-dust-and-scratches.png');
         background-color: #4f7b70;
         color: #f7ebd5;
         box-shadow: -20px 0 0 #4f7b70;
@@ -649,7 +647,7 @@ div p, li, a {
     }
 
     .background {
-      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png');
       z-index: -1;
       background-color: wheat;
       border-radius: 40px;
@@ -689,7 +687,7 @@ div p, li, a {
 
     color: #224a49;
     .background {
-      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png');
       z-index: -1;
       background-color: wheat;
       border-radius: 40px;
@@ -795,7 +793,7 @@ div p, li, a {
 
     h2 {
 
-      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png');
       background-color: #a1362b;
       color: #eae5de;
       box-shadow: -20px 0 0 #a1362b;

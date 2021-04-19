@@ -159,11 +159,9 @@ export default {
   opacity: 0.7;
   left: 0;
   z-index: -1;
-  background-image: url('~assets/graphic/light_background.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('~assets/graphic/light_background.png?webp') center no-repeat;
   background-size: cover;
-  animation: rotation 200s infinite linear;
+  animation: rotate 120s infinite linear;
 
 }
 

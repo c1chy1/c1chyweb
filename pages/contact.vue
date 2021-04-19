@@ -301,7 +301,7 @@ section section:nth-child(4) {
     -webkit-text-stroke-width: 3px;
     filter: drop-shadow(4px 5px 0 #224a49);
     -webkit-text-stroke-color: #e4ddd3;
-    background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+    background-image: url('~assets/graphic/green-dust-and-scratches.png');
     background-color: #4f7b70;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;
@@ -363,9 +363,7 @@ figure {
   opacity: 0.7;
   left: 0;
   z-index: 5;
-  background-image: url('~assets/graphic/light_background.png?webp');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('~assets/graphic/light_background.png?webp') center no-repeat;
   background-size: cover;
   animation: rotate 200s infinite linear;
 
@@ -489,7 +487,7 @@ aside {
 
     h3 {
 
-      background-image: url(~assets/graphic/green-dust-and-scratches.png?webp);
+      background-image: url(~assets/graphic/green-dust-and-scratches.png);
       background-color: #4f7b70;
 
 
@@ -574,7 +572,7 @@ aside {
     h2 {
 
 
-      background-image: url('~assets/graphic/green-dust-and-scratches.png?webp');
+      background-image: url('~assets/graphic/green-dust-and-scratches.png');
       background-color: #a1362b;
       color: #eae5de;
       box-shadow: -20px 0 0 #a1362b;
