@@ -24,6 +24,29 @@ export default {
         ['@neneos/nuxt-animate.css'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
+        ['nuxt-purgecss',
+            {
+
+                enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
+                paths: [
+                    'components/**/*.vue',
+                    'layouts/**/*.vue',
+                    'pages/**/*.vue',
+                    'plugins/**/*.js'
+                ],
+                styleExtensions: ['.css'],
+                whitelist: ['body', 'html', 'nuxt-progress'],
+                extractors: [
+                    {
+                        extractor: content => content.match(/[A-z0-9-:\\/]+/g) || [],
+                        extensions: ['html', 'vue', 'js']
+                    }
+                ]
+
+
+
+
+}],
         ['nuxt-compress',  {
             gzip: {
                 threshold: 8192,
@@ -58,7 +81,7 @@ export default {
     build: {
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
-                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf)$/)) {
+                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
                     rule.use.push({
                         loader: 'image-webpack-loader',
                         options: {
