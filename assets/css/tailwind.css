@@ -489,8 +489,6 @@
 
         [data-anchor="page2"] .welcome_studio div span:after {
 
-
-
             height: 18px;
         }
 
@@ -726,17 +724,19 @@
         }
 
 
-        .welcome_studio > div > span:before , span:after {
 
 
-            height: 4px!important;
-        }
-
-        .welcome_studio > div >  span:after {
+        [data-anchor="page2"] .welcome_studio > div >  span:after {
 
             height: 15px!important;
 
         }
+
+        .about_me span:after , .portfolio_case span:after {
+
+            height: 20px!important;
+        }
+
 
         #form {
             height: 90vh;

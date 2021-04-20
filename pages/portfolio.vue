@@ -52,7 +52,7 @@
 
       <div class="portfolio_case w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative"></span>
-        <h4 class=" lg:w-full 2xl:w-9/12 font-bold text-3xl mt-4 text-center"
+        <h4 class="font-bold text-3xl mt-4  text-center lg:w-full 2xl:w-9/12 2xl:mt-8"
 
         >MEANINGFUL CREATIVE WORK</h4>
         <span class="w-full inline-block relative"></span>

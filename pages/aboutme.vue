@@ -48,11 +48,11 @@
     <section class="section w-full h-108 bg-black rounded-4xl relative">
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-20">
-        <span class="w-full inline-block relative"></span>
-        <h4 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center"
+        <span class="w-full inline-block relative 2xl:w-1/2"></span>
+        <h4 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
         >WHAT I DO</h4>
-        <span class="w-full inline-block relative"></span>
+        <span class="w-full inline-block relative 2xl:w-1/2"></span>
 
 
       </div>
@@ -222,11 +222,11 @@
     <section class="section h-full ">
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8 2xl:mt-0">
-        <span class="w-full inline-block relative"></span>
-        <h4 class="w-1/2 font-bold text-3xl mt-4 text-center"
+        <span class="w-full inline-block relative 2xl:w-2/3"></span>
+        <h4 class="w-1/2 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
         >WHAT I'M WORKING ON</h4>
-        <span class="w-full inline-block relative"></span>
+        <span class="w-full inline-block relative 2xl:w-2/3"></span>
 
 
       </div>
@@ -583,7 +583,7 @@ figure {
       width: 100%;
       content: "";
       display: block;
-      background: url('~assets/graphic/star.svg?webp') repeat-x top left;
+      background: url('~assets/graphic/star.svg') repeat-x top left;
     }
 
   }
