@@ -622,7 +622,6 @@ section {
 
 .slide {
 
-  background-color: rebeccapurple;
   border: 3px solid darken(rebeccapurple, 25);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   background-position: initial;
