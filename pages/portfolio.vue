@@ -21,7 +21,7 @@
 
             <img
 
-                :srcSet="require('~/assets/graphic/ribbon.png?webp')" type="image/webp"
+                :srcSet="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">

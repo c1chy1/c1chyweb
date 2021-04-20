@@ -1,7 +1,6 @@
 export default {
 
 
-
     head: {
 
         title: 'c1chy.web',
@@ -11,8 +10,14 @@ export default {
             amp: true
         },
         meta: [
-            {charset: 'utf-8'},
-            {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+
+            {
+                charset: 'utf-8'
+            },
+            {
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1'
+            },
             {
                 hid: 'description',
                 name: 'description',
@@ -24,16 +29,16 @@ export default {
 
     target: 'static',
 
-    modules : [
+    modules: [
         ['@nuxtjs/tailwindcss'],
-    /*    ['fullpage-nuxt', { animate: true}],*/
+        /*    ['fullpage-nuxt', { animate: true}],*/
         ['@neneos/nuxt-animate.css'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-purgecss',
             {
 
-                enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
+                enabled: ({isDev, isClient}) => (!isDev && isClient), // or `false` when in dev/debug mode
                 paths: [
                     'components/**/*.vue',
                     'layouts/**/*.vue',
@@ -50,10 +55,8 @@ export default {
                 ]
 
 
-
-
-}],
-        ['nuxt-compress',  {
+            }],
+        ['nuxt-compress', {
             gzip: {
                 threshold: 8192,
             },
@@ -73,7 +76,7 @@ export default {
     },
 
     plugins: [
-        { src: '~/plugins/fullpage', mode: 'client'}
+        {src: '~/plugins/fullpage', mode: 'client'}
     ],
 
     loading: '~/components/loading.vue',
@@ -81,7 +84,6 @@ export default {
     optimizedImages: {
         optimizeImages: true
     },
-
 
 
     build: {
@@ -93,8 +95,8 @@ export default {
                         options: {
                             svgo: {
                                 plugins: [
-                                    { removeViewBox: false },
-                                    { removeDimensions: true }
+                                    {removeViewBox: false},
+                                    {removeDimensions: true}
                                 ]
                             }
                         }

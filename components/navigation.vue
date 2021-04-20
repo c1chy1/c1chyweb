@@ -25,7 +25,7 @@
         <li>
 
           <img
-              :srcSet="require('../assets/graphic/logo_nav.png?webp')" type="image/webp" alt="c1chy.web"
+              :srcSet="require('../assets/graphic/logo_nav.png?webp')"  alt="c1chy.web"
 
               class="h-20 w-20 mx-auto">
 
@@ -34,19 +34,15 @@
         <li @click.prevent="toTop">
           <NuxtLink to="/portfolio" class="text-2xl spin circle">Portfolio</NuxtLink>
         </li>
-        <li @click.prevent="toTop" >
-          <NuxtLink to="/contact"class="text-2xl spin circle">Contact</NuxtLink>
+        <li @click.prevent="toTop">
+          <NuxtLink to="/contact" class="text-2xl spin circle">Contact</NuxtLink>
         </li>
       </ul>
 
     </div>
 
 
-
   </nav>
-
-
-
 
 
 </template>
@@ -76,8 +72,8 @@ export default {
 
     toTop() {
 
-      window.scroll(0,0)
-      fullpage_api.moveTo('page1',2)
+      window.scroll(0, 0)
+      fullpage_api.moveTo('page1', 2)
 
     }
 
@@ -98,7 +94,6 @@ $purple: #6477b9;
 $blue: #0eb7da;
 
 $scrollLength: 100vh;
-
 
 
 .spin {
@@ -193,7 +188,7 @@ label {
   text-align: center;
   text-shadow: 0px 3px 5px #d11515, 0px 5px 10px #d11515, 0px 5px 10px #d11515, 0px 5px 10px #d11515, 0px 5px 10px #d11515;
   color: #fff;
-  font-family: Merriweather , sans-serif;
+  font-family: Merriweather, sans-serif;
   letter-spacing: 0.4px;
   overflow: hidden;
   outline: 0 !important;
@@ -355,7 +350,6 @@ nav {
           border-right-color 0.15s linear 0.10s,
           border-bottom-color 0.15s linear 0.20s;
         }
-
 
 
         :focus::after {
