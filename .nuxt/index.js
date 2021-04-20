@@ -12,6 +12,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_vlazyload_1d83d7c6 from 'nuxt_plugin_vlazyload_1d83d7c6' // Source: .\\v-lazy-load.js (mode: 'all')
+import nuxt_plugin_fontLoader_32947187 from 'nuxt_plugin_fontLoader_32947187' // Source: .\\fontLoader.js (mode: 'client')
 import nuxt_plugin_libplugin26db65d4_11e06042 from 'nuxt_plugin_libplugin26db65d4_11e06042' // Source: .\\lib.plugin.26db65d4.js (mode: 'client')
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ..\\plugins\\fullpage (mode: 'client')
 
@@ -63,7 +65,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"c1chy.web","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"Portfolio","name":"c1chy.de","content":"My Frontend experiences"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"c1chy.web","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"Portfolio","name":"c1chy.de","content":"My Frontend experiences"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"font-preload","rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"}],"style":[],"script":[],"noscript":[{"hid":"font-noscript","innerHTML":"\u003Clink rel=\"stylesheet\" href=\"\u002Ffonts\u002Ffont-face.css\"\u003E"}],"__dangerouslyDisableSanitizersByTagID":{"font-noscript":["innerHTML"]}},
 
     router,
     nuxt: {
@@ -176,6 +178,14 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
+
+  if (typeof nuxt_plugin_vlazyload_1d83d7c6 === 'function') {
+    await nuxt_plugin_vlazyload_1d83d7c6(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_fontLoader_32947187 === 'function') {
+    await nuxt_plugin_fontLoader_32947187(app.context, inject)
+  }
 
   if (process.client && typeof nuxt_plugin_libplugin26db65d4_11e06042 === 'function') {
     await nuxt_plugin_libplugin26db65d4_11e06042(app.context, inject)

@@ -142,9 +142,10 @@
           <div class="flex items-end  sm:justify-center  sm:w-1/3  md:w-full lg:w-2/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
 
             <img
+
+
                 :srcSet="require('~/assets/graphic/vintage_wolf.jpg?webp')" type="image/webp"
-                 :class="{'animate__animated animate__jackInTheBox show' : animate}"
-                 class="wolf fade w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full rounded-t-4xl "
+                 class="wolf  w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full rounded-t-4xl "
             alt="vintage wolf">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
