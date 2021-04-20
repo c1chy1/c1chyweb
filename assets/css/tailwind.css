@@ -726,6 +726,17 @@
         }
 
 
+        .welcome_studio > div > span:before , span:after {
+
+
+            height: 4px!important;
+        }
+
+        .welcome_studio > div >  span:after {
+
+            height: 15px!important;
+
+        }
 
         #form {
             height: 90vh;
@@ -812,7 +823,22 @@
     }
 
 
-    .slots-enter-active { animation: 1s slots reverse; }
+    .slots {
+
+        background-color: black;
+    }
+
+    .spotlight {
+
+
+        background-color: black;
+
+
+    }
+
+
+    .slots-enter-active { animation: 1s slots reverse;
+    }
     .slots-leave-active { animation: 1s slots 1.5s; }
 
     @keyframes slots {

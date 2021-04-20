@@ -11,10 +11,9 @@ import '..\\assets\\css\\tailwind.css'
 import '..\\node_modules\\animate.css\\animate.min.css'
 
 import _7027c366 from '..\\layouts\\desktop.vue'
-import _77b471ed from '..\\layouts\\mobil.vue'
 import _6f6c098b from './layouts/default.vue'
 
-const layouts = { "_desktop": sanitizeComponent(_7027c366),"_mobil": sanitizeComponent(_77b471ed),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_desktop": sanitizeComponent(_7027c366),"_default": sanitizeComponent(_6f6c098b) }
 
 export default {
   render (h, props) {
