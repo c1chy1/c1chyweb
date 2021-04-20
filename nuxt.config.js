@@ -3,14 +3,20 @@ export default {
 
 
     head: {
+
         title: 'c1chy.web',
+
+        htmlAttrs: {
+            lang: 'de',
+            amp: true
+        },
         meta: [
             {charset: 'utf-8'},
             {name: 'viewport', content: 'width=device-width, initial-scale=1'},
             {
-                hid: 'Portfolio',
-                name: 'c1chy.de',
-                content: 'My Frontend experiences'
+                hid: 'description',
+                name: 'description',
+                content: 'c1chy My Frontend experiences Nuxt Portfolio Webentwickler'
             }
         ],
         link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
