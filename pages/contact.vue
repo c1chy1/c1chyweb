@@ -174,19 +174,7 @@ export default {
 
   components: {stickyFooter},
 
-  head: {
-    title: 'Contact',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Home page description'
-      }
-    ],
-  },
-
   layout: 'desktop',
-
 
   transition: {
     name: 'spotlight',

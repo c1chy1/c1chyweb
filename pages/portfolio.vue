@@ -176,17 +176,6 @@ export default {
 
   components: {slideA, slideB, slideC, stickyFooter},
 
-  head: {
-    title: 'Portfolio',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Home page description'
-      }
-    ],
-  },
-
   layout: 'desktop',
 
 

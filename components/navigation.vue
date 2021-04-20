@@ -25,7 +25,7 @@
         <li>
 
           <img
-              :srcSet="require('../assets/graphic/logo_nav.png?webp')" type="image/webp"
+              :srcSet="require('../assets/graphic/logo_nav.png?webp')" type="image/webp" alt="c1chy.web"
 
               class="h-20 w-20 mx-auto">
 

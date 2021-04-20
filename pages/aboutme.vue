@@ -302,27 +302,14 @@ import stickyFooter from "@/components/stickyFooter";
 export default {
 
   components: {stickyFooter},
-  head: {
-    title: 'aboutme',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Home page description'
-      }
-    ],
-  },
+
 
   layout: 'desktop',
 
   transition: {
 
-
-
     name: 'spotlight',
     mode: 'out-in',
-
-
 
 
   },
