@@ -75,7 +75,7 @@ section {
   z-index: 10000;
   position: absolute;
   background: #231f20;
-  transition: all .5s ease-in;
+  transition: all 1s ease-in;
   animation: spiral 3s ease-in;
   animation-delay: 4s;
 }
