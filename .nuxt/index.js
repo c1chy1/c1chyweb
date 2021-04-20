@@ -12,7 +12,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_vlazyload_1d83d7c6 from 'nuxt_plugin_vlazyload_1d83d7c6' // Source: .\\v-lazy-load.js (mode: 'all')
 import nuxt_plugin_fontLoader_32947187 from 'nuxt_plugin_fontLoader_32947187' // Source: .\\fontLoader.js (mode: 'client')
 import nuxt_plugin_libplugin26db65d4_11e06042 from 'nuxt_plugin_libplugin26db65d4_11e06042' // Source: .\\lib.plugin.26db65d4.js (mode: 'client')
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ..\\plugins\\fullpage (mode: 'client')
@@ -178,10 +177,6 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
-
-  if (typeof nuxt_plugin_vlazyload_1d83d7c6 === 'function') {
-    await nuxt_plugin_vlazyload_1d83d7c6(app.context, inject)
-  }
 
   if (process.client && typeof nuxt_plugin_fontLoader_32947187 === 'function') {
     await nuxt_plugin_fontLoader_32947187(app.context, inject)

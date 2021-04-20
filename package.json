@@ -4,7 +4,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "analyze": "nuxt build --analyze"
   },
   "dependencies": {
     "@neneos/nuxt-animate.css": "0.0.1",
