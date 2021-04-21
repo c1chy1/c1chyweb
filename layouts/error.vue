@@ -18,7 +18,7 @@
           <figure class="relative flex items-center justify-center filter-shadow-black">
 
 
-            <img src="~assets/graphic/ribbon.png" alt="Trulli"
+            <img src="~assets/graphic/ribbon.png?webp" alt="Trulli"
                  class="w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class=" mx-auto mt-5 text-3xl">
               <NuxtLink to="/">Home</NuxtLink>
@@ -38,7 +38,7 @@
     <div>
 
       <div class="banner ">
-        <img class="m-auto w-1/3" src="~assets/graphic/404.png">
+        <img class="m-auto w-1/3" src="~assets/graphic/404.png?webp">
 
       </div>
 

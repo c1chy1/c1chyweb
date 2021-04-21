@@ -31,7 +31,6 @@ export default {
 
     modules: [
         ['@nuxtjs/tailwindcss'],
-        /*    ['fullpage-nuxt', { animate: true}],*/
         ['@neneos/nuxt-animate.css'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
@@ -81,8 +80,13 @@ export default {
 
     loading: '~/components/loading.vue',
 
+
+
+
+
     optimizedImages: {
         optimizeImages: true
+
     },
 
 
