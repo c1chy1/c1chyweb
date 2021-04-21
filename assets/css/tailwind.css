@@ -31,7 +31,7 @@
         word-spacing: 0.06em;
         letter-spacing: 0.04em;
         background-image: url('~assets/graphic/exclusive-paper.png?webp');
-        background-color: #a1362b;
+        background-color:black;
     }
 
     html {
@@ -391,6 +391,21 @@
         height: var(--height);
     }
 
+
+    [data-anchor="page1"]:before {
+
+
+        background: url('~assets/graphic/light_background.png?size=480&format=webp') center no-repeat ;
+
+    }
+
+
+
+
+
+
+
+
     @screen sm {
 
 
@@ -620,6 +635,7 @@
             width: 12px !important;
             margin: -2px 0 0 -7px !important;
             transition: all 0.3s ease-in-out !important;
+            background-color: white!important;
         }
 
 
@@ -642,14 +658,14 @@
             width: 20px !important;
             height: 20px !important;
             margin: -7px 0 0 -11px !important;
-            background: white !important;
+            background: #a1362b !important;
 
         }
 
 
         #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
 
-            background: white !important;
+            background: #a1362b !important;
         }
 
 
@@ -721,6 +737,12 @@
             font-size: 8rem
         }
 
+        [data-anchor="page1"]:before {
+
+
+            background: url('~assets/graphic/light_background.png?size=1000&format=webp') center no-repeat;
+
+        }
 
 
 

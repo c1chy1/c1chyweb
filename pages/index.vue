@@ -149,7 +149,9 @@
             <img
 
 
-                :srcSet="require('~/assets/graphic/vintage_wolf.jpg?webp')"
+                :srcSet="scumback.srcSet"
+                :src="scumback.src"
+
                  class="wolf  w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full rounded-4xl "
             alt="vintage wolf">
           </div>
@@ -186,7 +188,10 @@
             <img
                 class="w-full h-4/5 relative   self-center sm:h-1/2  md:w-3/4 md:h-3/4 md-portrait:h-3/4 md-portrait:w-full md-landscape:w-4/5 md-portrait:pl-12 lg:w-1/2 rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
-                :srcSet="require('~/assets/graphic/vintage_music.jpg?webp')"
+
+
+                :srcSet="vintageMusic.srcSet"
+                :src="vintageMusic.src"
                  alt="vintage">
           </section>
 
@@ -286,6 +291,8 @@ import stickyFooter from "@/components/stickyFooter";
 const logo = require('~/assets/graphic/logo_c1chy3.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const scumback =require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 
 export default {
@@ -307,7 +314,7 @@ export default {
 
     return {
 
-      logo,hat,body,
+      logo,hat,body,scumback,vintageMusic,
 
       fade:false,
       show:false,
@@ -498,7 +505,6 @@ div p, li, a {
     top: -50%;
     left: -50%;
     z-index: -1;
-    background: url('~assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp') center no-repeat;
     background-size: cover;
     animation:rotate 120s linear infinite;
   }
