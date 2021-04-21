@@ -4,7 +4,7 @@
     <full-page class="h-full w-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
-      <section class="fp-section w-full h-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  rounded-4xl  filter-shadow-black">
+      <section class="fp-section w-full h-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black">
         <div
             class="section-1 w-screen h-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
@@ -23,9 +23,10 @@
 
 
    <img
-       :srcSet="require('~/assets/graphic/logo_c1chy3.png?webp')"
 
 
+       :srcSet="logo.srcSet"
+       :src="logo.src"
        alt="c1chy"
        class="logo relative 2xl:w-1/4 z-50"
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
@@ -33,7 +34,8 @@
 
 
           <img
-              :srcSet="require('~/assets/graphic/hat.png?webp')"
+              :srcSet="hat.srcSet"
+              :src="hat.src"
               alt="rainbow balloon"
                class="hat md:self-center 2xl:w-1/5  2xl:mt-10 z-20"
           >
@@ -51,7 +53,8 @@
 
           <img
 
-              :srcSet="require('~/assets/graphic/body.png?webp')"
+              :srcSet="body.srcSet"
+              :src="body.src"
 
               alt="vintage body"
               class="body  filter-shadow-black ">
@@ -80,7 +83,7 @@
 
       </section>
 
-      <div class="section w-full h-full relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 rounded-4xl  ">
+      <div class="section w-full h-full relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 xl:rounded-4xl  ">
 
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
@@ -119,7 +122,7 @@
 
         </div>
         <section
-            class="scumbag w-full h-screen flex justify-around bg-repeat bg-auto bg-center z-2 rounded-4xl">
+            class="scumbag w-full h-screen flex justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
           <div
               class="text-center mt-3 p-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
 
@@ -147,7 +150,7 @@
 
 
                 :srcSet="require('~/assets/graphic/vintage_wolf.jpg?webp')"
-                 class="wolf  w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full rounded-t-4xl "
+                 class="wolf  w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full rounded-4xl "
             alt="vintage wolf">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
@@ -155,7 +158,7 @@
         </section>
       </div>
 
-      <div class="section h-full w-full relative overflow-hidden box-content rounded-4xl z-0 "  >
+      <div class="section h-full w-full relative overflow-hidden box-content xl:rounded-4xl z-0 "  >
         <div class="bg_stars h-full w-full flex flex-row-reverse text-white z-0 ">
 
           <section class="w-1/2 h-screen">
@@ -189,7 +192,7 @@
 
         </div>
       </div>
-      <div class="section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
+      <div class="section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
         <article class="show w-full h-full flex flex-col sm:self-center md:h-1/3 2xl:"
 
@@ -278,6 +281,13 @@
 
 
 import stickyFooter from "@/components/stickyFooter";
+
+
+const logo = require('~/assets/graphic/logo_c1chy3.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+
+
 export default {
 
   components: {stickyFooter},
@@ -296,6 +306,8 @@ export default {
 
 
     return {
+
+      logo,hat,body,
 
       fade:false,
       show:false,
@@ -482,10 +494,11 @@ div p, li, a {
     position: absolute;
     width: 200%;
     height: 200%;
+
     top: -50%;
     left: -50%;
     z-index: -1;
-    background: url('~assets/graphic/light_background.png?webp') center no-repeat;
+    background: url('~assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp') center no-repeat;
     background-size: cover;
     animation:rotate 120s linear infinite;
   }
