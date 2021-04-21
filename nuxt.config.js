@@ -27,8 +27,7 @@ export default {
         link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
     },
 
-    target: 'server',
-    ssr: 'true',
+    target: 'static',
 
     modules: [
         ['@nuxtjs/tailwindcss'],

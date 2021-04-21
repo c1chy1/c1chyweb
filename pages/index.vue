@@ -274,11 +274,11 @@
 <script>
 
 
-import navigation from "~/components/navigation";
+
 import stickyFooter from "@/components/stickyFooter";
 export default {
 
-  components: {navigation,stickyFooter},
+  components: {stickyFooter},
 
 
   layout: 'desktop',
