@@ -3,24 +3,28 @@
     "name": "aboutme",
     "path": "/aboutme",
     "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\aboutme.vue",
-    "chunkName": "pages/aboutme"
+    "chunkName": "pages/aboutme",
+    "_name": "_41d0420c"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_4c496272"
   },
   {
     "name": "portfolio",
     "path": "/portfolio",
     "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\portfolio.vue",
-    "chunkName": "pages/portfolio"
+    "chunkName": "pages/portfolio",
+    "_name": "_7d4ad7a2"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\c1chy\\\\Desktop\\\\portfoliofullpage\\\\portfolio\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_34cb3b8e"
   }
 ]

@@ -1,7 +1,7 @@
 <template>
 
 <client-only>
-    <section class="w-full relative">
+    <section class="w-full h-screen relative">
       <navigation />
       <Nuxt keep-alive />
 

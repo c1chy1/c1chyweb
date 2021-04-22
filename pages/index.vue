@@ -1,12 +1,12 @@
 <template>
 
 
-    <full-page class="fp-auto-height-responsive fp-auto-height w-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
+    <full-page class="w-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
       <section class="fp-section w-full  overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black">
         <div
-            class="section-1 w-screen absolute grid fill-40 justify-items-center items-end "
+            class="section-1 h-full w-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
 
@@ -83,7 +83,7 @@
 
       </section>
 
-      <div class="section w-full h-full relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 xl:rounded-4xl  ">
+      <section class="fp-section w-full h-full relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 xl:rounded-4xl  ">
 
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
@@ -118,12 +118,8 @@
 </article>
 
           </div>
-          <div
-              class="background w-7\/12">
-          </div>
 
-
-        <section
+        <div
             class="scumbag w-full flex justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
           <div
               class="text-center mt-3 p-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
@@ -159,10 +155,10 @@
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <div class="section h-full w-full relative overflow-hidden box-content xl:rounded-4xl z-0 "  >
+      <section class="fp-section h-full w-full relative overflow-hidden box-content xl:rounded-4xl z-0 "  >
         <div class="bg_stars h-full w-full flex flex-row-reverse text-white z-0 ">
 
           <section class="w-1/2 ">
@@ -198,8 +194,8 @@
           </section>
 
         </div>
-      </div>
-      <div class="section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
+      </section>
+      <section class="fp-section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
         <article class="show w-full h-full flex flex-col sm:self-center md:h-1/3 2xl:"
 
@@ -277,7 +273,7 @@
 
         <stickyFooter class="bottom-0 absolute"/>
 
-      </div>
+      </section>
 
     </full-page>
 
@@ -503,7 +499,7 @@ div p, li, a {
     position: absolute;
     width: 200%;
     height: 200%;
-
+    overflow: hidden;
     top: -50%;
     left: -50%;
     z-index: -1;
@@ -669,13 +665,7 @@ div p, li, a {
 
     }
 
-    .background {
-      background-image: url('~assets/graphic/green-dust-and-scratches.png');
-      z-index: -1;
-      background-color: wheat;
-      border-radius: 40px;
-      filter: blur(20px);
-    }
+
 
 
   li {
