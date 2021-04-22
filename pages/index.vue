@@ -4,9 +4,9 @@
     <full-page class="fp-auto-height-responsive fp-auto-height w-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
-      <section class="fp-section w-full fp-auto-height-responsive fp-auto-height overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black">
+      <section class="fp-section w-full  overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black">
         <div
-            class="section-1 w-screen h-screen absolute grid fill-40 justify-items-center items-end "
+            class="section-1 w-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
 
@@ -124,7 +124,7 @@
 
 
         <section
-            class="scumbag w-full h-screen flex justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
+            class="scumbag w-full flex justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
           <div
               class="text-center mt-3 p-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
 
@@ -165,7 +165,7 @@
       <div class="section h-full w-full relative overflow-hidden box-content xl:rounded-4xl z-0 "  >
         <div class="bg_stars h-full w-full flex flex-row-reverse text-white z-0 ">
 
-          <section class="w-1/2 h-screen">
+          <section class="w-1/2 ">
 
 <div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 md:mx-auto xl:mr-10">
             <h2

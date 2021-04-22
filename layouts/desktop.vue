@@ -1,7 +1,7 @@
 <template>
 
 <client-only>
-    <section class="fp-auto-height-responsive fp-auto-height w-full relative">
+    <section class="w-full relative">
       <navigation />
       <Nuxt keep-alive />
 
