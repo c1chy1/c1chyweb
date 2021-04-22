@@ -4,7 +4,7 @@
     <full-page class="w-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
-      <section class="fp-section w-full fp-auto-height-responsive fp-auto-height overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black">
+      <section class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black">
         <div
             class="section-1 h-full w-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
@@ -87,7 +87,7 @@
 
       </section>
 
-      <section class="fp-section w-full fp-auto-height-responsive fp-auto-height relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 xl:rounded-4xl  ">
+      <section class="fp-section w-full  relative bg-repeat bg-scroll opacity-100 overflow-hidden z-10 xl:rounded-4xl  ">
 
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
@@ -162,7 +162,7 @@
         </div>
       </section>
 
-      <section class="fp-section fp-auto-height-responsive  fp-auto-height w-full relative overflow-hidden box-content xl:rounded-4xl z-0 "  >
+      <section class="fp-section  w-full relative overflow-hidden box-content xl:rounded-4xl z-0 "  >
         <div class="bg_stars h-full w-full flex flex-row-reverse text-white z-0 ">
 
           <section class="w-1/2 ">
@@ -199,7 +199,7 @@
 
         </div>
       </section>
-      <section class="fp-section fp-auto-height-responsive fp-auto-height w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
+      <section class="fp-section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
         <article class="show w-full h-full flex flex-col sm:self-center md:h-1/3 2xl:"
 
@@ -290,7 +290,7 @@
 import stickyFooter from "@/components/stickyFooter";
 
 
-const logo = require('assets/graphic/logo.png');
+const logo = require('~/assets/graphic/logo.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
