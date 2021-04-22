@@ -333,7 +333,6 @@ export default {
         verticalCentered: false,
         css3: true,
         slidesNavigation:false,
-        responsiveHeight: 410
       },
     }
   },
