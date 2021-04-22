@@ -24,7 +24,7 @@
 
    <img
 
-
+       data-src="~/assets/graphic/logo.png"
        :srcSet="logo.srcSet"
        :src="logo.src"
        alt="c1chy"
@@ -34,6 +34,7 @@
 
 
           <img
+              data-src="~/assets/graphic/hat.png"
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
@@ -44,6 +45,7 @@
 
 
             <img
+                data-src="~/assets/graphic/ribbon.png"
                 :srcSet="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
                 class="w-max-w-full  w-11/12 h-8 relative bottom-1/20 sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
@@ -53,6 +55,8 @@
 
           <img
 
+
+              data-src="~/assets/graphic/body.png"
               :srcSet="body.srcSet"
               :src="body.src"
 
@@ -146,7 +150,7 @@
 
             <img
 
-
+                data-src="~/assets/graphic/vintage_wolf.jpg"
                 :srcSet="scumback.srcSet"
                 :src="scumback.src"
 
@@ -187,7 +191,7 @@
                 class="w-full h-4/5 relative   self-center sm:h-1/2  md:w-3/4 md:h-3/4 md-portrait:h-3/4 md-portrait:w-full md-landscape:w-4/5 md-portrait:pl-12 lg:w-1/2 rounded-3xl  "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
 
-
+                data-src="~/assets/graphic/vintage_music.jpg"
                 :srcSet="vintageMusic.srcSet"
                 :src="vintageMusic.src"
                  alt="vintage">
@@ -286,7 +290,7 @@
 import stickyFooter from "@/components/stickyFooter";
 
 
-const logo = require('~/assets/graphic/logo_c1chy3.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const logo = require('assets/graphic/logo.png');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
@@ -329,6 +333,7 @@ export default {
         verticalCentered: false,
         css3: true,
         slidesNavigation:false,
+        lazyLoading:true
       },
     }
   },
