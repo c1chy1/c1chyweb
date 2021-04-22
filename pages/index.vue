@@ -149,11 +149,8 @@
           <div class="flex items-end  sm:justify-center  sm:w-1/3  md:w-full lg:w-2/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
 
             <img
-
-                data-src="~/assets/graphic/vintage_wolf.jpg"
-                :srcSet="scumback.srcSet"
                 :src="scumback.src"
-
+                :srcSet="scumback.srcSet"
                  class="wolf  w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full xl:max-h-6xl 2xl:max-h-8xl rounded-4xl "
             alt="vintage wolf">
           </div>
