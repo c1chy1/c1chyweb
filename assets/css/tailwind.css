@@ -37,7 +37,7 @@
         width: 100%;
         word-spacing: 0.06em;
         letter-spacing: 0.04em;
-        background-image: url('~assets/graphic/exclusive-paper.png?webp');
+        background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
         background-color:black;
     }
 
