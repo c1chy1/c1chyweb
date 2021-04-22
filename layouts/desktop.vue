@@ -1,7 +1,7 @@
 <template>
 
 <client-only>
-    <section class="h-screen w-full relative">
+    <section class="fp-auto-height-responsive fp-auto-height w-full relative">
       <navigation />
       <Nuxt keep-alive />
 
@@ -40,7 +40,6 @@ export default {
 section  {
 
   width: 100%;
-  height: 100vh;
 
 
 
