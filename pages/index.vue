@@ -37,7 +37,7 @@
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
-               class="hat md:self-center 2xl:w-1/5  2xl:mt-10 z-20"
+               class="hat md:self-center 2xl:w-1/5  2xl:mt-4 z-20"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
@@ -47,7 +47,7 @@
                 :srcSet="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
                 class="w-max-w-full  w-11/12 h-8 relative bottom-1/20 sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
-            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto sm:mt-6  md:text-3xl lg:text-4xl xl:mt-8 tracking-widest">
+            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto sm:mt-6  md:text-3xl lg:text-4xl xl:mt-8 xl:tracking-wider">
               Visually Striking Design </figcaption>
           </figure>
 
@@ -64,7 +64,7 @@
         <div class="hidden sm:block bottom-0 right-2 absolute lg:pr-2 2xl:block 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-5 2xl:mr-5 text-center tracking-widest md:text-left">
           <div class="classic sm:mb-3 md:absolute  lg:text-center 2xl:block 2xl:relative 2xl:right-1/3 ">
             <span class="intro intro--the block text-3xl">The</span>
-            <span class="intro intro--num block text inline-block absolute font-semibold sm:hidden lg:block">first #1</span>
+            <span class="intro intro--num block text inline-block absolute font-semibold sm:hidden lg:inline">first #1</span>
             <span class="intro block text-3xl">classic style</span>
           </div>
           <div class="vintage__container block md:absolute lg:relative 2xl:relative ">
@@ -72,10 +72,10 @@
             <p class="vintage vintage__bot  m-0 text-6xl leading-none sm:hidden md:absolute md:text-5xl lg:absolute 2xl:relative 2xl:block 2xl:text-center">VINTAGE</p>
 
           </div>
-          <div class="sm:hidden md:hidden 2xl:block 2xl:right-0 2xl:mt-2">
-            <span class="outro pt-4 text-white text-xl md:hidden  lg:text-left  2xl:block">NO.01</span>
-            <span class="outro outro--big text-white text-3xl font-sans xl:text-2xl">OLDSCHOOL RECREATED</span>
-            <span class="outro text-white text-xl  md:hidden  lg:text-right 2xl:block">BEST</span>
+          <div class="sm:hidden md:hidden 2xl:block 2xl:right-0 2xl:mt-2 2xl:tracking-wide">
+            <span class="outro pt-4 text-white text-xl ">NO.01</span>
+            <span class="outro  text-white text-3xl font-sans">OLDSCHOOL RECREATED</span>
+            <span class="outro text-white text-xl">BEST</span>
             <span class="outro block text-white text-xl 2xl:text-center">c1chy.web</span>
           </div>
         </div>
@@ -88,39 +88,41 @@
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
             <span class="w-11/12 inline-block relative"></span>
-            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0 md:text-5xl  xl:text-2xl  2xl:text-3xl   "
+            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0 md:text-5xl  xl:text-2xl  2xl:text-4xl   "
 
             >WELCOME TO STUDIO</h1>
             <span class="w-11/12 inline-block relative"></span>
 
           </div>
 
-          <div >
-<article class="bg-center bg-no-repeat ">
+
+<article class="bg-center bg-no-repeat leading-none ">
             <h1
-                class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-9xl "
+                class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-9xl 2xl:mt-4 "
                 :class="{'animate__animated animate__swing animate__delay-3s animate' : animate}"
 
             >c1chy's studio</h1>
-</article>
-            <figure
-                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-8/12">
-              <img
-                  :srcSet="require('~/assets/graphic/ribbon.png?webp')"
-                  alt="ribbon"
 
-                  class="h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black z-1   " >
-              <figcaption
-                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest  2xl:text-3xl 2xl:mt-5 ">
-                ✪ ✪ ✪ ✪ ✪ ✪ ✪
-              </figcaption>
-            </figure>
+  <figure
+      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-1/2">
+    <img
+        :srcSet="require('~/assets/graphic/ribbon.png?webp')"
+        alt="ribbon"
+
+        class="h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black z-1   " >
+    <figcaption
+        class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega 2xl:text-3xl 2xl:mt-5 ">
+      ✪ ✪ ✪ ✪ ✪ ✪ ✪
+    </figcaption>
+  </figure>
+</article>
+
           </div>
           <div
               class="background w-7\/12">
           </div>
 
-        </div>
+
         <section
             class="scumbag w-full h-screen flex justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
           <div
@@ -152,7 +154,7 @@
                 :srcSet="scumback.srcSet"
                 :src="scumback.src"
 
-                 class="wolf  w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full rounded-4xl "
+                 class="wolf  w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full xl:max-h-6xl 2xl:max-h-8xl rounded-4xl "
             alt="vintage wolf">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
@@ -563,7 +565,7 @@ div p, li, a {
     font-family: sans-serif;
     padding: 4px 6px 2px;
     text-shadow: none;
-    transform: rotate(-10deg) translate(18px, -35px);
+    transform: rotate(-12deg) translate(18px, -37px)
   }
 
 
@@ -620,7 +622,6 @@ div p, li, a {
 
   figure {
 
-    animation: matrix 5s infinite ease-in-out;
 
     figcaption {
 
@@ -717,8 +718,8 @@ div p, li, a {
     }
 
 
-    div {
 
+div {
       span {
 
 
@@ -755,20 +756,21 @@ div p, li, a {
 
       }
 
+
+    }
+  }
+    article {
+
       h1 {
 
         color: #224a49;
         filter: drop-shadow(5px 6px 0 #a9c9bb);
         font-family: Barlow Condensed,sans-serif;
       }
-    }
 
-    article {
-
-      background-size: 115% 250%;
     }
   }
-  }
+
 
 [data-anchor="page3"] {
 

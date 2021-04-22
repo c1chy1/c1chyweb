@@ -62,6 +62,17 @@ module.exports = {
         '4xl': '2rem',
       },
 
+      letterSpacing: {
+
+        tightest: '-.075em',
+        tighter: '-.05em',
+        tight: '-.025em',
+        normal: '0',
+        wide: '.05em',
+        wider: '.15em',
+        widest: '.25em',
+      },
+
       maxHeight: {
         xs: "4rem",
         sm: "8rem",
@@ -73,6 +84,7 @@ module.exports = {
         "4xl": "32rem",
         "5xl": "36rem",
         "6xl": "40rem",
+        "8xl": "50rem",
       },
 
     }

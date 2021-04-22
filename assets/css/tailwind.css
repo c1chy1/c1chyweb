@@ -16,11 +16,18 @@
     }
 
 
-    *, :hover, :focus, :active, :visited {
-        outline: none;
+    *:focus {
+        outline: 0;
+    }
+
+    button:focus {
+        outline: 0;
     }
 
 
+    *, :hover, :focus, :active, :visited {
+        outline: none;
+    }
 
 
     body {
@@ -288,15 +295,6 @@
 
     }
 
-
-
-    *:focus {
-        outline: 0 !important;
-    }
-
-    button:focus {
-        outline: 0 !important;
-    }
 
 
     .text-white {
@@ -577,11 +575,6 @@
 
 
 
-        [data-anchor="page1"] .intro--num  {
-
-            right: 20%;
-
-        }
 
 
 
@@ -705,7 +698,14 @@
 
         .hat {
 
-            top: 6rem
+
+            height: 48vh;
+
+        }
+
+        .body {
+
+            width: 40vw;
 
         }
 
@@ -719,14 +719,7 @@
 
         .logo {
 
-
-            top: 1rem;
-        }
-
-
-        .logo {
-
-            height: 25vh;
+            height: 24vh;
 
         }
 
@@ -734,7 +727,7 @@
         .welcome_studio article h1 {
 
 
-            font-size: 8rem
+            font-size: 11em
         }
 
         [data-anchor="page1"]:before {
@@ -765,23 +758,23 @@
 
         .circle1 {
 
-            left: 52%;
-            top: 33%;
+            left: 52vw;
+            top: 31vh;
 
         }
 
         .circle2 {
 
-            left: 51%;
-            top: 36%;
+            left: 51vw;
+            top: 34vh;
 
         }
 
 
         .circle3 {
 
-            left: 50.5%;
-            top: 38.5%;
+            left: 50.5vw;
+            top: 36.5vh;
 
         }
 
