@@ -68,8 +68,10 @@ export default {
         manifest: {
             name: 'PWA c1chy Portfolio',
             short_name: 'PWA',
+            description: "My Frontend experience and projects",
             lang: 'de',
-            theme_color: 'black'
+            theme_color: 'black',
+
         },
     },
 
