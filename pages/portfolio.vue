@@ -200,7 +200,7 @@ export default {
       projects: [
         {
           title: "Pizza",
-          image: "https://c1chy.lima-city.de/graphic/Food.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/Food.png",
           link: "https://c1chy.lima-city.de/Food/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
@@ -208,7 +208,7 @@ export default {
         },
         {
           title: "Cube",
-          image: "https://c1chy.lima-city.de/graphic/Portfoliode2.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/Portfoliode2.png",
           link: "https://c1chy.lima-city.de/Portfolio2/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
@@ -216,7 +216,7 @@ export default {
         },
         {
           title: "Bookstore",
-          image: "https://c1chy.lima-city.de/graphic/bookstore.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/bookstore.png",
           link: "https://bookstorec1chy.herokuapp.com/",
           technology: "FIREBASE",
           secondTechnology: "DATABASE",
@@ -224,7 +224,7 @@ export default {
         },
         {
           title: "Paper Game",
-          image: "https://c1chy.lima-city.de/graphic/paperGame.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/paperGame.png",
           link: "https://c1chy.lima-city.de/PaperGame/index.html",
           technology: "ES6",
           secondTechnology: "PURE CSS",
@@ -232,7 +232,7 @@ export default {
         },
         {
           title: "Avenue",
-          image: "https://c1chy.lima-city.de/graphic/avenuefasion.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/avenuefasion.png",
           link: "https://c1chy.lima-city.de/psdtohtml1/index.html",
           technology: "PURE CSS",
           secondTechnology: "CSS GRID",
@@ -240,7 +240,7 @@ export default {
         },
         {
           title: "Orders",
-          image: "https://c1chy.lima-city.de/graphic/OrderFirebase.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/OrderFirebase.png",
           link: "https://c1chy.lima-city.de/FirebaseOrder/index.html",
           technology: "FIREBASE",
           secondTechnology: "DATABASE",
@@ -248,7 +248,7 @@ export default {
         },
         {
           title: "Panel",
-          image: "https://c1chy.lima-city.de/graphic/bootstrap_4.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/bootstrap_4.png",
           link: "https://c1chy.lima-city.de/Bootstrap_4/index.html",
           technology: "PURE CSS",
           secondTechnology: "BOOTSTRAP 4",
@@ -256,7 +256,7 @@ export default {
         },
         {
           title: "Old Portfolio",
-          image: "https://c1chy.lima-city.de/graphic/c1chy_old.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/c1chy_old.png",
           link: "https://c1chy.de/",
           technology: "PURE CSS",
           secondTechnology: "PORTFOLIO",
@@ -264,7 +264,7 @@ export default {
         },
         {
           title: "API",
-          image: "https://c1chy.lima-city.de/graphic/Blogc1chy.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/Blogc1chy.png",
           link: "https://c1chy.lima-city.de/Webcomponent/dist/index.html",
           technology: "GITHUB API",
           secondTechnology: "WEB COMPONENTS",
@@ -272,7 +272,7 @@ export default {
         },
         {
           title: "New Portfolio",
-          image: "https://c1chy.lima-city.de/graphic/nuxtportfolio.png?webp",
+          image: "https://c1chy.lima-city.de/graphic/nuxtportfolio.png",
           link: "https://c1chy.lima-city.de/Food/index.html",
           technology: "NUXT.vue",
           secondTechnology: "TAILWIND CSS",
