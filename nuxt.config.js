@@ -3,6 +3,8 @@ export default {
 
     head: {
 
+
+
         title: 'c1chy.web',
 
         htmlAttrs: {
@@ -24,7 +26,12 @@ export default {
                 content: 'c1chy My Frontend experiences Nuxt Portfolio Webentwickler'
             }
         ],
-        link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
+        link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+            {
+            rel: 'preload',
+            as: 'style',
+            href: '/fonts/font-face.css'
+        }]
     },
 
 

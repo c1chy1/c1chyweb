@@ -67,7 +67,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"c1chy.web","htmlAttrs":{"lang":"de","amp":true},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"c1chy My Frontend experiences Nuxt Portfolio Webentwickler"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"font-preload","rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"}],"style":[],"script":[],"noscript":[{"hid":"font-noscript","innerHTML":"\u003Clink rel=\"stylesheet\" href=\"\u002Ffonts\u002Ffont-face.css\"\u003E"}],"__dangerouslyDisableSanitizersByTagID":{"font-noscript":["innerHTML"]}},
+    head: {"title":"c1chy.web","htmlAttrs":{"lang":"de","amp":true},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"c1chy My Frontend experiences Nuxt Portfolio Webentwickler"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"},{"hid":"font-preload","rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"}],"style":[],"script":[],"noscript":[{"hid":"font-noscript","innerHTML":"\u003Clink rel=\"stylesheet\" href=\"\u002Ffonts\u002Ffont-face.css\"\u003E"}],"__dangerouslyDisableSanitizersByTagID":{"font-noscript":["innerHTML"]}},
 
     router,
     nuxt: {
