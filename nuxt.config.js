@@ -60,6 +60,19 @@ export default {
     },
 
 
+    pwa: {
+        meta: {
+            title: 'c1chyweb',
+            author: 'c1chy',
+        },
+        manifest: {
+            name: 'PWA c1chy Portfolio',
+            short_name: 'PWA',
+            lang: 'de',
+            theme_color: 'black'
+        },
+    },
+
 
     plugins: [
         {src: '~/plugins/fullpage', mode: 'client'}
@@ -67,12 +80,12 @@ export default {
 
 
     modules: [
+        ['@nuxtjs/pwa'],
         ['@nuxtjs/tailwindcss'],
         ['@neneos/nuxt-animate.css'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
-
         ['nuxt-purgecss',
             {
 

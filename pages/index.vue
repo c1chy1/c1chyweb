@@ -110,13 +110,13 @@
             >c1chy's studio</h1>
 
   <figure
-      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-1/2">
+      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-1/2 z-20">
     <img
 
         :srcSet="require('../assets/graphic/ribbon.png?webp')"
         alt="ribbon"
 
-        class="lazyload h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black z-1   " >
+        class="lazyload h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black " >
     <figcaption
         class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega 2xl:text-3xl 2xl:mt-5 ">
       ✪ ✪ ✪ ✪ ✪ ✪ ✪
@@ -155,7 +155,7 @@
                 :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
                 :src="scumback.src"
                 :srcSet="scumback.srcSet"
-                 class="wolf lazyload w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full xl:max-h-6xl 2xl:max-h-8xl rounded-4xl "
+                 class="wolf lazyload w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full xl:max-h-6xl 2xl:max-h-8xl rounded-4xl z-10 "
             alt="vintage wolf">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">

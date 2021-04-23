@@ -12,8 +12,11 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_lazySizes_4383ad32 from 'nuxt_plugin_lazySizes_4383ad32' // Source: .\\lazySizes.js (mode: 'all')
-import nuxt_plugin_fontLoader_32947187 from 'nuxt_plugin_fontLoader_32947187' // Source: .\\fontLoader.js (mode: 'client')
+import nuxt_plugin_lazySizes_750e0da3 from 'nuxt_plugin_lazySizes_750e0da3' // Source: .\\lazySizes.js (mode: 'all')
+import nuxt_plugin_fontLoader_75c114cb from 'nuxt_plugin_fontLoader_75c114cb' // Source: .\\fontLoader.js (mode: 'client')
+import nuxt_plugin_workbox_72d1c1f2 from 'nuxt_plugin_workbox_72d1c1f2' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_metaplugin_23d21c87 from 'nuxt_plugin_metaplugin_23d21c87' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
+import nuxt_plugin_iconplugin_2879c1fb from 'nuxt_plugin_iconplugin_2879c1fb' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ..\\plugins\\fullpage (mode: 'client')
 
 // Component: <ClientOnly>
@@ -178,12 +181,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_lazySizes_4383ad32 === 'function') {
-    await nuxt_plugin_lazySizes_4383ad32(app.context, inject)
+  if (typeof nuxt_plugin_lazySizes_750e0da3 === 'function') {
+    await nuxt_plugin_lazySizes_750e0da3(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_fontLoader_32947187 === 'function') {
-    await nuxt_plugin_fontLoader_32947187(app.context, inject)
+  if (process.client && typeof nuxt_plugin_fontLoader_75c114cb === 'function') {
+    await nuxt_plugin_fontLoader_75c114cb(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_workbox_72d1c1f2 === 'function') {
+    await nuxt_plugin_workbox_72d1c1f2(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_metaplugin_23d21c87 === 'function') {
+    await nuxt_plugin_metaplugin_23d21c87(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_iconplugin_2879c1fb === 'function') {
+    await nuxt_plugin_iconplugin_2879c1fb(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_fullpage_4279eb14 === 'function') {
