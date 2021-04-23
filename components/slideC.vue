@@ -1,16 +1,40 @@
 <template>
   <div class="slide flex items-center text-2xl font-sans text-white">
-    <NuxtLink to="/"
-              class="spin circle mr-auto pl-2 pb-2 self-end">
-      <img
-          src="../assets/graphic/logo_nav.png"
-          class="h-20 w-20">
-    </NuxtLink></div>
+
+    <div
+        class="mr-auto pl-2 pb-2 self-end"
+
+        @click.prevent="toTop">
+      <NuxtLink to="/"
+                class="spin circle ">
+        <img
+
+            :srcSet="require('../assets/graphic/logo_nav.png?webp')"
+            class="lazyload h-20 w-20">
+
+      </NuxtLink>
+    </div>
+  </div>
+
 </template>
 
 <script>
 export default {
-  name: "slideC"
+  name: "slideC",
+
+
+  methods: {
+
+
+    toTop() {
+
+      window.scroll(0, 0)
+
+    }
+
+
+  }
+
 }
 </script>
 
@@ -19,14 +43,14 @@ export default {
 
 .slide {
 
-  background-image: url('~assets/graphic/portfolio_slide_1.jpg?webp') ;
+  background-image: url('~assets/graphic/portfolio_slide_1.jpg?webp');
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 
   img {
 
     &:hover {
 
-      animation: rotation 1s ease-in;
+      animation: rotate 1s ease-in;
 
     }
 

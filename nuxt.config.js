@@ -27,13 +27,52 @@ export default {
         link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
     },
 
+
+
+    build: {
+        extend(config, {isDev, isClient}) {
+            config.module.rules.forEach(rule => {
+                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
+                    rule.use.push({
+                        loader: 'image-webpack-loader',
+                        options: {
+                            svgo: {
+                                plugins: [
+                                    {removeViewBox: false},
+                                    {removeDimensions: true}
+                                ]
+                            }
+                        }
+                    })
+                }
+            })
+        }
+    },
+
+
+
+    loading: '~/components/loading.vue',
+
     target: 'static',
+
+    generate: {
+        fallback: '404.html'
+    },
+
+
+
+    plugins: [
+        {src: '~/plugins/fullpage', mode: 'client'}
+    ],
+
 
     modules: [
         ['@nuxtjs/tailwindcss'],
         ['@neneos/nuxt-animate.css'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
+        ['nuxt-lazysizes'],
+
         ['nuxt-purgecss',
             {
 
@@ -66,48 +105,27 @@ export default {
 
         ]
     ],
+
+
     fontLoader: {
         url: '/fonts/font-face.css'
     },
 
-    generate: {
-        fallback: '404.html'
+
+    lazySizes: {
+        extendAssetUrls: {
+            img: ['src', 'srcset', 'data-src', 'data-srcset'],
+            source: ['src', 'srcset', 'data-src', 'data-srcset'],
+
+            // Example for a custom component
+            AppImage: ['source-md-url', 'image-url'],
+        },
     },
-
-    plugins: [
-        {src: '~/plugins/fullpage', mode: 'client'}
-    ],
-
-    loading: '~/components/loading.vue',
-
-
-
-
 
     optimizedImages: {
         optimizeImages: true
 
     },
 
-
-    build: {
-        extend(config, {isDev, isClient}) {
-            config.module.rules.forEach(rule => {
-                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
-                    rule.use.push({
-                        loader: 'image-webpack-loader',
-                        options: {
-                            svgo: {
-                                plugins: [
-                                    {removeViewBox: false},
-                                    {removeDimensions: true}
-                                ]
-                            }
-                        }
-                    })
-                }
-            })
-        }
-    },
 
 }

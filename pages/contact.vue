@@ -21,9 +21,9 @@
 
             <img
 
-                :srcSet="require('~/assets/graphic/ribbon.png?webp')"
+                :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="w-full h-20 my-auto z-1 filter-shadow-black">
+                class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>
               > About Me
@@ -66,10 +66,8 @@
         <section class="w-1/2 p-20">
 
           <img
-              class="mx-auto rounded-3xl"
-
-              :srcSet="require('~/assets/graphic/spaceman.png?webp')"
-
+              class="lazyload mx-auto rounded-3xl"
+              :data-src="require('~/assets/graphic/spaceman.png?webp')"
           >
         </section>
 
@@ -102,8 +100,8 @@
 
         <article class="w-1/3 p-10 mb-10">
           <h3 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">CONTACT ME</h3>
-          <img  class="m-auto"
-                :srcSet="require('~/assets/graphic/woman-phone.png?webp')"
+          <img  class="lazyload m-auto"
+                :data-src="require('~/assets/graphic/woman-phone.png?webp')"
           >
           <span class="w-full"></span>
           <ul class="mt-6  lg:text-xl 2xl:text-3xl text-center ">
@@ -140,8 +138,9 @@
           <img
 
 
-              :srcSet="require('~/assets/graphic/clocks.png?webp')"
-              class="m-auto">
+
+              :data-src="require('~/assets/graphic/clocks.png?webp')"
+              class="lazyload m-auto">
           <span></span>
 
           <ul class="mt-6 lg:text-xl   2xl:text-3xl text-center">

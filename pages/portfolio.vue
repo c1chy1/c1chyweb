@@ -21,9 +21,9 @@
 
             <img
 
-                :srcSet="require('~/assets/graphic/ribbon.png?webp')"
+                :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                 class="w-full h-20 my-auto z-1 filter-shadow-black">
+                 class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
               <NuxtLink to="/">Home</NuxtLink>
               > My Projects
@@ -89,16 +89,16 @@
           </h1>
         </div>
         <div>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" v-bind:class="{ active: currentFilter === 'ALL' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'ALL' }"
                 v-on:click="setFilter('ALL')">ALL</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" v-bind:class="{ active: currentFilter === 'WEBPACK' }" v-on:click="setFilter('WEBPACK')">WEBPACK</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" v-bind:class="{ active: currentFilter === 'ES6' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'WEBPACK' }" v-on:click="setFilter('WEBPACK')">WEBPACK</span>
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'ES6' }"
                 v-on:click="setFilter('ES6')">ES6</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" v-bind:class="{ active: currentFilter === 'PURECSS' }" v-on:click="setFilter('PURECSS')">PURE CSS</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" v-bind:class="{ active: currentFilter === 'DATABASE' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'PURECSS' }" v-on:click="setFilter('PURECSS')">PURE CSS</span>
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'DATABASE' }"
                 v-on:click="setFilter('DATABASE')">DATABASE</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" v-bind:class="{ active: currentFilter === 'REACT' }" v-on:click="setFilter('REACT')">REACT</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" v-bind:class="{ active: currentFilter === 'VUE' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'REACT' }" v-on:click="setFilter('REACT')">REACT</span>
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'VUE' }"
                 v-on:click="setFilter('VUE')">VUE</span>
 
         </div>
@@ -115,7 +115,9 @@
               <i class="card-arrow w-8 h-12 absolute bottom-1 right-4 bg-no-repeat cursor-pointer z-50"></i>
               <p class="absolute top-2 right-12 text-2xl opacity-70">{{ project.secondTechnology }}</p>
 
-              <img class="pic w-10/12 h-56  z-50" v-bind:src="project.image">
+              <img class="lazyload pic w-10/12 h-56  z-50" :src="project.image"
+
+              >
               <ul class="absolute list-none z-50">
                 <li></li>
                 <li></li>
@@ -198,7 +200,7 @@ export default {
       projects: [
         {
           title: "Pizza",
-          image: "https://c1chy.lima-city.de/graphic/Food.png",
+          image: "https://c1chy.lima-city.de/graphic/Food.png?webp",
           link: "https://c1chy.lima-city.de/Food/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
@@ -206,7 +208,7 @@ export default {
         },
         {
           title: "Cube",
-          image: "https://c1chy.lima-city.de/graphic/Portfoliode2.png",
+          image: "https://c1chy.lima-city.de/graphic/Portfoliode2.png?webp",
           link: "https://c1chy.lima-city.de/Portfolio2/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
@@ -214,7 +216,7 @@ export default {
         },
         {
           title: "Bookstore",
-          image: "https://c1chy.lima-city.de/graphic/bookstore.png",
+          image: "https://c1chy.lima-city.de/graphic/bookstore.png?webp",
           link: "https://bookstorec1chy.herokuapp.com/",
           technology: "FIREBASE",
           secondTechnology: "DATABASE",
@@ -222,7 +224,7 @@ export default {
         },
         {
           title: "Paper Game",
-          image: "https://c1chy.lima-city.de/graphic/paperGame.png",
+          image: "https://c1chy.lima-city.de/graphic/paperGame.png?webp",
           link: "https://c1chy.lima-city.de/PaperGame/index.html",
           technology: "ES6",
           secondTechnology: "PURE CSS",
@@ -230,7 +232,7 @@ export default {
         },
         {
           title: "Avenue",
-          image: "https://c1chy.lima-city.de/graphic/avenuefasion.png",
+          image: "https://c1chy.lima-city.de/graphic/avenuefasion.png?webp",
           link: "https://c1chy.lima-city.de/psdtohtml1/index.html",
           technology: "PURE CSS",
           secondTechnology: "CSS GRID",
@@ -238,7 +240,7 @@ export default {
         },
         {
           title: "Orders",
-          image: "https://c1chy.lima-city.de/graphic/OrderFirebase.png",
+          image: "https://c1chy.lima-city.de/graphic/OrderFirebase.png?webp",
           link: "https://c1chy.lima-city.de/FirebaseOrder/index.html",
           technology: "FIREBASE",
           secondTechnology: "DATABASE",
@@ -246,7 +248,7 @@ export default {
         },
         {
           title: "Panel",
-          image: "https://c1chy.lima-city.de/graphic/bootstrap_4.png",
+          image: "https://c1chy.lima-city.de/graphic/bootstrap_4.png?webp",
           link: "https://c1chy.lima-city.de/Bootstrap_4/index.html",
           technology: "PURE CSS",
           secondTechnology: "BOOTSTRAP 4",
@@ -254,7 +256,7 @@ export default {
         },
         {
           title: "Old Portfolio",
-          image: "https://c1chy.lima-city.de/graphic/c1chy_old.png",
+          image: "https://c1chy.lima-city.de/graphic/c1chy_old.png?webp",
           link: "https://c1chy.de/",
           technology: "PURE CSS",
           secondTechnology: "PORTFOLIO",
@@ -262,7 +264,7 @@ export default {
         },
         {
           title: "API",
-          image: "https://c1chy.lima-city.de/graphic/Blogc1chy.png",
+          image: "https://c1chy.lima-city.de/graphic/Blogc1chy.png?webp",
           link: "https://c1chy.lima-city.de/Webcomponent/dist/index.html",
           technology: "GITHUB API",
           secondTechnology: "WEB COMPONENTS",
@@ -270,7 +272,7 @@ export default {
         },
         {
           title: "New Portfolio",
-          image: "https://c1chy.lima-city.de/graphic/vueportfolio.png",
+          image: "https://c1chy.lima-city.de/graphic/nuxtportfolio.png?webp",
           link: "https://c1chy.lima-city.de/Food/index.html",
           technology: "NUXT.vue",
           secondTechnology: "TAILWIND CSS",

@@ -25,10 +25,10 @@
         <li>
 
           <img
-              :srcSet="require('../assets/graphic/logo_nav.png?webp')"  alt="c1chy.web"
+              :srcSet="require('../assets/graphic/logo_nav.png?webp')"
 
-              class="h-20 w-20 mx-auto">
-
+              class="lazyload h-20 w-20 mx-auto"
+               alt="c1chy.web">
         </li>
 
         <li @click.prevent="toTop">

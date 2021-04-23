@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_lazySizes_4383ad32 from 'nuxt_plugin_lazySizes_4383ad32' // Source: .\\lazySizes.js (mode: 'all')
 import nuxt_plugin_fontLoader_32947187 from 'nuxt_plugin_fontLoader_32947187' // Source: .\\fontLoader.js (mode: 'client')
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ..\\plugins\\fullpage (mode: 'client')
 
@@ -176,6 +177,10 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
+
+  if (typeof nuxt_plugin_lazySizes_4383ad32 === 'function') {
+    await nuxt_plugin_lazySizes_4383ad32(app.context, inject)
+  }
 
   if (process.client && typeof nuxt_plugin_fontLoader_32947187 === 'function') {
     await nuxt_plugin_fontLoader_32947187(app.context, inject)

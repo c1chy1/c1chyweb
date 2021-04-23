@@ -1,17 +1,39 @@
 <template>
   <div class="slide flex items-center text-2xl font-sans text-white">
-    <NuxtLink to="/"
-              class="spin circle mr-auto pl-2 pb-2 self-end">
-      <img
-          src="../assets/graphic/logo_nav.png"
-          class="h-20 w-20">
-    </NuxtLink>
+
+    <div
+        class="mr-auto pl-2 pb-2 self-end"
+
+        @click.prevent="toTop">
+      <NuxtLink to="/"
+                class="spin circle ">
+        <img
+
+            :data-src="require('~/assets/graphic/logo_nav.png?webp')"
+            class="lazyload h-20 w-20">
+
+      </NuxtLink>
+    </div>
   </div>
+
 </template>
 
 <script>
 export default {
-  name: "slideB"
+  name: "slideB",
+
+
+  methods: {
+
+
+    toTop() {
+
+      window.scroll(0, 0)
+
+    }
+
+
+  }
 }
 </script>
 
@@ -27,7 +49,7 @@ export default {
 
     &:hover {
 
-      animation: rotation 1s ease-in;
+      animation: rotate 1s ease-in;
 
     }
 
