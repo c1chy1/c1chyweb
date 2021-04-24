@@ -390,12 +390,6 @@
     }
 
 
-    [data-anchor="page1"]:before {
-
-
-        background: url('~assets/graphic/light_background.png?size=480&format=webp') center no-repeat ;
-
-    }
 
 
 
@@ -730,12 +724,6 @@
             font-size: 11em
         }
 
-        [data-anchor="page1"]:before {
-
-
-            background: url('~assets/graphic/light_background.png?size=1000&format=webp') center no-repeat;
-
-        }
 
 
 
@@ -909,7 +897,7 @@
 
     .filter-shadow-green {
 
-        filter: drop-shadow(5px 6px 0 #487d79);
+        filter: drop-shadow(5px 6px 0 #4f7b70);
     }
 
 }

@@ -4,7 +4,15 @@
     <full-page class="w-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
-      <section class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black">
+      <section class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10">
+
+        <div class="light_background"><img
+
+            :data-src="require('~/assets/graphic/light_background.png?webp')"
+            :light="light.src"
+            :srcSet="light.srcSet"
+            class="lazyload light">
+        </div>
         <div
             class="section-1 h-full w-screen absolute grid fill-40 justify-items-center items-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
@@ -27,7 +35,6 @@
        :data-src="require('~/assets/graphic/logo.png?webp')"
        :srcSet="logo.srcSet"
        :src="logo.src"
-
 
        alt="c1chy"
        class="logo lazyload relative 2xl:w-1/4 z-50"
@@ -67,7 +74,7 @@
         </div>
 
 
-        <div class="hidden sm:block bottom-0 right-2 absolute lg:pr-2 2xl:block 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-5 2xl:mr-5 text-center tracking-widest md:text-left">
+        <div class="hidden sm:block bottom-0 right-2 absolute lg:pr-2 2xl:block 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-5 2xl:mr-5 text-center tracking-widest md:text-left z-10">
           <div class="classic sm:mb-3 md:absolute  lg:text-center 2xl:block 2xl:relative 2xl:right-1/3 ">
             <span class="intro intro--the block text-3xl">The</span>
             <span class="intro intro--num block text inline-block absolute font-semibold sm:hidden lg:inline">first #1</span>
@@ -291,6 +298,7 @@
 import stickyFooter from "@/components/stickyFooter";
 
 
+const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const logo = require('~/assets/graphic/logo.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
@@ -305,6 +313,9 @@ export default {
 
   layout: 'desktop',
 
+
+
+
  transition: {
    name: 'slots',
    mode: 'out-in',
@@ -317,7 +328,7 @@ export default {
 
     return {
 
-      logo,hat,body,scumback,vintageMusic,
+      logo,hat,body,scumback,vintageMusic,light,
 
       fade:false,
       show:false,
@@ -389,6 +400,7 @@ export default {
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 2;
 
 }
 
@@ -497,20 +509,32 @@ div p, li, a {
   visibility: inherit;
 
 
+  .light_background {
 
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  overflow: hidden;
 
-  &:before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    overflow: hidden;
-    top: -50%;
-    left: -50%;
+  img.light {
+
     z-index: -1;
-    background-size: cover;
-    animation:rotate 120s linear infinite;
+    height: 100vmax;
+    width: 100%;
+    animation: rotate 120s linear infinite;
+    object-fit: cover;
+    overflow: hidden;
   }
+
+
+}
+
+
+
+
 
 
   .circle_bg {

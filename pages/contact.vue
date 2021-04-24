@@ -2,39 +2,46 @@
 
   <section class="h-screen w-full absolute z-10">
 
-    <header class="container px-16 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
-      <div
-          class="w-full h-112 grid grid-cols-1 justify-items-center header_img_wrap"
-      >
-
-        <div class="flex flex-col justify-center">
-          <div class="title uppercase top-2">
-            <h1 class="text-8xl font-semibold text-center uppercase">CONTACT</h1></div>
-          <div class="title_dividers w-1/2 h-4 mx-auto my-10 relative inline-block">
-            <span class="w-full h-0.5 absolute left-2/4 transform -translate-x-1/2"></span>
-            <span class="w-full h-0.5 top-2 absolute left-2/4 transform -translate-x-1/2"></span>
-            <span class="w-full h-0.5 top-4 absolute left-2/4 transform -translate-x-1/2"></span>
-          </div>
-
-          <figure class="relative flex items-center justify-center filter-shadow-black z-10">
+    <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
 
-            <img
+      <div class="filter-shadow-black ">
+        <img
 
-                :data-src="require('~/assets/graphic/ribbon.png?webp')"
-                alt="ribbon"
-                class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
-            <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
-              <NuxtLink to="/">Home</NuxtLink>
-              > About Me
-            </figcaption>
-          </figure>
-        </div>
+            :data-src="require('~/assets/graphic/light_background.png?webp')"
+            :light="light.src"
+            :srcSet="light.srcSet"
+            class="lazyload light"
+            alt="light">
 
-
-        <img class="header_image w-full h-112 absolute flex opacity-70"
-             alt="header_image">
       </div>
+      <div class="title uppercase top-2">
+        <h1 class="text-8xl font-semibold text-center uppercase">Contact
+        </h1>
+      </div>
+      <div class="title_dividers w-1/2 h-4 mx-auto my-10 relative inline-block">
+        <span class="w-full h-0.5 absolute left-2/4 transform -translate-x-1/2"></span>
+        <span class="w-full h-0.5 top-2 absolute left-2/4 transform -translate-x-1/2"></span>
+        <span class="w-full h-0.5 top-4 absolute left-2/4 transform -translate-x-1/2"></span>
+      </div>
+
+      <figure class="relative flex items-center justify-center filter-shadow-black z-10">
+
+
+        <img
+
+            :data-src="require('~/assets/graphic/ribbon.png?webp')"
+
+            alt="ribbon"
+            class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
+        <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
+          <NuxtLink to="/">Home</NuxtLink>
+          > Contact
+        </figcaption>
+      </figure>
+
+
+
 
 
     </header>
@@ -74,7 +81,7 @@
       </div>
     </section>
 
-    <section class="w-full h-auto bg-black rounded-4xl relative">
+    <section class="exclusive-paper w-full h-auto bg-black rounded-4xl relative">
 
       <div class="contact_me w-3/4 h-28  items-center flex  mx-auto pt-20 ">
         <span class="w-full inline-block relative"></span>
@@ -167,9 +174,13 @@
 <script>
 
 
+
 import stickyFooter from "@/components/stickyFooter";
 
+const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+
 export default {
+
 
   components: {stickyFooter},
 
@@ -178,6 +189,17 @@ export default {
   transition: {
     name: 'spotlight',
     mode: 'out-in'
+  },
+
+  data() {
+
+    return {
+
+      light
+
+    }
+
+
   },
 
 
@@ -203,13 +225,10 @@ h1 {
   font-family: Barlow Condensed, sans-serif;
 
 }
+.exclusive-paper {
 
-
-section section:nth-child(4) {
-
-
-  background-color: antiquewhite;
   background-image: url('~assets/graphic/exclusive-paper.png?webp');
+  background-color: antiquewhite;
 
 }
 
@@ -267,6 +286,109 @@ section section:nth-child(4) {
 
   }
 }
+
+
+header {
+
+
+  h1 {
+    color: #224a49;
+    filter: drop-shadow(5px 6px 0 #a9c9bb);
+    font-family: Barlow Condensed, sans-serif;
+
+  }
+
+  div:nth-child(1)  {
+
+
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    overflow: hidden;
+  }
+
+
+  img.light {
+
+    height: 100vmax;
+    width: 100%;
+    animation: rotate 120s linear infinite;
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;
+
+
+  }
+
+
+  .title {
+
+    font-family: Barlow Condensed, sans-serif;
+    color: #4f7b70;
+    line-height: initial;
+
+    h1 {
+
+      -webkit-text-stroke-width: 3px;
+      filter: drop-shadow(4px 5px 0 #224a49);
+      -webkit-text-stroke-color: #e4ddd3;
+
+      background-image: url('~assets/graphic/green-dust-and-scratches.png');
+      background-color: #4f7b70;
+      -webkit-font-smoothing: antialiased;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+  }
+
+
+  .title_dividers {
+
+
+    span {
+
+      background: -webkit-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+      background: -o-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+      background: linear-gradient(to left, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+
+    }
+
+
+  }
+
+  figure {
+
+
+    figcaption {
+
+
+      font-family: Satisfy, sans-serif;
+      letter-spacing: 10px;
+
+
+      a {
+        transition: all 0.2s ease;
+        &:hover {
+
+
+          color: #224a49;
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+}
+
 
 .page-spacing {
 
@@ -341,20 +463,7 @@ figure {
 }
 
 
-.header_image {
-  display: flex;
-  content: "";
-  width: 250%;
-  height: 400%;
-  top: -145%;
-  opacity: 0.7;
-  left: 0;
-  z-index: 5;
-  background: url('~assets/graphic/light_background.png?webp') center no-repeat;
-  background-size: cover;
-  animation: rotate 200s infinite linear;
 
-}
 
 
 .contact_me {

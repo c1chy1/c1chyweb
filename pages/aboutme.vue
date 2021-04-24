@@ -3,14 +3,20 @@
   <section class="h-screen w-full absolute z-10">
 
 
-    <header class="container px-16 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
-      <div
-          class="w-full h-112 grid grid-cols-1 justify-items-center header_img_wrap"
-      >
+    <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
-        <div class="flex flex-col justify-center">
+
+<div>
+        <img
+
+            :data-src="require('~/assets/graphic/light_background.png?webp')"
+            :light="light.src"
+            :srcSet="light.srcSet"
+            class="lazyload light">
+
+</div>
           <div class="title uppercase top-2">
-            <h1 class="text-8xl font-semibold text-center uppercase">About Me
+<h1 class="text-8xl font-semibold text-center uppercase">About Me
             </h1>
           </div>
           <div class="title_dividers w-1/2 h-4 mx-auto my-10 relative inline-block">
@@ -33,12 +39,9 @@
               > About Me
             </figcaption>
           </figure>
-        </div>
 
 
-        <img class="header_image w-full h-112 absolute flex opacity-70"
-             alt="header_image">
-      </div>
+
 
 
     </header>
@@ -47,7 +50,7 @@
         class="page-spacing w-full h-20 absolute left-0 bg-repeat bg-center"
     ></div>
 
-    <section class="section w-full h-108 bg-black relative">
+    <section class="w-full h-108 bg-black relative">
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
@@ -61,7 +64,7 @@
 
       <div>
         <h1
-            class="text-10xl font-bold text-center leading-tight uppercase "
+            class="text-10xl font-bold text-center leading-tight uppercase filter-shadow-green"
 
         >WINNING DESIGN</h1>
 
@@ -238,7 +241,7 @@
 
       <div>
         <h1
-            class="text-9xl font-bold text-center leading-tight mb-20 "
+            class="text-9xl font-bold text-center leading-tight mb-20 filter-shadow-green"
 
         >CORE PRINCIPLES</h1>
 
@@ -303,7 +306,10 @@
 
 <script>
 
+
+const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 import stickyFooter from "@/components/stickyFooter";
+
 
 
 export default {
@@ -313,6 +319,20 @@ export default {
 
   layout: 'desktop',
 
+
+
+
+  data() {
+
+    return {
+
+      light
+
+    }
+
+
+  },
+
   transition: {
 
     name: 'spotlight',
@@ -320,6 +340,7 @@ export default {
 
 
   },
+
 
   mounted() {
 
@@ -333,8 +354,21 @@ export default {
 }
 </script>
 
-<style  scoped lang="scss">
+<style scoped lang="scss">
 
+
+$titleColor: #224a49;
+
+section {
+
+  background-color: antiquewhite;
+  background-image: url('~assets/graphic/exclusive-paper.png?webp');
+}
+
+h1 {
+
+  color:$titleColor;
+}
 
 .button_red {
 
@@ -391,26 +425,108 @@ export default {
   }
 }
 
-h1 {
-  color: #224a49;
-  filter: drop-shadow(5px 6px 0 #a9c9bb);
-  font-family: Barlow Condensed, sans-serif;
+
+header {
+
+  h1 {
+    color: #224a49;
+    filter: drop-shadow(5px 6px 0 #a9c9bb);
+    font-family: Barlow Condensed, sans-serif;
+
+  }
+
+  div:nth-child(1)  {
+
+
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    overflow: hidden;
+  }
+
+
+  img.light {
+
+    height: 100vmax;
+    width: 100%;
+    animation: rotate 120s linear infinite;
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;
+
+
+  }
+
+
+  .title {
+
+    font-family: Barlow Condensed, sans-serif;
+    color: #4f7b70;
+    line-height: initial;
+
+    h1 {
+
+      -webkit-text-stroke-width: 3px;
+      filter: drop-shadow(4px 5px 0 #224a49);
+      -webkit-text-stroke-color: #e4ddd3;
+
+      background-image: url('~assets/graphic/green-dust-and-scratches.png');
+      background-color: #4f7b70;
+      -webkit-font-smoothing: antialiased;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+  }
+
+
+  .title_dividers {
+
+
+    span {
+
+      background: -webkit-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+      background: -o-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+      background: linear-gradient(to left, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
+
+    }
+
+
+  }
+
+  figure {
+
+
+    figcaption {
+
+
+      font-family: Satisfy, sans-serif;
+      letter-spacing: 10px;
+
+
+      a {
+        transition: all 0.2s ease;
+        &:hover {
+
+
+          color: #224a49;
+
+        }
+
+      }
+
+
+    }
+
+  }
+
 
 }
-
-
-section {
-
-  background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png?webp');
-}
-
-
 
 .about_gallery {
-
-
-
 
   article {
 
@@ -477,83 +593,9 @@ section {
 }
 
 
-.title {
-
-  font-family: Barlow Condensed, sans-serif;
-  color: #4f7b70;
-  line-height: initial;
-
-  h1 {
-
-    -webkit-text-stroke-width: 3px;
-    filter: drop-shadow(4px 5px 0 #224a49);
-    -webkit-text-stroke-color: #e4ddd3;
-
-    background-image: url('~assets/graphic/green-dust-and-scratches.png');
-    background-color: #4f7b70;
-    -webkit-font-smoothing: antialiased;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-  }
-}
-
-
-.title_dividers {
-
-
-  span {
 
 
 
-    background: -webkit-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
-    background: -o-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
-    background: linear-gradient(to left, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
-
-  }
-
-
-}
-
-figure {
-
-
-  figcaption {
-
-
-    font-family: Satisfy, sans-serif;
-    letter-spacing: 10px;
-
-
-    a {
-      transition: all 0.2s ease;
-      &:hover {
-
-
-        color: #224a49;
-
-      }
-
-    }
-
-
-  }
-
-}
-
-
-.header_image {
-  content: "";
-  width: 250%;
-  height: 400%;
-  top: -145%;
-  left: 0;
-  z-index: 5;
-  background: url('~assets/graphic/light_background.png?webp') center no-repeat;
-  background-size: cover;
-  animation: rotate 200s infinite linear;
-
-}
 
 
 .page-spacing {
@@ -623,6 +665,7 @@ article {
       color: #e9e4dd;
     }
 
+
     p {
       font-family: monospace, sans-serif;
       color: #e9e4dd;
@@ -646,7 +689,7 @@ article {
 
       &:after {
         top: 14px;
-        height: 8px;
+        height: 14px;
         position: absolute;
         left: 0;
         width: 85%;
