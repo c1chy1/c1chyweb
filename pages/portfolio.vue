@@ -312,12 +312,11 @@ export default {
   },
 
   mounted() {
-
-    var fp = fullpage_api.destroy('all')
+    var fp = this.fullpage_api.destroy('all')
 
     if (fp===true) {
 
-      fullpage_api.destroy('all')
+      this.fullpage_api.destroy('all')
 
     } else {
 
@@ -325,9 +324,6 @@ export default {
 
 
     }
-
-
-
   }
 
 
