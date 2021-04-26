@@ -115,7 +115,7 @@
               <i class="card-arrow w-8 h-12 absolute bottom-1 right-4 bg-no-repeat cursor-pointer z-50"></i>
               <p class="absolute top-2 right-12 text-2xl opacity-70">{{ project.secondTechnology }}</p>
 
-              <img class="lazyload pic w-10/12 h-56  z-50" :src="project.image"
+              <img class="lazyload pic w-10/12 h-56  z-50" :src="project.image" :alt="project.alt"
 
               >
               <ul class="absolute list-none z-50">
@@ -218,7 +218,8 @@ export default {
           link: "https://c1chy.lima-city.de/Portfolio2/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
-          category: 'WEBPACK'
+          category: 'WEBPACK',
+          alt: 'Cube Website'
         },
         {
           title: "Bookstore",
@@ -226,7 +227,8 @@ export default {
           link: "https://bookstorec1chy.herokuapp.com/",
           technology: "FIREBASE",
           secondTechnology: "DATABASE",
-          category: 'REACT'
+          category: 'REACT',
+          alt: 'React Bookstore Website'
         },
         {
           title: "Paper Game",
@@ -234,7 +236,8 @@ export default {
           link: "https://c1chy.lima-city.de/PaperGame/index.html",
           technology: "ES6",
           secondTechnology: "PURE CSS",
-          category: 'ES6'
+          category: 'ES6',
+          alt: 'Paper Game Website'
         },
         {
           title: "Avenue",
@@ -242,7 +245,8 @@ export default {
           link: "https://c1chy.lima-city.de/psdtohtml1/index.html",
           technology: "PURE CSS",
           secondTechnology: "CSS GRID",
-          category: 'PURECSS'
+          category: 'PURECSS',
+          alt: 'Pure css layout example'
         },
         {
           title: "Orders",
@@ -250,7 +254,8 @@ export default {
           link: "https://c1chy.lima-city.de/FirebaseOrder/index.html",
           technology: "FIREBASE",
           secondTechnology: "DATABASE",
-          category: 'DATABASE'
+          category: 'DATABASE',
+          alt: 'Firebase example'
         },
         {
           title: "Panel",
@@ -258,7 +263,8 @@ export default {
           link: "https://c1chy.lima-city.de/Bootstrap_4/index.html",
           technology: "PURE CSS",
           secondTechnology: "BOOTSTRAP 4",
-          category: 'PURECSS'
+          category: 'PURECSS',
+          alt: 'Bootstrap 4 Panel'
         },
         {
           title: "Old Portfolio",
@@ -266,7 +272,8 @@ export default {
           link: "https://c1chy.de/",
           technology: "PURE CSS",
           secondTechnology: "PORTFOLIO",
-          category: 'WEBPACK'
+          category: 'WEBPACK',
+          alt: 'Old c1chy portfolio'
         },
         {
           title: "API",
@@ -274,7 +281,8 @@ export default {
           link: "https://c1chy.lima-city.de/Webcomponent/dist/index.html",
           technology: "GITHUB API",
           secondTechnology: "WEB COMPONENTS",
-          category: 'ES6'
+          category: 'ES6',
+          alt: 'Api Example'
         },
         {
           title: "New Portfolio",
@@ -282,7 +290,8 @@ export default {
           link: "https://c1chy.lima-city.de/Food/index.html",
           technology: "NUXT.vue",
           secondTechnology: "TAILWIND CSS",
-          category: 'VUE'
+          category: 'VUE',
+          alt: 'New c1chy portfolio'
         },
       ]
 
@@ -297,11 +306,7 @@ export default {
     },
 
     changeSlide: function (dir) {
-      // simple test against dir string
-      // if "next" then increase currentSlide by 1, otherwise decrease by 1
-      // would be really easy to create a rule to go to first or last slide as well
       this.currentSlide = dir === 'next' ? this.currentSlide + 1 : this.currentSlide - 1;
-      // just give the dir string because the CSS transitions are prefixed with "next" and "prev"
       this.currentTransition = dir;
     }
 
