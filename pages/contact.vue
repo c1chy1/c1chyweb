@@ -75,6 +75,7 @@
           <img
               class="lazyload mx-auto rounded-3xl"
               :data-src="require('~/assets/graphic/spaceman.png?webp')"
+              alt="spaceman"
           >
         </section>
 

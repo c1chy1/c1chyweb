@@ -12,7 +12,9 @@
             :data-src="require('~/assets/graphic/light_background.png?webp')"
             :light="light.src"
             :srcSet="light.srcSet"
-            class="lazyload light">
+            class="lazyload light"
+            alt="light"
+        >
 
 </div>
           <div class="title uppercase top-2">

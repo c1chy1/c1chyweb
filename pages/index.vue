@@ -11,7 +11,8 @@
             :data-src="require('~/assets/graphic/light_background.png?webp')"
             :light="light.src"
             :srcSet="light.srcSet"
-            class="lazyload light">
+            class="lazyload light"
+            alt="light">
         </div>
         <div
             class="section-1 h-full w-screen absolute grid fill-40 justify-items-center items-end "
