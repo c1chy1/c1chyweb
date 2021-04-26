@@ -163,7 +163,7 @@
                 :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
                 :src="scumback.src"
                 :srcSet="scumback.srcSet"
-                 class="wolf lazyload w-full sticky bottom-0  sm:self-end sm:w-3/4 sm:h-5/6  md-portrait:w-full  md-portrait:max-h-full lg:max-h-4xl lg:w-full xl:max-h-6xl 2xl:max-h-8xl rounded-4xl z-10 "
+                 class="wolf lazyload rounded-4xl z-10 "
             alt="vintage wolf">
           </div>
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
