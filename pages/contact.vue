@@ -208,11 +208,7 @@ export default {
 
   beforeMount() {
 
-
-    var fp = fullpage_api.destroy('all')
-
-    fp.once();
-
+    fullpage_api.destroy('all')
 }}
 </script>
 

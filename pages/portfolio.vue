@@ -314,9 +314,9 @@ export default {
   beforeMount() {
 
 
-    var fp = fullpage_api.destroy('all')
+  fullpage_api.destroy('all')
 
-    fp.once();
+
 
 
   }

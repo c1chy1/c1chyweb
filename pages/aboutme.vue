@@ -343,10 +343,6 @@ export default {
 
     var fp = fullpage_api.destroy('all')
 
-    fp.once();
-
-
-
   }
 }
 </script>
