@@ -325,20 +325,13 @@ export default {
   data() {
 
     return {
-
       light
-
     }
-
-
   },
 
   transition: {
-
     name: 'spotlight',
     mode: 'out-in',
-
-
   },
 
 
@@ -362,7 +355,7 @@ $titleColor: #224a49;
 section {
 
   background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png?webp');
+  background-image: url('~assets/graphic/exclusive-paper.png');
 }
 
 h1 {

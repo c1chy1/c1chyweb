@@ -533,14 +533,10 @@ div p, li, a {
 }
 
 
-
-
-
-
   .circle_bg {
 
 
-    background-image: url('~assets/graphic/exclusive-paper.png?webp');
+    background-image: url('~assets/graphic/exclusive-paper.png?size=150');
     border: 5px solid #000000;
     border-radius: 50%;
 
@@ -639,7 +635,7 @@ div p, li, a {
 [data-anchor="page2"] {
 
   vertical-align: top !important;
-  background-image: url('~assets/graphic/exclusive-paper.png?webp');
+  background-image: url('~assets/graphic/exclusive-paper.png');
 
   background-position: 0 0;
   visibility: inherit;
@@ -899,7 +895,7 @@ div {
   input, textarea {
 
 
-    background-image: url("~assets/graphic/exclusive-paper.png?webp");
+    background-image: url("~assets/graphic/exclusive-paper.png");
     background-color: #faebd7;
   }
 

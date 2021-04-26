@@ -3,7 +3,6 @@
 
     <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
-
       <div>
         <img
 
@@ -328,7 +327,7 @@ $blue: #2b26c3;
 section {
 
   background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png?webp');
+  background-image: url('~assets/graphic/exclusive-paper.png');
 
 }
 

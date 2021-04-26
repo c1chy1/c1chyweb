@@ -227,7 +227,7 @@ h1 {
 }
 .exclusive-paper {
 
-  background-image: url('~assets/graphic/exclusive-paper.png?webp');
+  background-image: url('~assets/graphic/exclusive-paper.png');
   background-color: antiquewhite;
 
 }
