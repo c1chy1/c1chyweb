@@ -209,7 +209,8 @@ export default {
           link: "https://c1chy.lima-city.de/Food/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
-          category: 'WEBPACK'
+          category: 'WEBPACK',
+          alt: 'Pizza Website'
         },
         {
           title: "Cube",
