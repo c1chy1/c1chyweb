@@ -315,7 +315,19 @@ export default {
 
     var fp = fullpage_api.destroy('all')
 
-    console.log(fp)
+    if (fp===true) {
+
+      fullpage_api.destroy('all')
+
+    } else {
+
+      fp = ""
+
+
+    }
+
+
+
   }
 
 

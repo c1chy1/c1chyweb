@@ -341,7 +341,18 @@ export default {
 
   mounted() {
 
-   fullpage_api.destroy('all')
+    var fp = fullpage_api.destroy('all')
+
+    if (fp===true) {
+
+      fullpage_api.destroy('all')
+
+    } else {
+
+      fp = ""
+
+
+    }
 
   },
 
