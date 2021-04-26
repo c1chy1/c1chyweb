@@ -208,13 +208,12 @@ export default {
 
   beforeMount() {
 
-    if(fullpage_api.destroy('all') === true )
-    {
-      fullpage_api.destroy('all')
-    }
-  }
 
-}
+    var fp = fullpage_api.destroy('all')
+
+    fp.once();
+
+}}
 </script>
 
 <style scoped lang="scss">
