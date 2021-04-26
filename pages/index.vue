@@ -38,7 +38,7 @@
        :src="logo.src"
 
        alt="c1chy"
-       class="logo lazyload relative z-50"
+       class="logo lazyload  2xl:max-w-md  relative z-50"
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
@@ -71,7 +71,7 @@
               :src="body.src"
 
               alt="vintage body"
-              class="body lazyload filter-shadow-black ">
+              class="body lazyload 2xl:w-1/3 2xl:max-h-md filter-shadow-black ">
         </div>
 
 
