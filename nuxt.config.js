@@ -73,11 +73,11 @@ export default {
             author: 'c1chy',
         },
         manifest: {
-            name: 'PWA c1chy Portfolio',
-            short_name: 'PWA',
+            name: 'c1chy.app',
+            short_name: 'APP',
             description: "My Frontend experience and projects",
             lang: 'de',
-            theme_color: 'black',
+            theme_color: '#40635b',
 
         },
     },
