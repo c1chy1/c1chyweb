@@ -56,9 +56,9 @@
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
-        <h3 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
+        <h2 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
-        >WHAT I DO</h3>
+        >WHAT I DO</h2>
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
 
 
