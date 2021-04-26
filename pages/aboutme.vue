@@ -56,9 +56,9 @@
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
-        <h4 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
+        <h3 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
-        >WHAT I DO</h4>
+        >WHAT I DO</h3>
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
 
 
@@ -165,9 +165,9 @@
 
       <div class="mission_left  w-1/2  lg:pl-16  2xl:pl-24 2xl:pt-16 ">
         <div class="flex">
-          <h4 class="w-1/3 font-bold text-3xl mt-4 ml-2 text-left"
+          <h3 class="w-1/3 font-bold text-3xl mt-4 ml-2 text-left"
 
-          >CORE PRINCIPLES</h4>
+          >CORE PRINCIPLES</h3>
           <span class="w-10/12 inline-block relative self-center"></span>
         </div>
         <h1 class="text-10xl font-semibold leading-none uppercase">MISSION</h1>
@@ -233,9 +233,9 @@
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8 2xl:mt-0">
         <span class="w-full inline-block relative 2xl:w-2/3"></span>
-        <h4 class="w-1/2 font-bold text-3xl mt-4 text-center 2xl:mt-8"
+        <h3 class="w-1/2 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
-        >WHAT I'M WORKING ON</h4>
+        >WHAT I'M WORKING ON</h3>
         <span class="w-full inline-block relative 2xl:w-2/3"></span>
 
 
@@ -259,7 +259,7 @@
             <img class="lazyload m-auto"
 
                  :data-src="require('~/assets/graphic/principles_01.png?webp')"
-
+                 alt="Verstehen Frontend"
 
             >
 
@@ -276,6 +276,7 @@
             </h2>
             <img class="lazyload m-auto"
                  :data-src="require('~/assets/graphic/principles_02.png?webp')"
+                 alt="Entwickeln Frontend"
             >
             <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
             <a href="#"
@@ -290,6 +291,7 @@
             </h2>
             <img class="lazyload m-auto"
                  :data-src="require('~/assets/graphic/principles_03.png?webp')"
+                 alt="Umsetzen Frontend"
             >
             <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
             <a href="#"
@@ -633,7 +635,7 @@ header {
   }
 
 
-  h4 {
+  h3 {
 
     font-family: Barlow Condensed, sans-serif;
 
@@ -753,7 +755,7 @@ article {
   }
 
 
-  h4 {
+   h3 {
 
     font-family: Barlow Condensed, sans-serif;
     color: #224a49;
