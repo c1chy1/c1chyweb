@@ -52,9 +52,9 @@
 
       <div class="portfolio_case w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative"></span>
-        <h3 class="font-bold text-3xl mt-4  text-center lg:w-full 2xl:w-9/12 2xl:mt-8"
+        <h2 class="font-bold text-3xl mt-4  text-center lg:w-full 2xl:w-9/12 2xl:mt-8"
 
-        >MEANINGFUL CREATIVE WORK</h3>
+        >MEANINGFUL CREATIVE WORK</h2>
         <span class="w-full inline-block relative"></span>
 
 
@@ -659,7 +659,7 @@ header {
   }
 
 
-  h3 {
+  h2 {
 
     font-family: Barlow Condensed, sans-serif;
 
