@@ -58,7 +58,7 @@
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload w-max-w-full  w-11/12 h-8 relative bottom-1/20 sm:w-1/2 md:w-3/5 lg:w-full lg:h-16 2xl:mx-10 z-1 filter-shadow-black">
+                class="lazyload  filter-shadow-black z-1">
             <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto sm:mt-6  md:text-3xl lg:text-4xl xl:mt-8 xl:tracking-wider">
               Visually Striking Design </figcaption>
           </figure>
@@ -124,7 +124,7 @@
         :srcSet="require('../assets/graphic/ribbon.png?webp')"
         alt="ribbon"
 
-        class="lazyload h-8 w-full  sm:h-12 sm:w-1/2 sm:m-auto md:w-3/4 lg:h-12  lg:w-2/5 2xl:w-full 2xl:h-16  filter-shadow-black " >
+        class="lazyload  filter-shadow-black " >
     <figcaption
         class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega 2xl:text-3xl 2xl:mt-5 ">
       ✪ ✪ ✪ ✪ ✪ ✪ ✪
