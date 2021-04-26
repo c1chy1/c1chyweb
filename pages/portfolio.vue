@@ -150,8 +150,7 @@
                 <i class="text-5xl"></i>
               </div>
               <a :href="`${project.link}`" target="_blank">
-                <button class="w-8 h-8 absolute bottom-4 right-4 border-none outline-none cursor-pointer ">
-
+                <button class="w-8 h-8 absolute bottom-4 right-4 border-none outline-none cursor-pointer " aria-label="Project">
                 </button>
               </a>
             </div>
