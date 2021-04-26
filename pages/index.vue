@@ -71,7 +71,7 @@
               :src="body.src"
 
               alt="vintage body"
-              class="body lazyload 2xl:w-1/3 2xl:max-h-md filter-shadow-black ">
+              class="body lazyload w-full  2xl:max-w-2xl 2xl:max-h-md filter-shadow-black ">
         </div>
 
 
