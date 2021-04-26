@@ -86,9 +86,9 @@
 
       <div class="contact_me w-3/4 h-28  items-center flex  mx-auto pt-20 ">
         <span class="w-full inline-block relative"></span>
-        <h4 class="w-7/12 font-bold text-3xl mt-4 text-center"
+        <h2 class="w-7/12 font-bold text-3xl mt-4 text-center"
 
-        >HAVE ANY QUESTIONS</h4>
+        >HAVE ANY QUESTIONS</h2>
         <span class="w-full inline-block relative"></span>
 
 
@@ -107,9 +107,10 @@
 
 
         <article class="w-1/3 p-10 mb-10">
-          <h3 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">CONTACT ME</h3>
+          <h2 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">CONTACT ME</h2>
           <img  class="lazyload m-auto"
                 :data-src="require('~/assets/graphic/woman-phone.png?webp')"
+                alt="woman c1chy"
           >
           <span class="w-full"></span>
           <ul class="mt-6  lg:text-xl 2xl:text-3xl text-center ">
@@ -148,7 +149,8 @@
 
 
               :data-src="require('~/assets/graphic/clocks.png?webp')"
-              class="lazyload m-auto">
+              class="lazyload m-auto"
+              alt="clocks">
           <span></span>
 
           <ul class="mt-6 lg:text-xl   2xl:text-3xl text-center">
@@ -500,7 +502,7 @@ figure {
   }
 
 
-  h4 {
+  h2 {
 
     font-family: Barlow Condensed, sans-serif;
 
@@ -582,7 +584,7 @@ aside {
 
     }
 
-    h3 {
+    h2 {
 
       background-image: url(~assets/graphic/green-dust-and-scratches.png);
       background-color: #4f7b70;
