@@ -10,7 +10,8 @@
         <img
 
             :srcSet="require('../assets/graphic/logo_nav.png?webp')"
-            class="lazyload h-20 w-20">
+            class="lazyload h-20 w-20"
+            alt="c1chy">
 
       </NuxtLink>
     </div>
