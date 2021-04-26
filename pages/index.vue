@@ -49,7 +49,7 @@
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
-               class="hat lazyload md:self-center 2xl:w-1/5  2xl:mt-4 z-20"
+               class="hat lazyload  z-20"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
@@ -71,7 +71,7 @@
               :src="body.src"
 
               alt="vintage body"
-              class="body lazyload w-full  2xl:max-w-2xl 2xl:max-h-md filter-shadow-black ">
+              class="body lazyload w-full  2xl:max-w-2xl filter-shadow-black ">
         </div>
 
 
