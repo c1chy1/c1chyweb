@@ -311,19 +311,15 @@ export default {
 
   },
 
-  mounted() {
-    var fp = this.fullpage_api.destroy('all')
+  beforeMount() {
 
-    if (fp===true) {
-
-      this.fullpage_api.destroy('all')
-
-    } else {
-
-      fp = ""
-
-
+    if(fullpage_api.destroy('all') === true )
+    {
+      fullpage_api.destroy('all')
     }
+
+
+
   }
 
 

@@ -339,20 +339,15 @@ export default {
   },
 
 
-  mounted() {
+  beforeMount() {
 
-    var fp = this.fullpage_api.destroy('all')
-
-    if (fp===true) {
-
-      this.fullpage_api.destroy('all')
-
-    } else {
-
-      fp = ""
-
-
+    if(fullpage_api.destroy('all') === true )
+    {
+      fullpage_api.destroy('all')
     }
+
+
+
   }
 }
 </script>
