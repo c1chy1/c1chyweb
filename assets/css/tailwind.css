@@ -377,6 +377,7 @@
 
     }
 
+    /*
 
     .logo {
 
@@ -391,6 +392,7 @@
         height: var(--height);
     }
 
+    */
 
 
 
@@ -428,7 +430,7 @@
         }
 
 
-        .logo {
+    /*    .logo {
 
             --ratio: 9 / 16;
 
@@ -441,7 +443,7 @@
             height: 25vh;
 
         }
-
+*/
 
         .hat {
 
@@ -461,7 +463,7 @@
 
 
 
-        .logo {
+ /*       .logo {
 
             --ratio: 9 / 16;
 
@@ -471,7 +473,7 @@
             width: 60vmin;
             height: 20vh;
 
-        }
+        }*/
 
         .hat {
 
@@ -712,12 +714,14 @@
             font-size: 10vw!important;
 
         }
+        /*
 
         .logo {
 
             height: 24vh;
 
         }
+        */
 
 
         .welcome_studio article h1 {
