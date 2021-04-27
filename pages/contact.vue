@@ -40,16 +40,11 @@
         </figcaption>
       </figure>
 
-
-
-
-
     </header>
 
     <div
         class="page-spacing w-full h-20 absolute left-0 bg-repeat bg-center"
     ></div>
-
 
     <section class="section h-full mt-20 relative box-content bg-repeat bg-auto bg-center overflow-hidden z-0">
       <div class="bg_stars w-full h-full flex">
@@ -712,7 +707,7 @@ aside {
   }
 
   p {
-    font-family: Helvetica Neue, sans-serif;
+    font-family: monospace;
     color: rgba(233, 228, 221, 0.7)
 
   }

@@ -59,7 +59,7 @@
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
                 class="lazyload  filter-shadow-black z-1">
-            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto sm:mt-6  md:text-3xl lg:text-4xl xl:mt-8 xl:tracking-wider">
+            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto sm:mt-6  md:text-3xl lg:text-4xl xl:mt-8 xl:tracking-wider 2xl:mt-4">
               Visually Striking Design </figcaption>
           </figure>
 
@@ -189,7 +189,7 @@
 
 
             <a href="#"
-               class="button_red hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
+               class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
             >MY STORY</a>
 </div>
           </section>
@@ -238,14 +238,14 @@
         :data-src="require('~/assets/graphic/ribbon.png?webp')"
         alt="ribbon"
 
-        class="lazyload md-landscape:h-12  md-portrait:h-8 md:w-full lg:w-3/4  xl:w-full filter-shadow-black  z-1 ">
+        class="lazyload md-landscape:h-12  md-portrait:h-8 md:w-full lg:w-3/4  xl:w-full filter-shadow-black 2xl:h-12 2xl:text-center z-1 ">
     <figcaption
-        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-3xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest 2xl:text-4xl   z-0 ">
+        class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-3xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest 2xl:text-3xl   z-0 ">
       Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-full h-full mt-5 text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:block 2xl:text-2xl 2xl:mt-5 ">
+  <p class="w-auto h-auto mt-5 text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:max-w-lg 2xl:block 2xl:text-2xl 2xl:mt-5 ">
     Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
@@ -278,7 +278,7 @@
                       class="w-4/5 h-auto mt-3 pl-1  text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-2xl " > </textarea>
             </label>
 
-            <button type = "submit" form ="form" value="submit" class="button_red  px-4 mt-4 sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:self-stretch 2xl:ml-24 ">SEND</button>
+            <button type ="submit" form="form" value="submit" class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24">SEND</button>
 
           </form>
 
@@ -441,11 +441,7 @@ div p, li, a {
   border-width: 4px 0;
   border-style: solid;
   font-weight: 700;
-  padding-top: 5px;
-  padding-bottom: 8px;
   line-height: 1;
-  text-align: center;
-  position: relative;
   font-family: Barlow Condensed,sans-serif;
   transition: all 0.2s ease;
 

@@ -1,37 +1,43 @@
 <template>
-  <div class="h-screen w-screen">
+  <section class="h-screen w-screen">
 
-    <header class="container px-16 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
-      <div
-          id="1"
-          class="w-full h-112 grid grid-cols-1 justify-items-center header_img_wrap"
-      >
+    <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
-        <div class="error flex flex-col justify-center">
-          <div class="title"><h1>ERROR 404</h1></div>
-          <div class="title_dividers">
-            <span></span>
-            <span class="top-2"></span>
-            <span class="top-4"></span>
-          </div>
+        <div class="filter-shadow-black overflow-hidden absolute">
+          <img
 
-          <figure class="relative flex items-center justify-center filter-shadow-black">
+              :data-src="require('~/assets/graphic/light_background.png?webp')"
+              :light="light.src"
+              :srcSet="light.srcSet"
+              class="lazyload light overflow-hidden "
+              alt="light">
 
-
-            <img src="~assets/graphic/ribbon.png?webp" alt="Trulli"
-                 class="w-full h-20 my-auto z-1 filter-shadow-black">
-            <figcaption class=" mx-auto mt-5 text-3xl">
-              <NuxtLink to="/">Home</NuxtLink>
-              > Page Not Found
-            </figcaption>
-          </figure>
         </div>
 
-
-        <img class="header_image w-full h-112 "
-             alt="header_image">
+      <div class="title uppercase top-2">
+        <h1 class="text-8xl font-semibold text-center uppercase">ERROR 404
+        </h1>
+      </div>
+      <div class="title_dividers w-1/5 h-4 mx-auto my-10 relative inline-block">
+        <span class="w-full h-0.5 absolute left-2/4 transform -translate-x-1/2"></span>
+        <span class="w-full h-0.5 top-2 absolute left-2/4 transform -translate-x-1/2"></span>
+        <span class="w-full h-0.5 top-4 absolute left-2/4 transform -translate-x-1/2"></span>
       </div>
 
+      <figure class="relative flex items-center justify-center filter-shadow-black z-10">
+
+
+        <img
+
+            :data-src="require('~/assets/graphic/ribbon.png?webp')"
+
+            alt="ribbon"
+            class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
+        <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
+          <NuxtLink to="/">Home</NuxtLink>
+          > Page Not Found
+        </figcaption>
+      </figure>
 
     </header>
 
@@ -50,37 +56,88 @@
       <div class="link">
         Please, proceed to our <a href="/">Home page</a></div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
+
+const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+
+
 export default {
-  props: ['error'],
-  layout: 'error', // you can set a custom layout for the error page
 
+  transition: {
+    name: 'spotlight',
+    mode: 'out-in'
+  },
 
+  data() {
+
+    return {
+
+      light
+    }
+
+  }
 }
 </script>
 <style scoped lang="scss">
 
-.error {
+
+section {
+
+  background-color: antiquewhite;
+  background-image: url('~assets/graphic/exclusive-paper.png');
+}
+
+header {
+
+
+  h1 {
+    color: #224a49;
+    filter: drop-shadow(5px 6px 0 #a9c9bb);
+    font-family: Barlow Condensed, sans-serif;
+
+  }
+
+  div:nth-child(1)  {
+
+
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    overflow: hidden;
+  }
+
+
+  img.light {
+
+    height: 100vmax;
+    width: 100%;
+    animation: rotate 120s linear infinite;
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;
+
+
+  }
+
 
   .title {
 
     font-family: Barlow Condensed, sans-serif;
     color: #4f7b70;
-    top: 20px;
     line-height: initial;
 
     h1 {
 
-      font-size: 100px;
-      font-weight: 600;
       -webkit-text-stroke-width: 3px;
       filter: drop-shadow(4px 5px 0 #224a49);
       -webkit-text-stroke-color: #e4ddd3;
-      text-align: center;
-      text-transform: uppercase;
+
       background-image: url('~assets/graphic/green-dust-and-scratches.png');
       background-color: #4f7b70;
       -webkit-font-smoothing: antialiased;
@@ -88,41 +145,17 @@ export default {
       -webkit-text-fill-color: transparent;
 
     }
-
   }
 
 
-   a {
-     transition: all 0.2s ease;
-
-     &:hover {
-
-
-       color: #224a49;
-
-     }
-
-   }
-
   .title_dividers {
 
-    display: inline-block;
-    position: relative;
-    width: 310px;
-    height: 20px;
-    margin: 30px auto;
 
     span {
 
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 3px;
-      width: 100%;
       background: -webkit-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
       background: -o-linear-gradient(right, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
       background: linear-gradient(to left, rgba(255, 255, 255, .01), #E9E4DD, #E9E4DD, rgba(255, 255, 255, .01));
-
 
     }
 
@@ -131,37 +164,30 @@ export default {
 
   figure {
 
-    position: relative;
-    z-index: 10;
 
     figcaption {
 
 
       font-family: Satisfy, sans-serif;
-      display: block;
-      position: absolute;
-      text-align: center;
       letter-spacing: 10px;
-      color: white;
+
+
+      a {
+        transition: all 0.2s ease;
+        &:hover {
+
+
+          color: #224a49;
+
+        }
+
+      }
+
+
     }
 
   }
-}
 
-
-.header_img_wrap .header_image {
-  display: flex;
-  content: "";
-  position: absolute;
-  width: 250%;
-  height: 400%;
-  top: -145%;
-  opacity: 0.7;
-  left: 0;
-  z-index: -1;
-  background: url('~assets/graphic/light_background.png?webp') center no-repeat;
-  background-size: cover;
-  animation: rotate 120s infinite linear;
 
 }
 
