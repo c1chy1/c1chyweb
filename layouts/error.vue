@@ -18,7 +18,7 @@
         <h1 class="text-8xl font-semibold text-center uppercase">ERROR 404
         </h1>
       </div>
-      <div class="title_dividers w-1/5 h-4 mx-auto my-10 relative inline-block">
+      <div class="title_dividers w-1/2 h-4 mx-auto my-10 relative inline-block">
         <span class="w-full h-0.5 absolute left-2/4 transform -translate-x-1/2"></span>
         <span class="w-full h-0.5 top-2 absolute left-2/4 transform -translate-x-1/2"></span>
         <span class="w-full h-0.5 top-4 absolute left-2/4 transform -translate-x-1/2"></span>
@@ -44,7 +44,10 @@
     <div>
 
       <div class="banner ">
-        <img class="m-auto w-1/3" src="~assets/graphic/404.png?webp">
+        <img
+            class="m-auto w-1/3"
+            src="~assets/graphic/404.png?webp"
+            alt="Error 404">
 
       </div>
 
