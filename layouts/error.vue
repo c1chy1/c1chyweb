@@ -66,11 +66,6 @@ const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&
 
 export default {
 
-  transition: {
-    name: 'spotlight',
-    mode: 'out-in'
-  },
-
   data() {
 
     return {

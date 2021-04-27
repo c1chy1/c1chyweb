@@ -112,7 +112,7 @@
 
 <article class="bg-center bg-no-repeat leading-none ">
             <h1
-                class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-9xl 2xl:mt-4 "
+                class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-11xl 2xl:mt-4 "
                 :class="{'animate__animated animate__swing animate__delay-3s animate' : animate}"
 
             >c1chy's studio</h1>
@@ -157,15 +157,14 @@
             </div>
 
           </div>
-          <div class="flex items-end  sm:justify-center  sm:w-1/3  md:w-full lg:w-2/3 xl:h-full xl:w-2/6 xl:transform xl:rotate-12 z-0">
 
             <img
                 :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
                 :src="scumback.src"
                 :srcSet="scumback.srcSet"
-                 class="wolf lazyload rounded-4xl z-10 "
+                 class="wolf lazyload   rounded-4xl  2xl:w-1/4 2xl:transform 2xl:rotate-12 z-10 "
             alt="vintage wolf">
-          </div>
+
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
         </div>
@@ -176,12 +175,12 @@
 
           <section class="w-1/2 ">
 
-<div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 md:mx-auto xl:mr-10">
+<div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 md:mx-auto xl:mr-10 2xl:mr-auto">
             <h2
                 class="text-xl sm:text-2xl md:text-5xl  lg:text-5xl xl:leading-tight  xl:text-4xl 2xl:text-6xl">
               Strategie, Technologie, Design & Content </h2>
 
-            <p class="hidden text-xs xl:block xl:text-xl 2xl:text-2xl ">
+            <p class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
               An der Schnittstelle von Design und Technik entwickeln wir digitale Anwendungen,
               die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
               auf welchem Gerät. Dazu erproben wir kontinuierlich neuartige Methoden, beschäftigen uns intensiv mit aufregenden Technologien,
@@ -876,9 +875,9 @@ div {
 
   p {
 
-   font-family: Mulish, sans-serif;
+   font-family: monospace;
   color:rgba(233,228,221,0.7);
-    font-size: 1.4vw;
+    font-size: 1.2vw;
 
   }
 
