@@ -6,13 +6,13 @@
     <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
 
-<div>
+<div class="overflow-hidden absolute">
         <img
 
             :data-src="require('~/assets/graphic/light_background.png?webp')"
             :light="light.src"
             :srcSet="light.srcSet"
-            class="lazyload light"
+            class="lazyload light overflow-hidden "
             alt="light"
         >
 
@@ -341,7 +341,7 @@ export default {
 
   beforeMount() {
 
-    var fp = fullpage_api.destroy('all')
+   fullpage_api.destroy('all')
 
   }
 }
