@@ -66,7 +66,7 @@
 
       <div>
         <h1
-            class="text-10xl font-bold text-center leading-tight uppercase filter-shadow-green"
+            class="text-11xl font-bold text-center leading-tight uppercase filter-shadow-green"
 
         >WINNING DESIGN</h1>
 
