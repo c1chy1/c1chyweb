@@ -515,6 +515,55 @@
 
 
 
+        .hat {
+
+
+            top: 10vh;
+        }
+
+
+        [data-anchor="page3"]:before {
+
+
+            top: 5px;
+            left: 15px;
+            width: 96%;
+
+        }
+
+
+        [data-anchor="page3"]:after {
+
+
+            left: 16px;
+            width: 96%;
+            bottom: 5px;
+
+        }
+
+        [data-anchor="page3"] .bg_stars:before {
+
+
+
+            width: 3%;
+            height: 96%;
+            left: 5px;
+            top: 25px;
+
+        }
+
+        [data-anchor="page3"] .bg_stars:after {
+
+
+            right: 5px;
+            width: 3%;
+            height: 96%;
+            top: 25px;
+
+        }
+
+
+
         [data-anchor="page1"]  .light_background {
 
             width: 200vw;
@@ -565,30 +614,12 @@
         }
 
 
-
-        .circle1,.circle2, .circle3 {
-
-            display: none;
-
-        }
-
     }
 
 
     @screen lg {
 
 
-        /*
-        .hat {
-
-            --ratio: 12 / 16;
-
-            margin: auto;
-            width: 50vmin;
-            height: 45vh;
-
-        }
-        */
 
 
         .slide {
@@ -637,6 +668,48 @@
             top: 35vh;
             left:47vw
         }
+
+
+
+
+        [data-anchor="page3"]:before {
+
+
+            top: 5px;
+            left: 10px;
+            width: 98%;
+
+        }
+
+
+        [data-anchor="page3"]:after {
+
+
+            left: 10px;
+            width: 98%;
+            bottom: 5px;
+
+
+        }
+
+        [data-anchor="page3"] .bg_stars:before {
+
+
+            width: 3%;
+            height: 95%;
+            left: 5px;
+            top: 18px;
+        }
+
+        [data-anchor="page3"] .bg_stars:after {
+
+
+            right: 5px;
+            width: 3%;
+            height: 95%;
+            top: 18px;
+        }
+
 
 
         #fp-nav {
