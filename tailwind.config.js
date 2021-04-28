@@ -45,10 +45,7 @@ module.exports = {
 
 
     },
-    colors: {
 
-
-    },
     fontFamily: {
       sans: ['Barlow Condensed', 'Mulish','Merriweather','Satisfy'],
       serif: ['Mulish', 'Merriweather','Satisfy'],

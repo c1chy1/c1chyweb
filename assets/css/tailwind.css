@@ -308,31 +308,11 @@
     }
 
 
-
     .text-white {
 
         --tw-text-opacity: 1;
         color: rgba(255, 255, 255, var(--tw-text-opacity));
 
-    }
-
-
-    .text-8xl {
-
-        font-size: 6rem;
-
-    }
-
-
-    .text-9xl {
-
-        font-size: 8rem;
-
-    }
-
-    .text-10xl {
-
-        font-size: 12rem;
     }
 
 
@@ -354,9 +334,24 @@
     }
 
 
-    .circle1 ,.circle2 ,.circle3 {
+    .circle1 {
 
-        display: none;
+     top:31vh
+
+
+    }
+
+    .circle2 {
+
+        top:33vh
+
+
+    }
+
+    .circle3 {
+
+        top:35vh
+
 
     }
 
@@ -418,46 +413,20 @@
 
         }
 
-/*
-   .body {
+       .fp-section [data-anchor="page1"]  .light_background {
 
-            --ratio: 9 / 16;
-
-
-
-
-            margin: 0 auto;
-            width: 60vmin;
-            max-height: 50vh;
-
-        }*/
-
-
-    /*    .logo {
-
-            --ratio: 9 / 16;
-
-
-
-
-
-            margin: 0 auto;
-            width: 60vmin;
-            height: 25vh;
-
-        }
-*/
-
- /*       .hat {
-
-            --ratio: 9 / 16;
-
-            width: 40vmin;
-            height: 45vh;
+         display: none;
 
         }
 
-*/
+        .light_background {
+
+            width: 200vw;
+
+
+        }
+
+
 
     }
 
@@ -466,40 +435,12 @@
 
 
 
- /*       .logo {
+        [data-anchor="page1"]  .light_background {
 
-            --ratio: 9 / 16;
+            width: 200vw;
 
-
-
-            margin: 0 auto;
-            width: 60vmin;
-            height: 20vh;
-
-        }*/
-
-    /*    .hat {
-
-            --ratio: 12 / 16;
-
-
-            margin: auto;
-            width: 60vmin;
-            height: 45vh;
 
         }
-
-*/
-     /*   .body {
-
-            --ratio: 12 / 16;
-
-
-            margin: 0 auto;
-            width: 75vmin;
-            height: 20vh;
-
-        }*/
 
 
         [data-anchor="page2"] .welcome_studio div span:after {

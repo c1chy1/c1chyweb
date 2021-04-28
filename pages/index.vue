@@ -6,7 +6,9 @@
 
       <section class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10">
 
-        <div class="light_background"><img
+
+
+        <div class="light_background md:w-screen px-0"><img
 
             :data-src="require('~/assets/graphic/light_background.png?webp')"
             :light="light.src"
@@ -21,12 +23,12 @@
 
 
           <div
-              class="circle_bg circle1 hidden w-20   md:w-16  xl:block xl:w-20 2xl:w-20 p-5 absolute  bg-white z-50"
+              class="circle_bg circle1 absolute w-2 px-4 py-2 ml-12 bg-white md:w-16  xl:block xl:w-20 2xl:w-20 2xl:p-5 z-50"
            ></div>
-          <div class="circle_bg circle2 hidden w-16  xl:block  md:w-12 xl:w-16  2xl:w-16 p-4 absolute bg-white z-40"
+          <div class="circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white xl:block  md:w-12 xl:w-16  2xl:w-16 2xl:p-4  z-40"
 
           ></div>
-          <div class="circle_bg circle3 hidden  w-8 xl:block md:w-8 p-2 absolute bg-white z-30"
+          <div class="circle_bg circle3  absolute w-6 px-2 py-1   bg-white xl:block md:w-8  2xl:p-2 z-30"
 
           ></div>
 
@@ -38,7 +40,7 @@
        :src="logo.src"
 
        alt="c1chy"
-       class="logo lazyload  2xl:max-w-md  relative z-50"
+       class="logo lazyload w-3/4 2xl:max-w-md  relative z-50"
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
@@ -49,7 +51,7 @@
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
-               class="hat lazyload top-28 2xl:max-w-xs relative z-20"
+               class="hat lazyload top-20 w-3/5  2xl:max-w-xs relative z-20"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
@@ -298,7 +300,7 @@
 import stickyFooter from "@/components/stickyFooter";
 
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1300&format=webp');
 const logo = require('~/assets/graphic/logo.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
@@ -508,26 +510,26 @@ div p, li, a {
 
   .light_background {
 
-  width: 100vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  overflow: hidden;
-
-  img.light {
-
-    z-index: -1;
-    height: 100vmax;
-    width: 100%;
-    animation: rotate 120s linear infinite;
-    object-fit: cover;
+    width: 200vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     overflow: hidden;
+
+
+    img.light {
+      z-index: -1;
+      height: 100vmax;
+      width: 100%;
+      animation: rotate 120s linear infinite;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+
   }
-
-
-}
 
 
   .circle_bg {
