@@ -40,7 +40,7 @@
        :src="logo.src"
 
        alt="c1chy"
-       class="logo lazyload w-3/4  sm:w-1/6    2xl:w-1/5 relative z-50"
+       class="logo lazyload w-3/4  sm:w-1/6  sm:self-center  2xl:w-1/5 relative z-50"
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
