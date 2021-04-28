@@ -40,7 +40,7 @@
        :src="logo.src"
 
        alt="c1chy"
-       class="logo lazyload w-3/4  sm:w-2/6    2xl:w-1/5 relative z-50"
+       class="logo lazyload w-3/4  sm:w-1/6    2xl:w-1/5 relative z-50"
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
@@ -51,7 +51,7 @@
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
-               class="hat lazyload relative top-20 w-3/5 sm:w-1/5  2xl:w-1/6  z-20"
+               class="hat lazyload relative top-20 w-3/5 sm:w-1/6  2xl:w-1/6  z-20"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
