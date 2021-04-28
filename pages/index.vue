@@ -23,12 +23,12 @@
 
 
           <div
-              class="circle_bg circle1 absolute w-2 px-4 py-2 ml-12 bg-white sm:hidden md:block md:w-16  xl:block xl:w-20 2xl:w-20 2xl:p-5 z-50"
+              class="circle_bg circle1 absolute w-2 px-4 py-2 ml-12 bg-white hidden md:block md:w-16  xl:block xl:w-20 2xl:w-20 2xl:p-5 z-50"
            ></div>
-          <div class="circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white sm:hidden md:block xl:block  md:w-12 xl:w-16  2xl:w-16 2xl:p-4  z-40"
+          <div class="circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white hidden md:block xl:block  md:w-12 xl:w-16  2xl:w-16 2xl:p-4  z-40"
 
           ></div>
-          <div class="circle_bg circle3  absolute w-6 px-2 py-1   bg-white sm:hidden  md:block xl:block md:w-8  2xl:p-2 z-30"
+          <div class="circle_bg circle3  absolute w-6 px-2 py-1   bg-white hidden  md:block xl:block md:w-8  2xl:p-2 z-30"
 
           ></div>
 
