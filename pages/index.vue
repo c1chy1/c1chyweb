@@ -23,12 +23,12 @@
 
 
           <div
-              class="circle_bg circle1 absolute w-2 px-4 py-2 ml-12 bg-white md:w-16  xl:block xl:w-20 2xl:w-20 2xl:p-5 z-50"
+              class="circle_bg circle1 absolute w-2 px-4 py-2 ml-12 bg-white sm:hidden md:block md:w-16  xl:block xl:w-20 2xl:w-20 2xl:p-5 z-50"
            ></div>
-          <div class="circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white xl:block  md:w-12 xl:w-16  2xl:w-16 2xl:p-4  z-40"
+          <div class="circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white sm:hidden md:block xl:block  md:w-12 xl:w-16  2xl:w-16 2xl:p-4  z-40"
 
           ></div>
-          <div class="circle_bg circle3  absolute w-6 px-2 py-1   bg-white xl:block md:w-8  2xl:p-2 z-30"
+          <div class="circle_bg circle3  absolute w-6 px-2 py-1   bg-white sm:hidden  md:block xl:block md:w-8  2xl:p-2 z-30"
 
           ></div>
 
@@ -40,7 +40,7 @@
        :src="logo.src"
 
        alt="c1chy"
-       class="logo lazyload w-3/4 2xl:max-w-md  relative z-50"
+       class="logo lazyload w-3/4  sm:w-2/6    2xl:w-1/5 relative z-50"
        :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
           >
 
@@ -51,7 +51,7 @@
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
-               class="hat lazyload top-20 w-3/5  2xl:max-w-xs relative z-20"
+               class="hat lazyload relative top-20 w-3/5 sm:w-1/5  2xl:w-1/6  z-20"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
@@ -60,8 +60,8 @@
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload  filter-shadow-black z-1">
-            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto sm:mt-6  md:text-3xl lg:text-4xl xl:mt-8 xl:tracking-wider 2xl:mt-4">
+                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full filter-shadow-black z-1">
+            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl xl:mt-8 xl:tracking-wider 2xl:mt-4">
               Visually Striking Design </figcaption>
           </figure>
 
@@ -73,7 +73,7 @@
               :src="body.src"
 
               alt="vintage body"
-              class="body lazyload w-full 2xl:max-w-2xl filter-shadow-black ">
+              class="body lazyload w-full  sm:w-5/12  2xl:w-1/3 filter-shadow-black ">
         </div>
 
 
@@ -81,7 +81,7 @@
           <div class="classic sm:mb-3 md:absolute  lg:text-center 2xl:block 2xl:relative 2xl:right-1/3 ">
             <span class="intro intro--the block text-3xl">The</span>
             <span class="intro intro--num block text inline-block absolute font-semibold sm:hidden lg:inline">first #1</span>
-            <span class="intro block text-3xl">classic style</span>
+            <span class="intro block text-3xl sm:text-xl">classic style</span>
           </div>
           <div class="vintage__container block md:absolute lg:relative 2xl:relative ">
             <p class="vintage vintage__top  m-0 text-6xl leading-none sm:hidden md:absolute md:text-5xl lg:absolute 2xl:absolute 2xl:block 2xl:text-center 2xl:w-full">VINTAGE</p>
@@ -120,13 +120,13 @@
             >c1chy's studio</h1>
 
   <figure
-      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-10/12 md:w-1/2 lg:w-full 2xl:w-1/2 z-20">
+      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full 2xl:w-1/2 z-20">
     <img
 
         :srcSet="require('../assets/graphic/ribbon.png?webp')"
         alt="ribbon"
 
-        class="lazyload  filter-shadow-black " >
+        class="lazyload sm:max-h-xs filter-shadow-black " >
     <figcaption
         class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega 2xl:text-3xl 2xl:mt-5 ">
       ✪ ✪ ✪ ✪ ✪ ✪ ✪
@@ -137,9 +137,9 @@
           </div>
 
         <div
-            class="scumbag w-full flex justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
+            class="scumbag w-full flex  flex-col  xl:flex-row  justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
           <div
-              class="text-center mt-3 p-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
+              class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
 
             <div>
               <h2
@@ -150,7 +150,7 @@
                 class="h-full w-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2   2xl:mt-5">
               <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:block 2xl:text-xl">
                 Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xs md:text-2xl lg:text-2xl xl:text-xl  2xl:text-2xl text-center">
+              <ul class=" mb-16 text-xs text-center font-bold md:text-2xl lg:text-2xl xl:text-xl  2xl:text-2xl ">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -164,7 +164,7 @@
                 :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
                 :src="scumback.src"
                 :srcSet="scumback.srcSet"
-                 class="wolf lazyload   rounded-4xl  2xl:w-1/4 2xl:transform 2xl:rotate-12 z-10 "
+                 class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block 2xl:w-1/4 transform rotate-12 z-10 "
             alt="vintage wolf">
 
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
@@ -173,13 +173,13 @@
       </section>
 
       <section class="fp-section  w-full relative overflow-hidden box-content xl:rounded-4xl z-0 "  >
-        <div class="bg_stars h-full w-full flex flex-row-reverse text-white z-0 ">
+        <div class="bg_stars h-full w-full flex flex-col justify-evenly sm:flex-row  xl:flex-row-reverse text-white z-0 ">
 
-          <section class="w-1/2 ">
 
-<div class=" h-full mx-auto w-2/3 flex flex-col justify-evenly  sm:mr-8 md:mx-auto xl:mr-10 2xl:mr-auto">
+
+<div class="w-5/12 self-center  lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-xl sm:text-2xl md:text-5xl  lg:text-5xl xl:leading-tight  xl:text-4xl 2xl:text-6xl">
+                class="text-2xl text-center rounded-2xl sm:text-3xl sm:self-center md:text-5xl  lg:text-5xl xl:leading-tight  xl:text-4xl 2xl:text-6xl">
               Strategie, Technologie, Design & Content </h2>
 
             <p class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
@@ -193,19 +193,17 @@
                class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
             >MY STORY</a>
 </div>
-          </section>
 
-          <section class="w-1/3 h-1/2 p-20 px-2 flex justify-center  md-portrait:h-1/2  md-portrait:w-1/2 md-portrait:p-0">
 
             <img
-                class="lazyload w-full h-4/5 relative   self-center sm:h-1/2  md:w-3/4 md:h-3/4 md-portrait:h-3/4 md-portrait:w-full md-landscape:w-4/5 md-portrait:pl-12 lg:w-1/2 rounded-3xl  "
+                class="lazyload w-1/2 relative self-center rounded-3xl sm:w-1/4 lg:w-1/4 "
                 :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
 
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :srcSet="vintageMusic.srcSet"
                 :src="vintageMusic.src"
                  alt="vintage">
-          </section>
+
 
         </div>
       </section>
@@ -246,7 +244,7 @@
     </figcaption>
   </figure>
 
-  <p class="w-auto h-auto mt-5 text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:max-w-lg 2xl:block 2xl:text-2xl 2xl:mt-5 ">
+  <p class="w-auto h-auto text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:max-w-lg 2xl:block 2xl:text-2xl 2xl:mt-5 ">
     Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
@@ -793,11 +791,8 @@ div {
 
   &:before {
 
-    bottom: 14px;
     float: left;
-    width: 97.2%;
-    left: 24px;
-  height: 16px;
+    height: 16px;
     position: absolute;
   content: "";
   display: block;
@@ -813,10 +808,7 @@ div {
   &:after {
 
     position: absolute;
-    top: 6px;
-    width: 97.6%;
     height: 15px;
-    left: 18px;
     content: "";
     display: block;
     background: url(~assets/graphic/star_white.png?webp) top repeat-x ;
@@ -834,7 +826,6 @@ div {
       background-image: url('~assets/graphic/green-dust-and-scratches.png');
       background-color: #a1362b;
       color: #eae5de;
-      box-shadow: -20px 0 0 #a1362b;
       white-space: revert;
       top: 5px;
       left: 6px;
@@ -842,11 +833,10 @@ div {
     }
     &:before {
 
-      top: 20px;
-      width: 15px;
+
+
       position: absolute;
-      left: 10px;
-      height: 95%;
+
       content: "";
       display: block;
       background: url(~assets/graphic/star_white.png?webp) left repeat-y ;
@@ -859,11 +849,9 @@ div {
 
     &:after {
 
-      top: 20px;
-      width: 15px;
+
+
       position: absolute;
-      right: 13px;
-      height: 95%;
       content: "";
       display: block;
       background: url(~assets/graphic/star_white.png?webp) right repeat-y ;
