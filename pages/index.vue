@@ -60,7 +60,7 @@
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full 2xl:w-8/12 filter-shadow-black z-1">
+                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full 2xl:w-9/12 filter-shadow-black z-1">
             <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  xl:mt-4 xl:tracking-wider 2xl:text-3xl 2xl:mt-4">
               Visually Striking Design </figcaption>
           </figure>
@@ -120,7 +120,7 @@
             >c1chy's studio</h1>
 
   <figure
-      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-1/2 2xl:mt-0 2xl:mb-1 z-20">
+      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
     <img
 
         :srcSet="require('../assets/graphic/ribbon.png?webp')"
@@ -148,9 +148,9 @@
 
             <div
 
-                class="w-full  px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2  2xl:pt-3 2xl:mt-1 2xl:flex ">
+                class="w-full  px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2  2xl:pt-3 2xl:mt-4 2xl:flex ">
 
-              <ul class=" mb-16 text-xs text-center font-bold md:text-2xl lg:text-2xl xl:text-xl 2xl:mb-0 2xl:text-xl ">
+              <ul class=" mb-16 text-xs text-center  md:text-2xl lg:text-2xl xl:text-xl xl:border-purple-700 2xl:mb-0 2xl:p-1 2xl:text-xl ">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -158,7 +158,7 @@
 
 
 
-              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:w-1/2 2xl:m-auto 2xl:block 2xl:text-xl">
+              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:w-1/2 2xl:p-1 2xl:m-auto 2xl:block 2xl:text-xl">
                 Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
 
             </div>
@@ -167,8 +167,8 @@
 
             <img
                 :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
-                :src="scumback.src"
-                :srcSet="scumback.srcSet"
+                :src="scumbag.src"
+                :srcSet="scumbag.srcSet"
                  class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 transform rotate-12 z-10 "
             alt="vintage wolf">
 
@@ -308,7 +308,7 @@ const logo = require('~/assets/graphic/logo.png?resize&sizes[]=300&sizes[]=600&s
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const scumback =require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const scumbag =require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 
 export default {
@@ -333,7 +333,7 @@ export default {
 
     return {
 
-      logo,hat,body,scumback,vintageMusic,light,
+      logo,hat,body,scumbag,vintageMusic,light,
 
       fade:false,
       show:false,
@@ -665,12 +665,13 @@ div p, li, a {
         background-color: #4f7b70;
         color: #f7ebd5;
         padding: 5px;
+
       }
 
 
       p {
-
-
+        border: 2px solid black;
+        border-radius: 15px;
       }
     }
 
@@ -688,7 +689,7 @@ div p, li, a {
 
     }
 
-
+ul {
 
 
   li {
@@ -715,7 +716,7 @@ div p, li, a {
       }
 
     }
-
+  }
 
   }
 
