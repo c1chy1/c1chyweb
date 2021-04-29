@@ -1,5 +1,5 @@
 <template>
-<footer id="site-footer" class="hidden w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:block md:h-24 md-landscape:hidden lg:w-full xl:hidden  2xl:flex 2xl:h-48">
+<footer id="site-footer" class="hidden w-full h-24 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:block md:h-24 md-landscape:hidden lg:w-full xl:hidden  2xl:flex 2xl:h-auto">
 
 
 <div class="w-1/5 h-full sm:w-3/5 md:w-1/12 md:ml-3 lg:w-full  lg:ml-0   xl:w-2/5 " >
@@ -11,7 +11,7 @@
 
       alt="c1chy logo"
 
-      class="lazyload h-16 w-full relative mt-4 ml-2 mx-auto sm:h-20 sm:w-1/2 sm:mt-2 sm:ml-5 md:h-16 md:w-full md:ml-3 md:mt-4 lg:w-full lg:h-32  lg:ml-6 xl:h-36 xl:w-7/12 xl:mt-5 2xl:w-1/2 2xl:h-40 2xl:mx-auto  2xl:p-0"
+      class="lazyload h-16 w-full relative mt-4 ml-2 mx-auto sm:h-20 sm:w-1/2 sm:mt-2 sm:ml-5 md:h-16 md:w-full md:ml-3 md:mt-4 lg:w-full lg:h-32  lg:ml-6 xl:h-36 xl:w-7/12 xl:mt-5 2xl:w-1/2 2xl:h-auto 2xl:mx-auto 2xl:mt-3  2xl:p-3"
       :class="{'animate__animated animate__pulse animate__infinite  animate__delay-2s ' : animate}"
   >
 
@@ -20,25 +20,25 @@
 
 
   <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:10/12 2xl:w-10/12">
-    <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-2xl xl:pt-5 2xl:text-xl ">
+    <li  @click.prevent="toTop">
+      <NuxtLink to="/" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
         Home</NuxtLink>
     </li>
-    <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/aboutme" class="box curmudgeon p-0 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5 2xl:text-xl">
+    <li @click.prevent="toTop">
+      <NuxtLink to="/aboutme" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
         About Me</NuxtLink>
     </li>
 
 
-    <li class="flex" @click.prevent="toTop">
-      <NuxtLink to="/portfolio" class="box curmudgeon p-4 w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5  2xl:text-xl">
+    <li @click.prevent="toTop">
+      <NuxtLink to="/portfolio" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
         Portfolio</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
       <NuxtLink
 
           to="/contact"
-          class="box curmudgeon p-4 w-36 h-16 relative text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs xl:pt-5 2xl:text-xl">
+          class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
         Contact
 
       </NuxtLink>

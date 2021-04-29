@@ -60,8 +60,8 @@
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full filter-shadow-black z-1">
-            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  xl:mt-4 xl:tracking-wider 2xl:mt-4">
+                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full 2xl:w-8/12 filter-shadow-black z-1">
+            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  xl:mt-4 xl:tracking-wider 2xl:text-3xl 2xl:mt-4">
               Visually Striking Design </figcaption>
           </figure>
 
@@ -77,11 +77,11 @@
         </div>
 
 
-        <div class="hidden sm:block bottom-0 right-2 absolute lg:pr-2 2xl:block 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-5 2xl:mr-5 text-center tracking-widest md:text-left z-10">
+        <div class="hidden sm:block bottom-0 right-2 absolute lg:pr-2 2xl:block 2xl:right-0 2xl:absolute 2xl:bottom-0 2xl:mb-3 2xl:mr-3 text-center tracking-widest md:text-left z-10">
           <div class="classic sm:mb-3 md:absolute  lg:text-center 2xl:block 2xl:relative 2xl:right-1/3 ">
             <span class="intro intro--the block text-3xl">The</span>
             <span class="intro intro--num block text inline-block absolute font-semibold sm:hidden lg:inline">first #1</span>
-            <span class="intro block text-3xl sm:text-xl">classic style</span>
+            <span class="intro block  sm:text-xl 2xl:text-4xl">classic style</span>
           </div>
           <div class="vintage__container block md:absolute lg:relative 2xl:relative ">
             <p class="vintage vintage__top  m-0 text-6xl leading-none sm:hidden md:absolute md:text-5xl lg:absolute 2xl:absolute 2xl:block 2xl:text-center 2xl:w-full">VINTAGE</p>
@@ -120,7 +120,7 @@
             >c1chy's studio</h1>
 
   <figure
-      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-1/2 z-20">
+      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-1/2 2xl:mt-0 2xl:mb-1 z-20">
     <img
 
         :srcSet="require('../assets/graphic/ribbon.png?webp')"
@@ -139,7 +139,7 @@
         <div
             class="scumbag w-full flex  flex-col  xl:flex-row  justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
           <div
-              class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/4">
+              class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/2">
 
             <div>
               <h2
@@ -147,10 +147,10 @@
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="h-full w-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2   2xl:mt-5">
-              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:block 2xl:text-xl">
+                class="w-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2  2xl:pt-3 2xl:mt-1">
+              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:w-1/2 2xl:m-auto 2xl:block 2xl:text-xl">
                 Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xs text-center font-bold md:text-2xl lg:text-2xl xl:text-xl  2xl:text-2xl ">
+              <ul class=" mb-16 text-xs text-center font-bold md:text-2xl lg:text-2xl xl:text-xl  2xl:text-xl ">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
@@ -508,7 +508,7 @@ div p, li, a {
 
   .light_background {
 
-    width: 200vw;
+    width: 160vw;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -659,16 +659,12 @@ div p, li, a {
         background-image: url('~assets/graphic/green-dust-and-scratches.png');
         background-color: #4f7b70;
         color: #f7ebd5;
-        box-shadow: -20px 0 0 #4f7b70;
-        white-space: revert;
-        top: 5px;
-        left: 6px;
+        padding: 5px;
       }
 
 
       p {
 
-        font-size: 2vh;
 
       }
     }

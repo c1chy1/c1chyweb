@@ -229,9 +229,9 @@
     </section>
 
 
-    <section class="section h-full ">
+    <section>
 
-      <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8 2xl:mt-0">
+      <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8  2xl:mt-0">
         <span class="w-full inline-block relative 2xl:w-2/3"></span>
         <h3 class="w-1/2 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
@@ -248,9 +248,9 @@
         >CORE PRINCIPLES</h1>
 
       </div>
-      <div class="principles flex flex-col text-center mb-8 2xl:mb-0 ">
+      <div class="principles  w-full flex pb-16 items-end text-center mb-8  2xl:pb-8 2xl:mb-0 ">
 
-        <div class="w-full flex pb-16 items-end">
+
           <article class="h-full w-1/3  ">
 
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
@@ -300,7 +300,6 @@
 
           </article>
         </div>
-      </div>
       <stickyFooter/>
 
     </section>
@@ -528,7 +527,7 @@ header {
 
       position: relative;
       display: block;
-      --ratio: 9 / 16;
+      --ratio: 10 / 16;
       --width: 98vmin;
       --height: calc(var(--width) * var(--ratio));
 
