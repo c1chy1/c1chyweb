@@ -164,12 +164,18 @@
             </div>
 
           </div>
+<transition class="animate"  name="light" mode="out-in" type="animation">
 
-            <img
+
+  <button>test</button>
+
+</transition>
+          <img
                 :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
                 :src="scumbag.src"
                 :srcSet="scumbag.srcSet"
-                 class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 transform rotate-12 z-10 "
+
+                class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 transform rotate-12 z-10 "
             alt="vintage wolf">
 
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
@@ -219,14 +225,14 @@
                  :class="{'animate__animated animate__bounceInLeft animate__delay-2s animate__slow fade' : animate}">
 
           <div
-              class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4">
+              class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4 2xl:w-full">
 
             <h2
                 class="together w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-4xl  lg:w-full lg:text-5xl xl:w-2/5 2xl:text-4xl ">
               LET'S WORK TOGETHER
             </h2>
             <span
-                class="w-full inline-block relative "></span>
+                class="w-1/2 inline-block relative "></span>
 
           </div>
 <div class="w-3/4 mx-auto items-center">
@@ -255,7 +261,7 @@
 </div>
         </article>
 
-        <div class="w-full sm:self-center z-0  "
+        <div class="w-full sm:self-center z-0  2xl:self-end "
 
              :class="{'animate__animated animate__bounceInRight animate__delay-2s animate__slow animate show' : fade}"
 

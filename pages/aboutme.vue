@@ -147,17 +147,27 @@
           </div>
 
         </article>
+
+
+
         <article class="bg-center bg-no-repeat">
+
           <div class="pic w-11/12">
+
+
             <img
 
                 :data-src="require('~/assets/graphic/about_gallery_6.jpg?webp')" class="lazyload"
-                alt="design concept">
+                alt="design concept"
+
+
+            >
             <h2 class="w-1/2 relative m-auto p-2  mt-6 flex justify-center text-2xl font-semibold uppercase">
               Design Concept
             </h2>
 
           </div>
+
         </article>
 
     </section>
