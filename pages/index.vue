@@ -147,14 +147,19 @@
                 Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
 
             <div
-                class="w-full px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2  2xl:pt-3 2xl:mt-1">
-              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:w-1/2 2xl:m-auto 2xl:block 2xl:text-xl">
-                Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
-              <ul class=" mb-16 text-xs text-center font-bold md:text-2xl lg:text-2xl xl:text-xl  2xl:text-xl ">
+
+                class="w-full  px-1 pt-5 leading-loose md:w-full xl:text-xl xl:mt-2  2xl:pt-3 2xl:mt-1 2xl:flex ">
+
+              <ul class=" mb-16 text-xs text-center font-bold md:text-2xl lg:text-2xl xl:text-xl 2xl:mb-0 2xl:text-xl ">
                 <li><h3>APP-Entwicklung</h3></li>
                 <li><h3>Responsive Webdesign</h3></li>
                 <li><h3>SEO + Sichtbarkeit</h3></li>
               </ul>
+
+
+
+              <p class="hidden sm:hidden md:hidden md:block  md:text-2xl lg:hidden xl:text-xl  xl:hidden 2xl:w-1/2 2xl:m-auto 2xl:block 2xl:text-xl">
+                Webseiten der neuen Generation, die mit dem Ziel erstellt werden, Arbeit durch Innovation zu transformieren. </p>
 
             </div>
 
@@ -179,7 +184,7 @@
 
 <div class="w-5/12 self-center  lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-2xl text-center rounded-2xl sm:text-3xl sm:self-center md:text-5xl  lg:text-5xl xl:leading-tight  xl:text-4xl 2xl:text-6xl">
+                class="text-center">
               Strategie, Technologie, Design & Content </h2>
 
             <p class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
@@ -207,9 +212,9 @@
 
         </div>
       </section>
-      <section class="fp-section h-full w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
+      <section class="fp-section  w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
-        <article class="show w-full h-full flex flex-col sm:self-center md:h-1/3 2xl:"
+        <article class="show w-full flex flex-col sm:self-center md:h-1/3 2xl:self-start"
 
                  :class="{'animate__animated animate__bounceInLeft animate__delay-2s animate__slow fade' : animate}">
 
@@ -231,7 +236,7 @@
 
 
   <figure
-      class="h-full w-full relative top-8 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
+      class=" w-full relative top-8 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
     <img
 
         :data-src="require('~/assets/graphic/ribbon.png?webp')"
@@ -250,7 +255,7 @@
 </div>
         </article>
 
-        <div class="w-full h-full sm:self-center z-0  "
+        <div class="w-full sm:self-center z-0  "
 
              :class="{'animate__animated animate__bounceInRight animate__delay-2s animate__slow animate show' : fade}"
 
@@ -774,6 +779,7 @@ div {
         color: #224a49;
         filter: drop-shadow(5px 6px 0 #a9c9bb);
         font-family: Barlow Condensed,sans-serif;
+        font-size: 9vw;
       }
 
     }
@@ -817,6 +823,7 @@ div {
   .bg_stars {
 
 
+
     h2 {
 
       background-image: url('~assets/graphic/green-dust-and-scratches.png');
@@ -825,6 +832,7 @@ div {
       white-space: revert;
       top: 5px;
       left: 6px;
+      font-size: 3vw;
 
     }
     &:before {
