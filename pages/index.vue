@@ -51,7 +51,7 @@
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
-               class="hat lazyload relative top-20 w-3/5 sm:w-32 md:w-1/2 lg:w-1/5  2xl:w-1/6  z-20"
+               class="hat lazyload relative top-20 w-3/5 sm:w-32 md:w-1/2 lg:w-1/5   z-20"
           >
 
           <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">

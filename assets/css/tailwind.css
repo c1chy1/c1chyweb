@@ -395,15 +395,6 @@
 
     .hat {
 
-/*        --ratio: 12 / 16;
-        --width: 98vmin;
-        --height: calc(var(--width) * var(--ratio));
-
-
-        display: block;
-        margin: auto;
-        width: 70vmin;
-        height: 45vh;*/
         animation: matrix 7s ease infinite;
     }
 
@@ -805,7 +796,7 @@
         .hat {
 
             top: 12vh;
-
+            width: 16vw!important;
         }
 
 
