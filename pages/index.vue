@@ -113,7 +113,6 @@
             <span class="w-11/12 inline-block relative"></span>
 
           </div>
-          <button @click="click">test</button>
 
           <article class="bg-center bg-no-repeat leading-none ">
             <h1
@@ -414,6 +413,7 @@ return {
 
 
   mounted() {
+
 
     this.$nextTick(() => {
       this.$nuxt.$loading.start()

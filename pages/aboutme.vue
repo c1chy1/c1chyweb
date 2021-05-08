@@ -342,7 +342,7 @@ export default {
   },
 
   transition: {
-    name: ['spotlight'],
+    name: 'spotlight',
     mode: 'out-in',
   },
 

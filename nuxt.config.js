@@ -8,7 +8,7 @@ export default {
 
 
 
-        script: [
+   script: [
 
             {
                 src: 'http://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
@@ -19,7 +19,6 @@ export default {
             },
 
         ],
-
 
 
         title: 'c1chy.web',
@@ -99,7 +98,7 @@ export default {
 
 
     plugins: [
-        {src: '~/plugins/fullpage', mode: 'client'},{  src: '~/plugins/vue2-animate', mode: 'client'   },
+        {src: '~/plugins/fullpage', mode: 'client'},
 
 
     ],
@@ -110,6 +109,7 @@ export default {
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
+
         ['nuxt-purgecss',
             {
 

@@ -33,6 +33,9 @@ export default {
 
 
     start() {
+
+
+
       this.loading = true
       setTimeout(() => {
 
@@ -73,9 +76,7 @@ export default {
       }, 3000 )
     },
     finish() {
-
       this.loading = false
-
   },
 
 
