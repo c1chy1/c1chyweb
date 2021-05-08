@@ -65,11 +65,10 @@
       </div>
 
       <div>
+
         <h1
             class="text-11xl font-bold text-center leading-tight uppercase filter-shadow-green"
-
         >WINNING DESIGN</h1>
-
       </div>
 
 
@@ -343,7 +342,7 @@ export default {
   },
 
   transition: {
-    name: 'spotlight',
+    name: ['spotlight'],
     mode: 'out-in',
   },
 

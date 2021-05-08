@@ -8,8 +8,6 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '..\\assets\\css\\tailwind.css'
 
-import '..\\node_modules\\animate.css\\animate.min.css'
-
 import _7027c366 from '..\\layouts\\desktop.vue'
 import _6f6c098b from './layouts/default.vue'
 

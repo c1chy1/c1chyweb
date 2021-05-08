@@ -1,10 +1,16 @@
 <template>
 
 
-    <full-page class="w-screen h-screen  absolute z-10 cursor-default container px-0 md:px-0 xl:px-16 max-w-full lg:max-w-max  mx-auto " :options="options">
 
 
-      <section class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10">
+    <full-page id="fullpage" class="w-screen h-screen  absolute z-10 cursor-default container px-0 md:px-0  max-w-full lg:max-w-max  mx-auto"  :options="options">
+
+
+
+      <section  class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10 ">
+
+
+
 
 
 
@@ -31,8 +37,6 @@
           <div class="circle_bg circle3  absolute w-6 px-2 py-1   bg-white hidden   2xl:block 2xl:p-2 z-30"
 
           ></div>
-
-
    <img
 
        :data-src="require('~/assets/graphic/logo.png?webp')"
@@ -41,8 +45,7 @@
 
        alt="c1chy"
        class="logo lazyload w-3/4  sm:w-1/6  sm:self-center md:w-2/3 lg:w-1/3 2xl:w-1/5 relative z-50"
-       :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2 '"
-          >
+       :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2'">
 
 
           <img
@@ -110,41 +113,46 @@
             <span class="w-11/12 inline-block relative"></span>
 
           </div>
+          <button @click="click">test</button>
 
-
-<article class="bg-center bg-no-repeat leading-none ">
+          <article class="bg-center bg-no-repeat leading-none ">
             <h1
                 class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-11xl 2xl:mt-4 "
                 :class="{'animate__animated animate__swing animate__delay-3s animate' : animate}"
 
             >c1chy's studio</h1>
 
-  <figure
-      class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
-    <img
+            <figure
+                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
+              <img
 
-        :srcSet="require('../assets/graphic/ribbon.png?webp')"
-        alt="ribbon"
+                  :srcSet="require('../assets/graphic/ribbon.png?webp')"
+                  alt="ribbon"
 
-        class="lazyload sm:max-h-xs  xl:text-center filter-shadow-black " >
-    <figcaption
-        class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega xl:mt-4 2xl:text-3xl 2xl:mt-5 ">
-      ✪ ✪ ✪ ✪ ✪ ✪ ✪
-    </figcaption>
-  </figure>
-</article>
+                  class="lazyload sm:max-h-xs  xl:text-center filter-shadow-black " >
+              <figcaption
+                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega xl:mt-4 2xl:text-3xl 2xl:mt-5 ">
+                ✪ ✪ ✪ ✪ ✪ ✪ ✪
+              </figcaption>
+            </figure>
+          </article>
 
-          </div>
+        </div>
 
         <div
-            class="scumbag w-full flex  flex-col  xl:flex-row  justify-around bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
+            class="scumbag w-full flex  flex-col  xl:flex-row  justify-end bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
+
           <div
               class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/2">
+
+
+
 
             <div>
               <h2
                   class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
-                Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2></div>
+                Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2>
+            </div>
 
             <div
 
@@ -163,20 +171,16 @@
 
             </div>
 
+
           </div>
-<transition class="animate"  name="light" mode="out-in" type="animation">
 
-
-  <button>test</button>
-
-</transition>
           <img
-                :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
-                :src="scumbag.src"
-                :srcSet="scumbag.srcSet"
+              :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
+              :src="scumbag.src"
+              :srcSet="scumbag.srcSet"
 
-                class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 transform rotate-12 z-10 "
-            alt="vintage wolf">
+              class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 transform rotate-12 z-10 "
+              alt="vintage wolf">
 
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
           </div>
@@ -218,7 +222,7 @@
 
         </div>
       </section>
-      <section class="fp-section  w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
+      <section class="fp-section w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
         <article class="show w-full flex flex-col sm:self-center md:h-1/3 2xl:self-start"
 
@@ -309,12 +313,14 @@
 import stickyFooter from "@/components/stickyFooter";
 
 
+
+
 const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1300&format=webp');
 const logo = require('~/assets/graphic/logo.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const scumbag =require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 
 export default {
@@ -323,8 +329,6 @@ export default {
 
 
   layout: 'desktop',
-
-
 
 
  transition: {
@@ -337,10 +341,13 @@ export default {
   data() {
 
 
-    return {
+return {
 
       logo,hat,body,scumbag,vintageMusic,light,
 
+
+
+      loading: false,
       fade:false,
       show:false,
       animate: false,
@@ -351,7 +358,7 @@ export default {
         navigation: true,
         anchors: ['page1', 'page2', 'page3', 'page4'],
         scrollingSpeed: 1500,
-        sectionsColor: ['#40E0D0', '#e4ddd3', '#1c1716', '#fec401'],
+        sectionsColor: ['#e4ddd3', '#e4ddd3', '#1c1716', '#fec401'],
         controlArrows: true,
         verticalCentered: false,
         css3: true,
@@ -360,7 +367,11 @@ export default {
     }
   },
 
+
+
+
   methods: {
+
 
     afterLoad: function (origin, destination, direction) {
 
@@ -373,17 +384,20 @@ export default {
         this.animate = true
         this.fade = true
         this.show = true
-        console.log(this.animate);
+/*        console.log(this.animate);*/
 
 
 
       }
 
-
+/*
       console.log("After load....");
-      console.log(destination.index);
+      console.log(destination.index);*/
 
     },
+
+
+
 
     getFormValues (submitEvent) {
       this.name = submitEvent.target.elements.name.value
@@ -392,15 +406,38 @@ export default {
 
 },
 
+  afterMount: () => {
+
+    console.log(this.$nuxt.$refs.test)
+
+  },
+
+
   mounted() {
 
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+    })
+  },
 
-  }
+
+
 }
 
 </script>
 
 <style scoped lang="scss">
+
+
+
+
+#fullpage {
+
+
+  background-color: antiquewhite;
+}
+
+
 
 
 

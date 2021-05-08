@@ -25,7 +25,6 @@ module.exports = {
     layers: ['base'],
   },
 
-
   theme: {
 
     screens: {

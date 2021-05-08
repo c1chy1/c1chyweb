@@ -8,13 +8,12 @@
     "analyze": "nuxt build --analyze"
   },
   "dependencies": {
-    "@neneos/nuxt-animate.css": "0.0.1",
     "@nuxtjs/pwa": "^3.3.5",
-    "animate.css": "^4.1.1",
     "fullpage-nuxt": "0.0.3",
     "nuxt": "^2.14.7",
     "nuxt-purgecss": "^1.0.0",
-    "vue-fullpage.js": "^0.1.7"
+    "vue-fullpage.js": "^0.1.7",
+    "vue2-animate": "^2.1.4"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",

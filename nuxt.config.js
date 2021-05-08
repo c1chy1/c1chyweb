@@ -1,7 +1,24 @@
+
+
 export default {
 
+    loading: '~/components/loading.vue',
 
     head: {
+
+
+
+        script: [
+
+            {
+                src: 'http://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
+            },
+            {
+                src: 'http://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js'
+
+            },
+
+        ],
 
 
 
@@ -36,6 +53,7 @@ export default {
 
 
 
+
     build: {
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
@@ -56,9 +74,6 @@ export default {
         }
     },
 
-
-
-    loading: '~/components/loading.vue',
 
     target: 'static',
 
@@ -84,14 +99,14 @@ export default {
 
 
     plugins: [
-        {src: '~/plugins/fullpage', mode: 'client'}
-    ],
+        {src: '~/plugins/fullpage', mode: 'client'},{  src: '~/plugins/vue2-animate', mode: 'client'   },
 
+
+    ],
 
     modules: [
         ['@nuxtjs/pwa'],
         ['@nuxtjs/tailwindcss'],
-        ['@neneos/nuxt-animate.css'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
@@ -139,7 +154,6 @@ export default {
             img: ['src', 'srcset', 'data-src', 'data-srcset'],
             source: ['src', 'srcset', 'data-src', 'data-srcset'],
 
-            // Example for a custom component
             AppImage: ['source-md-url', 'image-url'],
         },
     },

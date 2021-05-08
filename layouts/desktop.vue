@@ -1,9 +1,12 @@
-<template>
+<template lang="html">
 
 <client-only>
-    <section class="w-full h-screen relative">
+    <section  class="w-full h-screen relative">
+
+
+
       <navigation />
-      <Nuxt keep-alive />
+      <Nuxt  keep-alive />
 
     </section>
   </client-only>
@@ -17,25 +20,22 @@ import navigation from "~/components/navigation";
 
 
 
+
 export default {
   components:  {navigation},
 
 
 
-  mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 7000)
-    })
-  }
-
 
 }
 
 
+
+
 </script>
 
-<style scoped>
+<style scoped >
+
 
 section  {
 
@@ -44,5 +44,6 @@ section  {
 
 
 }
+
 
 </style>

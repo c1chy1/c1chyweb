@@ -18,6 +18,7 @@ import nuxt_plugin_workbox_72d1c1f2 from 'nuxt_plugin_workbox_72d1c1f2' // Sourc
 import nuxt_plugin_metaplugin_23d21c87 from 'nuxt_plugin_metaplugin_23d21c87' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
 import nuxt_plugin_iconplugin_2879c1fb from 'nuxt_plugin_iconplugin_2879c1fb' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ..\\plugins\\fullpage (mode: 'client')
+import nuxt_plugin_vue2animate_60abebf6 from 'nuxt_plugin_vue2animate_60abebf6' // Source: ..\\plugins\\vue2-animate (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -67,7 +68,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"c1chy.web","htmlAttrs":{"lang":"de","amp":true},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"c1chy My Frontend experiences Nuxt Portfolio Webentwickler"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"},{"hid":"font-preload","rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"}],"style":[],"script":[],"noscript":[{"hid":"font-noscript","innerHTML":"\u003Clink rel=\"stylesheet\" href=\"\u002Ffonts\u002Ffont-face.css\"\u003E"}],"__dangerouslyDisableSanitizersByTagID":{"font-noscript":["innerHTML"]}},
+    head: {"script":[{"src":"http:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fvelocity\u002F2.0.6\u002Fvelocity.min.js"},{"src":"http:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fvelocity\u002F2.0.6\u002Fvelocity.ui.min.js"}],"title":"c1chy.web","htmlAttrs":{"lang":"de","amp":true},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"c1chy My Frontend experiences Nuxt Portfolio Webentwickler"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"},{"hid":"font-preload","rel":"preload","as":"style","href":"\u002Ffonts\u002Ffont-face.css"}],"style":[],"noscript":[{"hid":"font-noscript","innerHTML":"\u003Clink rel=\"stylesheet\" href=\"\u002Ffonts\u002Ffont-face.css\"\u003E"}],"__dangerouslyDisableSanitizersByTagID":{"font-noscript":["innerHTML"]}},
 
     router,
     nuxt: {
@@ -203,6 +204,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_fullpage_4279eb14 === 'function') {
     await nuxt_plugin_fullpage_4279eb14(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vue2animate_60abebf6 === 'function') {
+    await nuxt_plugin_vue2animate_60abebf6(app.context, inject)
   }
 
   // Lock enablePreview in context
