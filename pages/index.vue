@@ -139,9 +139,11 @@
         </div>
 
         <div
-            class="scumbag w-full flex  flex-col  xl:flex-row  justify-end bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
+            class="scumbag w-full flex  flex-col  xl:flex-row  justify-center bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
 
           <div
+
+              ref="test"
               class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/2">
 
 
@@ -174,11 +176,14 @@
           </div>
 
           <img
+
+              :if="animate"
+              ref="scumbag"
               :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
               :src="scumbag.src"
               :srcSet="scumbag.srcSet"
 
-              class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 transform rotate-12 z-10 "
+              class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 opacity-0  z-10 "
               alt="vintage wolf">
 
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
@@ -211,7 +216,6 @@
 
             <img
                 class="lazyload w-1/2 relative self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
-                :class="{'animate__animated animate__flipInX animate__delay-3s animate__slow show' : show}"
 
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :srcSet="vintageMusic.srcSet"
@@ -223,9 +227,8 @@
       </section>
       <section class="fp-section w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
-        <article class="show w-full flex flex-col sm:self-center md:h-1/3 2xl:self-start"
+        <article class="show w-full flex flex-col sm:self-center md:h-1/3 2xl:self-start">
 
-                 :class="{'animate__animated animate__bounceInLeft animate__delay-2s animate__slow fade' : animate}">
 
           <div
               class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4 2xl:w-full">
@@ -266,7 +269,7 @@
 
         <div class="w-full sm:self-center z-0  2xl:self-end "
 
-             :class="{'animate__animated animate__bounceInRight animate__delay-2s animate__slow animate show' : fade}"
+
 
         >
           <form
@@ -347,8 +350,6 @@ return {
 
 
       loading: false,
-      fade:false,
-      show:false,
       animate: false,
       options: {
         ref: true,
@@ -372,26 +373,70 @@ return {
   methods: {
 
 
+
+
     afterLoad: function (origin, destination, direction) {
 
       this.animate = false
-      this.fade = false
-      this.show = false
+
 
       if (destination.index === 1 || destination.index === 2 || destination.index === 3  ) {
 
         this.animate = true
-        this.fade = true
-        this.show = true
-/*        console.log(this.animate);*/
+
+
+    Velocity(this.$refs.scumbag,
+
+            {
+              opacity: 1,
+              transform: ["translateX(0)", "translateX(50%)"],
+            },
+
+
+            {
+
+              easing:"swing",
+              duration: 450,
+              delay:4000,
+
+              begin: () => {
+                Velocity(this.$refs.test,
+                    {
+
+             transform: ["translateX(-12%) rotate(8deg)","translateX(0) rotate(0)"]
+
+
+                    },
+
+                    {
+                      duration: 500,
+                      delay:400,
+                      begin: () => {
+                        Velocity(this.$refs.scumbag,
+                            {
+
+                 transform: ["rotate(12deg)","rotate(0)"],
+
+
+                            },
+
+                            {
+
+                              easing:[300,8],
+                              duration: 1000,
+                            }
+                        )
+                      }
+
+
+                    },
 
 
 
+                )
+              }
+            })
       }
-
-/*
-      console.log("After load....");
-      console.log(destination.index);*/
 
     },
 
@@ -430,8 +475,6 @@ return {
 
   background-color: antiquewhite;
 }
-
-
 
 
 
