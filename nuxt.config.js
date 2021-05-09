@@ -11,10 +11,10 @@ export default {
    script: [
 
             {
-                src: 'http://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
             },
             {
-                src: 'http://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js'
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js'
 
             },
 
