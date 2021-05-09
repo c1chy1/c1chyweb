@@ -405,12 +405,6 @@ return {
 
 },
 
-  afterMount: () => {
-
-    console.log(this.$nuxt.$refs.test)
-
-  },
-
 
   mounted() {
 
