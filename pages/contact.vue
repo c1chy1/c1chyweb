@@ -56,12 +56,37 @@
                 class=" pt-1 pr-5 pl-2 pb-1 relative top-2 left-4 inline text-6xl font-semibold leading-tight">
               MY CULTURE IS TIMELESS AGE IS JUST A NUMBER</h2>
 
-            <p class="text-xl">Menschen zu bewegen, ihnen den Alltag zu erleichtern und sie für Marken zu begeistern, ist meine Mission. Dafür kümmere ich mich mit Hingabe auch um die kleinen Details, ohne das große Ganze aus dem Blick zu verlieren. Ich experimentiere, erfinde, erforsche. Deshalb gehört es für mich zum Alltag, Herangehensweisen immer wieder zu überdenken und mit neuen Technologien alternative Lösungen abseits der ausgetretenen Pfade zu entwickeln.</p>
+            <p class="text-xl"
+               v-bind:class="[isShowing ? blurClass : '', bkClass]"
+            >Menschen zu bewegen, ihnen den Alltag zu erleichtern und sie für Marken zu begeistern, ist meine Mission. Dafür kümmere ich mich mit Hingabe auch um die kleinen Details, ohne das große Ganze aus dem Blick zu verlieren. Ich experimentiere, erfinde, erforsche. Deshalb gehört es für mich zum Alltag, Herangehensweisen immer wieder zu überdenken und mit neuen Technologien alternative Lösungen abseits der ausgetretenen Pfade zu entwickeln.</p>
 
 
-            <a href="#"
+
+            <transition name="fade">
+              <div
+
+                  v-if="isShowing" class="modal" >
+                <button @click="toggleShow">
+                  Close
+                </button>
+                <ul>
+
+                  <li>2. HTML</li>
+                  <li>2. HTML</li>
+                  <li>2. HTML</li>
+                  <li>2. HTML</li>
+                  <li>2. HTML</li>
+
+                </ul>
+
+              </div>
+
+            </transition>
+
+            <button
                class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3"
-            >Lern Mehr</a>
+               @click="toggleShow"
+            >Lern Mehr</button>
           </div>
         </section>
 
@@ -193,9 +218,21 @@ export default {
 
     return {
 
-      light
-
+      light,
+      bkClass: 'bk',
+      blurClass: 'blur',
+      isShowing: false,
     }
+
+
+  },
+
+  methods: {
+
+
+    toggleShow() {
+      this.isShowing = !this.isShowing;
+    },
 
 
   },
@@ -279,6 +316,115 @@ h1 {
 
   }
 }
+
+
+
+.bk {
+  transition: all 0.3s ease-out;
+}
+
+.blur {
+  filter: blur(1px);
+  opacity: 0.4;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s ease-out;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+
+div.modal {
+  height: 75px;
+  width: 75px;
+  border-radius: 75px;
+  overflow: hidden;
+  position: absolute;
+  background-color: #4f7b70;
+  background-image: url('~assets/graphic/exclusive-paper.png?size=300');
+
+  animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+  h2, p ,li,button{
+    opacity: 0;
+    position: relative;
+    animation: modalContentFadeIn .5s 1.4s linear forwards;
+  }
+
+  &.out {
+    animation: slowFade .5s 1.5s linear forwards;
+
+    .modal-background {
+      background-color: rgba(0, 0, 0, .7);
+      animation: fadeToRed 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+
+
+  }
+}
+
+
+@keyframes modalContentFadeIn {
+  0% {
+    opacity:0;
+    top:-20px;
+  }
+  100% {
+    opacity:1;
+    top:0;
+  }
+}
+
+
+@keyframes fadeToRed {
+  0% {
+    background-color:rgba(black,.6);
+  }
+  100% {
+    background-color:rgba(red,.8);
+  }
+}
+
+@keyframes slowFade {
+  0% {
+    opacity:1;
+  }
+  99.9% {
+    opacity:0;
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(0);
+  }
+}
+
+
+@keyframes bondJamesBond {
+  0% {
+    transform:translateX(1000px);
+  }
+  80% {
+    transform:translateX(0px);
+    border-radius:75px;
+    height:75px;
+    width:75px;
+  }
+  90% {
+    border-radius:3px;
+    height:322px;
+    width:40%;
+  }
+  100% {
+    border-radius:3px;
+    height:352px;
+    width:45%;
+  }
+}
+
 
 
 header {

@@ -172,22 +172,59 @@
     </section>
     <section class="mission h-auto flex   lg:pt-12 lg:mt-16  lg:pb-32  2xl:mt-0  2xl:pb-12">
 
+
+
+      <transition name="fade">
+        <div
+
+            v-if="isShowing" class="modal z-20" >
+          <button @click="toggleShow">
+            Close
+          </button>
+          <ul>
+
+            <li>2. HTML</li>
+            <li>2. HTML</li>
+            <li>2. HTML</li>
+            <li>2. HTML</li>
+            <li>2. HTML</li>
+
+          </ul>
+
+        </div>
+
+      </transition>
+
+
+
       <div class="mission_left  w-1/2  lg:pl-16  2xl:pl-24 2xl:pt-16 ">
-        <div class="flex">
+        <div class="flex"
+
+        >
           <h3 class="w-1/3 font-bold text-3xl mt-4 ml-2 text-left"
 
           >CORE PRINCIPLES</h3>
           <span class="w-10/12 inline-block relative self-center"></span>
         </div>
         <h1 class="text-10xl font-semibold leading-none uppercase">MISSION</h1>
-        <p class="w-10/12 text-2xl text-left mt-12 mb-8">Das Internet ist groß und bunt. Hier gibt es keine Standard-Lösung, sondern es sind immer individuelle Ansätze gefragt. Ich finde für meine Kunden neue Ideen und Konzepte, die wir engagiert und mit dem nötigen Know-how umsetzen.Websites, die nicht auf Smartphones oder Tablets angezeigt werden können, sperren sich einem stetig wachsenden Markt. Mit Responsive Design mache ich Webseiten fit für den Einsatz immer und überall.</p>
+        <p class="w-10/12 text-2xl text-left mt-12 mb-8 z-10"
+           v-bind:class="[isShowing ? blurClass : '', bkClass]"
 
-        <a href="#"
+        >Das Internet ist groß und bunt. Hier gibt es keine Standard-Lösung, sondern es sind immer individuelle Ansätze gefragt. Ich finde für meine Kunden neue Ideen und Konzepte, die wir engagiert und mit dem nötigen Know-how umsetzen.Websites, die nicht auf Smartphones oder Tablets angezeigt werden können, sperren sich einem stetig wachsenden Markt. Mit Responsive Design mache ich Webseiten fit für den Einsatz immer und überall.</p>
+
+        <button
            class="button_red fade lg:hidden 2xl:block"
-        >MY APPROACH</a>
+                @click="toggleShow">
+        <span v-if="isShowing">HIDE</span>
+        <span v-else>SHOW</span>
+        MY APPROACH
+
+        </button>
       </div>
 
-      <div class="mission_right w-1/2 grid grid-cols-2 grid-rows-2 gap-x-0">
+      <div class="mission_right w-1/2 grid grid-cols-2 grid-rows-2 gap-x-0"
+
+      >
         <div class="h-72 w-72 m-auto cursor-pointer">
           <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lightbulb"
                class="svg-inline--fa fa-lightbulb fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -260,6 +297,9 @@
       <div class="principles  w-full flex pb-16 items-end text-center mb-8  2xl:pb-8 2xl:mb-0 ">
 
 
+
+
+
           <article class="h-full w-1/3  ">
 
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
@@ -269,13 +309,14 @@
 
                  :data-src="require('~/assets/graphic/principles_01.png?webp')"
                  alt="Verstehen Frontend"
-
             >
 
             <p class="w-2/3 m-auto text-2xl">Mein erster Schritt in jedem Projekt: Ihre Bedürfnisse, Wünsche und Erwartungen nachvollziehen – und die Ihrer User.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"
-            >Lern Mehr</a>
+            >Lern Mehr
+
+            </a>
 
           </article>
           <article class="h-full w-1/3 ">
@@ -290,7 +331,9 @@
             <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
             <a href="#"
                class="button_red inline-block fade uppercase"
+
             >Lern Mehr</a>
+
 
           </article>
           <article class="h-full w-1/3">
@@ -305,6 +348,7 @@
             <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
             <a href="#"
                class="button_red inline-block fade uppercase"
+
             >Lern Mehr</a>
 
           </article>
@@ -337,8 +381,15 @@ export default {
   data() {
 
     return {
-      light
+
+
+      light,
+      isShowing: false,
+      bkClass: 'bk',
+      blurClass: 'blur',
+
     }
+
   },
 
   transition: {
@@ -346,6 +397,18 @@ export default {
     mode: 'out-in',
   },
 
+
+
+  methods: {
+
+
+    toggleShow() {
+      this.isShowing = !this.isShowing;
+    },
+
+
+
+  },
 
   beforeMount() {
 
@@ -427,6 +490,117 @@ h1 {
 }
 
 
+
+.bk {
+  transition: all 0.05s ease-out;
+}
+
+.blur {
+  filter: blur(1px);
+  opacity: 0.4;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s ease-out;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+
+
+
+div.modal {
+  height: 75px;
+  width: 75px;
+  border-radius: 75px;
+  overflow: hidden;
+  position: absolute;
+  background-color: #4f7b70;
+  background-image: url('~assets/graphic/exclusive-paper.png?size=300');
+
+  animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+  h2, p ,li,button{
+    opacity: 0;
+    position: relative;
+    animation: modalContentFadeIn .5s 1.4s linear forwards;
+  }
+
+  &.out {
+    animation: slowFade .5s 1.5s linear forwards;
+
+    .modal-background {
+      background-color: rgba(0, 0, 0, .7);
+      animation: fadeToRed 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+
+
+  }
+}
+
+
+@keyframes modalContentFadeIn {
+  0% {
+    opacity:0;
+    top:-20px;
+  }
+  100% {
+    opacity:1;
+    top:0;
+  }
+}
+
+
+@keyframes fadeToRed {
+  0% {
+    background-color:rgba(black,.6);
+  }
+  100% {
+    background-color:rgba(red,.8);
+  }
+}
+
+@keyframes slowFade {
+  0% {
+    opacity:1;
+  }
+  99.9% {
+    opacity:0;
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(0);
+  }
+}
+
+
+@keyframes bondJamesBond {
+  0% {
+    transform: translateX(1000px);
+  }
+  80% {
+    transform: translateX(0px);
+    border-radius: 75px;
+    height: 75px;
+    width: 75px;
+  }
+  90% {
+    border-radius: 3px;
+    height: 65%;
+    width: 45%;
+  }
+  100% {
+    border-radius: 3px;
+    height: 70%;
+    width: 50%;
+  }
+
+
+}
+
 header {
 
   h1 {
@@ -436,7 +610,7 @@ header {
 
   }
 
-  div:nth-child(1)  {
+  div:nth-child(1) {
 
 
     width: 100vw;
@@ -510,6 +684,7 @@ header {
 
       a {
         transition: all 0.2s ease;
+
         &:hover {
 
 
@@ -523,8 +698,6 @@ header {
     }
 
   }
-
-
 }
 
 .about_gallery {
@@ -674,7 +847,8 @@ article {
 
     }
 
-    span {
+
+    div span {
 
 
       &:before {

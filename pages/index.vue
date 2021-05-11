@@ -196,23 +196,57 @@
 
 
 
-<div class="w-5/12 self-center  lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
+<div
+
+
+
+    class="w-5/12 self-center  lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
             <h2
                 class="text-center">
               Strategie, Technologie, Design & Content </h2>
 
-            <p class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
+
+
+            <p
+
+                v-bind:class="[isShowing ? blurClass : '', bkClass]"
+                class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
               An der Schnittstelle von Design und Technik entwickeln wir digitale Anwendungen,
               die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
               auf welchem Gerät. Dazu erproben wir kontinuierlich neuartige Methoden, beschäftigen uns intensiv mit aufregenden Technologien,
               experimentieren mit neuen Herangehensweisen.</p>
 
 
-            <a href="#"
+            <button
                class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
-            >MY STORY</a>
-</div>
+               @click="toggleShow"
+            >
+              <span v-if="isShowing">HIDE</span>
+              <span v-else>SHOW</span>
+              MY STORY
+            </button>
 
+  <transition name="fade">
+  <div
+
+      v-if="isShowing" class="modal" >
+    <button @click="toggleShow">
+      Close
+    </button>
+    <ul>
+
+      <li>2. HTML</li>
+      <li>2. HTML</li>
+      <li>2. HTML</li>
+      <li>2. HTML</li>
+      <li>2. HTML</li>
+
+    </ul>
+
+  </div>
+
+  </transition>
+</div>
 
             <img
                 class="lazyload w-1/2 relative self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
@@ -325,6 +359,7 @@ const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=
 const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 
+
 export default {
 
   components: {stickyFooter},
@@ -348,9 +383,12 @@ return {
       logo,hat,body,scumbag,vintageMusic,light,
 
 
+      bkClass: 'bk',
+      blurClass: 'blur',
 
+      animate:false,
       loading: false,
-      animate: false,
+      isShowing: false,
       options: {
         ref: true,
         dragAndMove: true,
@@ -374,6 +412,10 @@ return {
 
 
 
+    toggleShow() {
+      this.isShowing = !this.isShowing;
+    },
+
 
     afterLoad: function (origin, destination, direction) {
 
@@ -389,15 +431,16 @@ return {
 
             {
               opacity: 1,
-              transform: ["translateX(0)", "translateX(50%)"],
+              transform: ["translateX(0)", "translateX(75%)"],
             },
 
 
             {
 
               easing:"swing",
-              duration: 450,
-              delay:4000,
+              duration:750,
+              delay:3000,
+              repeat: 0,
 
               begin: () => {
                 Velocity(this.$refs.test,
@@ -410,7 +453,7 @@ return {
 
                     {
                       duration: 500,
-                      delay:400,
+                      delay:1400,
                       begin: () => {
                         Velocity(this.$refs.scumbag,
                             {
@@ -424,10 +467,45 @@ return {
 
                               easing:[300,8],
                               duration: 1000,
+
                             }
                         )
-                      }
 
+
+
+                      },
+
+                      complete: () => {
+                        Velocity(this.$refs.scumbag,{
+
+                            },
+                            {
+
+                            loop: 0,
+
+                              begin: () => {
+
+                                Velocity(this.$refs.scumbag,{
+
+
+                                  transform: ["translateX(-50%)","translateX(0) "],
+
+                                },
+
+
+                                )
+
+
+                              }
+
+                            }
+
+
+                        )
+
+
+
+                      }
 
                     },
 
@@ -435,11 +513,13 @@ return {
 
                 )
               }
+
+
+
             })
       }
 
     },
-
 
 
 
@@ -466,6 +546,117 @@ return {
 </script>
 
 <style scoped lang="scss">
+
+
+
+
+.bk {
+  transition: all 0.3s ease-out;
+}
+
+.blur {
+  filter: blur(1px);
+  opacity: 0.4;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s ease-out;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+
+div.modal {
+  height: 75px;
+  width: 75px;
+  border-radius: 75px;
+  overflow: hidden;
+  position: absolute;
+  background-color: #4f7b70;
+  background-image: url('~assets/graphic/exclusive-paper.png?size=300');
+
+  animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+  h2, p ,li,button{
+    opacity: 0;
+    position: relative;
+    animation: modalContentFadeIn .5s 1.4s linear forwards;
+  }
+
+  &.out {
+    animation: slowFade .5s 1.5s linear forwards;
+
+    .modal-background {
+      background-color: rgba(0, 0, 0, .7);
+      animation: fadeToRed 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+
+
+  }
+}
+
+
+@keyframes modalContentFadeIn {
+  0% {
+    opacity:0;
+    top:-20px;
+  }
+  100% {
+    opacity:1;
+    top:0;
+  }
+}
+
+
+@keyframes fadeToRed {
+  0% {
+    background-color:rgba(black,.6);
+  }
+  100% {
+    background-color:rgba(red,.8);
+  }
+}
+
+@keyframes slowFade {
+  0% {
+    opacity:1;
+  }
+  99.9% {
+    opacity:0;
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(0);
+  }
+}
+
+
+@keyframes bondJamesBond {
+  0% {
+    transform:translateX(1000px);
+  }
+  80% {
+    transform:translateX(0px);
+    border-radius:75px;
+    height:75px;
+    width:75px;
+  }
+  90% {
+    border-radius:3px;
+    height:372px;
+    width:90%;
+  }
+  100% {
+    border-radius:3px;
+    height:352px;
+    width:100%;
+  }
+}
+
+
 
 
 
