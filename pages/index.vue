@@ -219,7 +219,7 @@
 
             <button
                class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
-               @click="toggleShow"
+               @click="toggleModal"
             >
               <span v-if="isShowing">HIDE</span>
               <span v-else>SHOW</span>
@@ -229,7 +229,7 @@
   <transition name="fade">
   <div
 
-      v-if="isShowing" class="modal flex" >
+      v-show="isShowing" class="modal flex" >
 
     <img
 
@@ -240,11 +240,15 @@
     >
 
 
-    <button id="icon"
-            class="modal_close Icon"
-            @click="toggleShow"
-            v-model="checked"
-            :class="isShowing ? 'close' : ''"
+    <button
+
+
+        ref="button"
+
+        id="icon"
+            class="Icon"
+        v-if="isShowing"
+        @click="closeModal"
     >
 
 
@@ -411,7 +415,7 @@ return {
       blurClass: 'blur',
       closeClass: 'close',
 
-      close:  true,
+      close:  false,
       checked: false,
 
 
@@ -440,9 +444,20 @@ return {
   methods: {
 
 
+    toggleModal() {
+    this.isShowing = !this.isShowing;
 
-    toggleShow() {
-     this.isShowing = !this.isShowing;
+    },
+
+
+
+    closeModal(el) {
+
+
+
+      this.$refs.button.classList.add('close')
+
+
     },
 
 
@@ -549,6 +564,11 @@ return {
       }
 
     },
+
+
+
+
+
 
 
 
