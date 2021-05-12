@@ -65,7 +65,18 @@
             <transition name="fade">
               <div
 
-                  v-if="isShowing" class="modal" >
+                  v-if="isShowing" class="modal flex" >
+
+
+
+                <img
+
+                    :data-src="require('~/assets/graphic/vintage_guys.jpg?webp')"
+                    :src="guys.src"
+                    :srcSet="guys.srcSet"
+
+                >
+
                 <button @click="toggleShow">
                   Close
                 </button>
@@ -78,6 +89,8 @@
                   <li>2. HTML</li>
 
                 </ul>
+
+
 
               </div>
 
@@ -201,6 +214,7 @@
 import stickyFooter from "@/components/stickyFooter";
 
 const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const guys = require('~/assets/graphic/vintage_guys.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
 export default {
 
@@ -218,7 +232,7 @@ export default {
 
     return {
 
-      light,
+      light,guys,
       bkClass: 'bk',
       blurClass: 'blur',
       isShowing: false,
@@ -344,12 +358,12 @@ div.modal {
   border-radius: 75px;
   overflow: hidden;
   position: absolute;
-  background-color: #4f7b70;
+  background-color: #f4dda9;
   background-image: url('~assets/graphic/exclusive-paper.png?size=300');
 
   animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-  h2, p ,li,button{
+  h2, p ,li,button,img {
     opacity: 0;
     position: relative;
     animation: modalContentFadeIn .5s 1.4s linear forwards;
@@ -365,6 +379,7 @@ div.modal {
 
 
   }
+
 }
 
 

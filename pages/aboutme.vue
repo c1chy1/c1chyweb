@@ -177,7 +177,17 @@
       <transition name="fade">
         <div
 
-            v-if="isShowing" class="modal z-20" >
+            v-if="isShowing" class="modal ml-5 flex z-20" >
+
+          <img
+
+              :data-src="require('~/assets/graphic/vintage_cigarrettes.jpg?webp')"
+              :src="marlboro.src"
+              :srcSet="marlboro.srcSet"
+
+          >
+
+
           <button @click="toggleShow">
             Close
           </button>
@@ -364,6 +374,8 @@
 
 
 const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const marlboro = require('~/assets/graphic/vintage_cigarrettes.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
+
 import stickyFooter from "@/components/stickyFooter";
 
 
@@ -383,7 +395,8 @@ export default {
     return {
 
 
-      light,
+      light,marlboro,
+
       isShowing: false,
       bkClass: 'bk',
       blurClass: 'blur',
@@ -518,12 +531,12 @@ div.modal {
   border-radius: 75px;
   overflow: hidden;
   position: absolute;
-  background-color: #4f7b70;
-  background-image: url('~assets/graphic/exclusive-paper.png?size=300');
+  background-color: black;
+  filter: sepia(1);
 
   animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-  h2, p ,li,button{
+  h2, p ,li,button,img{
     opacity: 0;
     position: relative;
     animation: modalContentFadeIn .5s 1.4s linear forwards;

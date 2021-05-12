@@ -229,9 +229,29 @@
   <transition name="fade">
   <div
 
-      v-if="isShowing" class="modal" >
-    <button @click="toggleShow">
-      Close
+      v-if="isShowing" class="modal flex" >
+
+    <img
+
+        :data-src="require('~/assets/graphic/vintage_walkman.jpg?webp')"
+        :src="walkman.src"
+        :srcSet="walkman.srcSet"
+
+    >
+
+
+    <button id="icon"
+            class="modal_close Icon"
+            @click="toggleShow"
+            v-model="checked"
+            :class="isShowing ? 'close' : ''"
+    >
+
+
+      <span></span>
+      <span></span>
+      <span></span>
+
     </button>
     <ul>
 
@@ -242,6 +262,9 @@
       <li>2. HTML</li>
 
     </ul>
+
+
+
 
   </div>
 
@@ -357,6 +380,7 @@ const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&siz
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
 
 
@@ -380,11 +404,16 @@ export default {
 
 return {
 
-      logo,hat,body,scumbag,vintageMusic,light,
+      logo,hat,body,scumbag,vintageMusic,light,walkman,
 
 
       bkClass: 'bk',
       blurClass: 'blur',
+      closeClass: 'close',
+
+      close:  true,
+      checked: false,
+
 
       animate:false,
       loading: false,
@@ -413,7 +442,7 @@ return {
 
 
     toggleShow() {
-      this.isShowing = !this.isShowing;
+     this.isShowing = !this.isShowing;
     },
 
 
@@ -575,12 +604,12 @@ div.modal {
   border-radius: 75px;
   overflow: hidden;
   position: absolute;
-  background-color: #4f7b70;
+  background-color: #ffa735;
   background-image: url('~assets/graphic/exclusive-paper.png?size=300');
 
   animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-  h2, p ,li,button{
+  h2, p, li, button, img {
     opacity: 0;
     position: relative;
     animation: modalContentFadeIn .5s 1.4s linear forwards;
@@ -596,6 +625,77 @@ div.modal {
 
 
   }
+
+
+  .modal_close {
+
+
+  }
+
+}
+
+
+
+
+.Icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.Icon span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 23px;
+  height: 8px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  transform: rotate(0deg);
+  transition: .2s ease-in-out;
+}
+
+.Icon span:nth-child(1),
+.Icon span:nth-child(3) {
+  width: 50%;
+  transform: rotate(45deg);
+}
+
+.Icon span:nth-child(1) {
+  left: 3px;
+  top: 15px;
+}
+
+.Icon span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.Icon span:nth-child(3) {
+  left: 20px;
+  top: 31px;
+}
+
+.close span:nth-child(1),
+.close span:nth-child(3) {
+  left: -1px;
+}
+
+.close span:nth-child(1) {
+  top: 15px;
+  transform: rotate(135deg);
+}
+
+.close span:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.close span:nth-child(3) {
+  top: 31px;
+  transform: rotate(45deg);
 }
 
 
