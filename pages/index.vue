@@ -229,7 +229,7 @@
   <transition name="fade">
   <div
 
-      v-show="isShowing" class="modal flex" >
+      v-if="isShowing" ref="modal" class="modal flex" >
 
     <img
 
@@ -241,15 +241,10 @@
 
 
     <button
-
-
         ref="button"
-
         id="icon"
-            class="Icon"
-        v-if="isShowing"
-        @click="closeModal"
-    >
+        class="Icon"
+        @click="closeModal">
 
 
       <span></span>
@@ -413,10 +408,6 @@ return {
 
       bkClass: 'bk',
       blurClass: 'blur',
-      closeClass: 'close',
-
-      close:  false,
-      checked: false,
 
 
       animate:false,
@@ -451,11 +442,16 @@ return {
 
 
 
-    closeModal(el) {
+    closeModal() {
 
 
+        this.$refs.button.classList.add('close')
 
-      this.$refs.button.classList.add('close')
+      setTimeout(() => {
+
+        this.isShowing = false
+
+      }, 1000)
 
 
     },
@@ -609,6 +605,9 @@ return {
 }
 
 
+
+
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 1s ease-out;
 }
@@ -616,6 +615,9 @@ return {
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
+
+
+
 
 
 div.modal {
@@ -647,14 +649,9 @@ div.modal {
   }
 
 
-  .modal_close {
 
-
-  }
 
 }
-
-
 
 
 .Icon {

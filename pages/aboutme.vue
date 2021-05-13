@@ -188,8 +188,17 @@
           >
 
 
-          <button @click="toggleShow">
-            Close
+          <button
+              ref="button"
+              id="icon"
+              class="Icon"
+              @click="closeModal">
+
+
+            <span></span>
+            <span></span>
+            <span></span>
+
           </button>
           <ul>
 
@@ -419,7 +428,19 @@ export default {
       this.isShowing = !this.isShowing;
     },
 
+    closeModal() {
 
+
+      this.$refs.button.classList.add('close')
+
+      setTimeout(() => {
+
+        this.isShowing = false
+
+      }, 1000)
+
+
+    },
 
   },
 
@@ -552,6 +573,67 @@ div.modal {
 
 
   }
+}
+
+.Icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.Icon span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 23px;
+  height: 8px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  transform: rotate(0deg);
+  transition: .2s ease-in-out;
+}
+
+.Icon span:nth-child(1),
+.Icon span:nth-child(3) {
+  width: 50%;
+  transform: rotate(45deg);
+}
+
+.Icon span:nth-child(1) {
+  left: 3px;
+  top: 15px;
+}
+
+.Icon span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.Icon span:nth-child(3) {
+  left: 20px;
+  top: 31px;
+}
+
+.close span:nth-child(1),
+.close span:nth-child(3) {
+  left: -1px;
+}
+
+.close span:nth-child(1) {
+  top: 15px;
+  transform: rotate(135deg);
+}
+
+.close span:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.close span:nth-child(3) {
+  top: 31px;
+  transform: rotate(45deg);
 }
 
 
