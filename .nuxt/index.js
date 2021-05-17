@@ -12,12 +12,14 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_libplugin8eef95e0_701d38fa from 'nuxt_plugin_libplugin8eef95e0_701d38fa' // Source: .\\lib.plugin.8eef95e0.js (mode: 'client')
 import nuxt_plugin_lazySizes_750e0da3 from 'nuxt_plugin_lazySizes_750e0da3' // Source: .\\lazySizes.js (mode: 'all')
 import nuxt_plugin_fontLoader_75c114cb from 'nuxt_plugin_fontLoader_75c114cb' // Source: .\\fontLoader.js (mode: 'client')
 import nuxt_plugin_workbox_72d1c1f2 from 'nuxt_plugin_workbox_72d1c1f2' // Source: .\\workbox.js (mode: 'client')
 import nuxt_plugin_metaplugin_23d21c87 from 'nuxt_plugin_metaplugin_23d21c87' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
 import nuxt_plugin_iconplugin_2879c1fb from 'nuxt_plugin_iconplugin_2879c1fb' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_fullpage_4279eb14 from 'nuxt_plugin_fullpage_4279eb14' // Source: ..\\plugins\\fullpage (mode: 'client')
+import nuxt_plugin_aos_78651e70 from 'nuxt_plugin_aos_78651e70' // Source: ..\\plugins\\aos.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -181,6 +183,10 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
+  if (process.client && typeof nuxt_plugin_libplugin8eef95e0_701d38fa === 'function') {
+    await nuxt_plugin_libplugin8eef95e0_701d38fa(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_lazySizes_750e0da3 === 'function') {
     await nuxt_plugin_lazySizes_750e0da3(app.context, inject)
   }
@@ -203,6 +209,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_fullpage_4279eb14 === 'function') {
     await nuxt_plugin_fullpage_4279eb14(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_aos_78651e70 === 'function') {
+    await nuxt_plugin_aos_78651e70(app.context, inject)
   }
 
   // Lock enablePreview in context

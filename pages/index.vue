@@ -1,3 +1,4 @@
+<script src="../../../portfolio/portfolio/nuxt.config.js"></script>
 <template>
 
 
@@ -34,7 +35,7 @@
           <div class="circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white hidden  2xl:block 2xl:w-16 2xl:p-4  z-40"
 
           ></div>
-          <div class="circle_bg circle3  absolute w-6 px-2 py-1   bg-white hidden   2xl:block 2xl:p-2 z-30"
+          <div class="circle_bg circle3  absolute w-8 px-2 py-1   bg-white hidden   2xl:block 2xl:p-2 z-30"
 
           ></div>
    <img
@@ -45,7 +46,8 @@
 
        alt="c1chy"
        class="logo lazyload w-3/4  sm:w-1/6  sm:self-center md:w-2/3 lg:w-1/3 2xl:w-1/5 relative z-50"
-       :class="'animate__animated animate__tada animate__delay-10s animate__repeat-2'">
+       :class="'animate__animated animate__tada animate__delay-8s animate__repeat-2'">
+
 
 
           <img
@@ -117,7 +119,7 @@
           <article class="bg-center bg-no-repeat leading-none ">
             <h1
                 class="hidden inline text-5xl font-bold uppercase 2xl:block 2xl:text-11xl 2xl:mt-4 "
-                :class="{'animate__animated animate__swing animate__delay-3s animate' : animate}"
+
 
             >c1chy's studio</h1>
 
@@ -143,7 +145,7 @@
 
           <div
 
-              ref="test"
+              ref="welcomeStudio"
               class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/2">
 
 
@@ -203,7 +205,7 @@
     class="w-5/12 self-center  lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
             <h2
                 class="text-center">
-              Strategie, Technologie, Design & Content </h2>
+              Strategie, Technologie, <br> Design & Content </h2>
 
 
 
@@ -270,16 +272,19 @@
   </transition>
 </div>
 
+
             <img
-                class="lazyload w-1/2 relative self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
 
+                :if="animate"
+                ref="vintageMusic"
+                class="w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
-                :srcSet="vintageMusic.srcSet"
                 :src="vintageMusic.src"
+                :srcSet="vintageMusic.srcSet"
                  alt="vintage">
-
-
         </div>
+
+
       </section>
       <section class="fp-section w-full relative box-content flex-col bg-cover overflow-hidden flex xl:rounded-4xl z-0 sm:flex-row md:flex-col lg:flex-col  xl:flex-row  ">
 
@@ -324,11 +329,13 @@
         </article>
 
         <div class="w-full sm:self-center z-0  2xl:self-end "
-
-
-
         >
           <form
+
+
+
+              :if="!animate"
+              ref="form"
               id="form"
               class="w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"
               v-on:submit={getFormValues}
@@ -410,13 +417,14 @@ return {
       blurClass: 'blur',
 
 
-      animate:false,
+      animate:true,
       loading: false,
       isShowing: false,
       options: {
         ref: true,
         dragAndMove: true,
         afterLoad: this.afterLoad,
+        onLeave: this.onLeave,
         navigation: true,
         anchors: ['page1', 'page2', 'page3', 'page4'],
         scrollingSpeed: 1500,
@@ -457,12 +465,14 @@ return {
     },
 
 
+
+
     afterLoad: function (origin, destination, direction) {
 
       this.animate = false
 
 
-      if (destination.index === 1 || destination.index === 2 || destination.index === 3  ) {
+      if (destination.index === 1 ) {
 
         this.animate = true
 
@@ -478,12 +488,12 @@ return {
             {
 
               easing:"swing",
-              duration:750,
-              delay:3000,
+              duration:550,
+              delay:2500,
               repeat: 0,
 
               begin: () => {
-                Velocity(this.$refs.test,
+                Velocity(this.$refs.welcomeStudio,
                     {
 
              transform: ["translateX(-12%) rotate(8deg)","translateX(0) rotate(0)"]
@@ -493,7 +503,7 @@ return {
 
                     {
                       duration: 500,
-                      delay:1400,
+                      delay:500,
                       begin: () => {
                         Velocity(this.$refs.scumbag,
                             {
@@ -523,7 +533,7 @@ return {
 
                             loop: 0,
 
-                              begin: () => {
+                              begin: (el,done) => {
 
                                 Velocity(this.$refs.scumbag,{
 
@@ -531,6 +541,10 @@ return {
                                   transform: ["translateX(-50%)","translateX(0) "],
 
                                 },
+
+                                    {
+                                      complete: done
+                                    }
 
 
                                 )
@@ -557,13 +571,89 @@ return {
 
 
             })
+
+
       }
+
+
 
     },
 
 
 
 
+    onLeave: function (origin, destination, direction) {
+
+
+      console.log(destination.index)
+
+
+
+      if (destination.index === 2 ) {
+
+
+        this.animate = true
+
+
+          Velocity(this.$refs.vintageMusic,{
+
+
+
+           opacity : 1
+
+              },
+
+              {
+
+                duration:1000,
+
+                begin:()=> {
+
+                  this.$refs.vintageMusic.classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-2s')
+
+
+
+                }
+
+
+              })
+
+
+
+      }
+
+      else if (destination.index === 3 ) {
+
+        this.animate = true
+
+        Velocity(this.$refs.form,{
+
+
+              opacity : 1
+
+            },
+
+            {
+
+              duration:1000,
+
+              begin:()=> {
+
+                this.$refs.form.classList.add('animate__animated', 'animate__bounceInRight','animate__delay-1s')
+
+                this.$refs.form.style.opacity = "1"
+
+
+              }
+
+
+            })
+
+      }
+
+
+
+    },
 
 
 
@@ -800,10 +890,10 @@ div.modal {
 
 
 
-.animate__delay-10s {
+.animate__delay-8s {
 
 
-  animation-delay: 10s!important;
+  animation-delay: 8s!important;
 }
 
 div p, li, a {
@@ -929,7 +1019,7 @@ div p, li, a {
     background-image: url('~assets/graphic/exclusive-paper.png?size=150');
     border: 5px solid #000000;
     border-radius: 50%;
-
+    opacity: 0
 
   }
 

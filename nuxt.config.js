@@ -2,6 +2,13 @@
 
 export default {
 
+
+
+    css: [
+        'aos/dist/aos.css'
+    ],
+
+
     loading: '~/components/loading.vue',
 
     head: {
@@ -47,7 +54,9 @@ export default {
             rel: 'preload',
             as: 'style',
             href: '/fonts/font-face.css'
-        }]
+        },
+
+        ]
     },
 
 
@@ -100,6 +109,8 @@ export default {
     plugins: [
         {src: '~/plugins/fullpage', mode: 'client'},
 
+        {src:'~/plugins/aos.js', mode: 'client'}
+
 
     ],
 
@@ -109,7 +120,8 @@ export default {
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
-
+        ['@neneos/nuxt-animate.css'],
+        ['fullpage-nuxt', { animate: true}],
         ['nuxt-purgecss',
             {
 

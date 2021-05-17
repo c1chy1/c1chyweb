@@ -94,16 +94,53 @@
 
         </article>
         <article class="bg-center bg-no-repeat">
-          <div class="pic w-11/12">
+
+
+
+            <button @click="show = !show">
+              Toggle
+            </button>
+
+
+
+
+
+          <div class="pic w-11/12" id="example-4" ref="test"
+
+
+
+
+          >
+<!--               :if="animate=!animate"
+               :class="{'animate__animated animate__swing animate__delay-3s animate' : animate}"-->
+
+
+
+
+
+            <transition
+                :before-enter="beforeEnter"
+                :enter="enter"
+                :leave="leave"
+                :css="false"
+            >
+
             <img
+
+
+
+                v-if="show"
                 :data-src="require('~/assets/graphic/about_gallery_2.jpg?webp')" class="lazyload"
 
                 alt="digital design">
+
+            </transition>
 
             <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
               Digital Design
             </h2>
           </div>
+
 
         </article>
         <article class="bg-center bg-no-repeat">
@@ -171,6 +208,18 @@
 
     </section>
     <section class="mission h-auto flex   lg:pt-12 lg:mt-16  lg:pb-32  2xl:mt-0  2xl:pb-12">
+
+
+
+
+      <transition
+          v-on:before-enter="beforeEnter"
+          v-on:enter="enter"
+          v-on:leave="leave"
+          v-bind:css="false"
+      >
+        <p v-if="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis enim libero, at lacinia diam fermentum id. Pellentesque habitant morbi tristique senectus et netus.</p>
+      </transition>
 
 
 
@@ -385,6 +434,8 @@
 const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const marlboro = require('~/assets/graphic/vintage_cigarrettes.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
+
+
 import stickyFooter from "@/components/stickyFooter";
 
 
@@ -406,13 +457,19 @@ export default {
 
       light,marlboro,
 
+
+
+      animate: true,
       isShowing: false,
       bkClass: 'bk',
       blurClass: 'blur',
+      show: false,
+
 
     }
 
   },
+
 
   transition: {
     name: 'spotlight',
@@ -424,9 +481,37 @@ export default {
   methods: {
 
 
+    beforeEnter: (el) => {
+      el.style.opacity = 0
+      el.style.transformOrigin = 'left'
+    },
+    enter: (el, done) => {
+      Velocity(el, { opacity: 1, width: '120px' }, { duration: 300 })
+      Velocity(el, { width: '400px' }, { complete: done })
+    },
+    leave: (el, done) => {
+      Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { duration: 600 })
+      Velocity(el, { rotateZ: '100deg' }, { loop: 2 })
+      Velocity(el, {
+        rotateZ: '45deg',
+        translateY: '30px',
+        translateX: '30px',
+        opacity: 0
+      }, { complete: done })
+    },
+
+
+
+
+
+
+
+
+
     toggleShow() {
       this.isShowing = !this.isShowing;
     },
+
 
     closeModal() {
 
@@ -442,7 +527,16 @@ export default {
 
     },
 
-  },
+
+
+
+    },
+
+
+
+
+
+
 
   beforeMount() {
 
@@ -456,6 +550,86 @@ export default {
 
 
 $titleColor: #224a49;
+
+
+
+@-webkit-keyframes bounceIn {
+  20%,
+  40%,
+  60%,
+  80%,
+  from,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounceIn {
+  20%,
+  40%,
+  60%,
+  80%,
+  from,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 
 section {
 

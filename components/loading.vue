@@ -53,7 +53,7 @@ export default {
                 Velocity(this.$refs.hola,
 
                     {
-                      transform: ["translateY(-100%)", "translateY(0)"]
+                      transform: ["translateY(-100%)", "translateY(0)"],
                     },
 
                     {
@@ -62,6 +62,12 @@ export default {
                       complete: () => {
 
                         this.$nuxt.$el.children[1].firstChild.children[1].classList.add('animate-border', 'divide')
+                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-1s')
+                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-2s')
+                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-3s')
+                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].style.opacity = 1
+                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].style.opacity = 1
+                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].style.opacity = 1
 
 
                       }
@@ -90,6 +96,12 @@ export default {
 <style scoped lang="scss">
 
 
+
+.opacity {
+
+  opacity: 1;
+
+}
 
 #hola{
   width: 100vw;
