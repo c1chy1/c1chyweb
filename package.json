@@ -15,6 +15,7 @@
     "fullpage-nuxt": "0.0.3",
     "nuxt": "^2.14.7",
     "nuxt-purgecss": "^1.0.0",
+    "velocity-animate": "^1.5.2",
     "vue-fullpage.js": "^0.1.7"
   },
   "devDependencies": {

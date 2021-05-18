@@ -84,9 +84,9 @@ module.exports = {
         tighter: '-.05em',
         tight: '-.025em',
         normal: '0',
-        wide: '.05em',
-        wider: '.15em',
-        widest: '.25em',
+        wide: '.15em',
+        wider: '.35em',
+        widest: '.45em',
       },
 
       maxHeight: {

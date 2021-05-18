@@ -3,7 +3,15 @@ import Vue from 'vue'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-Vue.use(AOS.init( {duration: 1200}));
+Vue.use(AOS.init( {
+
+
+
+    duration: 1200,
+
+    animatedClassName: 'animate__bounceInLeft'
+
+}));
 
 
 

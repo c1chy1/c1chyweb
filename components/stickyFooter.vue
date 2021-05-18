@@ -11,7 +11,7 @@
 
       alt="c1chy logo"
 
-      class="lazyload h-16 w-full relative mt-4 ml-2 mx-auto sm:h-20 sm:w-1/2 sm:mt-2 sm:ml-5 md:h-16 md:w-full md:ml-3 md:mt-4 lg:w-full lg:h-32  lg:ml-6 xl:h-36 xl:w-7/12 xl:mt-5 2xl:w-1/2 2xl:h-auto 2xl:mx-auto 2xl:mt-3  2xl:p-3"
+      class="lazyload h-16 w-full relative mt-4 ml-2 mx-auto sm:h-20 sm:w-1/2 sm:mt-2 sm:ml-5 md:h-16 md:w-full md:ml-3 md:mt-4 lg:w-full lg:h-32  lg:ml-6 xl:h-36 xl:w-7/12 xl:mt-5 2xl:w-1/2 2xl:h-auto 2xl:mx-auto 2xl:mt-3  2xl:w-1/2"
       :class="{'animate__animated animate__pulse animate__infinite  animate__delay-2s ' : animate}"
   >
 
@@ -87,7 +87,6 @@ methods : {
 
       window.scroll(0,0)
       fullpage_api.moveTo('page1',2)
-
 
     }
 

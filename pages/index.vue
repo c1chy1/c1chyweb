@@ -65,7 +65,7 @@
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full 2xl:w-9/12 filter-shadow-black z-1">
+                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full 2xl:w-full filter-shadow-black z-1">
             <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  xl:mt-4 xl:tracking-wider 2xl:text-3xl 2xl:mt-4">
               Visually Striking Design </figcaption>
           </figure>
@@ -130,9 +130,9 @@
                   :srcSet="require('../assets/graphic/ribbon.png?webp')"
                   alt="ribbon"
 
-                  class="lazyload sm:max-h-xs  xl:text-center filter-shadow-black " >
+                  class="lazyload xl:text-center filter-shadow-black " >
               <figcaption
-                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega xl:mt-4 2xl:text-3xl 2xl:mt-5 ">
+                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega xl:mt-4 2xl:tracking-wider 2xl:text-4xl 2xl:mt-6 2xl:ml-2 ">
                 ✪ ✪ ✪ ✪ ✪ ✪ ✪
               </figcaption>
             </figure>
@@ -154,7 +154,7 @@
             <div>
               <h2
                   class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
-                Klare Strategie , ausdrucksstarkes Design & moderne Technologie. </h2>
+                Klare Strategie , ausdrucksstarkes <br> Design & moderne Technologie. </h2>
             </div>
 
             <div
@@ -179,7 +179,7 @@
 
           <img
 
-              :if="animate"
+
               ref="scumbag"
               :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
               :src="scumbag.src"
@@ -275,9 +275,12 @@
 
             <img
 
-                :if="animate"
+
+
+
+
                 ref="vintageMusic"
-                class="w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
+                class="opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :src="vintageMusic.src"
                 :srcSet="vintageMusic.srcSet"
@@ -334,10 +337,10 @@
 
 
 
-              :if="!animate"
+
               ref="form"
               id="form"
-              class="w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"
+              class="opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"
               v-on:submit={getFormValues}
           >
             <label for="name" class="w-full text-center">
@@ -390,6 +393,8 @@ const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=300
 
 
 
+
+
 export default {
 
   components: {stickyFooter},
@@ -416,15 +421,13 @@ return {
       bkClass: 'bk',
       blurClass: 'blur',
 
-
-      animate:true,
       loading: false,
       isShowing: false,
       options: {
         ref: true,
         dragAndMove: true,
         afterLoad: this.afterLoad,
-        onLeave: this.onLeave,
+
         navigation: true,
         anchors: ['page1', 'page2', 'page3', 'page4'],
         scrollingSpeed: 1500,
@@ -467,14 +470,11 @@ return {
 
 
 
-    afterLoad: function (origin, destination, direction) {
-
-      this.animate = false
+    afterLoad: function animation(origin, destination, direction) {
 
 
-      if (destination.index === 1 ) {
 
-        this.animate = true
+      if (direction === "down" && destination.index === 1 ) {
 
 
     Velocity(this.$refs.scumbag,
@@ -489,8 +489,27 @@ return {
 
               easing:"swing",
               duration:550,
-              delay:2500,
-              repeat: 0,
+              delay:2000,
+              queue: "test",
+
+              complete: () => {
+                Velocity(this.$refs.scumbag,
+                    {
+
+                      transform: ["rotate(12deg)","rotate(0)"],
+
+                    },
+
+                    {
+
+                      easing:[300,8],
+                      duration: 1000,
+                      queue: "test",
+                      complete: this.afterLoad,
+                    }
+                )
+
+              },
 
               begin: () => {
                 Velocity(this.$refs.welcomeStudio,
@@ -502,160 +521,208 @@ return {
                     },
 
                     {
+
+                      queue: false,
                       duration: 500,
                       delay:500,
-                      begin: () => {
-                        Velocity(this.$refs.scumbag,
-                            {
-
-                 transform: ["rotate(12deg)","rotate(0)"],
-
-
-                            },
-
-                            {
-
-                              easing:[300,8],
-                              duration: 1000,
-
-                            }
-                        )
-
-
-
-                      },
-
-                      complete: () => {
-                        Velocity(this.$refs.scumbag,{
-
-                            },
-                            {
-
-                            loop: 0,
-
-                              begin: (el,done) => {
-
-                                Velocity(this.$refs.scumbag,{
-
-
-                                  transform: ["translateX(-50%)","translateX(0) "],
-
-                                },
-
-                                    {
-                                      complete: done
-                                    }
-
-
-                                )
-
-
-                              }
-
-                            }
-
-
-                        )
-
-
-
-                      }
-
+                      complete: this.afterLoad,
                     },
-
-
 
                 )
               }
 
-
-
             })
 
 
       }
 
+      else if (direction === "up" && destination.index === 0 ) {
 
+        Velocity(this.$refs.scumbag,
 
-    },
-
-
-
-
-    onLeave: function (origin, destination, direction) {
-
-
-      console.log(destination.index)
-
-
-
-      if (destination.index === 2 ) {
-
-
-        this.animate = true
-
-
-          Velocity(this.$refs.vintageMusic,{
-
-
-
-           opacity : 1
-
-              },
-
-              {
-
-                duration:1000,
-
-                begin:()=> {
-
-                  this.$refs.vintageMusic.classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-2s')
-
-
-
-                }
-
-
-              })
-
-
-
-      }
-
-      else if (destination.index === 3 ) {
-
-        this.animate = true
-
-        Velocity(this.$refs.form,{
-
-
-              opacity : 1
-
+            {
+              opacity: 0,
+              transform: ["translateX(75%)", "translateX(0)"],
             },
 
             {
 
-              duration:1000,
+              duration:100,
 
-              begin:()=> {
+              complete: () => {
+                Velocity(this.$refs.scumbag,
+                    {
 
-                this.$refs.form.classList.add('animate__animated', 'animate__bounceInRight','animate__delay-1s')
+                      transform: ["rotate(0)","rotate(12deg)"],
 
-                this.$refs.form.style.opacity = "1"
+                    },
+
+                    {
+
+                      duration: 100,
+                      complete: this.afterLoad,
+                    }
+                )
+
+              },
+
+              begin: () => {
+                Velocity(this.$refs.welcomeStudio,
+                    {
+
+                      transform: ["translateX(0) rotate(0)","translateX(-12%) rotate(8deg)"]
 
 
+                    },
+
+                    {
+                      complete: this.afterLoad,
+                    },
+
+                )
               }
 
-
             })
+
+
 
       }
 
 
 
+
+      else if (direction === "down" && destination.index === 2 ) {
+
+
+        Velocity(this.$refs.vintageMusic,
+
+            {
+              opacity: 1,
+
+            },
+
+
+            {
+              easing:"swing",
+              duration:550,
+              begin: () => {
+
+
+                this.$refs.vintageMusic.classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-1s','animate__slow')
+
+
+
+                setTimeout(() => {
+
+
+                  this.$refs.vintageMusic.classList.remove('animate__animated', 'animate__bounceInLeft','animate__delay-1s','animate__slow')
+
+
+                }, 3000);
+                Velocity(this.$refs.vintageMusic, {
+
+
+                  opacity : 1
+
+                },
+                    {
+
+                      easing:"swing",
+                      delay:3500,
+                      complete: ()=> {
+
+
+                        this.$refs.vintageMusic.classList.add('animate__animated', 'animate__bounce','animate__repeat-2')
+
+
+                      }
+                    }
+
+
+
+                )
+
+
+        }
+
+            })
+
+
+      }
+
+
+     else if (direction === "up" && destination.index === 1 ) {
+
+
+        Velocity(this.$refs.vintageMusic,
+
+            {
+              opacity: 0,
+
+            },
+            {
+              begin: () => {
+
+
+                this.$refs.vintageMusic.classList.remove('animate__animated', 'animate__bounce','animate__repeat-2')
+
+
+              }
+            }
+        )
+
+      }
+
+
+
+      else if (direction === "down" && destination.index === 3 ) {
+
+
+        Velocity(this.$refs.form,
+
+            {
+              opacity: 1,
+
+            },
+            {
+              begin: () => {
+
+
+                this.$refs.form.classList.add('animate__animated', 'animate__bounceInRight','animate__delay-1s','animate__slow')
+
+
+              }
+            }
+        )
+
+      }
+
+
+
+
+      else if (direction === "up" && destination.index === 2 ) {
+
+
+        Velocity(this.$refs.form,
+
+            {
+              opacity: 0,
+
+            },
+            {
+              begin: () => {
+
+
+                this.$refs.form.classList.remove('animate__animated', 'animate__bounceInRight','animate__delay-1s','animate__slow')
+
+
+              }
+            }
+        )
+
+      }
+
     },
-
-
 
 
     getFormValues (submitEvent) {
@@ -693,7 +760,6 @@ return {
   filter: blur(1px);
   opacity: 0.4;
 }
-
 
 
 
