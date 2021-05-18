@@ -366,7 +366,8 @@
 
         </div>
 
-        <stickyFooter class="bottom-0 absolute"/>
+        <stickyFooter class="bottom-0 absolute"
+        />
 
       </section>
 
@@ -748,6 +749,10 @@ return {
 </script>
 
 <style scoped lang="scss">
+
+
+
+
 
 
 
@@ -1489,6 +1494,8 @@ div {
     }
 
   }
+
+
 
 }
 

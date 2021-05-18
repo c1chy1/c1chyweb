@@ -33,7 +33,7 @@
         width: 100%;
         word-spacing: 0.06em;
         letter-spacing: 0.04em;
-        background-color: #252328;
+        background-color: antiquewhite;
     }
 
 
@@ -45,7 +45,7 @@
     html {
 
         scroll-behavior: smooth;
-
+        background-color: antiquewhite;
     }
 
 

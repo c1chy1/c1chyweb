@@ -7,9 +7,8 @@ Vue.use(AOS.init( {
 
 
 
-    duration: 1200,
-
-    animatedClassName: 'animate__bounceInLeft'
+    duration: 800,
+    easing: 'ease-in-out',
 
 }));
 
