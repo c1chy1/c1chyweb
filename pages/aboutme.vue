@@ -329,7 +329,7 @@
     </section>
 
 
-    <section>
+    <section class="overflow-x-hidden">
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8  2xl:mt-0">
         <span class="w-full inline-block relative 2xl:w-2/3"></span>
@@ -348,7 +348,7 @@
         >CORE PRINCIPLES</h1>
 
       </div>
-      <div class="principles  w-full flex pb-16 items-end text-center mb-8  2xl:pb-8 2xl:mb-0 ">
+      <div class="principles  w-full flex pb-16 items-end text-center mb-8  2xl:pb-16 2xl:mb-0 ">
 
 
 
@@ -357,8 +357,8 @@
           <article class="h-full w-1/3"
 
 
-                   data-aos="zoom-in-left"
-                   data-aos-delay="1000"
+                   data-aos="fade-left"
+                   data-aos-delay="1750"
                    data-aos-anchor="#site-footer"
           >
 
@@ -381,8 +381,8 @@
           </article>
           <article class="h-full w-1/3 "
 
-                   data-aos-delay="1000"
-                   data-aos="zoom-in"
+                   data-aos-delay="1250"
+                   data-aos="fade-up"
                    data-aos-anchor="#site-footer"
 
           >
@@ -404,8 +404,8 @@
           </article>
           <article class="h-full w-1/3"
 
-                   data-aos="zoom-in-right"
-                   data-aos-delay="1000"
+                   data-aos="fade-right"
+                   data-aos-delay="1750"
                    data-aos-anchor="#site-footer"
           >
 
@@ -424,7 +424,10 @@
 
           </article>
         </div>
-      <stickyFooter/>
+      <stickyFooter  class="opacity-100"
+                     data-aos="slide-right"
+                     data-aos-duration="1000"
+      />
 
     </section>
   </section>
@@ -526,7 +529,6 @@ export default {
 
 
 $titleColor: #224a49;
-
 
 
 

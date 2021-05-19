@@ -366,7 +366,9 @@
 
         </div>
 
-        <stickyFooter class="bottom-0 absolute"
+        <stickyFooter
+            class="bottom-0 absolute"
+            ref="footer"
         />
 
       </section>
@@ -380,8 +382,6 @@
 
 
 import stickyFooter from "@/components/stickyFooter";
-
-
 
 
 const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1300&format=webp');
@@ -489,7 +489,7 @@ return {
             {
 
               easing:"swing",
-              duration:550,
+              duration:350,
               delay:2000,
               queue: "test",
 
@@ -689,12 +689,26 @@ return {
               begin: () => {
 
 
-                this.$refs.form.classList.add('animate__animated', 'animate__bounceInRight','animate__delay-1s','animate__slow')
+                this.$refs.form.classList.add('animate__animated', 'animate__bounceInRight','animate__delay-2s','animate__slow')
 
+                this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].classList.add('animate__animated', 'animate__slideInLeft','animate__delay-1s')
+                this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].style.opacity = "1"
+
+
+                this.$nuxt.$el.children[0].children[0].children[1].children[3].children[2].children[2].children[0].classList.add('animate__animated', 'animate__zoomInDown','animate__delay-2s')
+                this.$nuxt.$el.children[0].children[0].children[1].children[3].children[2].children[2].children[1].classList.add('animate__animated', 'animate__zoomInDown','animate__delay-3s')
+                this.$nuxt.$el.children[0].children[0].children[1].children[3].children[2].children[2].children[2].classList.add('animate__animated', 'animate__zoomInDown','animate__delay-4s')
+                this.$nuxt.$el.children[0].children[0].children[1].children[3].children[2].children[2].children[3].classList.add('animate__animated', 'animate__zoomInDown','animate__delay-5s')
 
               }
+
             }
         )
+
+
+
+
+
 
       }
 
@@ -714,9 +728,10 @@ return {
               begin: () => {
 
 
-                this.$refs.form.classList.remove('animate__animated', 'animate__bounceInRight','animate__delay-1s','animate__slow')
+                this.$refs.form.classList.remove('animate__animated', 'animate__bounceInRight','animate__delay-2s','animate__slow')
 
-
+                this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].classList.remove('animate__animated', 'animate__slideInLeft','animate__delay-1s')
+                this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].style.opacity = "0"
               }
             }
         )

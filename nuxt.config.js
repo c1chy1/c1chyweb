@@ -17,7 +17,7 @@ export default {
 
    script: [
 
-            {
+         {
                 src: '//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
             },
             {
@@ -108,10 +108,7 @@ export default {
 
     plugins: [
         {src: '~/plugins/fullpage', mode: 'client'},
-
-        {src:'~/plugins/aos.js', mode: 'client'}
-
-
+        {src:'~/plugins/aos.js', mode: 'client'},
     ],
 
     modules: [
@@ -120,6 +117,7 @@ export default {
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
+
         ['@neneos/nuxt-animate.css'],
         ['fullpage-nuxt', { animate: true}],
         ['nuxt-purgecss',

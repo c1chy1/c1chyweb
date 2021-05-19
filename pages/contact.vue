@@ -56,7 +56,10 @@
                 class=" pt-1 pr-5 pl-2 pb-1 relative top-2 left-4 inline text-6xl font-semibold leading-tight">
               MY CULTURE IS TIMELESS AGE IS JUST A NUMBER</h2>
 
-            <p class="text-xl"
+            <p
+
+                class="mt-10 text-xl"
+
                v-bind:class="[isShowing ? blurClass : '', bkClass]"
             >Menschen zu bewegen, ihnen den Alltag zu erleichtern und sie für Marken zu begeistern, ist meine Mission. Dafür kümmere ich mich mit Hingabe auch um die kleinen Details, ohne das große Ganze aus dem Blick zu verlieren. Ich experimentiere, erfinde, erforsche. Deshalb gehört es für mich zum Alltag, Herangehensweisen immer wieder zu überdenken und mit neuen Technologien alternative Lösungen abseits der ausgetretenen Pfade zu entwickeln.</p>
 
@@ -106,7 +109,8 @@
             </transition>
 
             <button
-               class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3"
+                id="aos-space"
+                class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3"
                @click="toggleShow"
             >Lern Mehr</button>
           </div>
@@ -115,6 +119,11 @@
         <section class="w-1/2 p-20">
 
           <img
+
+              data-aos="rotate-space"
+              data-aos-anchor="#aos-space"
+              data-aos-easing="ease-in-sine"
+              data-aos-anchor-placement="center-bottom"
               class="lazyload mx-auto rounded-3xl"
               :data-src="require('~/assets/graphic/spaceman.png?webp')"
               alt="spaceman"
@@ -164,9 +173,15 @@
         </article>
 
 
-        <article class="h-full flex w-1/3 flex-col p-10 p mb-10 bg-repeat bg-auto border-12 border-solid">
+        <article class="h-full flex w-1/3 flex-col p-10 p mb-10 bg-repeat bg-auto border-12 border-solid"
+
+        data-aos="zoom-in"
+        data-aos-delay="1500"
+                 data-aos-anchor-placement="center-bottom"
+                 data-anchor="#footer"
+        >
           <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center  lg:text-xl 2xl:text-3xl font-semibold uppercase">LET ME KNOW!</h3>
-          <p class="            lg:text-xl   2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
+          <p class="lg:text-xl   2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
           <form class="flex flex-col">
             <label>
               <input placeholder="Name*" class="w-full h-12 mt-2 pl-1 text-2xl">
@@ -208,7 +223,9 @@
           class="page-spacing"
       ></div>
 
-      <stickyFooter />
+      <stickyFooter
+          id="footer"
+          class="opacity-100"/>
     </section>
 
 
@@ -282,7 +299,14 @@ export default {
 
 <style scoped lang="scss">
 
+[data-aos="rotate-space"] {
+  transform: rotate(-540deg);
+  transition-property: transform;
+}
 
+[data-aos="rotate-space"].aos-animate {
+  transform: rotate(0deg);
+}
 
 
 h1 {

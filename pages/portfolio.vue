@@ -1,7 +1,8 @@
 <template>
   <section class="h-screen w-full absolute z-10">
 
-    <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
+    <header
+        class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
       <div>
         <img
@@ -39,7 +40,6 @@
       </figure>
 
 
-
     </header>
     <div
         class="page-spacing w-full h-20 absolute left-0 bg-repeat bg-center"
@@ -48,7 +48,7 @@
 
     </div>
 
-    <section class="portfolio h-auto pb-8">
+    <section class="portfolio h-auto pb-8 overflow-hidden">
 
       <div class="portfolio_case w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative"></span>
@@ -59,21 +59,35 @@
 
 
       </div>
-      <h1 class="leading-none mt-16 mb-24 text-10xl font-semibold text-center xl:text-7xl xl:mt-2 xl:mb-5 2xl:text-10xl 2xl:mt-16 2xl:mb-24 ">CASE STUDIES</h1>
+      <h1 class="leading-none mt-16 mb-24 text-10xl font-semibold text-center xl:text-7xl xl:mt-2 xl:mb-5 2xl:text-10xl 2xl:mt-20 2xl:mb-24 ">
+        CASE STUDIES</h1>
 
-      <div class="w-full  flex flex-col justify-center items-center overflow-hidden">
+      <div class="w-full  flex flex-col justify-center items-center overflow-hidden"
+           data-aos="flip-down"
+           data-aos-delay="250">
         <transition :name="currentTransition" mode="out-in">
-          <component class="w-1/2 h-3/4  flex items-center justify-center bg-repeat-round  bg-cover text-3xl text-white font-sans" :is="slides[currentSlide]"></component>
+          <component
+
+              class="w-1/2 h-3/4  flex items-center justify-center bg-repeat-round  bg-cover text-3xl text-white font-sans"
+              :is="slides[currentSlide]"></component>
         </transition>
 
         <div id="panel" class="w-full h-1/3 flex justify-center items-center font-sans text-white">
-          <button class="btn draw-border m-4 px-12 py-6  inline bg-none border-none text-2xl font-bold font-sans uppercase cursor-pointer leading-normal"  :class="{disabled: currentSlide === 0}" @click="changeSlide('prev')">prev
+          <button
+
+              class="draw-border m-4 px-12 py-6  inline bg-none border-none text-2xl font-bold font-sans uppercase cursor-pointer leading-normal"
+              :class="{disabled: currentSlide === 0}" @click="changeSlide('prev')"
+          >prev
           </button>
 
           <p class="w-1/3 text-center text-5xl font-sans">{{ currentSlide + 1 }} of {{ slides.length }}</p>
 
-          <button class="btn draw-border m-4 px-12 py-6  inline bg-none border-none text-2xl font-bold font-sans uppercase cursor-pointer leading-normal" :class="{disabled: currentSlide === slides.length - 1}"
-                  @click="changeSlide('next')">next
+          <button
+
+              class="btn draw-border m-4 px-12 py-6  inline bg-none border-none text-2xl font-bold font-sans uppercase cursor-pointer leading-normal"
+              :class="{disabled: currentSlide === slides.length - 1}"
+              @click="changeSlide('next')"
+          >next
           </button>
         </div>
 
@@ -81,24 +95,31 @@
 
     </section>
 
-    <section class="min-h-screen lg:-mb-8">
+    <section class="min-h-screen lg:-mb-8 overflow-x-hidden">
 
       <div class="title-container flex flex-col justify-center items-center mt-0">
 
-          <h1 class="title text-9xl font-semibold text-center uppercase mb-8">My Projects
-          </h1>
+        <h1 class="title text-9xl font-semibold text-center uppercase mb-8">My Projects
+        </h1>
 
         <div>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'ALL' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer"
+                :class="{ active: currentFilter === 'ALL' }"
                 v-on:click="setFilter('ALL')">ALL</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'WEBPACK' }" v-on:click="setFilter('WEBPACK')">WEBPACK</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'ES6' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer"
+                :class="{ active: currentFilter === 'WEBPACK' }" v-on:click="setFilter('WEBPACK')">WEBPACK</span>
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer"
+                :class="{ active: currentFilter === 'ES6' }"
                 v-on:click="setFilter('ES6')">ES6</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'PURECSS' }" v-on:click="setFilter('PURECSS')">PURE CSS</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'DATABASE' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer"
+                :class="{ active: currentFilter === 'PURECSS' }" v-on:click="setFilter('PURECSS')">PURE CSS</span>
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer"
+                :class="{ active: currentFilter === 'DATABASE' }"
                 v-on:click="setFilter('DATABASE')">DATABASE</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'REACT' }" v-on:click="setFilter('REACT')">REACT</span>
-          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer" :class="{ active: currentFilter === 'VUE' }"
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer"
+                :class="{ active: currentFilter === 'REACT' }" v-on:click="setFilter('REACT')">REACT</span>
+          <span class="filter px-4 py-2 rounded-2xl text-4xl font-medium font-sans transition-all cursor-pointer"
+                :class="{ active: currentFilter === 'VUE' }"
                 v-on:click="setFilter('VUE')">VUE</span>
 
         </div>
@@ -107,11 +128,14 @@
 
       <div class="container_projects w-full h-full mt-8 pb-10 flex justify-center items-center flex-col">
         <transition-group class="projects w-11/12  mb-8 mt-1 flex flex-wrap justify-around" name="projects">
-          <div class="card w-116 h-52 mb-1 mt-5 flex-wrap justify-center overflow-hidden" v-if="currentFilter === project.category || currentFilter === 'ALL'"
+          <div class="card w-116 h-52 mb-1 mt-5 flex-wrap justify-center overflow-hidden"
+               v-if="currentFilter === project.category || currentFilter === 'ALL'"
                v-bind:key="project.title" v-for="project in projects">
 
             <div class="project-image-wrapper relative">
-              <h2 class="project-title absolute bottom-0 right-28 text-4xl font-sans font-bold z-50">{{ project.title }}</h2>
+              <h2 class="project-title absolute bottom-0 right-28 text-4xl font-sans font-bold z-50">{{
+                  project.title
+                }}</h2>
               <i class="card-arrow w-8 h-12 absolute bottom-1 right-4 bg-no-repeat cursor-pointer z-50"></i>
               <p class="absolute top-2 right-12 text-2xl opacity-70">{{ project.secondTechnology }}</p>
 
@@ -144,13 +168,14 @@
                 <li></li>
               </ul>
               <div class="social w-52 h-8 absolute top-2 left-4 flex justify-around items-center">
-                <i class="text-5xl" >{{ project.technology }}</i>
+                <i class="text-5xl">{{ project.technology }}</i>
                 <i class="text-5xl">SCSS</i>
                 <i class="text-5xl"></i>
                 <i class="text-5xl"></i>
               </div>
               <a :href="`${project.link}`" target="_blank" rel="noopener">
-                <button class="w-8 h-8 absolute bottom-4 right-4 border-none outline-none cursor-pointer " aria-label="Project">
+                <button class="w-8 h-8 absolute bottom-4 right-4 border-none outline-none cursor-pointer "
+                        aria-label="Project">
                 </button>
               </a>
             </div>
@@ -158,8 +183,15 @@
           </div>
         </transition-group>
       </div>
+
+      <stickyFooter
+
+          class="opacity-100"
+          data-aos="slide-left"
+          data-aos-duration="1000"
+      />
     </section>
-    <stickyFooter/>
+
   </section>
 
 
@@ -314,9 +346,7 @@ export default {
   beforeMount() {
 
 
-  fullpage_api.destroy('all')
-
-
+    fullpage_api.destroy('all')
 
 
   }
@@ -350,7 +380,7 @@ header {
 
   }
 
-  div:nth-child(1)  {
+  div:nth-child(1) {
 
 
     width: 100vw;
@@ -424,6 +454,7 @@ header {
 
       a {
         transition: all 0.2s ease;
+
         &:hover {
 
 
@@ -442,8 +473,6 @@ header {
 }
 
 
-
-
 .filter.active {
   box-shadow: 1px 1px 3px 1px #00000026;
 }
@@ -451,7 +480,6 @@ header {
 .filter:hover {
   background: lightgray;
 }
-
 
 
 .projects-enter {
@@ -498,7 +526,6 @@ header {
 }
 
 
-
 .page-title {
 
 
@@ -510,7 +537,6 @@ header {
     line-height: initial;
 
     h1 {
-
 
 
       -webkit-text-stroke-width: 3px;
@@ -579,6 +605,7 @@ header {
     color: #e9e4dd;
 
   }
+
   span {
 
     &:before {
@@ -671,9 +698,7 @@ header {
 }
 
 
-
 #panel {
-
 
 
   button {
@@ -722,7 +747,6 @@ header {
   transform: scale3d(2, 0.5, 1) translate3d(-400px, 0, 0);
 }
 
-// prefixed with "prev" so the prev button easily changes to this block of CSS
 .prev-enter {
   opacity: 0;
   transform: scale3d(2, 0.5, 1) translate3d(-400px, 0, 0);
