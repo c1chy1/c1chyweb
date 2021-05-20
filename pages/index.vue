@@ -781,25 +781,6 @@ $blue: rgb(30, 130, 230);
 
 
 
-
-/*
-.fade-enter-active, .fade-leave-active {
-  transition:width 0.25s;
-  -webkit-transition:width .25s;
-  -moz-transition: width 0.25s;
-
-}
-.fade-leave-to {
-  transition:width 0.25s;
-  -webkit-transition:width .25s;
-  -moz-transition: width 0.25s;
-  width: 0;
-}
-
-*/
-
-
-
 #fullpage {
 
 
@@ -1317,13 +1298,11 @@ div {
 
     &.out {
       animation: slowFade  1.5s ;
-      transition: 1s all;
+
 
 
      > h2, p, li, button, img {
-       transition: 1s all;
-   animation: modalContentFadeOut  .5s 1.4s linear forwards;
-
+   animation: modalContentFadeOut 1.4s ;
       }
 
     }
@@ -1356,7 +1335,7 @@ div {
     @keyframes modalContentFadeIn {
       0% {
         opacity:0;
-        top:-20px;
+
       }
       100% {
         opacity:1;
@@ -1366,9 +1345,9 @@ div {
 
 
     @keyframes modalContentFadeOut {
-      0% {
+     0% {
         opacity:1;
-        top:0;
+       top:0;
       }
       100% {
         opacity:0;
