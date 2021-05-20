@@ -411,7 +411,7 @@ return {
         ref: true,
         dragAndMove: true,
         afterLoad: this.afterLoad,
-
+        licenseKey: "MiT",
         navigation: true,
         anchors: ['page1', 'page2', 'page3', 'page4'],
         scrollingSpeed: 1500,

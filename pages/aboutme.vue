@@ -783,12 +783,12 @@ div.modal {
     width: 75px;
   }
   90% {
-    border-radius: 3px;
+    border-radius: 25px;
     height: 65%;
     width: 45%;
   }
   100% {
-    border-radius: 3px;
+    border-radius: 35px;
     height: 70%;
     width: 50%;
   }
