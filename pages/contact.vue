@@ -158,7 +158,8 @@
 
 
         <article class="w-1/3 p-10 mb-10">
-          <h2 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">CONTACT ME</h2>
+          <h2 class="w-9/12 mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">
+            CONTACT ME</h2>
           <img  class="lazyload m-auto"
                 :data-src="require('~/assets/graphic/woman-phone.png?webp')"
                 alt="woman c1chy"
@@ -180,7 +181,8 @@
                  data-aos-anchor-placement="center-bottom"
                  data-anchor="#footer"
         >
-          <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center  lg:text-xl 2xl:text-3xl font-semibold uppercase">LET ME KNOW!</h3>
+          <h2 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center  lg:text-xl 2xl:text-3xl font-semibold uppercase">
+            LET ME KNOW!</h2>
           <p class="lg:text-xl   2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
           <form class="flex flex-col">
             <label>
@@ -200,10 +202,8 @@
         </article>
 
         <article class="w-1/3 p-10 mb-10">
-          <h3 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">OPEN HOURS</h3>
+          <h2 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center lg:text-xl 2xl:text-3xl font-semibold uppercase">OPEN HOURS</h2>
           <img
-
-
 
               :data-src="require('~/assets/graphic/clocks.png?webp')"
               class="lazyload m-auto"

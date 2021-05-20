@@ -764,11 +764,6 @@ return {
 
 @import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic);
 
-$blue: rgb(30, 130, 230);
-
-
-
-
 
 .bk {
   transition: all 0.3s ease-out;
@@ -1289,7 +1284,7 @@ div {
     .fifties {
       font-family: Lobster Two , italic ;
       color: white;
-      text-shadow: 0 8px 0 darken($blue, 9);
+      text-shadow: 0 8px 0 darken(#333, 9);
       font-size: 5rem;
 
     }
