@@ -736,6 +736,19 @@ div.modal {
 }
 
 
+@keyframes modalContentFadeOut {
+  0% {
+    opacity:1;
+    top:0;
+  }
+  100% {
+    opacity:0;
+    top:-20px;
+  }
+}
+
+
+
 @keyframes fadeToRed {
   0% {
     background-color:rgba(black,.6);

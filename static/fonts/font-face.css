@@ -3,8 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./barlowcondensed-regular.woff),
-    url(./barlowcondensed-regular.woff2)
+    src: url(./barlowcondensed-regular.woff2)
     format('truetype');
 }
 
@@ -14,8 +13,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./barlowcondensed-regular.woff),
-    url(./barlowcondensed-regular.woff2)
+    src: url(./barlowcondensed-regular.woff2)
     format('truetype');
 }
 
@@ -25,8 +23,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(./barlowcondensed-bold.woff),
-    url(./barlowcondensed-bold.woff2)
+    src: url(./barlowcondensed-bold.woff2)
     format('truetype');
 }
 
@@ -77,8 +74,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./merriweather-regular.woff),
-    url(./merriweather-regular.woff2)
+    src: url(./merriweather-regular.woff2)
     format('truetype');
 }
 
@@ -87,8 +83,18 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./merriweather-bold.woff),
-    url(./merriweather-bold.woff2)
+    src: url(./merriweather-bold.woff2)
+    format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./LobsterTwo-Italic.woff2)
     format('truetype');
 }
 

@@ -122,7 +122,6 @@
 
 
             >c1chy's studio</h1>
-
             <figure
                 class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
               <img
@@ -137,9 +136,7 @@
               </figcaption>
             </figure>
           </article>
-
         </div>
-
         <div
             class="scumbag w-full flex  flex-col  xl:flex-row  justify-center bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
 
@@ -147,10 +144,6 @@
 
               ref="welcomeStudio"
               class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/2">
-
-
-
-
             <div>
               <h2
                   class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
@@ -205,25 +198,23 @@
     class="w-5/12 self-center  lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
             <h2
                 class="text-center">
-              Strategie, Technologie, <br> Design & Content </h2>
+              Strategie, Technologie, <br> App & Content </h2>
 
-
-
-            <p
-
-                v-bind:class="[isShowing ? blurClass : '', bkClass]"
+  <p
+                :class="[isShowing ? blurClass : '', bkClass]"
                 class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
-              An der Schnittstelle von Design und Technik entwickeln wir digitale Anwendungen,
+              An der Schnittstelle von Technik entwickle ich digitale Anwendungen,
               die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
-              auf welchem Gerät. Dazu erproben wir kontinuierlich neuartige Methoden, beschäftigen uns intensiv mit aufregenden Technologien,
-              experimentieren mit neuen Herangehensweisen.</p>
+              auf welchem Gerät. Dazu erprobe ich neuartige Methoden, beschäftige ich intensiv mit aufregenden Technologien,
+              experimentiere mit neuen Herangehensweisen.</p>
 
 
             <button
                class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
                @click="toggleModal"
             >
-              <span v-if="isShowing">HIDE</span>
+              <span v-if="isShowing"
+              >HIDE</span>
               <span v-else>SHOW</span>
               MY STORY
             </button>
@@ -231,7 +222,7 @@
   <transition name="fade">
   <div
 
-      v-if="isShowing" ref="modal" class="modal flex" >
+      v-if="isShowing" ref="modal" class="modal flex w-full" >
 
     <img
 
@@ -241,11 +232,11 @@
 
     >
 
-
+<article class="flex flex-row-reverse leading-snug">
     <button
         ref="button"
         id="icon"
-        class="Icon"
+        class="Icon relative left-16"
         @click="closeModal">
 
 
@@ -256,16 +247,15 @@
     </button>
     <ul>
 
-      <li>2. HTML</li>
-      <li>2. HTML</li>
-      <li>2. HTML</li>
-      <li>2. HTML</li>
-      <li>2. HTML</li>
+      <li><p class="fifties">1. Original</p></li>
+      <li><p class="fifties">2. Stylish</p></li>
+      <li><p class="fifties">3. Modernly</p></li>
+
 
     </ul>
 
 
-
+</article>
 
   </div>
 
@@ -274,10 +264,6 @@
 
 
             <img
-
-
-
-
 
                 ref="vintageMusic"
                 class="opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
@@ -393,9 +379,6 @@ const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&si
 const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
 
-
-
-
 export default {
 
   components: {stickyFooter},
@@ -450,6 +433,13 @@ return {
     toggleModal() {
     this.isShowing = !this.isShowing;
 
+
+    if (!this.isShowing) {
+
+      this.$refs.modal.classList.add('out')
+
+    }
+
     },
 
 
@@ -461,9 +451,17 @@ return {
 
       setTimeout(() => {
 
+        this.$refs.modal.classList.add('out')
+
+      }, 500)
+
+
+
+      setTimeout(() => {
+
         this.isShowing = false
 
-      }, 1000)
+      }, 500)
 
 
     },
@@ -472,7 +470,6 @@ return {
 
 
     afterLoad: function animation(origin, destination, direction) {
-
 
 
       if (direction === "down" && destination.index === 1 ) {
@@ -488,9 +485,9 @@ return {
 
             {
 
-              easing:"swing",
-              duration:350,
-              delay:2000,
+              easing: "ease-out",
+              duration:500,
+              delay:2500,
               queue: "test",
 
               complete: () => {
@@ -503,7 +500,7 @@ return {
 
                     {
 
-                      easing:[300,8],
+                      easing:[400,4],
                       duration: 1000,
                       queue: "test",
                       complete: this.afterLoad,
@@ -522,9 +519,9 @@ return {
                     },
 
                     {
-
+                      easing:"ease-in",
                       queue: false,
-                      duration: 500,
+                      duration: 400,
                       delay:500,
                       complete: this.afterLoad,
                     },
@@ -765,8 +762,9 @@ return {
 
 <style scoped lang="scss">
 
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic);
 
-
+$blue: rgb(30, 130, 230);
 
 
 
@@ -784,173 +782,21 @@ return {
 
 
 
+/*
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 1s ease-out;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-
-
-
-
-
-div.modal {
-  height: 75px;
-  width: 75px;
-  border-radius: 75px;
-  overflow: hidden;
-  position: absolute;
-  background-color: #ffa735;
-  background-image: url('~assets/graphic/exclusive-paper.png?size=300');
-
-  animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-
-  h2, p, li, button, img {
-    opacity: 0;
-    position: relative;
-    animation: modalContentFadeIn .5s 1.4s linear forwards;
-  }
-
-  &.out {
-    animation: slowFade .5s 1.5s linear forwards;
-
-    .modal-background {
-      background-color: rgba(0, 0, 0, .7);
-      animation: fadeToRed 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-    }
-
-
-  }
-
-
-
+  transition:width 0.25s;
+  -webkit-transition:width .25s;
+  -moz-transition: width 0.25s;
 
 }
-
-
-.Icon {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
-  cursor: pointer;
+.fade-leave-to {
+  transition:width 0.25s;
+  -webkit-transition:width .25s;
+  -moz-transition: width 0.25s;
+  width: 0;
 }
 
-.Icon span {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 23px;
-  height: 8px;
-  width: 100%;
-  background: #fff;
-  border-radius: 4px;
-  transform: rotate(0deg);
-  transition: .2s ease-in-out;
-}
-
-.Icon span:nth-child(1),
-.Icon span:nth-child(3) {
-  width: 50%;
-  transform: rotate(45deg);
-}
-
-.Icon span:nth-child(1) {
-  left: 3px;
-  top: 15px;
-}
-
-.Icon span:nth-child(2) {
-  transform: rotate(-45deg);
-}
-
-.Icon span:nth-child(3) {
-  left: 20px;
-  top: 31px;
-}
-
-.close span:nth-child(1),
-.close span:nth-child(3) {
-  left: -1px;
-}
-
-.close span:nth-child(1) {
-  top: 15px;
-  transform: rotate(135deg);
-}
-
-.close span:nth-child(2) {
-  transform: rotate(0deg);
-}
-
-.close span:nth-child(3) {
-  top: 31px;
-  transform: rotate(45deg);
-}
-
-
-@keyframes modalContentFadeIn {
-  0% {
-    opacity:0;
-    top:-20px;
-  }
-  100% {
-    opacity:1;
-    top:0;
-  }
-}
-
-
-@keyframes fadeToRed {
-  0% {
-    background-color:rgba(black,.6);
-  }
-  100% {
-    background-color:rgba(red,.8);
-  }
-}
-
-@keyframes slowFade {
-  0% {
-    opacity:1;
-  }
-  99.9% {
-    opacity:0;
-    transform:scale(1);
-  }
-  100% {
-    transform:scale(0);
-  }
-}
-
-
-@keyframes bondJamesBond {
-  0% {
-    transform:translateX(1000px);
-  }
-  80% {
-    transform:translateX(0px);
-    border-radius:75px;
-    height:75px;
-    width:75px;
-  }
-  90% {
-    border-radius:3px;
-    height:372px;
-    width:90%;
-  }
-  100% {
-    border-radius:3px;
-    height:352px;
-    width:100%;
-  }
-}
-
-
-
+*/
 
 
 
@@ -1438,6 +1284,187 @@ div {
   color:rgba(233,228,221,0.7);
 
   }
+
+
+
+
+  div.modal {
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #ffa735;
+    background-image: url('~assets/graphic/exclusive-paper.png?size=300');
+
+    animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+    h2, p, li, button, img {
+      opacity: 0;
+      position: relative;
+      animation: modalContentFadeIn .5s 1.4s linear forwards;
+    }
+
+    .fifties {
+      font-family: Lobster Two , italic ;
+      color: white;
+      text-shadow: 0 8px 0 darken($blue, 9);
+      font-size: 5rem;
+
+    }
+
+
+
+    &.out {
+      animation: slowFade  1.5s ;
+      transition: 1s all;
+
+
+     > h2, p, li, button, img {
+       transition: 1s all;
+   animation: modalContentFadeOut  .5s 1.4s linear forwards;
+
+      }
+
+    }
+
+    @keyframes slowFade {
+      0% {
+        border-radius:3px;
+        height:352px;
+        width:100%;
+      }
+      80% {
+
+
+        border-radius:3px;
+        width:80%;
+      }
+      90% {
+        transform:translateX(0px);
+        border-radius:75px;
+        height:75px;
+        width:75px;
+      }
+      100% {
+        width:0;
+        transform:translateX(1000px);
+      }
+    }
+
+
+    @keyframes modalContentFadeIn {
+      0% {
+        opacity:0;
+        top:-20px;
+      }
+      100% {
+        opacity:1;
+        top:0;
+      }
+    }
+
+
+    @keyframes modalContentFadeOut {
+      0% {
+        opacity:1;
+        top:0;
+      }
+      100% {
+        opacity:0;
+        top:-20px;
+      }
+    }
+
+
+    @keyframes bondJamesBond {
+      0% {
+        transform:translateX(1000px);
+      }
+      80% {
+        transform:translateX(0px);
+        border-radius:75px;
+        height:75px;
+        width:75px;
+      }
+      90% {
+        border-radius:3px;
+        height:372px;
+        width:80%;
+      }
+      100% {
+        border-radius:3px;
+        height:352px;
+        width:125%;
+      }
+    }
+
+
+  }
+
+
+  .Icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform: rotate(-90deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .Icon span {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 23px;
+    height: 8px;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    transform: rotate(0deg);
+    transition: .2s ease-in-out;
+  }
+
+  .Icon span:nth-child(1),
+  .Icon span:nth-child(3) {
+    width: 50%;
+    transform: rotate(45deg);
+  }
+
+  .Icon span:nth-child(1) {
+    left: 3px;
+    top: 15px;
+  }
+
+  .Icon span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+
+  .Icon span:nth-child(3) {
+    left: 22px;
+    top: 33px;
+  }
+
+  .close span:nth-child(1),
+  .close span:nth-child(3) {
+    left: -1px;
+  }
+
+  .close span:nth-child(1) {
+    top: 15px;
+    transform: rotate(135deg);
+  }
+
+  .close span:nth-child(2) {
+    transform: rotate(0deg);
+  }
+
+  .close span:nth-child(3) {
+    top: 31px;
+    transform: rotate(45deg);
+  }
+
+
 
 }
 

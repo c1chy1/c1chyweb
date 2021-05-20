@@ -17,6 +17,7 @@ export default {
 
    script: [
 
+
          {
                 src: '//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
             },
@@ -24,6 +25,7 @@ export default {
                 src: '//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js'
 
             },
+
 
         ],
 
@@ -110,7 +112,6 @@ export default {
         {src: '~/plugins/fullpage', mode: 'client'},
         {src:'~/plugins/aos.js', mode: 'client'},
     ],
-
     modules: [
         ['@nuxtjs/pwa'],
         ['@nuxtjs/tailwindcss'],
