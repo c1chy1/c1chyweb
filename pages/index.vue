@@ -236,7 +236,7 @@
     <button
         ref="button"
         id="icon"
-        class="Icon relative left-16"
+        class="Icon relative left-16 mt-2"
         @click="closeModal">
 
 
@@ -245,7 +245,7 @@
       <span></span>
 
     </button>
-    <ul>
+    <ul class="ml-4">
 
       <li><p class="fifties">1. Original</p></li>
       <li><p class="fifties">2. Stylish</p></li>
