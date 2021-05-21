@@ -10,8 +10,6 @@ import '..\\node_modules\\fullpage-vue\\src\\fullpage.css'
 
 import '..\\assets\\css\\tailwind.css'
 
-import '..\\node_modules\\aos\\dist\\aos.css'
-
 import '..\\node_modules\\animate.css\\animate.min.css'
 
 import _7027c366 from '..\\layouts\\desktop.vue'

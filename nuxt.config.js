@@ -3,12 +3,6 @@
 export default {
 
 
-
-    css: [
-        'aos/dist/aos.css'
-    ],
-
-
     loading: '~/components/loading.vue',
 
     head: {
@@ -65,6 +59,9 @@ export default {
 
 
     build: {
+
+
+
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
@@ -82,6 +79,7 @@ export default {
                 }
             })
         }
+
     },
 
 

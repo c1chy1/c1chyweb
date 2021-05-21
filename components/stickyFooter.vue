@@ -24,24 +24,24 @@
 
   <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:10/12 2xl:w-1/2">
     <li  @click.prevent="toTop">
-      <NuxtLink to="/" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
+      <NuxtLink to="/" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl" no-prefetch>
         Home</NuxtLink>
     </li>
     <li @click.prevent="toTop">
-      <NuxtLink to="/aboutme" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
+      <NuxtLink to="/aboutme" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl" no-prefetch>
         About Me</NuxtLink>
     </li>
 
 
     <li @click.prevent="toTop">
-      <NuxtLink to="/portfolio" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
+      <NuxtLink to="/portfolio" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl" no-prefetch>
         Portfolio</NuxtLink>
     </li>
     <li class="flex" @click.prevent="toTop">
       <NuxtLink
 
           to="/contact"
-          class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
+          class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl" no-prefetch>
         Contact
 
       </NuxtLink>

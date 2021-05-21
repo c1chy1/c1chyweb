@@ -14,11 +14,11 @@
 
       <ul class="w-full h-12 px-16 flex justify-evenly self-center flex-wrap ">
         <li @click.prevent="toTop">
-          <NuxtLink to="/" class="text-2xl spin circle">Home</NuxtLink>
+          <NuxtLink to="/" class="text-2xl spin circle" no-prefetch>Home</NuxtLink>
         </li>
         <li @click.prevent="toTop"
         >
-          <NuxtLink to="/aboutme" class="text-2xl spin circle cursor-pointer">
+          <NuxtLink to="/aboutme" class="text-2xl spin circle cursor-pointer" no-prefetch>
             About Me
           </NuxtLink>
         </li>
@@ -32,10 +32,10 @@
         </li>
 
         <li @click.prevent="toTop">
-          <NuxtLink to="/portfolio" class="text-2xl spin circle">Portfolio</NuxtLink>
+          <NuxtLink to="/portfolio" class="text-2xl spin circle" no-prefetch>Portfolio</NuxtLink>
         </li>
         <li @click.prevent="toTop">
-          <NuxtLink to="/contact" class="text-2xl spin circle">Contact</NuxtLink>
+          <NuxtLink to="/contact" class="text-2xl spin circle" no-prefetch>Contact</NuxtLink>
         </li>
       </ul>
 
