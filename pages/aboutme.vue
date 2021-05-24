@@ -226,7 +226,7 @@
             <button
                 ref="button"
                 id="icon"
-                class="Icon relative self-end mt-6 "
+                class="Icon relative self-end mt-6 right-4"
                 @click="closeModal">
 
 
