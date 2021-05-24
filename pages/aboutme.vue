@@ -216,17 +216,17 @@
 
           <img
 
-              :data-src="require('~/assets/graphic/vintage_walkman.jpg?webp')"
+              :data-src="require('~/assets/graphic/vintage_cigarrettes.jpg?webp')"
               :src="marlboro.src"
               :srcSet="marlboro.srcSet"
 
           >
 
-          <article class="flex flex-row-reverse leading-snug">
+          <article class="flex flex-col justify-center leading-snug">
             <button
                 ref="button"
                 id="icon"
-                class="Icon relative left-16 mt-2"
+                class="Icon relative self-end mt-6 "
                 @click="closeModal">
 
 
@@ -235,14 +235,11 @@
               <span></span>
 
             </button>
-            <ul class="ml-4">
 
-              <li><p class="fifties">1. Original</p></li>
-              <li><p class="fifties">2. Stylish</p></li>
-              <li><p class="fifties">3. Modernly</p></li>
-
-
-            </ul>
+            <h1 class="vectro px-3"><span class="vectro-body">TRY</span></h1>
+            <h1 class="vectro px-3"><span class="vectro-body">IDEAS</span><span class="vectro-red">I</span></h1>
+            <h1 class="vectro px-3 "><span class="vectro-body">PLANS</span><span class="vectro-red">I</span><span class="vectro-green">I</span></h1>
+            <h1 class="vectro px-3"><span class="vectro-body">ADDICTION</span><span class="vectro-red">I</span><span class="vectro-green">I</span><span class="vectro-blue">I</span></h1>
 
 
           </article>
@@ -481,14 +478,16 @@ export default {
 
     toggleModal() {
       document.querySelector('.mission').scrollIntoView({behavior: 'smooth'});
-      this.isShowing = !this.isShowing;
 
+      setTimeout(() => { this.isShowing = !this.isShowing;
 
-      if (!this.isShowing) {
+        if (!this.isShowing) {
 
-        this.$refs.modal.classList.add('out')
+          this.$refs.modal.classList.add('out')
 
-      }
+        }
+
+        }, 500 )
 
     },
 
@@ -533,10 +532,6 @@ export default {
 
 
 $titleColor: #224a49;
-
-
-
-
 
 [data-aos="rotate"] {
   transform: rotate(720deg);
@@ -638,7 +633,7 @@ div.modal {
 
   animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-  h2, p, li, button, img {
+  h1, p, li, button, img , .vectro{
     opacity: 0;
     position: relative;
     animation: modalContentFadeIn .5s 1.4s linear forwards;
@@ -650,7 +645,7 @@ div.modal {
 
 
 
-    > h2, p, li, button, img {
+    > h1, p, li, button, img, .vectro {
       animation: modalContentFadeOut 0.7s ;
     }
 
@@ -658,14 +653,12 @@ div.modal {
 
   @keyframes slowFade {
     0% {
-      border-radius:45px;
-      height:352px;
       width:50%;
+      height: 66%;
+      border-radius:45px;
     }
     80% {
-
-
-      border-radius:35px;
+      height: 10%;
       width:5%;
     }
     90% {
@@ -711,6 +704,7 @@ div.modal {
   @keyframes bondJamesBond {
     0% {
       transform:translateX(1000px);
+
     }
     80% {
       transform:translateX(0px);
@@ -720,7 +714,7 @@ div.modal {
     }
     90% {
       height:60%;
-      width:60%;
+
     }
     100% {
 
@@ -730,72 +724,153 @@ div.modal {
   }
 
 
+
+
+  .vectro {
+    position: relative;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.1px #f1f1f1;
+    font-family: 'Righteous', cursive;
+    font-size: 5rem;
+    background-color: black;
+  }
+
+  .vectro:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*-webkit-animation:vectro_effect 0.067s infinite;*/
+    background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 0, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
+  }
+
+
+
+ .vectro {
+    -webkit-text-stroke: 1px #f1f1f1;
+  }
+
+  .vectro-body {
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(#C3BFB4 0%, #FDFCFA 50%, #E8E7E5 51%, #757172 52%, #E8E9DB 100%);
+    -webkit-filter: drop-shadow(2px 2px 15px #3F59F4);
+  }
+
+  .vectro-red {
+    color: #F10C20;
+    -webkit-text-fill-color: #F10C20;
+    -webkit-text-stroke: 0;
+    -webkit-filter: drop-shadow(2px 2px 15px #F10C20);
+    font-style: italic;
+    padding-right: 20px;
+  }
+
+  .vectro-red {
+    padding-right: 30px;
+  }
+
+  .vectro-green {
+    color: #6BFF2B;
+    -webkit-text-fill-color: #6BFF2B;
+    -webkit-filter: drop-shadow(2px 2px 15px #6BFF2B);
+    -webkit-text-stroke: 0;
+    font-style: italic;
+    padding-right: 20px;
+    margin-left: -20px;
+  }
+
+ .vectro-green {
+    padding-right: 30px;
+    margin-left: -30px;
+  }
+
+  .vectro-blue {
+    color: #3F59F4;
+    -webkit-text-fill-color: #3F59F4;
+    -webkit-filter: drop-shadow(2px 2px 15px #3F59F4);
+    -webkit-text-stroke: 0;
+    font-style: italic;
+    padding-right: 20px;
+    margin-left: -20px;
+  }
+
+ .vectro-blue {
+    padding-right: 30px;
+    margin-left: -30px;
+  }
+
+  .Icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .Icon span {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 23px;
+    height: 8px;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    transform: rotate(0deg);
+    transition: .2s ease-in-out;
+  }
+
+  .Icon span:nth-child(1),
+  .Icon span:nth-child(3) {
+    width: 50%;
+    transform: rotate(45deg);
+  }
+
+  .Icon span:nth-child(1) {
+    left: 3px;
+    top: 15px;
+  }
+
+  .Icon span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+
+  .Icon span:nth-child(3) {
+    left: 20px;
+    top: 31px;
+  }
+
+  .close span:nth-child(1),
+  .close span:nth-child(3) {
+    left: -1px;
+  }
+
+  .close span:nth-child(1) {
+    top: 15px;
+    transform: rotate(135deg);
+  }
+
+  .close span:nth-child(2) {
+    transform: rotate(0deg);
+  }
+
+  .close span:nth-child(3) {
+    top: 31px;
+    transform: rotate(45deg);
+  }
+
+
+
+
 }
 
 
 
 
-
-.Icon {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
-.Icon span {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 23px;
-  height: 8px;
-  width: 100%;
-  background: #fff;
-  border-radius: 4px;
-  transform: rotate(0deg);
-  transition: .2s ease-in-out;
-}
-
-.Icon span:nth-child(1),
-.Icon span:nth-child(3) {
-  width: 50%;
-  transform: rotate(45deg);
-}
-
-.Icon span:nth-child(1) {
-  left: 3px;
-  top: 15px;
-}
-
-.Icon span:nth-child(2) {
-  transform: rotate(-45deg);
-}
-
-.Icon span:nth-child(3) {
-  left: 20px;
-  top: 31px;
-}
-
-.close span:nth-child(1),
-.close span:nth-child(3) {
-  left: -1px;
-}
-
-.close span:nth-child(1) {
-  top: 15px;
-  transform: rotate(135deg);
-}
-
-.close span:nth-child(2) {
-  transform: rotate(0deg);
-}
-
-.close span:nth-child(3) {
-  top: 31px;
-  transform: rotate(45deg);
-}
 
 
 
