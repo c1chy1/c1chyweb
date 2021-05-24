@@ -68,50 +68,50 @@
             <transition name="fade">
               <div
 
-                  v-if="isShowing" class="modal flex" >
-
-
+                  v-if="isShowing" ref="modal" class="modal flex w-full z-40" >
 
                 <img
 
                     :data-src="require('~/assets/graphic/vintage_guys.jpg?webp')"
-                    :src="guys.src"
-                    :srcSet="guys.srcSet"
+                    :src="sick.src"
+                    :srcSet="sick.srcSet"
 
                 >
 
-                <button
-                    ref="button"
-                    id="icon"
-                    class="Icon"
-                    @click="closeModal">
+                <article class="flex flex-row-reverse leading-snug">
+                  <button
+                      ref="button"
+                      id="icon"
+                      class="Icon relative left-16 mt-2"
+                      @click="closeModal">
 
 
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-                </button>
-                <ul>
+                  </button>
+                  <ul class="ml-4">
 
-                  <li>2. HTML</li>
-                  <li>2. HTML</li>
-                  <li>2. HTML</li>
-                  <li>2. HTML</li>
-                  <li>2. HTML</li>
-
-                </ul>
+                    <li><p class="fifties">1. Original</p></li>
+                    <li><p class="fifties">2. Stylish</p></li>
+                    <li><p class="fifties">3. Modernly</p></li>
 
 
+                  </ul>
+
+
+                </article>
 
               </div>
 
             </transition>
 
+
             <button
                 id="aos-space"
                 class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3"
-               @click="toggleShow"
+               @click="toggleModal"
             >Lern Mehr</button>
           </div>
         </section>
@@ -240,7 +240,7 @@
 import stickyFooter from "@/components/stickyFooter";
 
 const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const guys = require('~/assets/graphic/vintage_guys.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
+const sick = require('~/assets/graphic/vintage_guys.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
 export default {
 
@@ -258,7 +258,7 @@ export default {
 
     return {
 
-      light,guys,
+      light,sick,
       bkClass: 'bk',
       blurClass: 'blur',
       isShowing: false,
@@ -269,6 +269,19 @@ export default {
 
   methods: {
 
+    toggleModal() {
+      document.querySelector('.bg_stars').scrollIntoView({behavior: 'smooth'});
+      this.isShowing = !this.isShowing;
+
+
+      if (!this.isShowing) {
+
+        this.$refs.modal.classList.add('out')
+
+      }
+
+    },
+
     closeModal() {
 
 
@@ -276,15 +289,19 @@ export default {
 
       setTimeout(() => {
 
+        this.$refs.modal.classList.add('out')
+
+      }, 500)
+
+
+
+      setTimeout(() => {
+
         this.isShowing = false
 
-      }, 1000)
+      }, 500)
 
 
-    },
-
-    toggleShow() {
-      this.isShowing = !this.isShowing;
     },
 
 
@@ -389,44 +406,117 @@ h1 {
 }
 
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 1s ease-out;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-
-
 div.modal {
   height: 75px;
   width: 75px;
-  border-radius: 75px;
+  border-radius: 40px;
   overflow: hidden;
   position: absolute;
   background-color: #f4dda9;
-  background-image: url('~assets/graphic/exclusive-paper.png?size=300');
 
   animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-  h2, p ,li,button,img {
+  h2, p, li, button, img {
     opacity: 0;
     position: relative;
     animation: modalContentFadeIn .5s 1.4s linear forwards;
   }
 
+
   &.out {
-    animation: slowFade .5s 1.5s linear forwards;
+    animation: slowFade  1.5s ;
 
-    .modal-background {
-      background-color: rgba(0, 0, 0, .7);
-      animation: fadeToRed 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+
+    > h2, p, li, button, img {
+      animation: modalContentFadeOut 1.6s ;
     }
-
 
   }
 
+  @keyframes slowFade {
+    0% {
+
+      height:352px;
+      width:45%;
+      border-radius: 0;
+    }
+    80% {
+
+      border-radius: 40px;
+      width:30%;
+
+    }
+    90% {
+      transform:translateX(0px);
+      height:75px;
+      width:10%;
+
+    }
+    100% {
+
+      height:75px;
+      width:  75px;
+      transform:translateX(1000px);
+    }
+  }
+
+
+  @keyframes modalContentFadeIn {
+    0% {
+      opacity:0;
+      top:-20px;
+
+
+    }
+    100% {
+      opacity:1;
+      top:0;
+
+    }
+  }
+
+
+  @keyframes modalContentFadeOut {
+    0% {
+
+      opacity:1;
+      top:0;
+    }
+    100% {
+
+      opacity:0;
+      top:-20px;
+    }
+  }
+
+
+  @keyframes bondJamesBond {
+    0% {
+      transform:translateX(1000px);
+    }
+    80% {
+      transform:translateX(0px);
+      border-radius:40px;
+      height:75px;
+      width:75px;
+    }
+    90% {
+      border-radius:3px;
+      height:322px;
+      width:40%;
+    }
+    100% {
+      border-radius:0;
+      height:352px;
+      width:45%;
+    }
+  }
+
+
 }
+
+
 
 .Icon {
   width: 50px;
@@ -491,62 +581,8 @@ div.modal {
 
 
 
-@keyframes modalContentFadeIn {
-  0% {
-    opacity:0;
-    top:-20px;
-  }
-  100% {
-    opacity:1;
-    top:0;
-  }
-}
 
 
-@keyframes fadeToRed {
-  0% {
-    background-color:rgba(black,.6);
-  }
-  100% {
-    background-color:rgba(red,.8);
-  }
-}
-
-@keyframes slowFade {
-  0% {
-    opacity:1;
-  }
-  99.9% {
-    opacity:0;
-    transform:scale(1);
-  }
-  100% {
-    transform:scale(0);
-  }
-}
-
-
-@keyframes bondJamesBond {
-  0% {
-    transform:translateX(1000px);
-  }
-  80% {
-    transform:translateX(0px);
-    border-radius:75px;
-    height:75px;
-    width:75px;
-  }
-  90% {
-    border-radius:3px;
-    height:322px;
-    width:40%;
-  }
-  100% {
-    border-radius:3px;
-    height:352px;
-    width:45%;
-  }
-}
 
 
 

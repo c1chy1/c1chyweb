@@ -206,52 +206,52 @@
         </article>
 
     </section>
-    <section class="mission h-auto flex   lg:pt-12 lg:mt-16  lg:pb-32  2xl:mt-0  2xl:pb-12">
+    <section  class="mission h-auto flex   lg:pt-12 lg:mt-16  lg:pb-32  2xl:mt-0  2xl:pb-12">
 
 
       <transition name="fade">
         <div
 
-            v-if="isShowing" class="modal ml-5 flex z-20" >
+            v-if="isShowing" ref="modal" class="modal flex w-full z-40 xl:mt-10" >
 
           <img
 
-              :data-src="require('~/assets/graphic/vintage_cigarrettes.jpg?webp')"
+              :data-src="require('~/assets/graphic/vintage_walkman.jpg?webp')"
               :src="marlboro.src"
               :srcSet="marlboro.srcSet"
 
           >
 
+          <article class="flex flex-row-reverse leading-snug">
+            <button
+                ref="button"
+                id="icon"
+                class="Icon relative left-16 mt-2"
+                @click="closeModal">
 
-          <button
-              ref="button"
-              id="icon"
-              class="Icon"
-              @click="closeModal">
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </button>
+            <ul class="ml-4">
+
+              <li><p class="fifties">1. Original</p></li>
+              <li><p class="fifties">2. Stylish</p></li>
+              <li><p class="fifties">3. Modernly</p></li>
 
 
-            <span></span>
-            <span></span>
-            <span></span>
+            </ul>
 
-          </button>
-          <ul>
 
-            <li>2. HTML</li>
-            <li>2. HTML</li>
-            <li>2. HTML</li>
-            <li>2. HTML</li>
-            <li>2. HTML</li>
-
-          </ul>
+          </article>
 
         </div>
 
       </transition>
 
-
-
-      <div class="mission_left  w-1/2  lg:pl-16  2xl:pl-24 2xl:pt-16 ">
+      <div class="mission_left  w-1/2  lg:pl-16  2xl:pl-24 2xl:pt-16  z-20">
         <div class="flex"
 
         >
@@ -268,7 +268,7 @@
 
         <button
            class="button_red fade lg:hidden 2xl:block"
-                @click="toggleShow">
+                @click="toggleModal">
         <span v-if="isShowing">HIDE</span>
         <span v-else>SHOW</span>
         MY APPROACH
@@ -280,7 +280,7 @@
 
       >
         <div class="h-72 w-72 m-auto cursor-pointer">
-          <svg      aria-hidden="true" focusable="false" data-prefix="far" data-icon="lightbulb"
+          <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lightbulb"
                class="svg-inline--fa fa-lightbulb fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
                viewBox="0 0 352 512">
             <path fill="#e9e4dc"
@@ -350,11 +350,7 @@
       </div>
       <div class="principles  w-full flex pb-16 items-end text-center mb-8  2xl:pb-16 2xl:mb-0 ">
 
-
-
-
-
-          <article class="h-full w-1/3"
+        <article class="h-full w-1/3"
 
 
                    data-aos="fade-left"
@@ -383,17 +379,14 @@
 
                    data-aos-delay="1250"
                    data-aos="fade-up"
-                   data-aos-anchor="#site-footer"
-
-          >
+                   data-aos-anchor="#site-footer">
 
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Entwickeln
             </h2>
             <img class="lazyload m-auto"
                  :data-src="require('~/assets/graphic/principles_02.png?webp')"
-                 alt="Entwickeln Frontend"
-            >
+                 alt="Entwickeln Frontend">
             <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
             <a href="#"
                class="button_red inline-block fade uppercase"
@@ -406,8 +399,7 @@
 
                    data-aos="fade-right"
                    data-aos-delay="1750"
-                   data-aos-anchor="#site-footer"
-          >
+                   data-aos-anchor="#site-footer">
 
             <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Umsetzen
@@ -487,10 +479,18 @@ export default {
   methods: {
 
 
-    toggleShow() {
+    toggleModal() {
+      document.querySelector('.mission').scrollIntoView({behavior: 'smooth'});
       this.isShowing = !this.isShowing;
-    },
 
+
+      if (!this.isShowing) {
+
+        this.$refs.modal.classList.add('out')
+
+      }
+
+    },
 
     closeModal() {
 
@@ -499,19 +499,23 @@ export default {
 
       setTimeout(() => {
 
+        this.$refs.modal.classList.add('out')
+
+      }, 500)
+
+
+
+      setTimeout(() => {
+
         this.isShowing = false
 
-      }, 1000)
+      }, 500)
 
 
     },
 
 
-
-
-    },
-
-
+  },
 
 
 
@@ -622,45 +626,115 @@ h1 {
 }
 
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 1s ease-out;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-
-
 
 
 div.modal {
   height: 75px;
   width: 75px;
-  border-radius: 75px;
+  border-radius: 40px;
   overflow: hidden;
   position: absolute;
   background-color: black;
-  filter: sepia(1);
 
   animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-  h2, p ,li,button,img{
+  h2, p, li, button, img {
     opacity: 0;
     position: relative;
     animation: modalContentFadeIn .5s 1.4s linear forwards;
   }
 
-  &.out {
-    animation: slowFade .5s 1.5s linear forwards;
 
-    .modal-background {
-      background-color: rgba(0, 0, 0, .7);
-      animation: fadeToRed 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  &.out {
+    animation: slowFade  1.5s ;
+
+
+
+    > h2, p, li, button, img {
+      animation: modalContentFadeOut 0.7s ;
     }
 
-
   }
+
+  @keyframes slowFade {
+    0% {
+      border-radius:45px;
+      height:352px;
+      width:50%;
+    }
+    80% {
+
+
+      border-radius:35px;
+      width:5%;
+    }
+    90% {
+      transform:translateX(0px);
+
+      height:75px;
+      width: 75px;
+    }
+    100% {
+      width:0;
+      transform:translateX(1000px);
+    }
+  }
+
+
+  @keyframes modalContentFadeIn {
+    0% {
+      opacity:0;
+      top:-20px;
+
+
+    }
+    100% {
+      opacity:1;
+      top:0;
+      border-radius:45px;
+    }
+  }
+
+
+  @keyframes modalContentFadeOut {
+    0% {
+      opacity:1;
+      top:0;
+    }
+    100% {
+      opacity:0;
+      top:-20px;
+    }
+  }
+
+
+  @keyframes bondJamesBond {
+    0% {
+      transform:translateX(1000px);
+    }
+    80% {
+      transform:translateX(0px);
+
+      height:75px;
+      width:75px;
+    }
+    90% {
+      height:60%;
+      width:60%;
+    }
+    100% {
+
+      height:66%;
+      width:50%;
+    }
+  }
+
+
 }
+
+
+
+
 
 .Icon {
   width: 50px;
@@ -724,77 +798,8 @@ div.modal {
 }
 
 
-@keyframes modalContentFadeIn {
-  0% {
-    opacity:0;
-    top:-20px;
-  }
-  100% {
-    opacity:1;
-    top:0;
-  }
-}
 
 
-@keyframes modalContentFadeOut {
-  0% {
-    opacity:1;
-    top:0;
-  }
-  100% {
-    opacity:0;
-    top:-20px;
-  }
-}
-
-
-
-@keyframes fadeToRed {
-  0% {
-    background-color:rgba(black,.6);
-  }
-  100% {
-    background-color:rgba(red,.8);
-  }
-}
-
-@keyframes slowFade {
-  0% {
-    opacity:1;
-  }
-  99.9% {
-    opacity:0;
-    transform:scale(1);
-  }
-  100% {
-    transform:scale(0);
-  }
-}
-
-
-@keyframes bondJamesBond {
-  0% {
-    transform: translateX(1000px);
-  }
-  80% {
-    transform: translateX(0px);
-    border-radius: 75px;
-    height: 75px;
-    width: 75px;
-  }
-  90% {
-    border-radius: 25px;
-    height: 65%;
-    width: 45%;
-  }
-  100% {
-    border-radius: 35px;
-    height: 70%;
-    width: 50%;
-  }
-
-
-}
 
 header {
 

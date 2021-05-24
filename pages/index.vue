@@ -431,6 +431,7 @@ return {
 
 
     toggleModal() {
+      document.querySelector('.bg_stars').scrollIntoView({behavior: 'smooth'});
     this.isShowing = !this.isShowing;
 
 
@@ -761,9 +762,6 @@ return {
 </script>
 
 <style scoped lang="scss">
-
-@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic);
-
 
 .bk {
   transition: all 0.3s ease-out;
@@ -1311,7 +1309,7 @@ div {
       80% {
 
 
-        border-radius:3px;
+        border-radius:25px;
         width:80%;
       }
       90% {
@@ -1330,7 +1328,7 @@ div {
     @keyframes modalContentFadeIn {
       0% {
         opacity:0;
-
+        top:-20px;
       }
       100% {
         opacity:1;
