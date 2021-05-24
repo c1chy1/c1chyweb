@@ -82,7 +82,7 @@
                   <button
                       ref="button"
                       id="icon"
-                      class="Icon relative left-16 mt-2"
+                      class="Icon relative right-2"
                       @click="closeModal">
 
 
@@ -91,15 +91,13 @@
                     <span></span>
 
                   </button>
-                  <ul class="ml-4">
 
-                    <li><p class="fifties">1. Original</p></li>
-                    <li><p class="fifties">2. Stylish</p></li>
-                    <li><p class="fifties">3. Modernly</p></li>
-
-
-                  </ul>
-
+                  <section class="text flex flex-col justify-center text-center">
+                    <h3>Hey everyone look at this</h3>
+                    <h1>
+                      <span>Awesome Vintage Style</span>
+                    </h1>
+                  </section>
 
                 </article>
 
@@ -316,6 +314,10 @@ export default {
 
 <style scoped lang="scss">
 
+
+
+
+
 [data-aos="rotate-space"] {
   transform: rotate(-540deg);
   transition-property: transform;
@@ -416,7 +418,7 @@ div.modal {
 
   animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
-  h2, p, li, button, img {
+  h2, p, li, button, img, h1 span,h3 {
     opacity: 0;
     position: relative;
     animation: modalContentFadeIn .5s 1.4s linear forwards;
@@ -428,8 +430,8 @@ div.modal {
 
 
 
-    > h2, p, li, button, img {
-      animation: modalContentFadeOut 1.6s ;
+    > h2, p, li, button, img ,h1 span,h3 {
+      animation: modalContentFadeOut 1s ;
     }
 
   }
@@ -437,7 +439,7 @@ div.modal {
   @keyframes slowFade {
     0% {
 
-      height:352px;
+      height:375px;
       width:45%;
       border-radius: 0;
     }
@@ -508,10 +510,70 @@ div.modal {
     }
     100% {
       border-radius:0;
-      height:352px;
+      height:375px;
       width:45%;
     }
   }
+
+
+
+  section.text {
+    position: relative;
+    width: 100%;
+    min-width: 600px;
+
+
+  }
+
+  h1, h3 {
+    font-family: "Oswald", sans-serif;
+    color:#121212;
+    transform: matrix(1, -0.20, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
+    filter: none;
+  }
+
+  h1 span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+  h3 {
+    font-family: "Merriweather", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  h3:before, h3:after {
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+  }
+
+  h3:before {
+    margin: 5px 0 0 -110px;
+  }
+
+  h3:after {
+    margin: 5px 0 0 10px;
+  }
+
 
 
 }
@@ -557,7 +619,7 @@ div.modal {
 
 .Icon span:nth-child(3) {
   left: 20px;
-  top: 31px;
+  top: 32px;
 }
 
 .close span:nth-child(1),

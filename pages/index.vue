@@ -214,9 +214,9 @@
                @click="toggleModal"
             >
               <span v-if="isShowing"
-              >HIDE</span>
-              <span v-else>SHOW</span>
-              MY STORY
+              >HIDE HOW !</span>
+              <span v-else>SHOW ME HOW !</span>
+
             </button>
 
   <transition name="fade">

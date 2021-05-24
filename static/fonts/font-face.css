@@ -116,3 +116,12 @@
     font-display: swap;
     src: url(./Righteous-Regular.woff2) format('truetype');
 }
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Oswald-Regular.woff2) format('truetype');
+}
+

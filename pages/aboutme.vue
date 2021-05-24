@@ -239,7 +239,7 @@
             <h1 class="vectro px-3"><span class="vectro-body">TRY</span></h1>
             <h1 class="vectro px-3"><span class="vectro-body">IDEAS</span><span class="vectro-red">I</span></h1>
             <h1 class="vectro px-3 "><span class="vectro-body">PLANS</span><span class="vectro-red">I</span><span class="vectro-green">I</span></h1>
-            <h1 class="vectro px-3"><span class="vectro-body">ADDICTION</span><span class="vectro-red">I</span><span class="vectro-green">I</span><span class="vectro-blue">I</span></h1>
+            <h1 class="vectro px-3"><span class="vectro-body">PROGRESS</span><span class="vectro-red">I</span><span class="vectro-green">I</span><span class="vectro-blue">I</span></h1>
 
 
           </article>
@@ -742,7 +742,6 @@ div.modal {
     top: 0;
     width: 100%;
     height: 100%;
-    /*-webkit-animation:vectro_effect 0.067s infinite;*/
     background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 0, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
   }
 
