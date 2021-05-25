@@ -64,7 +64,7 @@
               :src="body.src"
 
               alt="vintage body"
-              class="body lazyload self-center  sm:w-2/5 md:w-40 portrait:w-2/3 lg:w-5/12
+              class="body lazyload self-center w-full  sm:w-2/5 md:w-2/3 lg:w-5/12
 
 
 
@@ -125,7 +125,7 @@
 
             >c1chy's studio</h1>
             <figure
-                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
+                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 hidden sm:block sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
               <img
 
                   :srcSet="require('../assets/graphic/ribbon.png?webp')"
