@@ -430,11 +430,6 @@
     @screen sm {
 
 
-
-
-
-
-
         [data-anchor="page3"]:before {
 
 
@@ -629,7 +624,7 @@
 
         .logo {
 
-            top:6rem
+            top:7rem
 
         }
 
