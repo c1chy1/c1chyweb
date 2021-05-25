@@ -20,7 +20,7 @@
             alt="light">
         </div>
         <div
-            class="w-full h-screen relative fill-40 flex flex-col   justify-end    sm:justify-end "
+            class="w-full h-screen relative fill-40 flex flex-col   justify-between    sm:justify-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
 
@@ -199,7 +199,7 @@
 
     class="w-5/12 self-center lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-center  text-xl xl:text-3xl ">
+                class="text-center  text-xl xl:text-3xl 2xl:text-5xl ">
               Strategie, Technologie, <br> App & Content </h2>
 
   <p
