@@ -11,10 +11,6 @@
       <section  class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10 ">
 
 
-
-
-
-
         <div class="light_background md:w-screen px-0"><img
 
             :data-src="require('~/assets/graphic/light_background.png?webp')"
@@ -24,7 +20,7 @@
             alt="light">
         </div>
         <div
-            class="section-1 h-full w-screen absolute grid fill-40 justify-items-center items-end "
+            class="w-full h-screen relative fill-40 flex flex-col   justify-end    sm:justify-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
 
 
@@ -45,9 +41,11 @@
        :src="logo.src"
 
        alt="c1chy"
-       class="logo lazyload w-3/4  sm:w-1/6  sm:self-center md:w-2/3 lg:w-1/3 2xl:w-1/5 relative z-50"
-       :class="'animate__animated animate__tada animate__delay-8s animate__repeat-2'">
+       class="logo lazyload  self-center relative w-10/12 sm:w-1/3 md:w-40 portrait:w-1/2 lg:w-1/3 xl:w-1/4
 
+
+        xl:top-12 relative z-50"
+       :class="'animate__animated animate__tada animate__delay-8s animate__repeat-2'">
 
 
           <img
@@ -56,20 +54,8 @@
               :srcSet="hat.srcSet"
               :src="hat.src"
               alt="rainbow balloon"
-               class="hat lazyload relative top-20 w-3/5 sm:w-32 md:w-1/2 lg:w-1/5   z-20"
+               class="hat lazyload relative self-center w-3/5 sm:w-32  md:1/2 portrait:w-1/2 lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
           >
-
-          <figure class="ribbon absolute bottom-1/20 flex items-center justify-center z-10 sm:top-20  filter-shadow-black ">
-
-
-            <img
-                :data-src="require('~/assets/graphic/ribbon.png?webp')"
-                alt="ribbon"
-                class="lazyload  sm:max-h-xs sm:w-1/2 md:w-full 2xl:w-full filter-shadow-black z-1">
-            <figcaption class="mx-auto mt-2 absolute block text-xl text-white text-center my-auto  md:text-3xl lg:text-4xl  xl:mt-4 xl:tracking-wider 2xl:text-3xl 2xl:mt-4">
-              Visually Striking Design </figcaption>
-          </figure>
-
           <img
 
 
@@ -78,7 +64,23 @@
               :src="body.src"
 
               alt="vintage body"
-              class="body lazyload w-full  sm:w-5/12 md:w-full lg:w-1/3 2xl:w-1/3 filter-shadow-black ">
+              class="body lazyload self-center  sm:w-2/5 md:w-40 portrait:w-2/3 lg:w-5/12
+
+
+
+                xl:w-1/2 2xl:w-1/3 filter-shadow-black ">
+
+          <figure class="ribbon flex  sm:justify-center absolute w-8/12   xl:w-2/5 2xl:w-1/3 bottom-1/20 self-center   filter-shadow-black z-10 ">
+
+
+            <img
+                :data-src="require('~/assets/graphic/ribbon.png?webp')"
+                alt="ribbon"
+                class="lazyload absolute    sm:w-1/2 md:w-2/3 lg:w-full 2xl:w-full filter-shadow-black z-10">
+            <figcaption class="mx-auto mt-2   text-xs text-white text-center my-auto  md:text-xl lg:text-xl  xl:mt-4 xl:tracking-wider 2xl:text-xl 2xl:mt-5 z-20">
+              Visually Striking Design </figcaption>
+          </figure>
+
         </div>
 
 
@@ -195,9 +197,9 @@
 
 
 
-    class="w-5/12 self-center  lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
+    class="w-5/12 self-center lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-center">
+                class="text-center  text-xl xl:text-3xl ">
               Strategie, Technologie, <br> App & Content </h2>
 
   <p
@@ -304,14 +306,14 @@
         :data-src="require('~/assets/graphic/ribbon.png?webp')"
         alt="ribbon"
 
-        class="lazyload md-landscape:h-12  md-portrait:h-8 md:w-full lg:w-3/4  xl:w-full filter-shadow-black 2xl:h-12 2xl:text-center z-1 ">
+        class="lazyload md:w-full lg:w-3/4  xl:w-full filter-shadow-black 2xl:h-12 2xl:text-center z-1 ">
     <figcaption
         class="w-full absolute block text-2xl left-0 my-auto mt-2 bg-no-repeat text-center text-white md:ml-3 md:text-3xl md:tracking-widest  lg:text-3xl  2xl:tracking-widest 2xl:text-3xl   z-0 ">
       Let Me Know!
     </figcaption>
   </figure>
 
-  <p class="w-auto h-auto text-xs sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:max-w-lg 2xl:block 2xl:text-2xl 2xl:mt-5 ">
+  <p class="w-auto h-auto text-xs mt-4 sm:hidden md:text-2xl md:hidden  lg:text-3xl xl:block xl:text-2xl xl:mt-0 2xl:max-w-lg 2xl:block 2xl:text-2xl 2xl:mt-5 ">
     Eine hochwertige und ansprechende Website stellt die Grundlage für jede Online-Präsenz. </p>
 
 </div>
@@ -782,17 +784,6 @@ return {
 
 
 
-.section-1 {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(25% ,1fr)) ;
-
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 2;
-
-}
 
 
 
@@ -899,7 +890,7 @@ div p, li, a {
 
     width: 160vw;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -951,6 +942,11 @@ div p, li, a {
       font-family: Satisfy,sans-serif;
     }
 
+    img {
+
+      z-index: -1;
+
+    }
 
   }
 
@@ -1217,7 +1213,6 @@ div {
       white-space: revert;
       top: 5px;
       left: 6px;
-      font-size: 3vw;
 
     }
     &:before {

@@ -269,8 +269,18 @@
 
     }
 
+    .h-1\/3 {
+
+        height: 33%;
+
+    }
 
 
+    .h-1\/2 {
+
+        height: 50%;
+
+    }
 
     .h-3\/4 {
 
@@ -405,48 +415,22 @@
     .hat {
 
         animation: matrix 7s ease infinite;
+        top: 2rem;
     }
+   .logo {
+
+       top: 2rem;
+
+   }
 
 
-/*    .body {
 
-        --ratio: 1 / 3;
-        --width: 98vmin;
-        --height: calc(var(--width) * var(--ratio));
-
-        display: block;
-        margin: 0 auto;
-
-    }*/
-
-    /*
-
-    .logo {
-
-        --ratio: 6 / 16;
-        --width: 98vmin;
-        --height: calc(var(--width) * var(--ratio));
-
-
-        display: block;
-        margin: 0 auto;
-        width: 60vmin;
-        height: var(--height);
-    }
-
-    */
 
 
     @screen sm {
 
 
 
-  .hat {
-
-
-      top: 0;
-
-  }
 
 
 
@@ -511,15 +495,9 @@
     }
 
 
-    @screen md {
+@screen md {
 
 
-
-        .hat {
-
-
-            top: 10vh;
-        }
 
 
         [data-anchor="page3"]:before {
@@ -641,7 +619,23 @@
 
 
 
-   #form {
+
+        .hat {
+
+            top:4rem
+
+        }
+
+
+        .logo {
+
+            top:6rem
+
+        }
+
+
+
+        #form {
 
 
        height: 100vh;
@@ -836,19 +830,7 @@
 
 
 
-        .logo {
 
-            top: 7vh;
-
-        }
-
-
-
-        .hat {
-
-            top: 12vh;
-            width: 16vw!important;
-        }
 
 
         [data-anchor="page2"] .welcome_studio > div >  span:after {

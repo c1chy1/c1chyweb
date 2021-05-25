@@ -212,7 +212,7 @@
       <transition name="fade">
         <div
 
-            v-if="isShowing" ref="modal" class="modal flex w-full z-40 xl:mt-10" >
+            v-if="isShowing" ref="modal" class="modal flex w-full z-40 xl:mt-10 xl:ml-2"  >
 
           <img
 

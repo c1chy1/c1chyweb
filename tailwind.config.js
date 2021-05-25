@@ -6,7 +6,6 @@ module.exports = {
 
 
 
-
   tailwindcss: {
 
     cssPath: '~/assets/css/tailwind.css',
@@ -30,19 +29,12 @@ module.exports = {
     screens: {
       'sm': { 'min': '480px'},
       'md': {'min': '768px'},
-      'md-landscape': [
-        {'min': '768px'},
-        {'raw': '(orientation: landscape)'}
-      ],
-      'md-portrait': [
-        {'min': '768px'},
-        {'raw': '(orientation: portrait)'}
-      ],
       'lg': {'min': '1024px'},
       'xl': {'min': '1280px'},
       '2xl': {'min': '1536px'},
 
-
+      'portrait': {'raw': '(orientation: portrait)'},
+      'landscape': {'raw': '(orientation: landscape)'},
     },
 
     fontFamily: {
@@ -58,7 +50,7 @@ module.exports = {
       'base': '1rem',
       'lg': '1.125rem',
       'xl': '1.25rem',
-      '2xl': '1.5rem',
+      '2xl': '1.675rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
