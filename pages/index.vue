@@ -76,7 +76,7 @@
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload absolute    sm:w-1/2 md:w-2/3 lg:w-full 2xl:w-full filter-shadow-black z-10">
+                class="lazyload absolute   bottom-16 sm:w-1/2 md:w-2/3 lg:w-full 2xl:w-full filter-shadow-black z-10">
             <figcaption class="mx-auto mt-2   text-xs text-white text-center my-auto  md:text-xl lg:text-xl  xl:mt-4 xl:tracking-wider 2xl:text-2xl 2xl:mt-5 z-20">
               Visually Striking Design </figcaption>
           </figure>
