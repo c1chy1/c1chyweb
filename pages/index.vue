@@ -125,7 +125,7 @@
 
             >c1chy's studio</h1>
             <figure
-                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 hidden sm:block sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
+                class="h-full w-8/12 relative m-auto flex items-center filter-shadow-black z-10 hidden sm:flex sm:w-1/2 sm:mt-4 md:w-1/2 lg:w-full xl:w-2/3 2xl:w-2/3 2xl:mt-0 2xl:mb-1 z-20">
               <img
 
                   :srcSet="require('../assets/graphic/ribbon.png?webp')"
@@ -133,7 +133,7 @@
 
                   class="lazyload xl:text-center filter-shadow-black " >
               <figcaption
-                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-widest xl:tracking-mega xl:mt-4 2xl:tracking-wider 2xl:text-4xl 2xl:mt-6 2xl:ml-2 ">
+                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-wide md:sm:tracking-widest xl:tracking-mega xl:mt-4 2xl:tracking-wider 2xl:text-4xl 2xl:mt-6 2xl:ml-2 ">
                 ✪ ✪ ✪ ✪ ✪ ✪ ✪
               </figcaption>
             </figure>
