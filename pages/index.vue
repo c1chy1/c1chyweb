@@ -70,7 +70,7 @@
 
                 xl:w-1/2 2xl:w-1/3 filter-shadow-black ">
 
-          <figure class="ribbon flex bottom-12 absolute w-8/12 sm:justify-center  xl:w-2/5 2xl:w-1/3  self-center   filter-shadow-black z-10 ">
+          <figure class="ribbon flex bottom-20 absolute w-8/12 sm:justify-center  xl:w-2/5 2xl:w-1/3  self-center   filter-shadow-black z-10 ">
 
 
             <img

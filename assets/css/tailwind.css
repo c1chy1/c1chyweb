@@ -89,10 +89,15 @@
 
     .bottom-16 {
 
-        bottom: 3rem;
+        bottom: 4rem;
 
     }
 
+    .bottom-20 {
+
+        bottom: 5rem;
+
+    }
 
     .bottom-1\/20 {
 
