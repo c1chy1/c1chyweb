@@ -520,7 +520,7 @@ div.modal {
   section.text {
     position: relative;
     width: 100%;
-    min-width: 600px;
+    min-width: 300px;
 
 
   }
@@ -536,7 +536,7 @@ div.modal {
   h1 {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 3.5vw;
     text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
     filter: none;
   }
@@ -551,7 +551,7 @@ div.modal {
     font-family: "Merriweather", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 0.8vw;
     letter-spacing: 0.2em;
     margin-bottom: 10px;
     position: relative;

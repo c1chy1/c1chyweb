@@ -731,7 +731,7 @@ div.modal {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.1px #f1f1f1;
     font-family: 'Righteous', cursive;
-    font-size: 5rem;
+    font-size: 4vw;
     background-color: black;
   }
 

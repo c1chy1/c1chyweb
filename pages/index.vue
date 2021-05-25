@@ -77,7 +77,7 @@
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
                 class="lazyload absolute   sm:w-1/2 md:w-2/3 lg:w-full 2xl:w-full filter-shadow-black z-10">
-            <figcaption class="mx-auto mt-2   text-xs text-white text-center my-auto  md:text-xl lg:text-xl  xl:mt-4 xl:tracking-wider 2xl:text-2xl 2xl:mt-5 z-20">
+            <figcaption class="mx-auto mt-2   text-xs text-white text-center my-auto  md:text-xl lg:text-xl  xl:mt-4 xl:tracking-wider    2xl:mt-5 z-20">
               Visually Striking Design </figcaption>
           </figure>
 
@@ -238,7 +238,7 @@
     <button
         ref="button"
         id="icon"
-        class="Icon relative left-16 mt-2"
+        class="Icon relative 2xl:left-16 mt-2"
         @click="closeModal">
 
 
@@ -1278,7 +1278,7 @@ div {
       font-family: Lobster Two , italic ;
       color: white;
       text-shadow: 0 8px 0 darken(#333, 9);
-      font-size: 5rem;
+      font-size: 4vw;
 
     }
 

@@ -293,6 +293,14 @@
 
     }
 
+
+
+    .h-2\/5 {
+
+        height: 40%;
+
+    }
+
     .h-3\/4 {
 
         height: 75%;
@@ -625,6 +633,13 @@
 
 
 
+       .ribbon figcaption {
+
+
+            font-size: 1.2vw ;
+
+        }
+
 
         .hat {
 
@@ -835,6 +850,14 @@
     @screen 2xl {
 
 
+
+
+        .ribbon figcaption {
+
+
+            font-size: 1.4vw ;
+
+        }
 
 
 

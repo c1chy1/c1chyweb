@@ -1,7 +1,7 @@
 <template>
 <footer
     id="site-footer"
-    class="opacity-0 hidden w-full h-24 p-2 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:block md:h-24 md-landscape:hidden lg:w-full xl:hidden  2xl:flex 2xl:h-auto "
+    class="opacity-0 hidden w-full h-24 p-2 flex items-center  justify-start box-border bg-repeat bg-center text-6xl text-center sm:h-24 md:block md:h-24 md-landscape:hidden lg:w-full xl:hidden  2xl:flex 2xl:h-2/5 "
 >
 
 
