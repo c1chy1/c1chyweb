@@ -6,17 +6,10 @@
     <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
 
-<div class="overflow-hidden absolute">
-        <img
 
-            :data-src="require('~/assets/graphic/light_background.png?webp')"
-            :light="light.src"
-            :srcSet="light.srcSet"
-            class="lazyload light overflow-hidden "
-            alt="light"
-        >
+  <light class="overflow-hidden "/>
 
-</div>
+
           <div class="title uppercase top-2">
 <h1 class="text-8xl font-semibold text-center uppercase">About Me
             </h1>
@@ -426,22 +419,20 @@
 <script>
 
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const marlboro = require('~/assets/graphic/vintage_cigarrettes.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
 
 
 import stickyFooter from "@/components/stickyFooter";
-
+import light from "@/components/light";
 
 
 export default {
 
-  components: {stickyFooter},
+  components: {light,stickyFooter},
 
 
   layout: 'desktop',
-
 
 
 
@@ -449,8 +440,7 @@ export default {
 
     return {
 
-
-      light,marlboro,
+        marlboro,
 
 
 

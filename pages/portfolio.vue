@@ -4,16 +4,8 @@
     <header
         class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
-      <div>
-        <img
 
-            :data-src="require('~/assets/graphic/light_background.png')"
-            :light="light.src"
-            :srcSet="light.srcSet"
-            class="lazyload light"
-            alt="light">
-
-      </div>
+      <light/>
       <div class="title uppercase top-2">
         <h1 class="text-8xl font-semibold text-center uppercase">Portfolio
         </h1>
@@ -204,14 +196,13 @@ import slideA from "~/components/slideA";
 import slideB from "~/components/slideB";
 import slideC from "~/components/slideC";
 import stickyFooter from "@/components/stickyFooter";
-
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+import light from "@/components/light";
 
 
 export default {
 
 
-  components: {slideA, slideB, slideC, stickyFooter},
+  components: {light,slideA, slideB, slideC, stickyFooter},
 
   layout: 'desktop',
 
@@ -225,8 +216,6 @@ export default {
   data() {
 
     return {
-
-      light,
 
       slides: ['slideA', 'slideB', 'slideC'],
 

@@ -11,14 +11,7 @@
       <section  class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10 ">
 
 
-        <div class="light_background md:w-screen px-0"><img
-
-            :data-src="require('~/assets/graphic/light_background.png')"
-            :light="light.src"
-            :srcSet="light.srcSet"
-            class="lazyload light"
-            alt="light">
-        </div>
+        <light/>
         <div
             class="w-full h-screen relative fill-40 flex flex-col   justify-between    sm:justify-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
@@ -367,10 +360,10 @@
 
 
 
-import stickyFooter from "@/components/stickyFooter";
+import stickyFooter from "@/components/stickyFooter"
+import light from "@/components/light";
 
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1300&format=webp');
 const logo = require('~/assets/graphic/logo.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
@@ -383,10 +376,11 @@ const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=300
 
 export default {
 
-  components: {stickyFooter},
+  components: {light,stickyFooter},
 
 
   layout: 'desktop',
+
 
 
  transition: {
@@ -401,7 +395,7 @@ export default {
 
 return {
 
-      logo,hat,body,scumbag,vintageMusic,light,walkman,
+      logo,hat,body,scumbag,vintageMusic,walkman,
 
 
       bkClass: 'bk',
