@@ -379,6 +379,8 @@ const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&si
 const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
 
+
+
 export default {
 
   components: {stickyFooter},

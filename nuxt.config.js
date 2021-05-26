@@ -1,16 +1,10 @@
 
-const CompressionPlugin = require('compression-webpack-plugin');
+const webpack = require('webpack');
 
 export default {
 
 
 
-    chainWebpack(config) {
-        config.plugins.delete('prefetch');
-
-
-        config.plugin('CompressionPlugin').use(CompressionPlugin);
-    },
 
 
     loading: '~/components/loading.vue',
@@ -89,9 +83,38 @@ export default {
             })
         },
 
+        optimizeCSS: {
+            cssProcessor: require('css-mqpacker'),
+            cssProcessorPluginOptions: { sort: true }
+        },
 
-        analyze: true,
+        postcss: {
+            plugins: {
+                cssnano: {
+                    preset: [
+                        'default',
+                        {
+                            discardComments: {
+                                removeAll: true
+                            }
+                        }
+                    ]
+                }
+            }
+        },
 
+        mode: 'production',
+        optimization: {
+            nodeEnv: 'production',
+            minimize: true
+        },
+
+        plugins: [
+            new webpack.DefinePlugin({
+                'process.env.NODE_ENV': '"production"'
+            }),
+            new webpack.optimize.UglifyJsPlugin()
+        ],
 
     },
 

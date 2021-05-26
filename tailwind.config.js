@@ -5,7 +5,6 @@ module.exports = {
 
 
 
-
   tailwindcss: {
 
     cssPath: '~/assets/css/tailwind.css',
