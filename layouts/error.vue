@@ -3,16 +3,7 @@
 
     <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
 
-        <div class="filter-shadow-black overflow-hidden absolute">
-          <img
-
-              :data-src="require('~/assets/graphic/light_background.png?webp')"
-              :light="light.src"
-              :srcSet="light.srcSet"
-              class="lazyload light overflow-hidden "
-              alt="light">
-
-        </div>
+      <light class="filter-shadow-black overflow-hidden absolute"/>
 
       <div class="title uppercase top-2">
         <h1 class="text-8xl font-semibold text-center uppercase">ERROR 404
@@ -64,16 +55,20 @@
 
 <script>
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+
+import light from "@/components/light";
 
 
 export default {
+
+
+  components: {light},
 
   data() {
 
     return {
 
-      light
+
     }
 
   }

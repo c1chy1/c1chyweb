@@ -880,30 +880,6 @@ div p, li, a {
   visibility: inherit;
 
 
-  .light_background {
-
-    width: 160vw;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    overflow: hidden;
-
-
-    img.light {
-      z-index: -1;
-      height: 100vmax;
-      width: 100%;
-      animation: rotate 120s linear infinite;
-      object-fit: cover;
-      overflow: hidden;
-    }
-
-
-  }
-
-
   .circle_bg {
 
 
