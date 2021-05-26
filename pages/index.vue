@@ -324,9 +324,6 @@
         >
           <form
 
-
-
-
               ref="form"
               id="form"
               class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"

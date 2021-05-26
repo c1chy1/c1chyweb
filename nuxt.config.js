@@ -1,6 +1,16 @@
 
+const CompressionPlugin = require('compression-webpack-plugin');
 
 export default {
+
+
+
+    chainWebpack(config) {
+        config.plugins.delete('prefetch');
+
+
+        config.plugin('CompressionPlugin').use(CompressionPlugin);
+    },
 
 
     loading: '~/components/loading.vue',
@@ -57,12 +67,11 @@ export default {
 
 
 
-
     build: {
 
 
 
-        extend(config, {isDev, isClient}) {
+  /*      extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
                     rule.use.push({
@@ -78,9 +87,15 @@ export default {
                     })
                 }
             })
-        }
+        }*/
+
+
+        analyze: true,
+
 
     },
+
+
 
 
     target: 'static',
@@ -106,19 +121,19 @@ export default {
     },
 
 
+
     plugins: [
         {src: '~/plugins/fullpage', mode: 'client'},
         {src:'~/plugins/aos.js', mode: 'client'},
 
     ],
     modules: [
+
         ['@nuxtjs/pwa'],
         ['@nuxtjs/tailwindcss'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
-
-        ['@neneos/nuxt-animate.css'],
         ['fullpage-nuxt', { animate: true}],
         ['nuxt-purgecss',
             {
@@ -151,7 +166,10 @@ export default {
         },
 
         ]
+
     ],
+
+
 
 
     fontLoader: {
