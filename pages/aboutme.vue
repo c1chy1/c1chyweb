@@ -546,7 +546,7 @@ $titleColor: #224a49;
 section {
 
   background-color: antiquewhite;
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 }
 
 h1 {

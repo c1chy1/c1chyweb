@@ -13,7 +13,7 @@
 
         <div class="light_background md:w-screen px-0"><img
 
-            :data-src="require('~/assets/graphic/light_background.png?webp')"
+            :data-src="require('~/assets/graphic/light_background.png')"
             :light="light.src"
             :srcSet="light.srcSet"
             class="lazyload light"
@@ -1017,7 +1017,7 @@ div p, li, a {
 [data-anchor="page2"] {
 
   vertical-align: top !important;
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
   background-position: 0 0;
   visibility: inherit;
@@ -1264,7 +1264,7 @@ div {
     overflow: hidden;
     position: absolute;
     background-color: #ffa735;
-    background-image: url('~assets/graphic/exclusive-paper.png?size=300');
+    background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
     animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 
@@ -1444,7 +1444,7 @@ div {
   input, textarea {
 
 
-    background-image: url("~assets/graphic/exclusive-paper.png");
+    background-image: url("~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp");
     background-color: #faebd7;
   }
 

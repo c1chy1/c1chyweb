@@ -8,7 +8,7 @@
       <div class="filter-shadow-black overflow-hidden absolute">
         <img
 
-            :data-src="require('~/assets/graphic/light_background.png?webp')"
+            :data-src="require('~/assets/graphic/light_background.png')"
             :light="light.src"
             :srcSet="light.srcSet"
             class="lazyload light overflow-hidden "
@@ -336,7 +336,7 @@ h1 {
 }
 .exclusive-paper {
 
-  background-image: url('~assets/graphic/exclusive-paper.png');
+  background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
   background-color: antiquewhite;
 
 }

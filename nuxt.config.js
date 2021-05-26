@@ -1,9 +1,6 @@
-
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const devMode = process.env.NODE_ENV !== 'production';
 export default {
-
-
-
 
 
     loading: '~/components/loading.vue',
@@ -11,11 +8,10 @@ export default {
     head: {
 
 
+        script: [
 
-   script: [
 
-
-         {
+            {
                 src: '//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
             },
             {
@@ -50,21 +46,19 @@ export default {
         ],
         link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
             {
-            rel: 'preload',
-            as: 'style',
-            href: '/fonts/font-face.css'
-        },
+                rel: 'preload',
+                as: 'style',
+                href: '/fonts/font-face.css'
+            },
 
         ]
     },
 
 
-
     build: {
 
 
-
-     extend(config, {isDev, isClient}) {
+        extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
                     rule.use.push({
@@ -82,9 +76,26 @@ export default {
             })
         },
 
+
+        module: {
+            rules: [
+                {
+                    test: /\.(sa|sc|c)ss$/,
+                    use: [
+                        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                        'css-loader',
+                        'postcss-loader',
+                        'sass-loader',
+                    ],
+                },
+            ],
+        },
+        plugins: [].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
+
+
         optimizeCSS: {
             cssProcessor: require('css-mqpacker'),
-            cssProcessorPluginOptions: { sort: true }
+            cssProcessorPluginOptions: {sort: true}
         },
 
         postcss: {
@@ -108,11 +119,7 @@ export default {
             minimize: true
         },
 
-
     },
-
-
-
 
     target: 'static',
 
@@ -137,10 +144,9 @@ export default {
     },
 
 
-
     plugins: [
         {src: '~/plugins/fullpage', mode: 'client'},
-        {src:'~/plugins/aos.js', mode: 'client'},
+        {src: '~/plugins/aos.js', mode: 'client'},
 
     ],
     modules: [
@@ -150,7 +156,7 @@ export default {
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
-        ['fullpage-nuxt', { animate: true}],
+        ['fullpage-nuxt', {animate: true}],
         ['nuxt-purgecss',
             {
 
@@ -184,8 +190,6 @@ export default {
         ]
 
     ],
-
-
 
 
     fontLoader: {
