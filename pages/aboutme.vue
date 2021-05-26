@@ -212,10 +212,10 @@
       <transition name="fade">
         <div
 
-            v-if="isShowing" ref="modal" class="modal flex w-full z-40 xl:mt-10 xl:ml-2"  >
+            v-if="isShowing" ref="modal" class="lazyload modal flex w-full z-40 xl:mt-10 xl:ml-2"  >
 
           <img
-
+              class="lazyload"
               :data-src="require('~/assets/graphic/vintage_cigarrettes.jpg?webp')"
               :src="marlboro.src"
               :srcSet="marlboro.srcSet"

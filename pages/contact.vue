@@ -68,10 +68,10 @@
             <transition name="fade">
               <div
 
-                  v-if="isShowing" ref="modal" class="modal flex w-full z-40" >
+                  v-if="isShowing" ref="modal" class="lazyload modal flex w-full z-40" >
 
                 <img
-
+                    class="lazyload"
                     :data-src="require('~/assets/graphic/vintage_guys.jpg?webp')"
                     :src="sick.src"
                     :srcSet="sick.srcSet"

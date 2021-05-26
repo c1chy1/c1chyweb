@@ -26,12 +26,12 @@
 
 
           <div
-              class="circle_bg circle1 absolute w-2 px-4 py-2 ml-12 bg-white hidden   2xl:block 2xl:w-20 2xl:p-5 z-50"
+              class="lazyload circle_bg circle1 absolute w-2 px-4 py-2 ml-12 bg-white hidden   2xl:block 2xl:w-20 2xl:p-5 z-50"
            ></div>
-          <div class="circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white hidden  2xl:block 2xl:w-16 2xl:p-4  z-40"
+          <div class="lazyload circle_bg  circle2 absolute w-4 px-3 py-2 ml-6 bg-white hidden  2xl:block 2xl:w-16 2xl:p-4  z-40"
 
           ></div>
-          <div class="circle_bg circle3  absolute w-8 px-2 py-1   bg-white hidden   2xl:block 2xl:p-2 z-30"
+          <div class="lazyload circle_bg circle3  absolute w-8 px-2 py-1   bg-white hidden   2xl:block 2xl:p-2 z-30"
 
           ></div>
    <img
@@ -76,7 +76,7 @@
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload absolute   sm:w-1/2 md:w-2/3 lg:w-full 2xl:w-full filter-shadow-black z-10">
+                class="lazyload absolute  sm:w-1/2 md:w-2/3 lg:w-full 2xl:w-full filter-shadow-black z-10">
             <figcaption class="mx-auto mt-2   text-xs text-white text-center my-auto  md:text-xl lg:text-xl  xl:mt-4 xl:tracking-wider    2xl:mt-5 z-20">
               Visually Striking Design </figcaption>
           </figure>
@@ -224,17 +224,18 @@
   <transition name="fade">
   <div
 
-      v-if="isShowing" ref="modal" class="modal flex w-full" >
+      v-if="isShowing" ref="modal" class="lazyload modal flex w-full" >
 
     <img
 
+        class="lazyload"
         :data-src="require('~/assets/graphic/vintage_walkman.jpg?webp')"
         :src="walkman.src"
         :srcSet="walkman.srcSet"
 
     >
 
-<article class="flex flex-row-reverse leading-snug">
+<article class="lazyload flex flex-row-reverse leading-snug">
     <button
         ref="button"
         id="icon"
@@ -268,7 +269,7 @@
             <img
 
                 ref="vintageMusic"
-                class="opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
+                class="lazyload opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :src="vintageMusic.src"
                 :srcSet="vintageMusic.srcSet"
@@ -300,7 +301,7 @@
 
 
   <figure
-      class=" w-full relative top-8 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
+      class="lazyload  w-full relative top-8 m-auto flex items-center filter-shadow-black 2xl:h-auto 2xl:top-0 ">
     <img
 
         :data-src="require('~/assets/graphic/ribbon.png?webp')"
@@ -328,7 +329,7 @@
 
               ref="form"
               id="form"
-              class="opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"
+              class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"
               v-on:submit={getFormValues}
           >
             <label for="name" class="w-full text-center">
