@@ -71,7 +71,7 @@ export default {
 
 
 
-  /*      extend(config, {isDev, isClient}) {
+     extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
                     rule.use.push({
@@ -87,7 +87,7 @@ export default {
                     })
                 }
             })
-        }*/
+        },
 
 
         analyze: true,
