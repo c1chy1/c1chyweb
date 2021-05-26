@@ -180,7 +180,7 @@
               :src="scumbag.src"
               :srcSet="scumbag.srcSet"
 
-              class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-64 xl:h-32 opacity-0  z-10 "
+              class="wolf lazyload  h-32  w-64 rounded-4xl  xl:w-64 xl:h-32 opacity-0  z-10 "
               alt="vintage wolf">
 
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
