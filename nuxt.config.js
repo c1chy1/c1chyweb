@@ -3,6 +3,8 @@ const devMode = process.env.NODE_ENV !== 'production';
 export default {
 
 
+
+
     loading: '~/components/loading.vue',
 
     head: {
@@ -56,6 +58,8 @@ export default {
 
 
     build: {
+
+        target: 'static',
 
 
         extend(config, {isDev, isClient}) {
