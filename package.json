@@ -4,8 +4,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "start": "nuxt start",
-    "analyze": "nuxt build --analyze"
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",
@@ -31,7 +30,7 @@
     "nuxt-lazysizes": "^1.2.2",
     "responsive-loader": "^2.3.0",
     "sass-loader": "^10.1.0",
-    "sharp": "^0.28.1",
+    "sharp": "^0.28.3",
     "webp-loader": "^0.6.0"
   }
 }

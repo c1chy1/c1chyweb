@@ -59,8 +59,7 @@ export default {
 
     build: {
 
-        target: 'static',
-
+        target: 'server',
 
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
@@ -125,7 +124,7 @@ export default {
 
     },
 
-    target: 'static',
+
 
     generate: {
         fallback: '404.html'
