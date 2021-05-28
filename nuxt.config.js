@@ -4,11 +4,11 @@ export default {
 
     target: 'server',
 
-    server: {
+/*    server: {
         port: 8000, // default: 3000
         host: '195.242.102.130', // default: localhost,
         timing: false
-    },
+    },*/
 
     loading: '~/components/loading.vue',
 
