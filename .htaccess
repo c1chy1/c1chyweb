@@ -1,8 +1,8 @@
 # Cache po stronie przegladarki
-<FilesMatch ".(jpg|jpeg|png|gif|svg|css|js|webp)$">
-Header set Cache-Control "max-age=31536000"
+<FilesMatch ".(jpg|png|gif|js|css|jpeg|ico|webp)$">
+  Header set Expires "Mon, 1 Jan 2022 12:00:00 GMT"
+  Header set Cache-Control "max-age=29030400, public"
 </FilesMatch>
-
 # Kompresja
 AddOutputFilterByType DEFLATE text/plain # Kompresja
 AddOutputFilterByType DEFLATE text/plain
