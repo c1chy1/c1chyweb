@@ -102,7 +102,7 @@ export default {
 
 html {
 
-  background-color: pink;
+  background-color: pink!important;
 
 
 }
