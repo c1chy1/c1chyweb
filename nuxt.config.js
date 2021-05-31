@@ -15,10 +15,10 @@ export default {
 
 
             {
-                src: '//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js'
+                src: '//web300421.roc130.rockinghoster.cloud/files/plugins/Velocity/velocity.ui.min.js'
             },
             {
-                src: '//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js'
+                src: '//web300421.roc130.rockinghoster.cloud/files/plugins/Velocity/velocity.min.js'
 
             },
 
