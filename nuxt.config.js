@@ -11,7 +11,7 @@ export default {
     head: {
 
 
-        title: 'c1chy.web',
+        title: 'c1chyApp',
 
         htmlAttrs: {
             lang: 'de',
@@ -40,8 +40,6 @@ export default {
 
         base64: true,
         fontsPath: '~static/fonts',
-        prefetch: true,
-        preload: true,
         download: false,
         families: {
 
