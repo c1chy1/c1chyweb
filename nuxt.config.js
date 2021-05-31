@@ -40,6 +40,8 @@ export default {
 
         base64: true,
         fontsPath: '~static/fonts',
+
+        preload: true,
         download: false,
         families: {
 
