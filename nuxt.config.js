@@ -13,14 +13,14 @@ export default {
 
         script: [
 
-
+/*
             {
                 src: '//web300421.roc130.rockinghoster.cloud/files/plugins/Velocity/velocity.ui.min.js'
             },
             {
                 src: '//web300421.roc130.rockinghoster.cloud/files/plugins/Velocity/velocity.min.js'
 
-            },
+            },*/
 
 
         ],
@@ -61,7 +61,7 @@ export default {
     build: {
 
 
-
+        vendor: ['velocity-animate'],
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
@@ -151,6 +151,7 @@ export default {
     plugins: [
         {src: '~/plugins/fullpage', mode: 'client'},
         {src: '~/plugins/aos.js', mode: 'client'},
+        {src: '~/plugins/velocity', mode: 'client'},
 
     ],
     modules: [

@@ -11,9 +11,12 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "fullpage-nuxt": "0.0.3",
+    "jquery": "^3.6.0",
     "nuxt": "^2.14.7",
     "nuxt-purgecss": "^1.0.0",
     "nuxt-start": "^2.15.6",
+    "velocity-animate": "^2.0.6",
+    "velocityjs": "^2.0.3",
     "vue-fullpage.js": "^0.1.7"
   },
   "devDependencies": {

@@ -15,13 +15,14 @@
 
 
 
-
-
 export default {
 
 
 
+
   data: function () {
+
+
 
 
     return {
@@ -29,57 +30,69 @@ export default {
       loading: false,
     }
   },
+
+
   methods: {
 
 
-    start() {
+    start(){
 
-
-
+      console.log(this)
       this.loading = true
-      setTimeout(() => {
-
-        Velocity(this.$refs.preloader,
-
-            {
-              opacity: 0.1,
-              transform: ["translateY(-80px)", "translateY(0)"]
-            },
 
 
-            {
-              duration: 700,
-              complete: () => {
-                Velocity(this.$refs.hola,
 
-                    {
-                      transform: ["translateY(-100%)", "translateY(0)"],
-                    },
-
-                    {
-                      duration: 1000,
-                      easing: [0.7, 0, 0.3, 1],
-                      complete: () => {
-
-                        this.$nuxt.$el.children[1].firstChild.children[1].classList.add('animate-border', 'divide')
-                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-1s')
-                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-2s')
-                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-3s')
-                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].style.opacity = 1
-                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].style.opacity = 1
-                        this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].style.opacity = 1
+      if (process.browser) {
 
 
-                      }
+        setTimeout(() => {
 
-                    },
-                )
+          Velocity(this.$refs.preloader,
 
-              }
+              {
+                opacity: 0.1,
+                transform: ["translateY(-80px)", "translateY(0)"]
+              },
 
-            },
-        );
-      }, 3000 )
+
+              {
+                duration: 700,
+                complete: () => {
+                 Velocity(this.$refs.hola,
+
+                      {
+                        transform: ["translateY(-100%)", "translateY(0)"],
+                      },
+
+                      {
+                        duration: 1000,
+                        easing: [0.7, 0, 0.3, 1],
+                        complete: () => {
+
+                          this.$nuxt.$el.children[1].firstChild.children[1].classList.add('animate-border', 'divide')
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-1s')
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-2s')
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-3s')
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].style.opacity = 1
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].style.opacity = 1
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].style.opacity = 1
+
+
+                        }
+
+                      },
+                  )
+
+                }
+
+              },
+          );
+        }, 3000 )
+
+
+      }
+
+
     },
     finish() {
       this.loading = false
