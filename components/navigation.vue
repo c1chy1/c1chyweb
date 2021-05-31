@@ -301,7 +301,12 @@ nav {
         align-items: center;
 
         a {
+
+          font-family: "Barlow Condensed" ,sans-serif;
           font-weight: 700;
+
+
+
           color: #224a49;
 
           text-transform: uppercase;
