@@ -11,21 +11,6 @@ export default {
     head: {
 
 
-        script: [
-
-/*
-            {
-                src: '//web300421.roc130.rockinghoster.cloud/files/plugins/Velocity/velocity.ui.min.js'
-            },
-            {
-                src: '//web300421.roc130.rockinghoster.cloud/files/plugins/Velocity/velocity.min.js'
-
-            },*/
-
-
-        ],
-
-
         title: 'c1chy.web',
 
         htmlAttrs: {
@@ -60,8 +45,6 @@ export default {
 
     build: {
 
-
-        vendor: ['velocity-animate'],
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {

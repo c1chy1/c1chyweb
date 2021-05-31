@@ -364,12 +364,12 @@ import stickyFooter from "@/components/stickyFooter"
 import light from "@/components/light";
 
 
-const logo = require('~/assets/graphic/logo.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const hat = require('~/assets/graphic/hat.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const body =require('~/assets/graphic/body.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
+const logo = require('~/assets/graphic/logo.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const hat = require('~/assets/graphic/hat.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const body =require('~/assets/graphic/body.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=150&sizes[]=600&format=webp');
 
 
 
