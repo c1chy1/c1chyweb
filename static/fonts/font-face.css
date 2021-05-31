@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./barlowcondensed-regular.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./barlowcondensed-bold.woff2) format('woff2');
+}
+
+
+
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./merriweather-regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./merriweather-bold.woff2) format('woff2');
+}
+
+
+
+@font-face {
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./LobsterTwo-Italic.woff2) format('woff2');
+}
+
+
+
+@font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Satisfy-Regular.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./Righteous-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Oswald-Regular.woff2) format('woff2');
+}
+

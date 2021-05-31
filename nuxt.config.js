@@ -3,62 +3,11 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 export default {
 
+
+
+
+
     target: 'server',
-
-
-    loading: '~/components/loading.vue',
-
-    head: {
-
-
-        title: 'c1chyApp',
-
-        htmlAttrs: {
-            lang: 'de',
-            amp: true
-        },
-        meta: [
-
-            {
-                charset: 'utf-8'
-            },
-            {
-                name: 'viewport',
-                content: 'width=device-width, initial-scale=1'
-            },
-            {
-                hid: 'description',
-                name: 'description',
-                content: 'c1chy My Frontend experiences Nuxt Portfolio Webentwickler'
-            }
-        ],
-
-    },
-
-
-    googleFonts: {
-
-        base64: true,
-        fontsPath: '~static/fonts',
-
-        preload: true,
-        download: false,
-        families: {
-
-            'Barlow Condensed': {
-
-                wght: [400, 700],
-
-            },
-            'Merriweather': true,
-            'Lobster Two': true,
-            'Satisfy': true,
-            'Righteous': true,
-            'Oswald': true,
-        }
-
-},
-
 
 
     build: {
@@ -128,38 +77,41 @@ export default {
 
 
 
-    generate: {
-        fallback: '404.html'
-    },
+    head: {
 
 
-    pwa: {
-        meta: {
-            title: 'c1chyweb',
-            author: 'c1chy',
-        },
-        manifest: {
-            name: 'c1chy.app',
-            short_name: 'APP',
-            description: "My Frontend experience and projects",
+        title: 'c1chyApp',
+
+        htmlAttrs: {
             lang: 'de',
-            theme_color: '#40635b',
-
+            amp: true
         },
+        meta: [
+
+            {
+                charset: 'utf-8'
+            },
+            {
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1'
+            },
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'c1chy My Frontend experiences Nuxt Portfolio Webentwickler'
+            }
+        ],
+
     },
 
 
-    plugins: [
-        {src: '~/plugins/fullpage', mode: 'client'},
-        {src: '~/plugins/aos.js', mode: 'client'},
-        {src: '~/plugins/velocity', mode: 'client'},
 
-    ],
+
     modules: [
 
         ['@nuxtjs/pwa'],
         ['@nuxtjs/tailwindcss'],
-        ['@nuxtjs/google-fonts'],
+        ['nuxt-font-loader'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-lazysizes'],
         ['fullpage-nuxt', {animate: true}],
@@ -196,6 +148,93 @@ export default {
         ]
 
     ],
+
+    loading: '~/components/loading.vue',
+
+
+
+
+    fontLoader: {
+        /* module options */
+
+        url: {
+            local: '/fonts/font-face.css'
+        },
+
+
+        preload: {
+            local: {
+                hid: ['Barlow Condensed','Merriweather','Satisfy']
+            }
+        },
+
+        prefetch: {
+            local: {
+                hid: ['Barlow Condensed','Merriweather','Satisfy']
+            }
+        },
+
+    },
+
+
+
+    googleFonts: {
+
+        base64: true,
+        fontsPath: '~static/fonts',
+
+        preload: true,
+        download: false,
+        families: {
+
+            'Barlow Condensed': {
+
+                wght: [400, 700],
+
+            },
+            'Merriweather': true,
+            'Lobster Two': true,
+            'Satisfy': true,
+            'Righteous': true,
+            'Oswald': true,
+        }
+
+},
+
+
+
+
+
+
+
+    generate: {
+        fallback: '404.html'
+    },
+
+
+    pwa: {
+        meta: {
+            title: 'c1chyweb',
+            author: 'c1chy',
+        },
+        manifest: {
+            name: 'c1chy.app',
+            short_name: 'APP',
+            description: "My Frontend experience and projects",
+            lang: 'de',
+            theme_color: '#40635b',
+
+        },
+    },
+
+
+    plugins: [
+        {src: '~/plugins/fullpage', mode: 'client'},
+        {src: '~/plugins/aos.js', mode: 'client'},
+        {src: '~/plugins/velocity', mode: 'client'},
+
+    ],
+
 
     lazySizes: {
         extendAssetUrls: {
