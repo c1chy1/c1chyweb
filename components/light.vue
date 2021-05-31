@@ -5,7 +5,7 @@
       :data-src="require('~/assets/graphic/light_background.png')"
       :test="light.src"
       :srcSet="light.srcSet"
-      class="lazyload light overflow-hidden "
+      class="light overflow-hidden "
       alt="light"
   >
   </div>

@@ -42,7 +42,7 @@ export default {
         fontsPath: '~static/fonts',
         prefetch: true,
         preload: true,
-        preconnect: true,
+        download: false,
         families: {
 
             'Barlow Condensed': {
@@ -161,7 +161,6 @@ export default {
         ['@nuxtjs/tailwindcss'],
         ['@nuxtjs/google-fonts'],
         ['@aceforth/nuxt-optimized-images'],
-        ['nuxt-font-loader'],
         ['nuxt-lazysizes'],
         ['fullpage-nuxt', {animate: true}],
         ['nuxt-purgecss',
@@ -198,17 +197,10 @@ export default {
 
     ],
 
-
-    fontLoader: {
-        url: '/fonts/font-face.css'
-    },
-
-
     lazySizes: {
         extendAssetUrls: {
             img: ['src', 'srcset', 'data-src', 'data-srcset'],
             source: ['src', 'srcset', 'data-src', 'data-srcset'],
-
             AppImage: ['source-md-url', 'image-url'],
         },
     },
