@@ -1011,6 +1011,9 @@ div p, li, a {
 
       h2 {
 
+
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
         background-image: url('~assets/graphic/green-dust-and-scratches.png');
         background-color: #4f7b70;
         color: #f7ebd5;
@@ -1019,9 +1022,17 @@ div p, li, a {
       }
 
 
+      h3 {
+
+        font-family:'Merriweather', sans-serif;
+        font-weight: 700;
+      }
+
       p {
         border: 2px solid black;
         border-radius: 15px;
+        font-family:'Merriweather', sans-serif;
+        font-weight: 700;
       }
     }
 
@@ -1072,6 +1083,9 @@ ul {
 
   .welcome_studio {
 
+
+
+    font-family: Barlow Condensed,sans-serif;
     color: #224a49;
     .background {
       background-image: url('~assets/graphic/green-dust-and-scratches.png');
@@ -1131,6 +1145,7 @@ div {
         filter: drop-shadow(5px 6px 0 #a9c9bb);
         font-family: Barlow Condensed,sans-serif;
         font-size: 9vw;
+
       }
 
     }
@@ -1176,7 +1191,8 @@ div {
 
 
     h2 {
-
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
       background-image: url('~assets/graphic/green-dust-and-scratches.png');
       background-color: #a1362b;
       color: #eae5de;
@@ -1462,7 +1478,7 @@ div {
     h1 {
 
       color: #e9e4dc;
-
+      font-family: cursive;
     }
 
     h2 {

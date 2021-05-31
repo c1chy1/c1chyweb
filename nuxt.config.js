@@ -32,15 +32,33 @@ export default {
                 content: 'c1chy My Frontend experiences Nuxt Portfolio Webentwickler'
             }
         ],
-        link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-            {
-                rel: 'preload',
-                as: 'style',
-                href: '/fonts/font-face.css'
-            },
 
-        ]
     },
+
+
+    googleFonts: {
+
+        base64: true,
+        fontsPath: '~static/fonts',
+        prefetch: true,
+        preload: true,
+        preconnect: true,
+        families: {
+
+            'Barlow Condensed': {
+
+                wght: [400, 700],
+
+            },
+            'Merriweather': true,
+            'Lobster Two': true,
+            'Satisfy': true,
+            'Righteous': true,
+            'Oswald': true,
+        }
+
+},
+
 
 
     build: {
@@ -141,6 +159,7 @@ export default {
 
         ['@nuxtjs/pwa'],
         ['@nuxtjs/tailwindcss'],
+        ['@nuxtjs/google-fonts'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-font-loader'],
         ['nuxt-lazysizes'],

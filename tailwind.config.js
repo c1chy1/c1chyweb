@@ -37,10 +37,7 @@ module.exports = {
       'landscape': {'raw': '(orientation: landscape)'},
     },
 
-    fontFamily: {
-      sans: ['Barlow Condensed', 'Mulish','Merriweather','Satisfy'],
-      serif: ['Mulish', 'Merriweather','Satisfy'],
-    },
+
 
     fontSize: {
 
