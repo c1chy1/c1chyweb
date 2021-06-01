@@ -363,6 +363,8 @@
 import stickyFooter from "@/components/stickyFooter"
 import light from "@/components/light";
 
+import "default-passive-events";
+
 
 const logo = require('~/assets/graphic/logo.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');

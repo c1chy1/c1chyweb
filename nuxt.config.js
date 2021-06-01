@@ -155,7 +155,6 @@ export default {
 
 
     fontLoader: {
-        /* module options */
 
         url: {
             local: '/fonts/font-face.css'
