@@ -9,7 +9,9 @@ export default {
 
     target: 'server',
 
-
+    router: {
+        prefetchLinks: false
+    },
 
     build: {
 
