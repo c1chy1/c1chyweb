@@ -3,6 +3,7 @@
   <div  class="light_background md:w-screen px-0">
 
     <img
+         rel="preload"
         :data-src="require('~/assets/graphic/light_background.png')"
         :test="light.src"
         :srcSet="light.srcSet"
