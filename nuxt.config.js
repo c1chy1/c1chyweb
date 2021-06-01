@@ -100,6 +100,13 @@ export default {
                 hid: 'description',
                 name: 'description',
                 content: 'c1chy My Frontend experiences Nuxt Portfolio Webentwickler'
+            },
+
+            {
+
+                name:"google-site-verification" ,
+                content:"KJ4uvxuuxpNl_WJx2M1nRixFX1smSwksWHKwbsIwpmU"
+
             }
         ],
 
