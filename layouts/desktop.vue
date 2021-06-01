@@ -18,19 +18,13 @@
 
 import navigation from "~/components/navigation";
 
-
+import "default-passive-events";
 
 
 
 
 export default {
   components:  {navigation},
-
-
-
-
-
-  
 
 
 }
