@@ -16,7 +16,7 @@
 
 <script>
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const light = require( /* webpackPreload: true */ '~/assets/graphic/light_background.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
 
 
 export default {
