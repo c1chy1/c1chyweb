@@ -237,7 +237,7 @@ export default {
 
   components: {
 
-    light: () => import('~/components/light.vue'),
+    light: () => import(/* webpackPrefetch: true */ '~/components/light.vue'),
     stickyFooter: () => import('~/components/stickyFooter.vue'),
   },
 
@@ -333,7 +333,7 @@ h1 {
 .exclusive-paper {
 
   background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
-  background-color: antiquewhite;
+
 
 }
 

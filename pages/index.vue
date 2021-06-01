@@ -376,7 +376,7 @@ export default {
 
   components: {
 
-    light: () => import(/* webpackPrefetch: true */ '~/components/light.vue'),
+    light: () => import(/* webpackPreload: true */ '~/components/light.vue'),
     stickyFooter: () => import('~/components/stickyFooter.vue')
 
 
@@ -773,12 +773,6 @@ return {
 }
 
 
-
-#fullpage {
-
-
-  background-color: antiquewhite;
-}
 
 
 

@@ -64,19 +64,10 @@ export default {
 
   components: {
 
-    light: () => import('~/components/light.vue'),
-
+    light: () => import(/* webpackPrefetch: true */ '~/components/light.vue'),
 
    },
 
-  data() {
-
-    return {
-
-
-    }
-
-  }
 }
 </script>
 <style scoped lang="scss">
@@ -84,7 +75,6 @@ export default {
 
 section {
 
-  background-color: antiquewhite;
   background-image: url('~assets/graphic/exclusive-paper.png');
 }
 

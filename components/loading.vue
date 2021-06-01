@@ -112,15 +112,6 @@ export default {
 
 
 
-
-html {
-
-  background-color: pink!important;
-
-
-}
-
-
 .opacity {
 
   opacity: 1;
@@ -170,6 +161,58 @@ html {
   50% {transform: rotate(180deg); opacity: 1;}
   100% {transform: rotate(360deg); opacity: 0.5;}
 }
+
+
+.home {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home:before{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  content: '';
+
+}
+.home:after{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  content: '';
+
+}
+
+
+
+@media (min-width: 768px) {
+
+
+  .animate-border {
+    border-left: 60px solid #252328;
+    border-right: 60px solid #252328;
+    transition: border .5s .2s ease;
+  }
+  .home.divide:before {
+    transition: all .6s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    width: 0;
+  }
+  .home.divide:after {
+    transition: all .6s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    width: 0;
+  }
+
+
+}
+
 
 
 

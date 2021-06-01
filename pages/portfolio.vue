@@ -198,7 +198,7 @@ export default {
 
   components: {
 
-    light: () => import('~/components/light.vue'),
+    light: () => import(/* webpackPrefetch: true */ '~/components/light.vue'),
     stickyFooter: () => import('~/components/stickyFooter.vue'),
     slideA : () => import('~/components/slideA.vue'),
     slideB : () => import('~/components/slideB.vue'),
@@ -356,7 +356,6 @@ $blue: #2b26c3;
 
 section {
 
-  background-color: antiquewhite;
   background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 }

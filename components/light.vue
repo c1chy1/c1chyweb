@@ -1,12 +1,13 @@
 <template>
 
-  <div class="light_background md:w-screen px-0">    <img
+  <div  class="light_background md:w-screen px-0">
 
-      :data-src="require('~/assets/graphic/light_background.png')"
-      :test="light.src"
-      :srcSet="light.srcSet"
-      class="light overflow-hidden "
-      alt="light"
+    <img
+        :data-src="require('~/assets/graphic/light_background.png')"
+        :test="light.src"
+        :srcSet="light.srcSet"
+        class="light overflow-hidden "
+        alt="light"
   >
   </div>
 
@@ -15,7 +16,7 @@
 
 <script>
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
+const light = require('~/assets/graphic/light_background.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
 
 
 export default {

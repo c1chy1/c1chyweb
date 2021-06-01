@@ -4,6 +4,17 @@
 @layer base {
 
 
+    #fp-nav ul li a span, .fp-slidesNav ul li a span {
+
+        height: 12px !important;
+        width: 12px !important;
+        margin: -2px 0 0 -7px !important;
+        transition: all 0.3s ease-in-out !important;
+        background: white;
+    }
+
+
+
     * {
 
         margin: 0;
@@ -33,19 +44,12 @@
         width: 100%;
         word-spacing: 0.06em;
         letter-spacing: 0.04em;
-        background-color: antiquewhite;
     }
 
 
-    #__layout {
-
-        background-color: antiquewhite;
-
-    }
     html {
 
         scroll-behavior: smooth;
-        background-color: antiquewhite;
     }
 
 
@@ -740,7 +744,7 @@
             width: 12px !important;
             margin: -2px 0 0 -7px !important;
             transition: all 0.3s ease-in-out !important;
-            background-color: #333!important;
+            background: white;
         }
 
 
@@ -763,14 +767,14 @@
             width: 20px !important;
             height: 20px !important;
             margin: -7px 0 0 -11px !important;
-            background: #a1362b !important;
+
 
         }
 
 
         #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
 
-            background: #a1362b !important;
+        /*    background: #a1362b !important;*/
         }
 
 
@@ -798,49 +802,6 @@
         .wolf {
 
             bottom: 4rem;
-        }
-
-
-        .home {
-            height: 100vh;
-            position: relative;
-            background-color: antiquewhite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .home:before{
-            position: absolute;
-            width: 50%;
-            height: 100%;
-            z-index: 10;
-            top: 0;
-            left: 0;
-            content: '';
-            background-color: antiquewhite;
-        }
-        .home:after{
-            position: absolute;
-            width: 50%;
-            height: 100%;
-            z-index: 10;
-            top: 0;
-            right: 0;
-            content: '';
-            background-color: antiquewhite;
-        }
-        .animate-border{
-            border-left: 60px solid antiquewhite;
-            border-right: 60px solid antiquewhite;
-            transition: border .5s .2s ease;
-        }
-        .home.divide:before{
-            transition: all .6s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-            width: 0;
-        }
-        .home.divide:after{
-            transition: all .6s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-            width: 0;
         }
 
 
