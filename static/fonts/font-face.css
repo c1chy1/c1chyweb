@@ -41,7 +41,7 @@
     font-family: 'Lobster Two';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: auto;
     src: url(./LobsterTwo-Italic.woff2) format('woff2');
 }
 
@@ -51,7 +51,7 @@
     font-family: 'Satisfy';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: auto;
     src: url(./Satisfy-Regular.woff2) format('woff2');
 }
 
@@ -60,7 +60,7 @@
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 700;
-    font-display: swap;
+    font-display: auto;
     src: url(./Righteous-Regular.woff2) format('woff2');
 }
 
@@ -68,7 +68,7 @@
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: auto;
     src: url(./Oswald-Regular.woff2) format('woff2');
 }
 
