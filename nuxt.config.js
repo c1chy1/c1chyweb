@@ -9,6 +9,17 @@ export default {
 
     target: 'server',
 
+    minimize: true,
+    minimizer: [
+        // terser-webpack-plugin
+        // optimize-css-assets-webpack-plugin
+    ],
+    splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: undefined,
+        cacheGroups: {}
+    },
 
     build: {
 
