@@ -360,10 +360,6 @@
 
 
 
-import stickyFooter from "@/components/stickyFooter"
-import light from "@/components/light";
-
-
 
 
 const logo = require('~/assets/graphic/logo.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
@@ -378,7 +374,13 @@ const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=150
 
 export default {
 
-  components: {light,stickyFooter},
+  components: {
+
+    light: () => import(/* webpackPrefetch: true */ '~/components/light.vue'),
+    stickyFooter: () => import('~/components/stickyFooter.vue')
+
+
+  },
 
 
   layout: 'desktop',

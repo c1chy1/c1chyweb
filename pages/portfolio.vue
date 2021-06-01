@@ -192,17 +192,19 @@
 <script>
 
 
-import slideA from "~/components/slideA";
-import slideB from "~/components/slideB";
-import slideC from "~/components/slideC";
-import stickyFooter from "@/components/stickyFooter";
-import light from "@/components/light";
-
 
 export default {
 
 
-  components: {light,slideA, slideB, slideC, stickyFooter},
+  components: {
+
+    light: () => import('~/components/light.vue'),
+    stickyFooter: () => import('~/components/stickyFooter.vue'),
+    slideA : () => import('~/components/slideA.vue'),
+    slideB : () => import('~/components/slideB.vue'),
+    slideC : () => import('~/components/slideC.vue'),
+
+  },
 
   layout: 'desktop',
 

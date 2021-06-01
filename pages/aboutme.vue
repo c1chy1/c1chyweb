@@ -423,13 +423,17 @@ const marlboro = require('~/assets/graphic/vintage_cigarrettes.jpg?resize&sizes[
 
 
 
-import stickyFooter from "@/components/stickyFooter";
-import light from "@/components/light";
+
 
 
 export default {
 
-  components: {light,stickyFooter},
+  components: {
+
+    light: () => import('~/components/light.vue'),
+    stickyFooter: () => import('~/components/stickyFooter.vue'),
+
+   },
 
 
   layout: 'desktop',

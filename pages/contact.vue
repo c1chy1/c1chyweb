@@ -230,15 +230,16 @@
 
 
 
-import stickyFooter from "@/components/stickyFooter";
-import light from "@/components/light";
-
 const sick = require('~/assets/graphic/vintage_guys.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
 
 export default {
 
 
-  components: {stickyFooter,light},
+  components: {
+
+    light: () => import('~/components/light.vue'),
+    stickyFooter: () => import('~/components/stickyFooter.vue'),
+  },
 
   layout: 'desktop',
 

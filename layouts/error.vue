@@ -56,13 +56,18 @@
 <script>
 
 
-import light from "@/components/light";
+
 
 
 export default {
 
 
-  components: {light},
+  components: {
+
+    light: () => import('~/components/light.vue'),
+
+
+   },
 
   data() {
 
