@@ -358,10 +358,6 @@
 
 <script>
 
-
-
-
-
 const logo = require('~/assets/graphic/logo.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
 const hat = require('~/assets/graphic/hat.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
 const body =require('~/assets/graphic/body.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');

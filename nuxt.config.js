@@ -114,7 +114,7 @@ export default {
         ['nuxt-font-loader'],
         ['@aceforth/nuxt-optimized-images'],
         ['nuxt-lazysizes'],
-   /*     ['fullpage-nuxt', {animate: true}],*/
+/*        ['fullpage-nuxt', {animate: true}],*/
         ['nuxt-purgecss',
             {
 
