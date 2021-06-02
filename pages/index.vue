@@ -11,7 +11,7 @@
       <section  class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10 ">
 
 
-<!-- <light/>-->
+ <light/>
         <div
             class="w-full h-screen relative fill-40 flex flex-col   justify-between    sm:justify-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
@@ -47,7 +47,7 @@
 
           <img
 
-              :data-src="require('~/assets/graphic/hat.png')"
+              :data-src="require('~/assets/graphic/hat.png?webp')"
               :srcSet="hat.srcSet"
               :src="hat.src"
               :width="hat.width"
@@ -239,7 +239,9 @@
         :data-src="require('~/assets/graphic/vintage_walkman.jpg?webp')"
         :src="walkman.src"
         :srcSet="walkman.srcSet"
-
+        :width="walkman.width"
+        :height="walkman.height"
+        sizes='(min-width: 1024px) 1024px, 100vw'
     >
 
 <article class="lazyload flex flex-row-reverse leading-snug">
@@ -280,6 +282,10 @@
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :src="vintageMusic.src"
                 :srcSet="vintageMusic.srcSet"
+                :width="vintageMusic.width"
+                :height="vintageMusic.height"
+                sizes='(min-width: 1024px) 1024px, 100vw'
+
                  alt="vintage">
         </div>
 

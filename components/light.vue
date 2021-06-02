@@ -20,7 +20,7 @@
 
 <script>
 
-const light = require('~/assets/graphic/light_background.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
+const light = require('~/assets/graphic/light_background.png?resize&sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 
 
 export default {
@@ -56,7 +56,7 @@ export default {
 
 img.light {
   z-index: -1;
-  height: 100vmax;
+  height: 100%;
   width: 100%;
   animation: rotate 120s linear infinite;
   object-fit: cover;
