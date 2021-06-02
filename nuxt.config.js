@@ -34,6 +34,17 @@ export default {
         },
 
 
+        responsiveLoader: {
+            name: 'images/[name]-[width].[ext]', // use [name] to keep the original filename
+            sizes: [320, 640, 1024, 1280,], // array of image sizes - adjust to your layout needs
+            quality: 15 // 85 is default. Tweak this if you need to
+        },
+
+
+
+
+
+
         module: {
             rules: [
                 {
@@ -46,7 +57,8 @@ export default {
                                 // If you want to enable sharp support:
                                 adapter: require("responsive-loader/sharp"),
                             },
-
+                            placeholder: true,
+                            placeholderSize: 20
                         },
 
                         devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
@@ -256,9 +268,8 @@ export default {
 
     lazySizes: {
         extendAssetUrls: {
-            img: ['src', 'srcset', 'data-src', 'data-srcset'],
-            source: ['src', 'srcset', 'data-src', 'data-srcset'],
-            AppImage: ['source-md-url', 'image-url'],
+            img: ['src', 'srcset', 'data-src', 'data-srcset','sizes'],
+            source: ['src', 'srcset', 'data-src', 'data-srcset','sizes'],
         },
     },
 

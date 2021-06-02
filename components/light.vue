@@ -8,7 +8,7 @@
         :srcSet="light.srcSet"
         :width="light.width"
         :height="light.height"
-        sizes='(min-width: 1024px) 1024px, 100vw'
+        sizes="(min-width: 768px) 60vw, 95vw"
         class="lazypreload light overflow-hidden "
         alt="light"
         rel="preload"

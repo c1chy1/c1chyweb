@@ -11,7 +11,7 @@
       <section  class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10 ">
 
 
-<!--        <light/>-->
+<!-- <light/>-->
         <div
             class="w-full h-screen relative fill-40 flex flex-col   justify-between    sm:justify-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
@@ -36,7 +36,7 @@
        :src="logo.src"
        :width="logo.width"
        :height="logo.height"
-       sizes='(min-width: 1024px) 1024px, 100vw'
+
        alt="c1chy"
        class="logo lazyload  self-center relative w-10/12 sm:w-1/3 md:w-40 portrait:w-1/2 lg:w-1/3 xl:w-1/4
 
@@ -52,7 +52,7 @@
               :src="hat.src"
               :width="hat.width"
               :height="hat.height"
-              sizes='(min-width: 1024px) 1024px, 100vw'
+              sizes="(min-width: 768px) 60vw, 95vw"
 
               alt="rainbow balloon"
                class="hat lazyload relative self-center w-3/5 sm:w-32  md:1/2 portrait:w-1/2 lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
@@ -65,7 +65,7 @@
               :src="body.src"
               :width="body.width"
               :height="body.height"
-              sizes='(min-width: 1024px) 1024px, 100vw'
+              sizes="(min-width: 768px) 60vw, 95vw"
 
               alt="vintage body"
               class="body lazyload self-center w-full h-1/3 sm:w-2/5 sm:h-auto md:w-2/3 lg:w-5/12
@@ -183,6 +183,9 @@
               :data-src="require('~/assets/graphic/vintage_wolf.jpg?webp')"
               :src="scumbag.src"
               :srcSet="scumbag.srcSet"
+              :width="scumbag.width"
+              :height="scumbag.height"
+              sizes='(min-width: 1024px) 1024px, 100vw'
 
               class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 opacity-0  z-10 "
               alt="vintage wolf">
@@ -372,9 +375,9 @@
 const logo = require('~/assets/graphic/logo.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const hat = require('~/assets/graphic/hat.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const body =require('~/assets/graphic/body.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
-const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
-const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
-const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=150&sizes[]=600&format=webp');
+const vintageMusic = require('~/assets/graphic/vintage_music.jpg?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
+const scumbag = require('~/assets/graphic/vintage_wolf.jpg?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
+const walkman = require('~/assets/graphic/vintage_walkman.jpg?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 
 
 
