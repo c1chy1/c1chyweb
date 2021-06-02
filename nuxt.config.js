@@ -37,16 +37,30 @@ export default {
         module: {
             rules: [
                 {
-                    test: /\.(sa|sc|c)ss$/,
+                    test: /\.(sa|sc|css|jpe?g|png|webp)$/i,
                     use: [
+
+                        {
+                            loader: "responsive-loader",
+                            options: {
+                                // If you want to enable sharp support:
+                                adapter: require("responsive-loader/sharp"),
+                            },
+
+                        },
+
                         devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                         'css-loader',
                         'postcss-loader',
                         'sass-loader',
+
                     ],
                 },
             ],
         },
+
+
+
         plugins: [].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
 
 
@@ -209,11 +223,6 @@ export default {
         }
 
 },
-
-
-
-
-
 
 
     generate: {

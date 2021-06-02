@@ -27,12 +27,16 @@
           <div class="lazyload circle_bg circle3  absolute w-8 px-2 py-1   bg-white hidden   2xl:block 2xl:p-2 z-30"
 
           ></div>
+
+
    <img
 
-       :data-src="require('~/assets/graphic/logo.png?webp')"
-       :srcSet="logo.srcSet"
+       :data-src="require('~/assets/graphic/logo.png')"
+       :srcset="logo.srcSet"
        :src="logo.src"
-
+       :width="logo.width"
+       :height="logo.height"
+       sizes='(min-width: 1024px) 1024px, 100vw'
        alt="c1chy"
        class="logo lazyload  self-center relative w-10/12 sm:w-1/3 md:w-40 portrait:w-1/2 lg:w-1/3 xl:w-1/4
 
@@ -43,18 +47,25 @@
 
           <img
 
-              :data-src="require('~/assets/graphic/hat.png?webp')"
+              :data-src="require('~/assets/graphic/hat.png')"
               :srcSet="hat.srcSet"
               :src="hat.src"
+              :width="hat.width"
+              :height="hat.height"
+              sizes='(min-width: 1024px) 1024px, 100vw'
+
               alt="rainbow balloon"
                class="hat lazyload relative self-center w-3/5 sm:w-32  md:1/2 portrait:w-1/2 lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
           >
           <img
 
 
-              :data-src="require('~/assets/graphic/body.png?webp')"
+              :data-src="require('~/assets/graphic/body.png')"
               :srcSet="body.srcSet"
               :src="body.src"
+              :width="body.width"
+              :height="body.height"
+              sizes='(min-width: 1024px) 1024px, 100vw'
 
               alt="vintage body"
               class="body lazyload self-center w-full h-1/3 sm:w-2/5 sm:h-auto md:w-2/3 lg:w-5/12
@@ -358,9 +369,9 @@
 
 <script>
 
-const logo = require('~/assets/graphic/logo.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
-const hat = require('~/assets/graphic/hat.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
-const body =require('~/assets/graphic/body.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const logo = require('~/assets/graphic/logo.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
+const hat = require('~/assets/graphic/hat.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
+const body =require('~/assets/graphic/body.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
 const scumbag = require('~/assets/graphic/vintage_wolf.jpg?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
 const walkman = require('~/assets/graphic/vintage_walkman.jpg?resize&sizes[]=150&sizes[]=600&format=webp');

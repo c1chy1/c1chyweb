@@ -6,8 +6,12 @@
         :data-src="require('~/assets/graphic/light_background.png')"
         :test="light.src"
         :srcSet="light.srcSet"
+        :width="light.width"
+        :height="light.height"
+        sizes='(min-width: 1024px) 1024px, 100vw'
         class="lazypreload light overflow-hidden "
         alt="light"
+        rel="preload"
   >
   </div>
 
@@ -16,7 +20,7 @@
 
 <script>
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=150&sizes[]=600&sizes[]=1000&format=webp');
+const light = require('~/assets/graphic/light_background.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 
 
 export default {
