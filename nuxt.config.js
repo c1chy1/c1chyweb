@@ -28,13 +28,58 @@ export default {
 
         workbox: {
 
-            cacheId: '<npm aos> || nuxt',
-            directoryIndex: '/',
-            revision: undefined
 
+            runtimeCaching: [
+                {
+                    urlPattern: 'https://fonts.googleapis.com/.*',
+                    handler: 'cacheFirst',
+                    method: 'GET',
+                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+                },
+                {
+                    urlPattern: 'https://fonts.gstatic.com/.*',
+                    handler: 'cacheFirst',
+                    method: 'GET',
+                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+                },
+                {
+                    urlPattern: 'https://cdn.snipcart.com/.*',
+                    method: 'GET',
+                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+                },
+                {
+                    urlPattern: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+                    handler: 'cacheFirst',
+                    method: 'GET',
+                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+                }
+            ]
         },
 
+
     },
+
+
+    optimizeCSS: {
+        cssProcessor: require('css-mqpacker'),
+        cssProcessorPluginOptions: {sort: true}
+    },
+
+    postcss: {
+        plugins: {
+            cssnano: {
+                preset: [
+                    'default',
+                    {
+                        discardComments: {
+                            removeAll: true
+                        }
+                    }
+                ]
+            }
+        }
+    },
+
 
     router: {
         prefetchLinks: false
@@ -44,7 +89,7 @@ export default {
 
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
-                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js)$/)) {
+                if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js|woff(2))$/)) {
                     rule.use.push({
                         loader: 'image-webpack-loader',
                         options: {
@@ -55,6 +100,8 @@ export default {
                                 ]
                             }
                         }
+
+
                     })
                 }
             })
@@ -88,25 +135,7 @@ export default {
         plugins: [].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
 
 
-        optimizeCSS: {
-            cssProcessor: require('css-mqpacker'),
-            cssProcessorPluginOptions: {sort: true}
-        },
 
-        postcss: {
-            plugins: {
-                cssnano: {
-                    preset: [
-                        'default',
-                        {
-                            discardComments: {
-                                removeAll: true
-                            }
-                        }
-                    ]
-                }
-            }
-        },
 
         mode: 'production',
         optimization: {
