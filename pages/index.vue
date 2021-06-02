@@ -11,7 +11,7 @@
       <section  class="fp-section w-full overflow-hidden bg-no-repeat bg-cover bg-center opacity-100  xl:rounded-4xl  filter-shadow-black z-10 ">
 
 
-        <light/>
+<!--        <light/>-->
         <div
             class="w-full h-screen relative fill-40 flex flex-col   justify-between    sm:justify-end "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
