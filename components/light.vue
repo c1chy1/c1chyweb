@@ -3,7 +3,7 @@
   <div  class="light_background md:w-screen px-0">
 
     <img
-        :data-src="require('~/assets/graphic/light_background.png')"
+        :data-src="require('~/assets/graphic/light_background_medium.png')"
         :test="light.src"
         :srcSet="light.srcSet"
         :width="light.width"
@@ -20,7 +20,7 @@
 
 <script>
 
-const light = require('~/assets/graphic/light_background.png?resize&sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
+const light = require('~/assets/graphic/light_background_medium.png?sizes[]=600&format=webp');
 
 
 export default {
