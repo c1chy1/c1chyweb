@@ -1,3 +1,5 @@
+
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -8,6 +10,31 @@ export default {
 
 
     target: 'server',
+
+
+    pwa: {
+        meta: {
+            title: 'c1chyweb',
+            author: 'c1chy',
+        },
+        manifest: {
+            name: 'c1chy.app',
+            short_name: 'APP',
+            description: "My Frontend experience and projects",
+            lang: 'de',
+            theme_color: '#40635b',
+
+        },
+
+        workbox: {
+
+            cacheId: '<npm aos> || nuxt',
+            directoryIndex: '/',
+            revision: undefined
+
+        },
+
+    },
 
     router: {
         prefetchLinks: false
@@ -227,20 +254,6 @@ export default {
     },
 
 
-    pwa: {
-        meta: {
-            title: 'c1chyweb',
-            author: 'c1chy',
-        },
-        manifest: {
-            name: 'c1chy.app',
-            short_name: 'APP',
-            description: "My Frontend experience and projects",
-            lang: 'de',
-            theme_color: '#40635b',
-
-        },
-    },
 
 
     plugins: [

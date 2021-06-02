@@ -23,8 +23,10 @@
 const light = require('~/assets/graphic/light_background_medium.png?sizes[]=600&format=webp');
 
 
+
 export default {
   name: "light",
+
 
 
   data() {
@@ -52,6 +54,8 @@ export default {
   transform: translate(-50%, -50%);
   margin: 0;
   overflow: hidden;
+
+
 
 
 img.light {
