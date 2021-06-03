@@ -3,11 +3,11 @@
   <section class="h-screen w-full absolute z-10">
 
 
-    <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
+    <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto  relative overflow-hidden">
 
 
 
-  <light class="overflow-hidden "/>
+  <light class="overflow-hidden filter-shadow-black"/>
 
 
           <div class="title uppercase top-2">
@@ -45,9 +45,9 @@
         class="page-spacing w-full h-20 absolute left-0 bg-repeat bg-center"
     ></div>
 
-    <section class="w-full h-108 bg-black relative">
+    <section class="about_me w-full h-108 relative">
 
-      <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-20">
+      <div class=" w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
         <h2 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
@@ -57,12 +57,12 @@
 
       </div>
 
-      <div>
+
 
         <h1
-            class="text-11xl font-bold text-center leading-tight uppercase filter-shadow-green"
+            class="text-11xl  text-center leading-tight uppercase filter-shadow-green"
         >WINNING DESIGN</h1>
-      </div>
+
 
 
     </section>
@@ -319,7 +319,7 @@
     </section>
 
 
-    <section class="overflow-x-hidden">
+    <section class="principles overflow-x-hidden">
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8  2xl:mt-0">
         <span class="w-full inline-block relative 2xl:w-2/3"></span>
@@ -331,14 +331,14 @@
 
       </div>
 
-      <div>
+
         <h1
-            class="text-9xl font-bold text-center leading-tight mb-20 filter-shadow-green"
+            class="text-11xl font-bold text-center leading-tight mb-20 filter-shadow-green"
 
         >CORE PRINCIPLES</h1>
 
-      </div>
-      <div class="principles  w-full flex pb-16 items-end text-center mb-8  2xl:pb-16 2xl:mb-0 ">
+
+      <div class=" w-full flex pb-16 items-end text-center mb-8  2xl:pb-16 2xl:mb-0 ">
 
         <article class="h-full w-1/3"
 
@@ -420,10 +420,6 @@
 
 
 const marlboro = require('~/assets/graphic/vintage_cigarrettes.jpg?resize&sizes[]=300&sizes[]=600&format=webp');
-
-
-
-
 
 
 export default {
@@ -540,6 +536,7 @@ $titleColor: #224a49;
 section {
 
 
+  background-color: #faebd7;
   background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 }
 
@@ -602,8 +599,6 @@ h1 {
 
   }
 }
-
-
 
 .bk {
   transition: all 0.05s ease-out;
@@ -1028,7 +1023,7 @@ header {
       color: #f7ebd5;
       box-shadow: -10px 0 0 #4f7b70;
       white-space: revert;
-
+      font-family: Barlow Condensed, sans-serif;
     }
 
   }
@@ -1079,10 +1074,20 @@ header {
 
   }
 
+h1 {
 
+  font-family: Barlow Condensed, sans-serif;
+  font-weight: 800;
+}
+
+  h2 {
+
+    font-family: 'Righteous',sans-serif;
+
+  }
   h3 {
 
-    font-family: Barlow Condensed, sans-serif;
+    font-family: 'Righteous',sans-serif;
 
 
   }
@@ -1105,6 +1110,7 @@ article {
 
       filter: drop-shadow(5px 6px 0 #b3603b);
       color: #e9e4dd;
+      font-family: Barlow Condensed, sans-serif;
     }
 
 
@@ -1195,7 +1201,7 @@ article {
       box-shadow: -6px 0 0 #e53e26;
       color: #f7ebd5;
       white-space: revert;
-
+      font-family: Barlow Condensed, sans-serif;
     }
 
   }
@@ -1212,18 +1218,30 @@ article {
 
 .principles {
 
+
+
+  h1 {
+
+
+    font-family: Barlow Condensed, sans-serif;
+  }
+
+
   h2 {
 
     background-image: url(~assets/graphic/green-dust-and-scratches.png);
     background-color: #4f7b70;
     color: #f7ebd5;
     white-space: revert;
+    font-family: Barlow Condensed, sans-serif;
   }
+
+
 
   p {
 
     color: #333333;
-
+    font-family:  'Lobster Two',sans-serif;
   }
 
 

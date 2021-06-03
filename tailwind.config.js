@@ -4,7 +4,11 @@
 module.exports = {
 
 
-
+  corePlugins: {
+    // ...
+    float: false,
+    animation: false,
+  },
   tailwindcss: {
 
     cssPath: '~/assets/css/tailwind.css',
@@ -14,14 +18,21 @@ module.exports = {
 
 
   purge: {
-    content: [
-      'components/!**!/!*.vue',
-      'layouts/!**!/!*.vue',
-      'pages/!**!/!*.vue',
-      'plugins/!**!/!*.js',
-    ],
 
-    layers: ['base'],
+    mode: 'all',
+    preserveHtmlElements: false,
+    content: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+    ],
+    options: {
+      keyframes: true,
+    },
+
+
+    layers: ['base','utilities'],
   },
 
   theme: {
@@ -57,6 +68,7 @@ module.exports = {
       '9xl': '9rem',
       '10xl': '10rem',
       '11xl': '11rem',
+      '14xl': '14rem',
     },
 
     extend: {
@@ -100,7 +112,7 @@ module.exports = {
         'xs': '19rem',
 
 
-      }
+      },
 
     }
   },

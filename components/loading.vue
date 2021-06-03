@@ -1,5 +1,6 @@
 <template>
-<section v-if="loading" >
+<section v-if="loading"
+>
   <div id="hola" ref="hola">
     <div id="preloader" ref="preloader">
       <span></span>
@@ -37,7 +38,6 @@ export default {
 
     start(){
 
-      console.log(this)
       this.loading = true
 
 
@@ -51,7 +51,7 @@ export default {
 
               {
                 opacity: 0.1,
-                transform: ["translateY(-80px)", "translateY(0)"]
+                transform: ["translateY(-80px)", "translateY(0)"],
               },
 
 
@@ -62,6 +62,7 @@ export default {
 
                       {
                         transform: ["translateY(-100%)", "translateY(0)"],
+
                       },
 
                       {
@@ -124,6 +125,7 @@ export default {
   background-color: #252328;
   position: fixed;
   z-index: 999;
+
 }
 #preloader {
   position:relative;
@@ -131,6 +133,7 @@ export default {
   height: 80px;
   top: 45%;
   margin: 0 auto;
+
 }
 #preloader span {
   position:absolute;
@@ -204,10 +207,12 @@ export default {
   .home.divide:before {
     transition: all .6s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     width: 0;
+
   }
   .home.divide:after {
     transition: all .6s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     width: 0;
+
   }
 
 

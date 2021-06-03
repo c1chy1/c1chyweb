@@ -40,7 +40,7 @@ export default {
 section  {
 
   width: 100%;
-
+ background-color:#252328 ;
 
 
 }

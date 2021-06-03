@@ -62,12 +62,20 @@ img.light {
   z-index: -1;
   height: 100%;
   width: 100%;
-  animation: rotate 120s linear infinite;
+  animation: rotate 120s linear infinite ;
   object-fit: cover;
   overflow: hidden;
 }
 
 
+
+}
+
+@keyframes rotate {
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 </style>

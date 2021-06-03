@@ -18,7 +18,6 @@
     "nuxt-start": "^2.15.6",
     "velocity-animate": "^2.0.6",
     "vue-fullpage.js": "^0.1.7"
-
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",

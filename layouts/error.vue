@@ -1,7 +1,7 @@
 <template>
   <section class="h-screen w-screen">
 
-    <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
+    <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto relative overflow-hidden">
 
       <light class="filter-shadow-black overflow-hidden absolute"/>
 
@@ -74,12 +74,11 @@ export default {
 
 
 section {
-
+  background-color: #faebd7;
   background-image: url('~assets/graphic/exclusive-paper.png');
 }
 
 header {
-
 
   h1 {
     color: #224a49;

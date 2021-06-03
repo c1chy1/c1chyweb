@@ -1,8 +1,3 @@
-console.log('hi there. I have a clean API open to use over at https://ammobin.ca/api/graphql')
-
-
-
-
 workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/8dcefc7-540.webp', revision: 'abcd1234' },
     { url: '/_nuxt/img/d604ae9.webp', revision: 'abcd1234' },

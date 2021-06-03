@@ -4,16 +4,6 @@
 @layer base {
 
 
-    #fp-nav ul li a span, .fp-slidesNav ul li a span {
-
-        height: 12px !important;
-        width: 12px !important;
-        margin: -2px 0 0 -7px !important;
-        transition: all 0.3s ease-in-out !important;
-        background: white;
-    }
-
-
 
     * {
 
@@ -500,14 +490,6 @@
         }
 
 
-        .light_background {
-
-            width: 200vw;
-
-
-        }
-
-
 
 
     }
@@ -559,13 +541,6 @@
         }
 
 
-
-        [data-anchor="page1"]  .light_background {
-
-            width: 200vw;
-
-
-        }
 
 
         [data-anchor="page2"] .welcome_studio div span:after {
@@ -654,7 +629,7 @@
 
         .logo {
 
-            top:10vh
+            top:12vh
 
         }
 
@@ -730,6 +705,11 @@
         }
 
 
+        #fp-nav.fp-right {
+
+
+            right: 10px;
+        }
 
         #fp-nav {
 
@@ -767,14 +747,14 @@
             width: 20px !important;
             height: 20px !important;
             margin: -7px 0 0 -11px !important;
-
+            background: #a1362b !important;
 
         }
 
 
         #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
 
-        /*    background: #a1362b !important;*/
+      background: #a1362b !important;
         }
 
 
@@ -903,15 +883,6 @@
 
 
 
-    }
-
-
-
-    @keyframes rotate {
-
-        to {
-            transform: rotate(360deg);
-        }
     }
 
 

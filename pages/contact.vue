@@ -2,11 +2,11 @@
 
   <section class="h-screen w-full absolute z-10">
 
-    <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
+    <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto relative overflow-hidden">
 
 
 
-      <light class="filter-shadow-black overflow-hidden absolute"/>
+      <light class="overflow-hidden filter-shadow-black"/>
 
 
 
@@ -126,7 +126,7 @@
       </div>
     </section>
 
-    <section class="exclusive-paper w-full h-auto bg-black rounded-4xl relative">
+    <section id="contact_me" class="exclusive-paper w-full h-auto bg-black rounded-4xl relative">
 
       <div class="contact_me w-3/4 h-28  items-center flex  mx-auto pt-20 ">
         <span class="w-full inline-block relative"></span>
@@ -140,14 +140,14 @@
 
       <div>
         <h1
-            class="text-10xl mb-20 font-bold text-center leading-tight "
+            class="text-11xl mb-20  text-center leading-tight "
 
         >GET IN TOUCH</h1>
 
       </div>
 
 
-      <aside class="w-2/3 flex justify-center m-auto pb-5">
+      <aside class="w-3/4 flex justify-center m-auto pb-5">
 
 
         <article class="w-1/3 p-10 mb-10">
@@ -323,13 +323,25 @@ export default {
   transform: rotate(0deg);
 }
 
+#contact_me {
 
-h1 {
-  color: #224a49;
-  filter: drop-shadow(5px 6px 0 #a9c9bb);
-  font-family: Barlow Condensed, sans-serif;
+  background-color: #f7ebd5;
+
+  h1{
+      color: #224a49;
+      filter: drop-shadow(5px 6px 0 #a9c9bb);
+      font-family: Barlow Condensed, sans-serif;
+      font-weight: 800;
+
+  }
 
 }
+
+header {
+
+  background-color: #faebd7;
+}
+
 .exclusive-paper {
 
   background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
@@ -855,9 +867,11 @@ figure {
   }
 
 
+
+
   h2 {
 
-    font-family: Barlow Condensed, sans-serif;
+    font-family: Righteous,sans-serif;
 
 
   }
@@ -942,10 +956,15 @@ aside {
       background-image: url(~assets/graphic/green-dust-and-scratches.png);
       background-color: #4f7b70;
 
-
+      font-family: Barlow Condensed, sans-serif;
       color: #f7ebd5;
       box-shadow: -10px 0 0 #4f7b70;
       white-space: revert;
+
+    }
+    p {
+
+    font-family: 'Righteous', sans-serif;
 
     }
 
@@ -1030,7 +1049,7 @@ aside {
       color: #eae5de;
       box-shadow: -20px 0 0 #a1362b;
       white-space: revert;
-
+      font-family: 'Barlow Condensed',sans-serif;
     }
 
     &:before {

@@ -2,10 +2,10 @@
   <section class="h-screen w-full absolute z-10">
 
     <header
-        class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto filter-shadow-black relative overflow-hidden">
+        class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto relative overflow-hidden">
 
 
-      <light/>
+      <light class="overflow-hidden filter-shadow-black"/>
       <div class="title uppercase top-2">
         <h1 class="text-8xl font-semibold text-center uppercase">Portfolio
         </h1>
@@ -46,17 +46,28 @@
         <span class="w-full inline-block relative"></span>
         <h2 class="font-bold text-3xl mt-4  text-center lg:w-full 2xl:w-9/12 2xl:mt-8"
 
-        >MEANINGFUL CREATIVE WORK</h2>
+        >MEANINGFUL <br>CREATIVE WORK</h2>
         <span class="w-full inline-block relative"></span>
 
 
       </div>
-      <h1 class="leading-none mt-16 mb-24 text-10xl font-semibold text-center xl:text-7xl xl:mt-2 xl:mb-5 2xl:text-10xl 2xl:mt-20 2xl:mb-24 ">
+      <h1
+
+
+
+          class="leading-none mt-16 mb-24 text-10xl font-semibold text-center xl:text-7xl xl:mt-2 xl:mb-5 2xl:text-14xl 2xl:mt-20 2xl:mb-24 ">
         CASE STUDIES</h1>
 
       <div class="w-full  flex flex-col justify-center items-center overflow-hidden"
+
+
+
+           data-aos-anchor="#panel"
+           data-aos-easing="ease-in-sine"
+           data-aos-anchor-placement="center-bottom"
            data-aos="flip-down"
-           data-aos-delay="250">
+
+           data-aos-delay="500">
         <transition :name="currentTransition" mode="out-in">
           <component
 
@@ -87,7 +98,7 @@
 
     </section>
 
-    <section class="min-h-screen lg:-mb-8 overflow-x-hidden">
+    <section id="my_projects" class="lg:-mb-8 overflow-x-hidden min-h-screen flex flex-col justify-between">
 
       <div class="title-container flex flex-col justify-center items-center mt-0">
 
@@ -118,7 +129,7 @@
       </div>
 
 
-      <div class="container_projects w-full h-full mt-8 pb-10 flex justify-center items-center flex-col">
+      <div class="container_projects w-full h-full min-h-50 mt-8 pb-10 flex justify-center items-center flex-col">
         <transition-group class="projects w-11/12  mb-8 mt-1 flex flex-wrap justify-around" name="projects">
           <div class="card w-116 h-52 mb-1 mt-5 flex-wrap justify-center overflow-hidden"
                v-if="currentFilter === project.category || currentFilter === 'ALL'"
@@ -355,11 +366,16 @@ $blue: #2b26c3;
 
 
 section {
-
+  background-color: #faebd7;
   background-image: url('~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp');
 
 }
 
+#my_projects {
+
+  background-color: #faebd7;
+
+}
 
 header {
 
@@ -593,7 +609,8 @@ header {
 
     filter: drop-shadow(5px 6px 0 #b3603b);
     color: #e9e4dd;
-
+    font-family: "Barlow Condensed",sans-serif;
+    font-weight: 800;
   }
 
   span {
@@ -643,6 +660,7 @@ header {
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Barlow Condensed", sans-serif;
 
 }
 
@@ -678,10 +696,16 @@ header {
 
   }
 
+  h1 {
+
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+  }
+
 
   h2 {
 
-    font-family: Barlow Condensed, sans-serif;
+    font-family: Righteous, sans-serif;
 
 
   }
@@ -695,7 +719,7 @@ header {
     background-color: rgba(0, 0, 0, 0.25);
     background-image: url('~assets/graphic/green-dust-and-scratches.png');
     background-color: #4f7b70;
-
+    font-family:   Barlow Condensed, sans-serif;
 
     &.disabled {
       opacity: 0.5;

@@ -4,7 +4,8 @@
 
 
 
-    <full-page id="fullpage" class="w-screen h-screen  absolute z-10 cursor-default container px-0 md:px-0  max-w-full lg:max-w-max  mx-auto"  :options="options">
+    <full-page
+        id="fullpage" class="w-screen h-screen  absolute z-10 cursor-default container px-0 md:px-0  max-w-full lg:max-w-max  mx-auto"  :options="options">
 
 
 
@@ -14,7 +15,7 @@
  <light/>
         <div
             class="w-full h-screen relative fill-40 flex flex-col   justify-between    sm:justify-end "
-            style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.5));">
+            style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.6));">
 
 
 
@@ -114,11 +115,11 @@
 
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
-            <span class="w-11/12 inline-block relative"></span>
+            <span class="w-11/12 inline-block relative self-start"></span>
             <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0 md:text-5xl  xl:text-2xl  2xl:text-4xl   "
 
             >WELCOME TO STUDIO</h1>
-            <span class="w-11/12 inline-block relative"></span>
+            <span class="w-11/12 inline-block relative self-start"></span>
 
           </div>
 
@@ -214,7 +215,7 @@
                 class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
               An der Schnittstelle von Technik entwickle ich digitale Anwendungen,
               die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
-              auf welchem Gerät. Dazu erprobe ich neuartige Methoden, beschäftige ich intensiv mit aufregenden Technologien,
+              auf welchem Gerät. Dazu erprobe ich neuartige Methoden, beschäftige mich intensiv mit aufregenden Technologien,
               experimentiere mit neuen Herangehensweisen.</p>
 
 
@@ -234,14 +235,12 @@
       v-if="isShowing" ref="modal" class="lazyload modal flex w-full" >
 
     <img
-
         class="lazyload"
         :data-src="require('~/assets/graphic/vintage_walkman.jpg?webp')"
         :src="walkman.src"
         :srcSet="walkman.srcSet"
-        :width="walkman.width"
-        :height="walkman.height"
-        sizes='(min-width: 1024px) 1024px, 100vw'
+
+        alt="vintage"
     >
 
 <article class="lazyload flex flex-row-reverse leading-snug">
@@ -297,7 +296,7 @@
 
 
           <div
-              class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4 2xl:w-full">
+              class="w-full h-28 items-center flex mx-auto xl:mt-16 xl:w-3/4 ">
 
             <h2
                 class="together w-3/5 font-bold text-3xl mt-4 px-2 text-xl  md:text-4xl  lg:w-full lg:text-5xl xl:w-2/5 2xl:text-4xl ">
@@ -339,24 +338,24 @@
 
               ref="form"
               id="form"
-              class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-2xl"
+              class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-xl"
               v-on:submit={getFormValues}
           >
             <label for="name" class="w-full text-center">
             <input
                 type="text"
                 id="name"
-                class="w-4/5 h-8 mt-3 pl-1 border-2  text-xl rounded-xl sm:h-8  md:h-16 md:text-4xl  md-landscape:h-12  md-landscape:text-xl lg:text-3xl  xl:h-12 xl:text-2xl"
+                class="w-4/5 h-8 mt-3 pl-1 border-2  text-xl rounded-xl sm:h-8  md:h-16 md:text-4xl  md-landscape:h-12  md-landscape:text-xl lg:text-3xl  xl:h-12 xl:text-xl"
                 placeholder="name"
             >
           </label>
             <label for="email" class="w-full text-center">
             <input type="email" id="email" placeholder="email"
-                   class="w-4/5 h-8 mt-3 pl-1 text-xl  border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl  lg:mb-5 lg:text-3xl xl:h-12 xl:text-2xl" >
+                   class="w-4/5 h-8 mt-3 pl-1 text-xl  border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl  lg:mb-5 lg:text-3xl xl:h-12 xl:text-xl" >
            </label>
             <label for="message" class="w-full text-center">
             <textarea id="message" placeholder="message"
-                      class="w-4/5 h-auto mt-3 pl-1  text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-2xl " > </textarea>
+                      class="w-4/5 h-auto mt-3 pl-1  text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-xl" > </textarea>
             </label>
 
             <button type ="submit" form="form" value="submit" class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24">SEND</button>
@@ -788,12 +787,11 @@ return {
   opacity: 0.4;
 }
 
+#fullpage {
 
-
-
-
-
-
+  border-color:#252328;
+  background-color: #252328;
+}
 
 .animate__delay-8s {
 
@@ -890,7 +888,7 @@ div p, li, a {
 [data-anchor="page1"] {
 
   background-image: url("~assets/graphic/bg_green.png?webp");
-
+  box-shadow: inset 0 1px 30px 30px #fafafa40;
   visibility: inherit;
 
 
@@ -1145,6 +1143,12 @@ div {
         color: #224a49;
         filter: drop-shadow(5px 6px 0 #a9c9bb);
         font-family: Barlow Condensed,sans-serif;
+
+      }
+
+      h1 {
+
+        font-family: 'Righteous' , sans-serif;
 
       }
 
@@ -1443,7 +1447,7 @@ div {
 
   input, textarea {
 
-
+    font-family: 'Merriweather',sans-serif;
     background-image: url("~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp");
     background-color: #faebd7;
   }
