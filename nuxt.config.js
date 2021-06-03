@@ -1,5 +1,4 @@
-
-
+const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -13,6 +12,37 @@ export default {
 
 
     pwa: {
+
+
+        workbox: {
+
+            workboxExtensions: '@/plugins/custom-service-worker.js',
+            globIgnores: ['sw.js', '**!/workbox*.js'],
+
+
+            runtimeCaching: [{
+                // Match any request ends with .png, .jpg, .jpeg or .svg.
+                urlPattern: /.(?:png|jpg|jpeg|svg|webp)$/,
+
+                // Apply a cache-first strategy.
+                handler: 'cacheFirst',
+
+                options: {
+                    // Use a custom cache name.
+                    cacheName: 'images',
+
+                    // Only cache 50 images.
+                    expiration: {
+                        maxEntries: 50,
+                    },
+                },
+
+            },]
+
+        },
+
+
+
         meta: {
             title: 'c1chyweb',
             author: 'c1chy',
@@ -21,40 +51,13 @@ export default {
             name: 'c1chy.app',
             short_name: 'APP',
             description: "My Frontend experience and projects",
+            display: 'standalone',
             lang: 'de',
             theme_color: '#40635b',
 
         },
 
-        workbox: {
 
-
-            runtimeCaching: [
-                {
-                    urlPattern: 'https://fonts.googleapis.com/.*',
-                    handler: 'cacheFirst',
-                    method: 'GET',
-                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
-                },
-                {
-                    urlPattern: 'https://fonts.gstatic.com/.*',
-                    handler: 'cacheFirst',
-                    method: 'GET',
-                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
-                },
-                {
-                    urlPattern: 'https://cdn.snipcart.com/.*',
-                    method: 'GET',
-                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
-                },
-                {
-                    urlPattern: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-                    handler: 'cacheFirst',
-                    method: 'GET',
-                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
-                }
-            ]
-        },
 
 
     },
@@ -66,6 +69,9 @@ export default {
     },
 
     postcss: {
+
+        'postcss-autoprefixer': autoprefixer(),
+
         plugins: {
             cssnano: {
                 preset: [
@@ -86,6 +92,7 @@ export default {
     },
 
     build: {
+        extractCSS: true,
 
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
@@ -279,7 +286,8 @@ export default {
 
 
     generate: {
-        fallback: '404.html'
+        fallback: '404.html',
+        subFolders: false,
     },
 
 
@@ -289,7 +297,6 @@ export default {
         {src: '~/plugins/fullpage', mode: 'client'},
         {src: '~/plugins/aos.js', mode: 'client'},
         {src: '~/plugins/velocity', mode: 'client'},
-
     ],
 
 

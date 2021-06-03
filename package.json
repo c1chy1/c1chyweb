@@ -10,14 +10,15 @@
     "@nuxtjs/pwa": "^3.3.5",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "autoprefixer": "^9.8.6",
     "default-passive-events": "^2.0.0",
     "fullpage-nuxt": "0.0.3",
     "nuxt": "^2.14.7",
     "nuxt-purgecss": "^1.0.0",
     "nuxt-start": "^2.15.6",
     "velocity-animate": "^2.0.6",
-    "vue-fullpage.js": "^0.1.7",
-    "workbox-precaching": "^6.1.5"
+    "vue-fullpage.js": "^0.1.7"
+
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
