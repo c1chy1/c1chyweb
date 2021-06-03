@@ -310,23 +310,6 @@ export default {
 
 <style scoped lang="scss">
 
-.spotlight-enter-active {
-
-  animation: 2s spotlight reverse;
-
-
-}
-.spotlight-leave-active { animation: 2s spotlight 1.5s;
-}
-
-@keyframes spotlight {
-  0% { clip-path: circle(100% at 50% 50%); }
-  25% { clip-path: circle(20% at 50% 50%); }
-  50% { clip-path: circle(20% at 12% 84%); }
-  75% { clip-path: circle(20% at 93% 51%); }
-  100% { clip-path: circle(20% at -30% 20%); }
-}
-
 
 
 

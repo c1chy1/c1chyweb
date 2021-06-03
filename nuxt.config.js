@@ -8,7 +8,7 @@ export default {
 
 
 
-    target: 'server',
+    target: 'static',
 
 
     pwa: {

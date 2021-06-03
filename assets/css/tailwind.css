@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind utilities;
 
@@ -368,7 +369,7 @@
 
     .circle1 {
 
-     top:31vh
+        top:31vh
 
 
     }
@@ -430,11 +431,11 @@
         animation: matrix 7s ease infinite;
         top: 2rem;
     }
-   .logo {
+    .logo {
 
-       top: 2rem;
+        top: 2rem;
 
-   }
+    }
 
 
 
@@ -495,7 +496,7 @@
     }
 
 
-@screen md {
+    @screen md {
 
 
 
@@ -612,7 +613,7 @@
 
 
 
-       .ribbon figcaption {
+        .ribbon figcaption {
 
 
             font-size: 1.2vw ;
@@ -638,8 +639,8 @@
         #form {
 
 
-       height: 100vh;
-   }
+            height: 100vh;
+        }
 
 
         .circle1 {
@@ -754,7 +755,7 @@
 
         #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
 
-      background: #a1362b !important;
+            background: #a1362b !important;
         }
 
 
@@ -886,48 +887,50 @@
     }
 
 
-  @keyframes matrix {
+    @keyframes matrix {
 
 
-      0% {
+        0% {
 
-          transform: translateX(5%);
-      }
+            transform: translateX(5%);
+        }
 
-     25% {
+        25% {
 
-   transform: translateY(-5%);
-      }
-      50% {
+            transform: translateY(-5%);
+        }
+        50% {
 
-          transform: translateX(-5%);
-      }
+            transform: translateX(-5%);
+        }
 
-     75% {
+        75% {
 
-          transform: translateY(5%);
-      }
-      100% {
+            transform: translateY(5%);
+        }
+        100% {
 
-          transform: translateX(5%);
-      }
+            transform: translateX(5%);
+        }
 
 
     }
 
+    .spotlight-enter-active {
 
-    .spiral-enter-active { animation: 1s spiral reverse; }
-    .spiral-leave-active { animation: 1s spiral; }
+        animation: 2s spotlight reverse;
 
-    @keyframes spiral {
-        0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-        14.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 75%, 50% 75%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-        28.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 75% 25%, 75% 50%, 50% 50%, 50% 50%, 50% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-        42.75% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%, 25% 25%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 50%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-        57% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 25% 75%, 75% 75%, 75% 25%, 0% 25%); }
-        71.25% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 75%, 75% 25%, 0% 25%); }
-        85.5% { clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 75% 25%, 0% 25%); }
-        100% {clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%); }
+
+    }
+    .spotlight-leave-active { animation: 2s spotlight 1.5s;
+    }
+
+    @keyframes spotlight {
+        0% { clip-path: circle(100% at 50% 50%); }
+        25% { clip-path: circle(20% at 50% 50%); }
+        50% { clip-path: circle(20% at 12% 84%); }
+        75% { clip-path: circle(20% at 93% 51%); }
+        100% { clip-path: circle(20% at -30% 20%); }
     }
 
 
@@ -965,20 +968,6 @@
 
 
 
-
-    @-webkit-keyframes shine {
-        100% {
-            left: 125%;
-        }
-    }
-    @keyframes shine {
-        100% {
-            left: 125%;
-        }
-    }
-
-
-
 }
 
 
@@ -1005,5 +994,3 @@
     }
 
 }
-
-

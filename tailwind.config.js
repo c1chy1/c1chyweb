@@ -5,7 +5,6 @@ module.exports = {
 
 
   corePlugins: {
-    // ...
     float: false,
     animation: false,
   },
@@ -19,20 +18,15 @@ module.exports = {
 
   purge: {
 
-    mode: 'all',
-    preserveHtmlElements: false,
+
+ preserveHtmlElements: false,
     content: [
       'components/**/*.vue',
       'layouts/**/*.vue',
       'pages/**/*.vue',
       'plugins/**/*.js',
     ],
-    options: {
-      keyframes: true,
-    },
 
-
-    layers: ['base','utilities'],
   },
 
   theme: {
