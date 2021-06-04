@@ -14,6 +14,7 @@ export default {
     pwa: {
 
 
+/*
         workbox: {
 
             workboxExtensions: '@/plugins/custom-service-worker.js',
@@ -40,6 +41,7 @@ export default {
             },]
 
         },
+*/
 
 
         meta: {
@@ -52,7 +54,7 @@ export default {
             name: 'c1chy.app',
             description: "My Frontend experience and projects",
             display: 'standalone',
-            lang: 'de',
+            lang: 'de-DE',
             theme_color: '#40635b',
             background_color: "#252328"
 
