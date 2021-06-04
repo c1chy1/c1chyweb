@@ -14,6 +14,9 @@ export default {
     pwa: {
 
 
+
+
+
         workbox: {
 
             workboxExtensions: '@/plugins/custom-service-worker.js',
@@ -44,19 +47,22 @@ export default {
 
 
         meta: {
-            title: 'c1chyweb',
+            title: 'c1chyApp',
             author: 'c1chy',
         },
         manifest: {
 
-            start_url: "/?launch=pwa",
+            start_url: "?standalone=true",
             name: 'c1chy.app',
-            short_name: 'APP',
             description: "My Frontend experience and projects",
             display: 'standalone',
             lang: 'de',
             theme_color: '#40635b',
 
+        },
+
+        icon: {
+            /* icon options */
         },
 
 
