@@ -42,10 +42,9 @@ export default {
 
 
 
-/*
-        workbox: {
+      workbox: {
 
-            workboxExtensions: '@/plugins/custom-service-worker.js',
+     /*       workboxExtensions: '@/plugins/custom-service-worker.js',*/
 
 
 
@@ -70,7 +69,7 @@ export default {
 
         },
 
-*/
+
 
 
 
