@@ -53,7 +53,6 @@
               :src="hat.src"
               :width="hat.width"
               :height="hat.height"
-              sizes="(min-width: 768px) 60vw, 95vw"
 
               alt="rainbow balloon"
                class="hat lazyload relative self-center w-3/5  sm:w-2/12  md:w-7/12  lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
