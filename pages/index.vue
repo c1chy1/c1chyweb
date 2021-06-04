@@ -494,6 +494,7 @@ return {
     Velocity(this.$refs.scumbag,
 
             {
+              promiseRejectEmpty:false,
               opacity: 1,
               transform: ["translateX(0)", "translateX(75%)"],
             },
@@ -619,7 +620,7 @@ return {
             {
               easing:"swing",
               duration:550,
-              begin: () => {
+              begin: (el,done) => {
 
 
                 this.$refs.vintageMusic.classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-1s','animate__slow')
@@ -746,7 +747,9 @@ return {
                 this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].classList.remove('animate__animated', 'animate__slideInLeft','animate__delay-1s')
                 this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].style.opacity = "0"
               }
-            }
+
+            },
+
         )
 
       }
