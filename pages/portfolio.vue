@@ -393,8 +393,9 @@ header {
     width: 100vw;
     position: absolute;
     top: 50%;
+    height: 100vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     margin: 0;
     overflow: hidden;
   }
