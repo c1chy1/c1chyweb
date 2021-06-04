@@ -14,12 +14,9 @@ export default {
     pwa: {
 
 
-/*
         workbox: {
 
             workboxExtensions: '@/plugins/custom-service-worker.js',
-            globIgnores: ['sw.js', '**!/workbox*.js'],
-
 
             runtimeCaching: [{
                 // Match any request ends with .png, .jpg, .jpeg or .svg.
@@ -41,7 +38,6 @@ export default {
             },]
 
         },
-*/
 
 
         meta: {
