@@ -30,16 +30,12 @@ export default {
         },
 
         icon: {
-            /* icon options */
-
 
             src: "/static/icon.png",
             type: "image/png",
             sizes: [64, 120, 144, 152, 192, 384, 512],
 
         },
-
-
 
         workboxPluginMode: 'InjectManifest',
         workboxOptions: {
@@ -51,22 +47,19 @@ export default {
 
       workbox: {
 
-   workboxExtensions: '@/plugins/custom-service-worker.js',
+        workboxExtensions: '@/plugins/custom-service-worker.js',
 
           runtimeCaching: [{
-                // Match any request ends with .png, .jpg, .jpeg or .svg.
                 urlPattern: /.(?:png|jpg|jpeg|svg|webp)$/,
 
-                // Apply a cache-first strategy.
+
                 handler: 'cacheFirst',
 
                 options: {
-                    // Use a custom cache name.
-                    cacheName: 'images',
 
-                    // Only cache 50 images.
+                    cacheName: 'images',
                     expiration: {
-                        maxEntries: 50,
+                        maxEntries: 30,
                     },
                 },
 
