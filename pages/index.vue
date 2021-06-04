@@ -39,7 +39,7 @@
        :height="logo.height"
 
        alt="c1chy"
-       class="logo lazyload  self-center relative w-10/12 sm:w-1/3 md:w-40 portrait:w-1/2 lg:w-1/3 xl:w-1/4
+       class="logo lazyload  self-center relative w-10/12 sm:w-1/3 md:w-3/4  lg:w-1/3 xl:w-1/4
 
 
         xl:top-12 relative z-50"
@@ -56,7 +56,7 @@
               sizes="(min-width: 768px) 60vw, 95vw"
 
               alt="rainbow balloon"
-               class="hat lazyload relative self-center w-3/5 sm:w-32  md:1/2 portrait:w-1/2 lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
+               class="hat lazyload relative self-center w-3/5  sm:w-2/12  md:w-7/12  lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
           >
           <img
 
@@ -69,20 +69,20 @@
               sizes="(min-width: 768px) 60vw, 95vw"
 
               alt="vintage body"
-              class="body lazyload self-center w-full h-1/3 sm:w-2/5 sm:h-auto md:w-2/3 lg:w-5/12
+              class="body lazyload self-center w-10/12 h-1/4 sm:w-2/5   md:w-10/12 md:h-1/3 lg:w-5/12
 
 
 
                 xl:w-1/2 2xl:w-1/3 filter-shadow-black ">
 
-          <figure class="ribbon flex bottom-20 absolute w-8/12 sm:justify-center  xl:w-2/5 2xl:w-1/3  self-center   filter-shadow-black z-10 ">
+          <figure class="ribbon flex bottom-12 absolute w-8/12 sm:justify-center md:w-1/2 xl:w-2/5 2xl:w-1/3  self-center filter-shadow-black z-10 ">
 
 
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
-                class="lazyload absolute  sm:w-1/2 md:w-2/3 lg:w-full 2xl:w-full filter-shadow-black z-10">
-            <figcaption class="mx-auto mt-2   text-xs text-white text-center my-auto  md:text-xl lg:text-xl  xl:mt-4 xl:tracking-wider    2xl:mt-5 z-20">
+                class="lazyload absolute  sm:w-1/2 md:w-full lg:w-full 2xl:w-full filter-shadow-black z-10">
+            <figcaption class="mx-auto mt-1  text-white text-center  md:text-2xl lg:text-2xl lg:mt-3  xl:mt-4 xl:tracking-wider    2xl:mt-5 z-20">
               Visually Striking Design </figcaption>
           </figure>
 
@@ -116,7 +116,7 @@
         <div class="welcome_studio w-full pt-4 flex flex-col justify-content-between items-center text-center box-border leading-tight">
           <div class="w-full h-28  items-center flex  mx-auto 2xl:mt-16">
             <span class="w-11/12 inline-block relative self-start"></span>
-            <h1 class="w-full font-bold text-2xl mt-2 sm:w-full sm:text-2xl md:w-full md:mt-0 md:text-5xl  xl:text-2xl  2xl:text-4xl   "
+            <h1 class="w-full font-bold text-xl mt-0 sm:w-full sm:text-2xl md:w-full md:mt-0 md:text-5xl  xl:text-2xl  2xl:text-4xl   "
 
             >WELCOME TO STUDIO</h1>
             <span class="w-11/12 inline-block relative self-start"></span>
@@ -205,9 +205,9 @@
 
 
 
-    class="w-5/12 self-center lg:w-1/3  lg:h-full lg:flex lg:flex-col lg:justify-evenly">
+    class="w-7/12 self-center p-5 lg:w-1/3   lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-center  text-xl xl:text-3xl 2xl:text-5xl ">
+                class="text-center  text-xl md:text-4xl xl:text-3xl 2xl:text-5xl ">
               Strategie, Technologie, <br> App & Content </h2>
 
   <p
@@ -276,8 +276,7 @@
 
             <img
 
-                ref="vintageMusic"
-                class="lazyload opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/4 "
+                class="lazyload opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/2 2xl:w-1/4"
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :src="vintageMusic.src"
                 :srcSet="vintageMusic.srcSet"
@@ -308,7 +307,7 @@
           </div>
 <div class="w-3/4 mx-auto items-center">
 
-  <h1 class="hire hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl   md-landscape:hidden  md-portrait:text-5xl lg:block lg:text-10xl xl:hidden xl:text-4xl 2xl:block 2xl:text-9xl ">
+  <h1 class="hire hidden font-bold text-10xl filter-shadow-green md:block md:text-6xl   md-landscape:hidden  md-portrait:text-5xl lg:block lg:text-7xl xl:hidden xl:text-4xl 2xl:block 2xl:text-7xl ">
     HIRE ME</h1>
 
 
@@ -345,17 +344,17 @@
             <input
                 type="text"
                 id="name"
-                class="w-4/5 h-8 mt-3 pl-1 border-2  text-xl rounded-xl sm:h-8  md:h-16 md:text-4xl  md-landscape:h-12  md-landscape:text-xl lg:text-3xl  xl:h-12 xl:text-xl"
+                class="w-4/5 h-8 mt-3 pl-1 border-2  text-xs  sm:text-xl rounded-xl sm:h-8  md:h-16 md:text-4xl  md-landscape:h-12  md-landscape:text-xl lg:text-3xl  xl:h-12 xl:text-xl"
                 placeholder="name"
             >
           </label>
             <label for="email" class="w-full text-center">
             <input type="email" id="email" placeholder="email"
-                   class="w-4/5 h-8 mt-3 pl-1 text-xl  border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl  lg:mb-5 lg:text-3xl xl:h-12 xl:text-xl" >
+                   class="w-4/5 h-8 mt-3 pl-1   text-xs  sm:text-xl  border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl  lg:mb-5 lg:text-3xl xl:h-12 xl:text-xl" >
            </label>
             <label for="message" class="w-full text-center">
             <textarea id="message" placeholder="message"
-                      class="w-4/5 h-auto mt-3 pl-1  text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-xl" > </textarea>
+                      class="w-4/5 h-auto mt-3 pl-1 text-xs sm:text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-xl" > </textarea>
             </label>
 
             <button type ="submit" form="form" value="submit" class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24">SEND</button>

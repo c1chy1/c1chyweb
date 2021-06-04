@@ -98,6 +98,7 @@ module.exports = {
         "8xl": "50rem",
       },
 
+
       maxWidth: {
 
 
