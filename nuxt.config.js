@@ -20,14 +20,13 @@ export default {
         },
         manifest: {
 
-            start_url: "/?standalone=true",
+            start_url: "/",
             name: 'c1chy.app',
             description: "My Frontend experience and projects",
             display: 'standalone',
             lang: 'de',
             theme_color: '#40635b',
             background_color: "#252328",
-            scope: "/"
         },
 
         icon: {
