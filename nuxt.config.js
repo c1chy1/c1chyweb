@@ -61,14 +61,14 @@ export default {
             /* icon options */
 
 
-            src: "~/static/icon.png",
+            src: "/static/icon.png",
             type: "image/png",
-            sizes: [192, 512],
+            sizes: [64, 120, 144, 152, 192, 384, 512],
 
         },
 
-    },
 
+    },
 
     optimizeCSS: {
         cssProcessor: require('css-mqpacker'),
