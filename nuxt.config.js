@@ -123,7 +123,15 @@ export default {
 
 
                         {
+                            loader: "responsive-loader",
 
+                            options: {
+                                adapter: require('responsive-loader/sharp'),
+                                sizes: [320, 640, 1024, 1920],
+                                placeholder: true,
+                                placeholderSize: 20
+
+                            }
 
                         },
 
@@ -131,6 +139,8 @@ export default {
                         'css-loader',
                         'postcss-loader',
                         'sass-loader',
+
+
 
                     ],
                 },
