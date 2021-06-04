@@ -2,6 +2,7 @@
 
 
 
+/*
 
 workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/8dcefc7-540.webp', revision: 'abcd1234' },
@@ -11,6 +12,7 @@ workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/e670645-378.webp', revision: 'abcd1234' },
 ]);
 
+*/
 
 
 /*
