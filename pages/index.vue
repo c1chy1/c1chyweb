@@ -39,7 +39,7 @@
        :height="logo.height"
 
        alt="c1chy"
-       class="logo lazyload  self-center relative 2xl:w-1/6
+       class="logo lazyload  self-center relative 2xl:w-1/4
 
 
         xl:top-12 z-50"
@@ -376,7 +376,7 @@
 
 <script>
 
-const logo = require('~/assets/graphic/logo.png?sizes[]=150,sizes[]=300&format=webp');
+const logo = require('~/assets/graphic/logo.png?sizes[]=150,sizes[]=400&format=webp');
 const hat = require('~/assets/graphic/hat.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const body =require('~/assets/graphic/body.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
