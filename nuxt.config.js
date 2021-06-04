@@ -15,7 +15,7 @@ export default {
 
 
         meta: {
-            title: 'c1chyApp',
+            title: 'c1chy.App',
             author: 'c1chy',
         },
         manifest: {
@@ -53,9 +53,7 @@ export default {
 
    workboxExtensions: '@/plugins/custom-service-worker.js',
 
-
-
-            runtimeCaching: [{
+          runtimeCaching: [{
                 // Match any request ends with .png, .jpg, .jpeg or .svg.
                 urlPattern: /.(?:png|jpg|jpeg|svg|webp)$/,
 
