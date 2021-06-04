@@ -37,34 +37,37 @@ export default {
 
             },]
 
+
+            meta: {
+                title: 'c1chyApp',
+                author: 'c1chy',
+            },
+            manifest: {
+
+                start_url: "/?standalone=true",
+                name: 'c1chy.app',
+                description: "My Frontend experience and projects",
+                display: 'standalone',
+                lang: 'de-DE',
+                theme_color: '#40635b',
+                background_color: "#252328"
+
+            },
+
+            icon: {
+                /* icon options */
+
+
+                src: "/static/icon.png",
+                type: "image/png",
+                sizes: [64, 120, 144, 152, 192, 384, 512],
+
+            },
+
         },
 
 
-        meta: {
-            title: 'c1chyApp',
-            author: 'c1chy',
-        },
-        manifest: {
 
-            start_url: "/?standalone=true",
-            name: 'c1chy.app',
-            description: "My Frontend experience and projects",
-            display: 'standalone',
-            lang: 'de-DE',
-            theme_color: '#40635b',
-            background_color: "#252328"
-
-        },
-
-        icon: {
-            /* icon options */
-
-
-            src: "/static/icon.png",
-            type: "image/png",
-            sizes: [64, 120, 144, 152, 192, 384, 512],
-
-        },
 
 
     },
