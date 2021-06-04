@@ -54,7 +54,7 @@ export default {
             display: 'standalone',
             lang: 'de',
             theme_color: '#40635b',
-            backgroundColor: "#252328"
+            background_color: "#252328"
 
         },
 
