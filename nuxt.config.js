@@ -48,7 +48,7 @@ export default {
         },
         manifest: {
 
-            start_url: "?standalone=true",
+            start_url: "https://c1chyweb.netlify.app/",
             name: 'c1chy.app',
             description: "My Frontend experience and projects",
             display: 'standalone',
