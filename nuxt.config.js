@@ -54,11 +54,6 @@ export default {
    workboxExtensions: '@/plugins/custom-service-worker.js',
 
 
-          workboxPluginMode: 'InjectManifest',
-          workboxOptions: {
-              swSrc: '@/plugins/custom-service-worker.js',
-              swDest: '@/plugins/custom-service-worker.js',
-          },
 
             runtimeCaching: [{
                 // Match any request ends with .png, .jpg, .jpeg or .svg.
