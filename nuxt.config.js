@@ -43,8 +43,8 @@ export default {
 
         workboxPluginMode: 'InjectManifest',
         workboxOptions: {
-            swSrc: 'static/sw.js',
-            swDest: 'static/sw.js',
+            swSrc: '~/static/sw.js',
+            swDest: '~/static/sw.js',
         },
 
 
@@ -56,8 +56,8 @@ export default {
 
           workboxPluginMode: 'InjectManifest',
           workboxOptions: {
-              swSrc: 'static/sw.js',
-              swDest: 'static/sw.js',
+              swSrc: '~/static/sw.js',
+              swDest: '~/static/sw.js',
           },
 
             runtimeCaching: [{
