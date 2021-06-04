@@ -48,6 +48,8 @@ export default {
             author: 'c1chy',
         },
         manifest: {
+
+            start_url: "/?launch=pwa",
             name: 'c1chy.app',
             short_name: 'APP',
             description: "My Frontend experience and projects",
