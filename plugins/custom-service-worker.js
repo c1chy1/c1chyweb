@@ -1,25 +1,7 @@
 
-self.addEventListener('install', function (e) {
-    self.skipWaiting()
-})
-
-self.addEventListener('activate', function (e) {
-    self.registration.unregister()
-        .then(function () {
-            return self.clients.matchAll()
-        })
-        .then(function (clients) {
-            clients.forEach(client => client.navigate(client.url))
-        })
-})
 
 
-
-
-
-
-
-
+/*
 workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/8dcefc7-540.webp', revision: 'abcd1234' },
     { url: '/_nuxt/img/d604ae9.webp', revision: 'abcd1234' },
@@ -27,6 +9,7 @@ workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/f1c895d-600.webp', revision: 'abcd1234' },
     { url: '/_nuxt/img/e670645-378.webp', revision: 'abcd1234' },
 ]);
+*/
 
 workbox.routing.registerRoute(
     /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
