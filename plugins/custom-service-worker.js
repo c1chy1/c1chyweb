@@ -11,7 +11,7 @@ workbox.precaching.precacheAndRoute([
 
 
 
-/*
+
 workbox.routing.registerRoute(
     /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
     new workbox.strategies.CacheFirst({
@@ -24,7 +24,7 @@ workbox.routing.registerRoute(
         ],
     })
 )
-*/
+
 
 workbox.routing.registerRoute(
     /\.(?:js|css|gz)$/,

@@ -57,7 +57,7 @@ export default {
           },
 
 
-          runtimeCaching: [{
+       /*   runtimeCaching: [{
                 urlPattern: /.(?:png|jpg|jpeg|svg|webp)$/,
 
 
@@ -72,7 +72,7 @@ export default {
                     },
                 },
 
-            },]
+            },]*/
 
         },
 
