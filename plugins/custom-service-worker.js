@@ -4,9 +4,8 @@
 
 
 
-navigator.serviceWorker.register
-(href = '/sw.js', { scope: '/' })
 
+/*
 
 workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/8dcefc7-540.webp', revision: 'abcd1234' },
@@ -35,6 +34,7 @@ workbox.routing.registerRoute(
         cacheName: 'static-resources',
     })
 )
+*/
 
 
 
