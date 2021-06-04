@@ -48,12 +48,13 @@ export default {
         },
         manifest: {
 
-            start_url: "https://c1chyweb.netlify.app/",
+            start_url: "/?standalone=true",
             name: 'c1chy.app',
             description: "My Frontend experience and projects",
             display: 'standalone',
             lang: 'de',
             theme_color: '#40635b',
+            backgroundColor: "#252328"
 
         },
 
