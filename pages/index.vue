@@ -39,7 +39,10 @@
        :height="logo.height"
 
        alt="c1chy"
+       class="logo lazyload  self-center relative w-10/12 sm:w-1/3 md:w-3/4  lg:w-1/3 xl:w-1/4 2xl:w-1/6
 
+
+        xl:top-12 relative z-50"
        :class="'animate__animated animate__tada animate__delay-8s animate__repeat-2'">
 
 
