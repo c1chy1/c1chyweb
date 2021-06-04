@@ -38,20 +38,6 @@ export default {
 
 <style scoped lang="scss">
 
-
-
-.light_background {
-
-
-
-
-
-}
-
-
-
-
-
 .light_background:before {
   content: "";
   position: absolute;
@@ -65,24 +51,7 @@ export default {
   background-size: cover;
   animation: rotate 120s infinite linear;
 
-
 }
-
-
-@media screen and (max-width: 640px ) {
-
-
-
-
-
-}
-
-
-
-
-
-
-
 
 @keyframes rotate {
 

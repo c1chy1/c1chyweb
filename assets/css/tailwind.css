@@ -809,7 +809,13 @@
 
     @screen 2xl {
 
+        .light_background:before {
 
+
+            background-image: url('~assets/graphic/light_background.png?sizes[]=1280&format=webp');
+
+
+        }
 
 
         .ribbon figcaption {
