@@ -68,6 +68,7 @@ export default {
                     cacheName: 'images',
                     expiration: {
                         maxEntries: 30,
+                        maxAgeSeconds: 30 * 24 * 60 * 60
                     },
                 },
 
