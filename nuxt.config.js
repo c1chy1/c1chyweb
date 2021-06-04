@@ -24,10 +24,10 @@ export default {
             name: 'c1chy.app',
             description: "My Frontend experience and projects",
             display: 'standalone',
-            lang: 'de-DE',
+            lang: 'de',
             theme_color: '#40635b',
-            background_color: "#252328"
-
+            background_color: "#252328",
+            scope: "/"
         },
 
         icon: {
