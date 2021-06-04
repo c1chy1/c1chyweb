@@ -43,8 +43,8 @@ export default {
 
         workboxPluginMode: 'InjectManifest',
         workboxOptions: {
-            swSrc: '~/static/sw.js',
-            swDest: '~/static/sw.js',
+            swSrc: '@/plugins/custom-service-worker.js',
+            swDest: '@/plugins/custom-service-worker.js',
         },
 
 
@@ -56,8 +56,8 @@ export default {
 
           workboxPluginMode: 'InjectManifest',
           workboxOptions: {
-              swSrc: '~/static/sw.js',
-              swDest: '~/static/sw.js',
+              swSrc: '@/plugins/custom-service-worker.js',
+              swDest: '@/plugins/custom-service-worker.js',
           },
 
             runtimeCaching: [{
