@@ -376,8 +376,8 @@
 
 <script>
 
-const logo = require('~/assets/graphic/logo.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
-const hat = require('~/assets/graphic/hat.png?sizes[]=150,sizes[]=300&format=webp');
+const logo = require('~/assets/graphic/logo.png?sizes[]=150,sizes[]=300&format=webp');
+const hat = require('~/assets/graphic/hat.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const body =require('~/assets/graphic/body.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const vintageMusic = require('~/assets/graphic/vintage_music.jpg?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const scumbag = require('~/assets/graphic/vintage_wolf.jpg?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
