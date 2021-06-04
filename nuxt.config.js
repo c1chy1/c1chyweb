@@ -49,6 +49,14 @@ export default {
 
         workboxExtensions: '@/plugins/custom-service-worker.js',
 
+
+          workboxPluginMode: 'InjectManifest',
+          workboxOptions: {
+              swSrc: '@/plugins/custom-service-worker.js',
+              swDest: '@/plugins/custom-service-worker.js',
+          },
+
+
           runtimeCaching: [{
                 urlPattern: /.(?:png|jpg|jpeg|svg|webp)$/,
 
