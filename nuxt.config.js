@@ -14,9 +14,6 @@ export default {
     pwa: {
 
 
-
-
-
         workbox: {
 
             workboxExtensions: '@/plugins/custom-service-worker.js',
@@ -45,7 +42,6 @@ export default {
         },
 
 
-
         meta: {
             title: 'c1chyApp',
             author: 'c1chy',
@@ -63,10 +59,13 @@ export default {
 
         icon: {
             /* icon options */
+
+
+            src: "~/static/icon.png",
+            type: "image/png",
+            sizes: [192, 512],
+
         },
-
-
-
 
     },
 
