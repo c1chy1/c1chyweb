@@ -207,7 +207,7 @@
 
     class="w-7/12 self-center p-5 lg:w-1/3   lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-center  text-xl md:text-4xl xl:text-3xl 2xl:text-5xl ">
+                class="text-center  text-xl md:text-4xl xl:text-3xl 2xl:text-5xl 2xl:mb-16 ">
               Strategie, Technologie, <br> App & Content </h2>
 
   <p
@@ -220,7 +220,7 @@
 
 
             <button
-               class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl"
+               class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl 2xl:mt-16"
                @click="toggleModal"
             >
               <span v-if="isShowing"
@@ -276,6 +276,7 @@
 
             <img
 
+                ref="vintageMusic"
                 class="lazyload opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/2 2xl:w-1/4"
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :src="vintageMusic.src"

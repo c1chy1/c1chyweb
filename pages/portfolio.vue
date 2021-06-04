@@ -40,7 +40,7 @@
 
     </div>
 
-    <section class="portfolio h-auto pb-8 overflow-hidden">
+    <section class="portfolio  min-h-screen pb-8 overflow-hidden">
 
       <div class="portfolio_case w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative"></span>
@@ -98,7 +98,7 @@
 
     </section>
 
-    <section id="my_projects" class="lg:-mb-8 overflow-x-hidden min-h-screen flex flex-col justify-between">
+    <section id="my_projects" class="lg:-mb-8 overflow-x-hidden flex flex-col justify-between">
 
       <div class="title-container flex flex-col justify-center items-center mt-0">
 
@@ -129,7 +129,7 @@
       </div>
 
 
-      <div class="container_projects w-full h-full min-h-50 mt-8 pb-10 flex justify-center items-center flex-col">
+      <div class="container_projects w-full h-full  mt-8 pb-10 flex justify-center items-center flex-col">
         <transition-group class="projects w-11/12  mb-8 mt-1 flex flex-wrap justify-around" name="projects">
           <div class="card w-116 h-52 mb-1 mt-5 flex-wrap justify-center overflow-hidden"
                v-if="currentFilter === project.category || currentFilter === 'ALL'"
