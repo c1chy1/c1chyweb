@@ -114,6 +114,9 @@ export default {
     build: {
         extractCSS: true,
 
+
+
+
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js|woff(2))$/)) {
@@ -177,7 +180,19 @@ export default {
         mode: 'production',
         optimization: {
             nodeEnv: 'production',
-            minimize: true
+            minimize: true,
+
+            splitChunks: {
+                cacheGroups: {
+                    styles: {
+                        name: 'styles',
+                        test: /\.(css|vue)$/,
+                        chunks: 'all',
+                        enforce: true
+                    }
+                }
+            }
+
         },
 
     },

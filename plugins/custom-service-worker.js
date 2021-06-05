@@ -19,7 +19,7 @@ workbox.routing.registerRoute(
         plugins: [
             new  workbox.expiration.ExpirationPlugin({
                 maxEntries: 60,
-                maxAgeSeconds: 30 * 24 * 60 * 60  , // 30 Days
+                maxAgeSeconds: 365 * 24 * 60 * 60  , // 30 Days
             }),
         ],
     })
@@ -27,7 +27,7 @@ workbox.routing.registerRoute(
 
 
 workbox.routing.registerRoute(
-    /\.(?:js|css|gz)$/,
+    /\.(?:js|css|gz|br)$/,
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'static-resources',
     })
