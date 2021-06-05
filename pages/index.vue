@@ -203,7 +203,7 @@
 
     class="w-7/12 self-center p-5 lg:w-1/3   lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-center  text-xl md:text-4xl xl:text-3xl 2xl:text-5xl 2xl:mb-16 ">
+                class="text-center  text-xl md:text-4xl xl:text-3xl 2xl:text-5xl 2xl:mb-24 ">
               Strategie, Technologie, <br> App & Content </h2>
 
   <p
@@ -228,7 +228,7 @@
   <transition name="fade">
   <div
 
-      v-if="isShowing" ref="modal" class="lazyload modal flex w-full" >
+      v-if="isShowing" ref="modal" class="lazyload modal flex w-full 2xl:mt-16" >
 
     <img
         class="lazyload"
@@ -239,7 +239,7 @@
         alt="vintage"
     >
 
-<article class="lazyload flex flex-row-reverse leading-snug">
+<article class="lazyload flex flex-row-reverse leading-snug ">
     <button
         ref="button"
         id="icon"
