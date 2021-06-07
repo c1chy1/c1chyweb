@@ -35,7 +35,7 @@ workbox.routing.registerRoute(
 
 
 workbox.routing.registerRoute(
-    /\.(?:js|css|gz|br)$/,
+    /\.(?:js|css|gz|br|woff2)$/,
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'static-resources',
     })
