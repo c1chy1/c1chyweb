@@ -10,7 +10,6 @@ export default {
 
     target: 'server',
 
-
     pwa: {
 
 
@@ -37,51 +36,15 @@ export default {
 
         },
 
-        workboxPluginMode: 'InjectManifest',
-        workboxOptions: {
-            swSrc: '@/plugins/custom-service-worker.js',
-            swDest: '@/plugins/custom-service-worker.js',
-        },
+
+        workbox: {
+
+            workboxExtensions: 'plugins/custom-service-worker.js',
 
 
 
-      workbox: {
+        },},
 
-        workboxExtensions: '@/plugins/custom-service-worker.js',
-
-
-          workboxPluginMode: 'InjectManifest',
-          workboxOptions: {
-              swSrc: '@/plugins/custom-service-worker.js',
-              swDest: '@/plugins/custom-service-worker.js',
-          },
-
-
-       /*   runtimeCaching: [{
-                urlPattern: /.(?:png|jpg|jpeg|svg|webp)$/,
-
-
-                handler: 'cacheFirst',
-
-                options: {
-
-                    cacheName: 'images',
-                    expiration: {
-                        maxEntries: 30,
-                        maxAgeSeconds: 30 * 24 * 60 * 60
-                    },
-                },
-
-            },]*/
-
-        },
-
-
-
-
-
-
-    },
 
     optimizeCSS: {
         cssProcessor: require('css-mqpacker'),
@@ -113,9 +76,6 @@ export default {
 
     build: {
         extractCSS: true,
-
-
-
 
         extend(config, {isDev, isClient}) {
             config.module.rules.forEach(rule => {

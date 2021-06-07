@@ -1,6 +1,14 @@
 
 
 
+// Start controlling any existing clients as soon as it activates
+workbox.core.clientsClaim()
+
+// Skip over the SW waiting lifecycle stage
+workbox.core.skipWaiting()
+
+workbox.precaching.cleanupOutdatedCaches()
+
 
 
 workbox.precaching.precacheAndRoute([
@@ -19,7 +27,7 @@ workbox.routing.registerRoute(
         plugins: [
             new  workbox.expiration.ExpirationPlugin({
                 maxEntries: 60,
-                maxAgeSeconds: 365 * 24 * 60 * 60  , // 30 Days
+                maxAgeSeconds: 30 * 24 * 60 * 60  , // 30 Days
             }),
         ],
     })
