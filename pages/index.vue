@@ -71,7 +71,7 @@
 
                 xl:w-1/2 2xl:w-1/3 filter-shadow-black ">
 
-          <figure class="ribbon flex bottom-12 absolute w-8/12 sm:justify-center md:w-1/2 xl:w-2/5 2xl:w-1/3  self-center filter-shadow-black z-10 ">
+          <figure class="ribbon flex bottom-20 absolute w-8/12 sm:justify-center md:w-1/2 xl:w-2/5 2xl:w-1/3 xl:bottom-12 self-center filter-shadow-black z-10 ">
 
 
             <img
@@ -333,7 +333,7 @@
         >
        <form
 
-
+           v-on:submit.prevent
               ref="form"
               id="form"
               class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-xl"
@@ -346,6 +346,7 @@
                 id="name"
                 class="w-4/5 h-8 mt-3 pl-1 border-2  text-xs  sm:text-xl rounded-xl sm:h-8  md:h-16 md:text-4xl  md-landscape:h-12  md-landscape:text-xl lg:text-3xl  xl:h-12 xl:text-xl"
                 placeholder="name"
+                autocomplete="off"
                 v-model="name"
             >
           </label>
@@ -356,6 +357,7 @@
                 type="email"
                 v-model="email"
                 placeholder="email"
+                autocomplete="off"
                 required
                 class="w-4/5 h-8 mt-3 pl-1   text-xs  sm:text-xl  border-2 rounded-xl sm:h-8
                     md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl
@@ -369,7 +371,7 @@
          <span
              id="emailErr"
 
-             class="absolute flex "
+             class="absolute flex hidden lg:flex"
 
              :class="{'animate__animated animate__bounceInLeft' : !isShowing}"
 
@@ -393,24 +395,16 @@
 
 
            <button
+                id="buttonSubmit"
                 type ="submit"
                 form="form"
                 value="submit"
                 v-model="button"
                 :class="button ? 'is_active' : ''"
-                @click.prevent="send"
+                @click="send"
                 v-bind:disabled="button"
-
-
-                class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24">
-
-
-
-
-
-
-
-              <span>Submit</span>
+                class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24 z-50">
+<span>Submit</span>
               <div class="success">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
 
@@ -1654,7 +1648,7 @@ div {
   }
 
 
-  .success{
+  .success {
     position: absolute;
     box-sizing: content-box;
     border: 3px solid #a1362b;;
@@ -1679,10 +1673,12 @@ div {
     display: inline-flex;
   }
 
-  .button_red.is_active{
+  .success.is_active{
     width: 20%;
 
   }
+
+
 
   .button_red.is_active .success{
     opacity: 1;
@@ -1698,7 +1694,10 @@ div {
     opacity: 0;
     visibility: hidden;
   }
-
+  button.button_red .is_active {
+    opacity: 0;
+    visibility: hidden;
+  }
 
 }
 

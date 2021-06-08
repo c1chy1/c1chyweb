@@ -189,6 +189,7 @@
                   id="name"
                   class="w-full h-12 mt-2 pl-1 text-2xl"
                   v-model="name"
+                  autocomplete="off"
                   :disabled="button"
                   :class="[button ? blurClass : '', bkClass]"
               >
@@ -201,6 +202,7 @@
                   id="email"
                   v-model="email"
                   class="w-full h-12 mt-2 pl-1 text-2xl "
+                  autocomplete="off"
                   :disabled="button"
                   :class="[button ? blurClass : '', bkClass]"
                   required
@@ -238,7 +240,6 @@
 
           <button
               type ="submit"
-              form="form"
               value="submit"
               v-model="button"
               :class="button ? 'is_active' : ''"
@@ -389,6 +390,7 @@ export default {
 
       })
 
+      document.getElementById("buttonSubmit").style.opacity = "0"
 
     },
 
