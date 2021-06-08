@@ -1658,7 +1658,7 @@ div {
     position: absolute;
     box-sizing: content-box;
     border: 3px solid #a1362b;;
-    top: -4.5rem;
+    top: -4rem;
     left: -0.2rem;
     width: 100%;
     background: #fff;
