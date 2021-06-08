@@ -582,15 +582,18 @@ return {
     send() {
 
 
-      this.button = true
-     this.$mail.send({
-        subject:this.name,
-        to:this.email,
-        html: `<b>Imię:</b> ${this.name}<br><b>Email:</b> ${this.email}<br><b>Wiadomość:</b> ${this.message}`
 
-      })
+      if (this.email !== "")  {
 
+        this.button = true
+        this.$mail.send({
+          subject:this.name,
+          to:this.email,
+          html: `<b>Imię:</b> ${this.name}<br><b>Email:</b> ${this.email}<br><b>Wiadomość:</b> ${this.message}`
 
+        })
+
+      }
     },
 
 
@@ -889,14 +892,9 @@ return {
 <style scoped lang="scss">
 
 
-
-
-
-
 .bk {
   transition: all 0.3s ease-out;
 }
-
 
 
 .blur {
