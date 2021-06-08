@@ -179,7 +179,7 @@
           <p class="lg:text-xl 2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
 
           <form
-
+              v-on:submit.prevent
               ref="form"
               class="flex flex-col">
             <label>
@@ -243,7 +243,7 @@
               value="submit"
               v-model="button"
               :class="button ? 'is_active' : ''"
-              @click.prevent="send"
+              @click="send"
               v-bind:disabled="button"
 
 
