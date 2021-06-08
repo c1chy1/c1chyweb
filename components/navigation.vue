@@ -4,7 +4,11 @@
 
     <button class="toggle m-2 absolute">
 
-      <input type="checkbox" v-model="checked" name="button" id="button" @click="toggle">
+      <input type="checkbox"
+             v-model="checked"
+             name="button"
+             id="button"
+             @click="toggle">
       <label class="bevel " for="button">MENU</label>
     </button>
 

@@ -328,35 +328,101 @@
 </div>
         </article>
 
+
         <div class="w-full sm:self-center z-0  2xl:self-end "
         >
-          <form
+       <form
+
 
               ref="form"
               id="form"
               class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-xl"
-              v-on:submit={getFormValues}
           >
             <label for="name" class="w-full text-center">
             <input
+                :disabled="button"
+                :class="[button ? blurClass : '', bkClass]"
                 type="text"
                 id="name"
                 class="w-4/5 h-8 mt-3 pl-1 border-2  text-xs  sm:text-xl rounded-xl sm:h-8  md:h-16 md:text-4xl  md-landscape:h-12  md-landscape:text-xl lg:text-3xl  xl:h-12 xl:text-xl"
                 placeholder="name"
+                v-model="name"
             >
           </label>
-            <label for="email" class="w-full text-center">
-            <input type="email" id="email" placeholder="email"
-                   class="w-4/5 h-8 mt-3 pl-1   text-xs  sm:text-xl  border-2 rounded-xl sm:h-8  md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl  lg:mb-5 lg:text-3xl xl:h-12 xl:text-xl" >
+          <label for="email" class="w-full text-center">
+            <input
+                id="email"
+                name="email"
+                type="email"
+                v-model="email"
+                placeholder="email"
+                required
+                class="w-4/5 h-8 mt-3 pl-1   text-xs  sm:text-xl  border-2 rounded-xl sm:h-8
+                    md:h-16 md:text-4xl md-landscape:h-12  md-landscape:text-xl
+                     lg:mb-5 lg:text-3xl xl:h-12 xl:text-xl "
+                :disabled="button"
+                :class="[button ? blurClass : '', bkClass]"
+            >
            </label>
+
+<transition :leave-active-class="'animate__bounceOutDown'">
+         <span
+             id="emailErr"
+
+             class="absolute flex "
+
+             :class="{'animate__animated animate__bounceInLeft' : !isShowing}"
+
+             ref="spanEmail"
+             v-if="msg.email">
+
+           <b class=" w-full self-center text-center text-2xl">{{msg.email}}</b></span>
+
+</transition>
+
             <label for="message" class="w-full text-center">
-            <textarea id="message" placeholder="message"
-                      class="w-4/5 h-auto mt-3 pl-1 text-xs sm:text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-xl" > </textarea>
+            <textarea
+                id="message"
+                v-model="message"
+                placeholder="message"
+                class="w-4/5 h-auto mt-3 pl-1 text-xs sm:text-xl resize-none border-2 rounded-xl  md:text-4xl  md-landscape:text-xl  lg:h-64 lg:mb-5 lg:text-3xl xl:text-xl"
+                :disabled="button"
+                :class="[button ? blurClass : '', bkClass]"
+            > </textarea>
             </label>
 
-            <button type ="submit" form="form" value="submit" class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24">SEND</button>
+
+           <button
+                type ="submit"
+                form="form"
+                value="submit"
+                v-model="button"
+                :class="button ? 'is_active' : ''"
+                @click.prevent="send"
+                v-bind:disabled="button"
+
+
+                class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24">
+
+
+
+
+
+
+
+              <span>Submit</span>
+              <div class="success">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+
+	<path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"/>
+ </svg>
+              </div></button>
 
           </form>
+
+
+
+
 
         </div>
 
@@ -407,15 +473,26 @@ export default {
 
   data() {
 
-
 return {
 
+
       logo,hat,body,scumbag,vintageMusic,walkman,
+
+
+
+
+    message: '',
+    name: '',
+    email: '',
+    html: '',
+    msg: [],
+
 
 
       bkClass: 'bk',
       blurClass: 'blur',
 
+      button : false,
       loading: false,
       isShowing: false,
       options: {
@@ -432,13 +509,39 @@ return {
         css3: true,
         slidesNavigation:false,
       },
+}},
+
+
+
+  watch: {
+    email(value){
+
+      this.email = value;
+      this.validateEmail(value);
     }
   },
 
 
 
-
   methods: {
+
+    validateEmail(value){
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value))
+      {
+        document.querySelector("#email").style.borderColor = "#4f7b70"
+
+        this.msg['email'] = '';
+
+      } else{
+
+        document.querySelector("#email").style.borderColor = "#a1362b"
+
+        this.msg['email'] = "BAD E-MAIL"
+
+
+
+      }
+    },
 
 
     toggleModal() {
@@ -479,6 +582,22 @@ return {
     },
 
 
+
+
+
+    send() {
+
+
+      this.button = true
+     this.$mail.send({
+        subject:this.name,
+        to:this.email,
+        html: `<b>Imię:</b> ${this.name}<br><b>Email:</b> ${this.email}<br><b>Wiadomość:</b> ${this.message}`
+
+      })
+
+
+    },
 
 
     afterLoad: function animation(origin, destination, direction) {
@@ -732,7 +851,7 @@ return {
 
             {
               opacity: 0,
-
+              promiseRejectEmpty:false,
             },
             {
               begin: () => {
@@ -753,12 +872,10 @@ return {
     },
 
 
-    getFormValues (submitEvent) {
-      this.name = submitEvent.target.elements.name.value
-    },
-
 
 },
+
+
 
 
   mounted() {
@@ -779,13 +896,18 @@ return {
 
 
 
+
+
+
 .bk {
   transition: all 0.3s ease-out;
 }
 
+
+
 .blur {
-  filter: blur(1px);
-  opacity: 0.4;
+  filter: blur(2px);
+  opacity: 0.6;
 }
 
 #fullpage {
@@ -1451,6 +1573,13 @@ div {
     font-family: 'Merriweather',sans-serif;
     background-image: url("~assets/graphic/exclusive-paper.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000&format=webp");
     background-color: #faebd7;
+
+
+   &:focus {
+
+      border-color: #4f7b70;
+
+    }
   }
 
 
@@ -1509,6 +1638,66 @@ div {
 
   }
 
+  #emailErr {
+
+
+    height: 10%;
+    width: 30%;
+    background-color: #a1362b;
+
+
+    b {
+
+     color: #e6c8a0;
+      font-family: Merriweather, sans-serif;
+    }
+  }
+
+
+  .success{
+    position: absolute;
+    box-sizing: content-box;
+    border: 3px solid #a1362b;;
+    top: -4.5rem;
+    left: -0.2rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s;
+  }
+
+  .success svg{
+    width: 50%;
+
+    fill: yellowgreen;
+    transform-origin: 50% 50%;
+    transform: translateY(-50%) rotate(720deg) scale(1);
+    transition: all .35s;
+    display: inline-flex;
+  }
+
+  .button_red.is_active{
+    width: 20%;
+
+  }
+
+  .button_red.is_active .success{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .button_red.is_active .success svg{
+    margin-top: 50%;
+    transform: translateY(-50%) rotate(720deg) scale(1);
+  }
+
+  .button_red.is_active span{
+    opacity: 0;
+    visibility: hidden;
+  }
 
 
 }

@@ -176,22 +176,96 @@
         >
           <h2 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center  lg:text-xl 2xl:text-3xl font-semibold uppercase">
             LET ME KNOW!</h2>
-          <p class="lg:text-xl   2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
-          <form class="flex flex-col">
+          <p class="lg:text-xl 2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
+
+          <form
+
+              ref="form"
+              class="flex flex-col">
             <label>
-              <input placeholder="Name*" class="w-full h-12 mt-2 pl-1 text-2xl">
+              <input
+                  type="text"
+                  placeholder="Name*"
+                  id="name"
+                  class="w-full h-12 mt-2 pl-1 text-2xl"
+                  v-model="name"
+                  :disabled="button"
+                  :class="[button ? blurClass : '', bkClass]"
+              >
             </label>
             <label>
-              <input placeholder="Email*" class="w-full h-12 mt-2 pl-1 text-2xl ">
+              <input
+                  type="email"
+                  placeholder="Email*"
+                  name="email"
+                  id="email"
+                  v-model="email"
+                  class="w-full h-12 mt-2 pl-1 text-2xl "
+                  :disabled="button"
+                  :class="[button ? blurClass : '', bkClass]"
+                  required
+              >
             </label>
+
+
+            <transition :leave-active-class="'animate__bounceOutDown'">
+         <span
+             id="emailErr"
+
+             class="absolute flex "
+
+             :class="{'animate__animated animate__bounceInLeft' : !isShowing}"
+
+             ref="spanEmail"
+             v-if="msg.email">
+
+           <b class=" w-full self-center text-center text-2xl">{{msg.email}}</b></span>
+
+            </transition>
+
             <label>
-              <textarea placeholder="Your message" class="w-full h-32 pl-1 mt-2 block text-2xl resize-none"></textarea>
+              <textarea
+                  placeholder="Your message"
+                  id="message"
+                  v-model="message"
+                  class="w-full h-32 pl-1 mt-2 block text-2xl resize-none"
+                  :disabled="button"
+                  :class="[button ? blurClass : '', bkClass]"
+              ></textarea>
             </label>
           </form>
 
-          <a href="#"
-             class="button_red w-1/3 self-center xl:w-1/2 xl:p-2 "
-          >SEND</a>
+
+          <button
+              type ="submit"
+              form="form"
+              value="submit"
+              v-model="button"
+              :class="button ? 'is_active' : ''"
+              @click.prevent="send"
+              v-bind:disabled="button"
+
+
+              class="button_red text-center w-1/3 self-center xl:w-1/2 xl:p-2 ">
+
+
+
+
+
+
+            <span>Submit</span>
+            <div class="success">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+
+	<path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"/>
+ </svg>
+            </div></button>
+
+
+
+
+
+
         </article>
 
         <article class="w-1/3 p-10 mb-10">
@@ -253,15 +327,72 @@ export default {
     return {
 
       sick,
+
+      message: '',
+      name: '',
+      email: '',
+      html: '',
+      msg: [],
+
+
       bkClass: 'bk',
       blurClass: 'blur',
+      button : false,
       isShowing: false,
     }
 
 
   },
 
+
+  watch: {
+    email(value){
+
+      this.email = value;
+      this.validateEmail(value);
+    }
+  },
+
+
+
   methods: {
+
+
+    validateEmail(value){
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value))
+      {
+        document.querySelector("#email").style.borderColor = "#4f7b70"
+
+        this.msg['email'] = '';
+
+      } else{
+
+        document.querySelector("#email").style.borderColor = "#a1362b"
+
+        this.msg['email'] = "BAD E-MAIL"
+
+
+
+      }
+    },
+
+
+
+    send() {
+
+
+      this.button = true
+      this.$mail.send({
+        subject:this.name,
+        to:this.email,
+        html: `<b>Imię:</b> ${this.name}<br><b>Email:</b> ${this.email}<br><b>Wiadomość:</b> ${this.message}`
+
+      })
+
+
+    },
+
+
 
     toggleModal() {
       document.querySelector('.bg_stars').scrollIntoView({behavior: 'smooth'});
@@ -306,9 +437,97 @@ export default {
 
     fullpage_api.destroy('all')
 }}
+
 </script>
 
 <style scoped lang="scss">
+
+
+
+
+#emailErr {
+
+
+  height: 8%;
+  width: 82%;
+  background-color: #a1362b;
+
+
+  b {
+
+    color: #e6c8a0;
+    font-family: Merriweather, sans-serif;
+  }
+}
+
+
+.success{
+  position: absolute;
+  box-sizing: content-box;
+  border: 3px solid #a1362b;
+  top: -2rem;
+  left: -0.5rem;
+  width: 110%;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .35s;
+}
+
+.success svg{
+  width: 50%;
+
+  fill: yellowgreen;
+  transform-origin: 50% 50%;
+  transform: translateY(-50%) rotate(720deg) scale(1);
+  transition: all .35s;
+  display: inline-flex;
+}
+
+.button_red.is_active{
+  width: 25%;
+
+}
+
+.button_red.is_active .success{
+  opacity: 1;
+  visibility: visible;
+}
+
+.button_red.is_active .success svg{
+  margin-top: 50%;
+  transform: translateY(-50%) rotate(720deg) scale(1);
+}
+
+.button_red.is_active span{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -647,12 +866,6 @@ div.modal {
   top: 31px;
   transform: rotate(45deg);
 }
-
-
-
-
-
-
 
 
 header {

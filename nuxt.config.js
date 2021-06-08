@@ -198,6 +198,23 @@ export default {
 
     modules: [
 
+
+
+        ['@nuxtjs/axios'],
+
+        ['nuxt-mail', {
+            message: {
+                to: 'cichy08081987pp@gmail.com',
+            },
+            smtp: {
+                host: 'smtp.gmail.com',
+                port: "587",
+                auth: {
+                    user: 'cichy08081987pp@gmail.com',
+                    pass: 'Coca12345!'
+                },
+            },
+        }],
         ['@nuxtjs/pwa'],
         ['@nuxtjs/tailwindcss'],
         ['nuxt-font-loader'],
