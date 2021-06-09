@@ -302,7 +302,7 @@ export default {
         {
           title: "Old Portfolio",
           image: "https://c1chy.lima-city.de/graphic/c1chy_old.png",
-          link: "https://c1chy.de/",
+          link: "https://web300421.roc130.rockinghoster.cloud/c1chy.old/index.html",
           technology: "PURE CSS",
           secondTechnology: "PORTFOLIO",
           category: 'WEBPACK',
