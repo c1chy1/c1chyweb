@@ -403,7 +403,7 @@
                 :class="button ? 'is_active' : ''"
                 @click="send"
                 v-bind:disabled="button"
-                class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-32 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24 z-50">
+                class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-32 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24 z-50 cursor-pointer">
 <span>Submit</span>
               <div class="success">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
