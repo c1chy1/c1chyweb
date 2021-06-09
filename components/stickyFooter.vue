@@ -23,22 +23,22 @@
 
 
   <ul class="hidden w-1/2 h-12  pt-2 flex  justify-evenly self-center flex-wrap sm:hidden lg:hidden xl:flex xl:block xl:10/12 2xl:w-1/2">
-    <li  @click.prevent="toTop" >
-      <NuxtLink to="/" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl ">
+    <li  @click.prevent="toTop"  class="cursor-pointer">
+      <NuxtLink to="/" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle xl:max-w-full xl:text-xs 2xl:text-xl ">
         Home</NuxtLink>
     </li>
-    <li @click.prevent="toTop">
-      <NuxtLink to="/aboutme" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
+    <li @click.prevent="toTop" class="cursor-pointer">
+      <NuxtLink to="/aboutme" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle xl:max-w-full xl:text-xs 2xl:text-xl">
         About Me</NuxtLink>
     </li>
 
 
-    <li @click.prevent="toTop">
-      <NuxtLink to="/portfolio" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl">
+    <li @click.prevent="toTop" class="cursor-pointer">
+      <NuxtLink to="/portfolio" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle xl:max-w-full xl:text-xs 2xl:text-xl">
         Portfolio</NuxtLink>
     </li>
-    <li @click.prevent="toTop">
-      <NuxtLink to="/contact" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle cursor-pointer xl:max-w-full xl:text-xs 2xl:text-xl" prefetch>
+    <li @click.prevent="toTop" class="cursor-pointer">
+      <NuxtLink to="/contact" class="box curmudgeon flex justify-center items-center  w-36 h-16 relative  text-xl text-center text-white align-middle xl:max-w-full xl:text-xs 2xl:text-xl" prefetch>
         Contact</NuxtLink>
     </li>
   </ul>
