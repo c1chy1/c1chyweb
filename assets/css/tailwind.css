@@ -12,8 +12,9 @@
         padding: 0;
         box-sizing: border-box;
 
-    }
 
+
+    }
 
     *:focus {
         outline: 0;
@@ -26,6 +27,7 @@
 
     *, :hover, :focus, :active, :visited {
         outline: none;
+
     }
 
 
@@ -36,6 +38,29 @@
         word-spacing: 0.06em;
         letter-spacing: 0.04em;
         background-color: #252328;
+
+    }
+
+    .cursor-pointer {
+
+
+
+        cursor: url(./static/pointer_cursor.png),pointer;
+
+    }
+
+    .cursor-pointer:active {
+
+
+
+        cursor: url(./static/bang_cursor.png),pointer;
+
+    }
+
+    .cursor-default {
+
+        cursor: url(./static/default_cursor.png),default;
+
     }
 
 
@@ -354,11 +379,6 @@
 
         border-width: 12px;
 
-    }
-
-    .cursor-pointer {
-
-        cursor: pointer;
     }
 
     #fp-nav {
@@ -736,6 +756,7 @@
 
 
             right: 10px;
+            cursor: default;
         }
 
         #fp-nav {
@@ -753,6 +774,15 @@
             transition: all 0.3s ease-in-out !important;
             background: white!important;
         }
+
+
+        #fp-nav ul li, .fp-slidesNav ul li {
+               display: block;
+               width: 25px;
+               height: 65px !important;
+               margin: 5px !important;
+               position: relative;
+           }
 
 
         #fp-nav ul li, .fp-slidesNav ul li {

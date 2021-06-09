@@ -1,7 +1,10 @@
 <template lang="html">
 
 <client-only>
-    <section  class="w-full h-screen relative">
+
+
+
+    <section  class="w-full h-screen relative cursor-default">
 
 
 
@@ -16,6 +19,9 @@
 <script>
 
 
+
+
+
 import navigation from "~/components/navigation";
 
 import "default-passive-events";
@@ -23,7 +29,6 @@ import "default-passive-events";
 
 export default {
   components:  {navigation},
-
 
 }
 
@@ -42,6 +47,5 @@ section  {
 
 
 }
-
 
 </style>

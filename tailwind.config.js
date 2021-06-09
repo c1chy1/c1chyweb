@@ -7,6 +7,7 @@ module.exports = {
   corePlugins: {
     float: false,
     animation: false,
+    cursor: false,
   },
   tailwindcss: {
 

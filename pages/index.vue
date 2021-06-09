@@ -39,7 +39,7 @@
        :height="logo.height"
 
        alt="c1chy"
-       class="logo lazyload  self-center relative  sm:w-1/3 md:w-7/12 lg:w-1/3 2xl:w-1/4  z-50"
+       class="logo lazyload self-center relative  sm:w-1/3 md:w-7/12 lg:w-1/3 2xl:w-1/4  z-50"
        :class="'animate__animated animate__tada animate__delay-8s animate__repeat-2'">
 
 
@@ -216,7 +216,7 @@
 
 
             <button
-               class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl 2xl:mt-16"
+               class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl 2xl:mt-16 cursor-pointer"
                @click="toggleModal"
             >
               <span v-if="isShowing"
@@ -336,9 +336,9 @@
            v-on:submit.prevent
               ref="form"
               id="form"
-              class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-xl"
+              class="lazyload opacity-0 w-full h-full flex flex-col justify-start items-center text-xl sm:justify-center md:justify-start lg:justify-center xl:justify-center xl:text-xl "
           >
-            <label for="name" class="w-full text-center">
+            <label for="name" class="w-full text-center cursor-default">
             <input
                 :disabled="button"
                 :class="[button ? blurClass : '', bkClass]"
@@ -350,7 +350,7 @@
                 v-model="name"
             >
           </label>
-          <label for="email" class="w-full text-center">
+          <label for="email" class="w-full text-center cursor-default">
             <input
                 id="email"
                 name="email"
@@ -382,7 +382,7 @@
 
 </transition>
 
-            <label for="message" class="w-full text-center">
+            <label for="message" class="w-full text-center cursor-default">
             <textarea
                 id="message"
                 v-model="message"
@@ -403,7 +403,7 @@
                 :class="button ? 'is_active' : ''"
                 @click="send"
                 v-bind:disabled="button"
-                class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-20 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24 z-50">
+                class="button_red text-center px-4 py-2 mt-4 relative sm:mt-2 sm:ml-10 sm:self-start md:w-32 md:self-center md:text-2xl 2xl:w-40 2xl:self-stretch 2xl:ml-24 z-50">
 <span>Submit</span>
               <div class="success">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
@@ -531,8 +531,6 @@ return {
         document.querySelector("#email").style.borderColor = "#a1362b"
 
         this.msg['email'] = "BAD E-MAIL"
-
-
 
       }
     },
@@ -890,6 +888,8 @@ return {
 </script>
 
 <style scoped lang="scss">
+
+
 
 
 .bk {

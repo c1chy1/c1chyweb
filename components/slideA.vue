@@ -12,7 +12,7 @@
         <img
 
             :data-src="require('~/assets/graphic/logo_nav.png?webp')"
-            class="lazyload h-20 w-20"
+            class="lazyload h-20 w-20 cursor-pointer"
             alt="c1chy"
         >
 
@@ -57,7 +57,16 @@ export default {
 
     }
 
+    @keyframes rotate {
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
   }
 }
+
+
 
 </style>

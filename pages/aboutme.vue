@@ -1,6 +1,6 @@
 <template>
 
-  <section class="h-screen w-full absolute z-10">
+  <section class="h-screen w-full absolute z-10 cursor-default">
 
 
     <header class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto  relative overflow-hidden">
@@ -30,7 +30,7 @@
                 alt="ribbon"
                  class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
             <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
-              <NuxtLink to="/">Home</NuxtLink>
+              <NuxtLink to="/" class="cursor-pointer">Home</NuxtLink>
               > About Me
             </figcaption>
           </figure>
@@ -219,7 +219,7 @@
             <button
                 ref="button"
                 id="icon"
-                class="Icon relative self-end mt-6 right-4"
+                class="Icon relative self-end mt-6 right-4 cursor-pointer"
                 @click="closeModal">
 
 
@@ -257,7 +257,7 @@
         >Das Internet ist groß und bunt. Hier gibt es keine Standard-Lösung, sondern es sind immer individuelle Ansätze gefragt. Ich finde für meine Kunden neue Ideen und Konzepte, die wir engagiert und mit dem nötigen Know-how umsetzen.Websites, die nicht auf Smartphones oder Tablets angezeigt werden können, sperren sich einem stetig wachsenden Markt. Mit Responsive Design mache ich Webseiten fit für den Einsatz immer und überall.</p>
 
         <button
-           class="button_red fade lg:hidden 2xl:block"
+           class="button_red fade lg:hidden 2xl:block cursor-pointer"
                 @click="toggleModal">
         <span v-if="isShowing">HIDE</span>
         <span v-else>SHOW</span>
@@ -359,7 +359,7 @@
 
             <p class="w-2/3 m-auto text-2xl">Mein erster Schritt in jedem Projekt: Ihre Bedürfnisse, Wünsche und Erwartungen nachvollziehen – und die Ihrer User.</p>
             <a href="#"
-               class="button_red inline-block fade uppercase"
+               class="button_red inline-block fade uppercase cursor-pointer"
             >Lern Mehr
 
             </a>
@@ -379,7 +379,7 @@
                  alt="Entwickeln Frontend">
             <p class="w-2/3 m-auto text-2xl">Auf dieser Grundlage ermittle ich mögliche Lösungswege und entwerfe erste konkrete Ansätze. </p>
             <a href="#"
-               class="button_red inline-block fade uppercase"
+               class="button_red inline-block fade uppercase cursor-pointer"
 
             >Lern Mehr</a>
 
@@ -400,7 +400,7 @@
             >
             <p class="w-2/3 m-auto mb-4 text-2xl">Ich stimme meine Ideen mit Ihnen ab. Ich übertrage den geplanten Maßnahmen und beginne mit der technischen Umsetzung.</p>
             <a href="#"
-               class="button_red inline-block fade uppercase"
+               class="button_red inline-block fade uppercase cursor-pointer"
 
             >Lern Mehr</a>
 
@@ -796,7 +796,6 @@ div.modal {
 
     transform: rotate(0deg);
     transition: .5s ease-in-out;
-    cursor: pointer;
   }
 
   .Icon span {
@@ -996,7 +995,6 @@ header {
         background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
         -webkit-transform: skewX(-25deg);
         transform: skewX(-25deg);
-        cursor: pointer;
 
       }
 
@@ -1012,7 +1010,6 @@ header {
         border: 25px solid rgb(194, 213, 180);
         padding: 5px;
         border-image: url(~assets/graphic/portfolio-points.png?webp) 20% round;
-        cursor: pointer;
       }
     }
 
@@ -1257,6 +1254,12 @@ article {
 
     }
 
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
   }
 }
 

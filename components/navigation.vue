@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="fixed w-full z-20 mt-3 hidden md:visible lg:hidden  xl:block">
+  <nav class="fixed cursor-pointer w-full z-20 mt-3 hidden md:visible lg:hidden  xl:block">
 
     <button class="toggle m-2 absolute">
 
@@ -9,16 +9,16 @@
              name="button"
              id="button"
              @click="toggle">
-      <label class="bevel " for="button">MENU</label>
+      <label class="bevel cursor-pointer" for="button">MENU</label>
     </button>
 
-    <div id="nav" class="slidein h-16 w-full w-max z-10 nav text-center flex fixed bg-center bg-repeat 2xl:w-full"
+    <div id="nav" class="slidein h-16 w-full w-max z-10 nav text-center flex fixed bg-center bg-repeat 2xl:w-full cursor-default"
          :class="open ? 'open' : ''">
 
 
       <ul class="w-full h-12 px-16 flex justify-evenly self-center flex-wrap ">
         <li @click.prevent="toTop">
-          <NuxtLink to="/" class="text-2xl spin circle" prefetch>Home</NuxtLink>
+          <NuxtLink to="/" class="text-2xl spin circle cursor-pointer" prefetch>Home</NuxtLink>
         </li>
         <li @click.prevent="toTop"
         >
@@ -36,10 +36,10 @@
         </li>
 
         <li @click.prevent="toTop">
-          <NuxtLink to="/portfolio" class="text-2xl spin circle" prefetch>Portfolio</NuxtLink>
+          <NuxtLink to="/portfolio" class="text-2xl spin circle cursor-pointer" prefetch>Portfolio</NuxtLink>
         </li>
         <li @click.prevent="toTop">
-          <NuxtLink to="/contact" class="text-2xl spin circle" prefetch>Contact</NuxtLink>
+          <NuxtLink to="/contact" class="text-2xl spin circle cursor-pointer" prefetch>Contact</NuxtLink>
         </li>
       </ul>
 
@@ -171,10 +171,6 @@ $buttonHeight: 54;
 
 input {
   display: none;
-}
-
-label {
-  cursor: pointer;
 }
 
 .bevel {

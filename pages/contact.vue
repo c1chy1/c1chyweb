@@ -30,7 +30,7 @@
             alt="ribbon"
             class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
         <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center ">
-          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/" class="cursor-pointer">Home</NuxtLink>
           > Contact
         </figcaption>
       </figure>
@@ -77,7 +77,7 @@
                   <button
                       ref="button"
                       id="icon"
-                      class="Icon relative right-2"
+                      class="Icon relative right-2 cursor-pointer"
                       @click="closeModal">
 
 
@@ -103,7 +103,7 @@
 
             <button
                 id="aos-space"
-                class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3"
+                class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3 cursor-pointer"
                @click="toggleModal"
             >Lern Mehr</button>
           </div>
@@ -161,7 +161,6 @@
           <ul class="mt-6  lg:text-xl 2xl:text-3xl text-center ">
             <li>58511 Lüdenscheid,</li>
             <li>Märkischer Kreis, NRW</li>
-            <li><a href="mailto:cichy08081987pp@gmail.com" class="inline">cichy08081987pp@gmail.com</a></li>
           </ul>
 
         </article>
@@ -194,7 +193,7 @@
                   :class="[button ? blurClass : '', bkClass]"
               >
             </label>
-            <label>
+            <label for="email" >
               <input
                   type="email"
                   placeholder="Email*"
@@ -247,7 +246,7 @@
               v-bind:disabled="button"
 
 
-              class="button_red text-center w-1/3 self-center xl:w-1/2 xl:p-2 ">
+              class="button_red text-center w-1/3 self-center xl:w-1/2 xl:p-2 cursor-pointer">
 
 
 
@@ -817,7 +816,7 @@ div.modal {
   position: relative;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
-  cursor: pointer;
+
 }
 
 .Icon span {

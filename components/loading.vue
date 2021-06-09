@@ -1,7 +1,7 @@
 <template>
 <section v-if="loading"
 >
-  <div id="hola" ref="hola">
+  <div id="hola" ref="hola" class="cursor-default">
     <div id="preloader" ref="preloader">
       <span></span>
       <span></span>
@@ -102,15 +102,10 @@ export default {
 
   },
 
-
-
 }
 </script>
 
 <style lang="scss">
-
-
-
 
 
 .opacity {
