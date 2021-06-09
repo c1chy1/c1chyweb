@@ -320,7 +320,7 @@ export default {
         {
           title: "New Portfolio",
           image: "https://c1chy.lima-city.de/graphic/nuxtportfolio.png",
-          link: "https://c1chy.lima-city.de/Food/index.html",
+          link: "https://c1chy.eu",
           technology: "NUXT.vue",
           secondTechnology: "TAILWIND CSS",
           category: 'VUE',
