@@ -32,7 +32,7 @@
 
    <img
 
-       :data-src="require('~/assets/graphic/logo.png')"
+       :data-src="require('~/assets/graphic/logo.png?webp')"
        :srcset="logo.srcSet"
        :src="logo.src"
        :width="logo.width"
