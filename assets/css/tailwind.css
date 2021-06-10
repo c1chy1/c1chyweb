@@ -410,6 +410,14 @@
     }
 
 
+
+    [data-anchor="page1"] {
+
+        background-image: url("~assets/graphic/bg_green.png?sizes[]=600&format=webp");
+
+
+    }
+
     [data-anchor="page3"]:before {
 
 
@@ -649,6 +657,14 @@
     @screen xl {
 
 
+
+
+        [data-anchor="page1"] {
+
+            background-image: url("~assets/graphic/bg_green.png?sizes[]=1080&format=webp");
+
+
+        }
 
         .light_background:before {
 

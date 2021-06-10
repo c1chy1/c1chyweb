@@ -1002,7 +1002,7 @@ div p, li, a {
 
 [data-anchor="page1"] {
 
-  background-image: url("~assets/graphic/bg_green.png?webp");
+
   box-shadow: inset 0 1px 30px 30px #fafafa40;
   visibility: inherit;
 

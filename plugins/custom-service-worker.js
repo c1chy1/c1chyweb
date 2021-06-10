@@ -12,8 +12,28 @@ workbox.precaching.cleanupOutdatedCaches()
 
 
 workbox.precaching.precacheAndRoute([
-    { url: '/_nuxt/img/8dcefc7-540.webp', revision: 'abcd1234' },
-    { url: '/_nuxt/img/d604ae9.webp', revision: 'abcd1234' },
+    { url: '/_nuxt/img/8dcefc7-540.webp', revision: 'light-desktop' },
+    { url: '/_nuxt/img/d604ae9.webp', revision: 'bg-desktop' },
+    { url: '/_nuxt/img/87ad976.webp', revision: 'exclusive-paper' },
+    { url: '/_nuxt/img/609d61f-300.webp', revision: 'exclusive-paper-300' },
+    { url: '/_nuxt/img/776f6b4.png', revision: 'cursor-default' },
+    { url: '/_nuxt/img/b8e9fe9.png', revision: 'cursor-bang' },
+    { url: '/_nuxt/img/e890c41.png', revision: 'cursor-pointer' },
+    { url: '/_nuxt/img/ec1323b.webp', revision: 'hat' },
+    { url: '/_nuxt/img/7418a7e-384.webp', revision: 'hat-384' },
+    { url: '/_nuxt/img/1825833-150.webp', revision: 'hat-150' },
+
+
+
+    { url: '/_nuxt/img/87ad976.webp', revision: 'exclusive-paper' },
+    { url: '/_nuxt/img/87ad976.webp', revision: 'exclusive-paper' },
+    { url: '/_nuxt/img/87ad976.webp', revision: 'exclusive-paper' },
+    { url: '/_nuxt/img/87ad976.webp', revision: 'exclusive-paper' },
+    { url: '/_nuxt/img/87ad976.webp', revision: 'exclusive-paper' },
+    { url: '/_nuxt/img/87ad976.webp', revision: 'exclusive-paper' },
+
+
+
 ]);
 
 
