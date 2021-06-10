@@ -52,7 +52,7 @@
               :height="hat.height"
 
               alt="rainbow balloon"
-               class="hat lazyload relative self-center w-3/5  sm:w-2/12  md:w-8/12  lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
+               class="hat lazyload relative self-center w-3/5  sm:w-2/12  md:w-1/3  lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
           >
           <img
 
