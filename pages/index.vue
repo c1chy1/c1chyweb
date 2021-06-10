@@ -57,7 +57,7 @@
           <img
 
 
-              :data-src="require('~/assets/graphic/body.png')"
+              :data-src="require('~/assets/graphic/body.png?webp')"
               :srcSet="body.srcSet"
               :src="body.src"
               :width="body.width"
