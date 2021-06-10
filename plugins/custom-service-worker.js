@@ -11,6 +11,7 @@ workbox.precaching.cleanupOutdatedCaches()
 
 
 
+/*
 workbox.precaching.precacheAndRoute([
 
     { url: '/_nuxt/img/6f74aac-250.webp', revision: 'light-sm' },
@@ -22,8 +23,6 @@ workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/d26e04e-150.webp', revision: 'logo-small' },
     { url: '/_nuxt/img/3e6bbea-400.webp', revision: 'logo-mid' },
 
-
-    { url: '/_nuxt/img/d76ae5c.webp', revision: 'logo-desktop' },
     { url: '/_nuxt/img/ec1323b.webp', revision: 'hat' },
     { url: '/_nuxt/img/7418a7e-384.webp', revision: 'hat-384' },
     { url: '/_nuxt/img/1825833-150.webp', revision: 'hat-150' },
@@ -32,6 +31,7 @@ workbox.precaching.precacheAndRoute([
     { url: '/_nuxt/img/f1c895d-600.webp', revision: 'body-650' },
 
 ]);
+*/
 
 
 
