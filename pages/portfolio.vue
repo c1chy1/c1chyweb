@@ -25,8 +25,8 @@
 
             alt="ribbon"
             class="lazyload w-full h-20 my-auto z-1 filter-shadow-black">
-        <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center cursor-pointer">
-          <NuxtLink to="/">Home</NuxtLink>
+        <figcaption class="absolute block mx-auto mt-5 text-white text-3xl text-center">
+          <NuxtLink to="/" class="cursor-pointer">Home</NuxtLink>
           > Portfolio
         </figcaption>
       </figure>
