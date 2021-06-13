@@ -203,12 +203,12 @@
 
     class="w-7/12 self-center p-5 lg:w-1/3   lg:flex lg:flex-col lg:justify-evenly">
             <h2
-                class="text-center  text-xl md:text-4xl xl:text-3xl 2xl:text-5xl 2xl:mb-24 ">
+                class="text-center  text-xl md:text-4xl xl:text-2xl 2xl:text-4xl 2xl:mb-16 ">
               Strategie, Technologie, <br> App & Content </h2>
 
   <p
                 :class="[isShowing ? blurClass : '', bkClass]"
-                class="hidden text-xs xl:block xl:text-xl 2xl:text-xl ">
+                class="hidden text-xs xl:block xl:text-xl ">
               An der Schnittstelle von Technik entwickle ich digitale Anwendungen,
               die mit durchdachter Benutzerführung und ausgefeilter Funktionalität überzeugen – egal,
               auf welchem Gerät. Dazu erprobe ich neuartige Methoden, beschäftige mich intensiv mit aufregenden Technologien,
@@ -216,7 +216,7 @@
 
 
             <button
-               class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-3xl 2xl:mt-16 cursor-pointer"
+               class="button_red text-center px-4 py-2 relative hidden lg:hidden xl:hidden 2xl:block 2xl:w-1/2 2xl:text-2xl 2xl:mt-16 cursor-pointer"
                @click="toggleModal"
             >
               <span v-if="isShowing"
@@ -243,7 +243,7 @@
     <button
         ref="button"
         id="icon"
-        class="Icon relative 2xl:left-16 mt-2"
+        class="Icon relative 2xl:left-16 mt-2 cursor-pointer"
         @click="closeModal">
 
 
@@ -1495,7 +1495,6 @@ div {
     position: relative;
     transform: rotate(-90deg);
     transition: .5s ease-in-out;
-    cursor: pointer;
   }
 
   .Icon span {

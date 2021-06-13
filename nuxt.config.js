@@ -75,6 +75,7 @@ export default {
     },
 
     build: {
+
         extractCSS: true,
 
         extend(config, {isDev, isClient}) {
@@ -177,10 +178,18 @@ export default {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
             },
+
+            {
+                name: 'robots',
+                content: 'index,follow'
+
+            },
+
+
             {
                 hid: 'description',
                 name: 'description',
-                content: 'c1chy My Frontend experiences Nuxt Portfolio Webentwickler'
+                content: 'c1chy Website Lüdenscheid Apps Anwendung'
             },
 
             {
@@ -211,7 +220,7 @@ export default {
                 port: "587",
                 auth: {
                     user: 'cichy08081987pp@gmail.com',
-                    pass: 'Coca12345!'
+                    pass: '!!!!!!'
                 },
             },
         }],

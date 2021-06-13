@@ -2,3 +2,4 @@
 /.nuxt
 /dist
 sw.*
+nuxt.config.js

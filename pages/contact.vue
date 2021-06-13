@@ -48,12 +48,12 @@
 
           <div class="h-full mx-auto w-2/3 flex flex-col justify-evenly">
             <h2
-                class=" pt-1 pr-5 pl-2 pb-1 relative top-2 left-4 inline text-6xl font-semibold leading-tight">
-              MY CULTURE IS TIMELESS AGE IS JUST A NUMBER</h2>
+                class=" pt-1 pr-5 pl-2 pb-1 relative top-2 left-4 inline text-center text-6xl xl:text-4xl font-semibold leading-tight">
+              MY CULTURE IS TIMELESS <br> AGE IS JUST A NUMBER</h2>
 
             <p
 
-                class="mt-10 text-xl"
+                class="mt-10 text-xl xl:mt-0 "
 
                v-bind:class="[isShowing ? blurClass : '', bkClass]"
             >Menschen zu bewegen, ihnen den Alltag zu erleichtern und sie für Marken zu begeistern, ist meine Mission. Dafür kümmere ich mich mit Hingabe auch um die kleinen Details, ohne das große Ganze aus dem Blick zu verlieren. Ich experimentiere, erfinde, erforsche. Deshalb gehört es für mich zum Alltag, Herangehensweisen immer wieder zu überdenken und mit neuen Technologien alternative Lösungen abseits der ausgetretenen Pfade zu entwickeln.</p>
@@ -103,7 +103,7 @@
 
             <button
                 id="aos-space"
-                class="button_red w-4/12 uppercase  lg:hidden 2xl:block 2xl:p-3 cursor-pointer"
+                class="button_red w-4/12 uppercase  lg:hidden xl:text-2xl 2xl:block 2xl:p-3 cursor-pointer"
                @click="toggleModal"
             >Lern Mehr</button>
           </div>
@@ -577,11 +577,9 @@ header {
   background-color: transparent;
   color: #e53e26;
   border-color: #e53e26;
-  margin-top: 30px;
   border-width: 4px 0;
   border-style: solid;
   font-weight: 700;
-  font-size: 30px;
   line-height: 1;
   text-align: center;
   position: relative;
