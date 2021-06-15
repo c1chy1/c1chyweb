@@ -1,4 +1,4 @@
-<template>
+<template functional>
 
   <div  class="light_background  overflow-hidden  md:w-screen px-0">
 

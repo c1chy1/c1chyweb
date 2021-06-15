@@ -40,17 +40,17 @@ data() {
       "@type": "LocalBusiness",
       "priceRange": "Euro",
       "name": "c1chyWeb",
-      "url": "https://c1chy.de/",
-      "image": "https://c1chy.lima-city.de/graphic/imagec1chy.png",
+      "url": "https://c1chy.eu/",
+      "image": "https://web300421.roc130.rockinghoster.cloud/files/graphic/logo.png",
       "email": "cichy08081987pp@gmail.com",
-      "description": "Webseite Lüdenscheid Nordrhein-Westfalen kaufen ",
+      "description": "Webseite Lüdenscheid Nordrhein-Westfalen kaufen",
       "openingHours": "24h",
 
       "review": {
 
         "@type" : "Review",
         "author": "c1chy",
-        "reviewBody" : "Webentwicklung Programmierung "
+        "reviewBody" : "Websiten Webentwicklung Programmierung"
       },
 
       "aggregateRating": {
@@ -63,7 +63,9 @@ data() {
         "addressLocality": "Lüdenscheid",
         "addressRegion": "Nordrhein-Westfalen",
         "postalCode": "58-511",
-        "addressCountry": "Lüdenscheid"
+        "addressCountry": "Lüdenscheid",
+        "telephone": "015774122487"
+
       }
 
     }

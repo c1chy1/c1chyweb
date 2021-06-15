@@ -538,6 +538,12 @@
     @screen md {
 
 
+        [data-anchor="page1"] {
+
+            background-image: url("~assets/graphic/bg_green.png?sizes[]=1080&format=webp");
+
+
+        }
 
 
         .hat {
@@ -659,12 +665,6 @@
 
 
 
-        [data-anchor="page1"] {
-
-            background-image: url("~assets/graphic/bg_green.png?sizes[]=1080&format=webp");
-
-
-        }
 
         .light_background:before {
 

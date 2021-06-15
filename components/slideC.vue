@@ -1,4 +1,4 @@
-<template>
+<template >
   <div class="slide flex items-center text-2xl font-sans text-white">
 
     <div

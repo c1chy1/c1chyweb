@@ -1,4 +1,3 @@
-<script src="../../../portfolio/portfolio/nuxt.config.js"></script>
 <template>
 
 
@@ -433,6 +432,14 @@
 
 <script>
 
+
+
+
+
+
+
+
+
 const logo = require('~/assets/graphic/logo.png?sizes[]=150,sizes[]=400&format=webp');
 const hat = require('~/assets/graphic/hat.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
 const body =require('~/assets/graphic/body.png?sizes[]=150,sizes[]=600,sizes[]=1024&format=webp');
@@ -442,8 +449,8 @@ const walkman = require('~/assets/graphic/vintage_walkman.jpg?sizes[]=150,sizes[
 
 
 
-
 export default {
+
 
   components: {
 
@@ -596,6 +603,8 @@ return {
 
 
     afterLoad: function animation(origin, destination, direction) {
+
+
 
 
       if (direction === "down" && destination.index === 1 ) {
@@ -824,9 +833,13 @@ return {
                 this.$nuxt.$el.children[0].children[0].children[1].children[3].children[2].children[2].children[2].classList.add('animate__animated', 'animate__zoomInDown','animate__delay-4s')
                 this.$nuxt.$el.children[0].children[0].children[1].children[3].children[2].children[2].children[3].classList.add('animate__animated', 'animate__zoomInDown','animate__delay-5s')
 
-              }
+              },
+
+
 
             }
+
+
         )
 
 
@@ -846,7 +859,7 @@ return {
 
             {
               opacity: 0,
-              promiseRejectEmpty:false,
+
             },
             {
               begin: () => {
@@ -856,9 +869,9 @@ return {
 
                 this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].classList.remove('animate__animated', 'animate__slideInLeft','animate__delay-1s')
                 this.$nuxt.$el.children[0].childNodes[0].children[1].children[3].children[2].style.opacity = "0"
-              }
-
+              },
             },
+
 
         )
 
@@ -869,7 +882,6 @@ return {
 
 
 },
-
 
 
 
