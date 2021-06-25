@@ -409,7 +409,11 @@
 
     }
 
+    .ribbon {
 
+        bottom: 3rem;
+
+    }
 
     [data-anchor="page1"] {
 
@@ -482,6 +486,14 @@
 
     @screen sm {
 
+
+
+
+        .ribbon {
+
+            bottom: 1rem;
+
+        }
 
         [data-anchor="page3"]:before {
 

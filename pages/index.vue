@@ -13,7 +13,7 @@
 
  <light/>
         <div
-            class="w-full h-screen relative fill-40 flex flex-col   justify-between    sm:justify-end "
+            class="w-full h-screen relative fill-40 flex flex-col   justify-between  "
             style="background-image:radial-gradient(transparent, rgba(0, 0, 0, 0.6));">
 
 
@@ -38,7 +38,7 @@
        :height="logo.height"
 
        alt="c1chy"
-       class="logo lazyload self-center relative  sm:w-1/3 md:w-7/12 lg:w-1/3 2xl:w-1/4  z-50"
+       class="logo lazyload self-center relative  sm:w-1/3  lg:w-1/3 2xl:w-1/4  z-50"
        :class="'animate__animated animate__tada animate__delay-8s animate__repeat-2'">
 
 
@@ -51,7 +51,7 @@
               :height="hat.height"
 
               alt="rainbow balloon"
-               class="hat lazyload relative self-center w-3/5  sm:w-2/12  md:w-5/12  lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
+               class="hat lazyload relative self-center w-3/5  sm:w-1/5  md:w-5/12  lg:w-1/4  xl:top-12 xl:w-1/5 z-20"
           >
           <img
 
@@ -64,20 +64,20 @@
               sizes="(min-width: 768px) 60vw, 95vw"
 
               alt="vintage body"
-              class="body lazyload self-center w-10/12 h-1/4 sm:w-2/5   md:w-10/12 md:h-1/3 lg:w-5/12
+              class="body lazyload self-center w-10/12 h-1/4 sm:w-3/5    lg:w-5/12
 
 
 
                 xl:w-1/2 2xl:w-1/3 filter-shadow-black ">
 
-          <figure class="ribbon flex bottom-20 absolute w-8/12 sm:justify-center md:w-1/2 xl:w-2/5 2xl:w-1/3 xl:bottom-12 self-center filter-shadow-black z-10 ">
+          <figure class="ribbon flex items-center  absolute w-8/12 sm:justify-center  md:w-1/2 xl:w-2/5 2xl:w-1/3 xl:bottom-12 self-center filter-shadow-black z-10 ">
 
 
             <img
                 :data-src="require('~/assets/graphic/ribbon.png?webp')"
                 alt="ribbon"
                 class="lazyload absolute  sm:w-1/2 md:w-full lg:w-full 2xl:w-full filter-shadow-black z-10">
-            <figcaption class="mx-auto mt-1  text-white text-center  md:text-2xl lg:text-2xl lg:mt-3  xl:mt-4 xl:tracking-wider    2xl:mt-5 z-20">
+            <figcaption class="mx-auto mt-3  text-white text-center  md:tracking-wide md:text-2xl lg:text-2xl xl:tracking-wider    z-20">
               Visually Striking Design </figcaption>
           </figure>
 

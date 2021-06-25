@@ -246,7 +246,7 @@
               v-bind:disabled="button"
 
 
-              class="button_red text-center w-1/3 self-center xl:w-1/2 xl:p-2 cursor-pointer">
+              class="button_red text-center mt-8 w-1/3 self-center text-xl xl:w-1/2 xl:p-2 cursor-pointer">
 
 
 
