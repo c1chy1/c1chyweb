@@ -2,8 +2,8 @@
 
   <section class="h-screen w-full absolute z-10">
 
-    <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto relative overflow-hidden">
-
+    <header
+        class="container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto relative overflow-hidden">
 
 
       <light class="overflow-hidden filter-shadow-black"/>
@@ -509,32 +509,6 @@ export default {
   opacity: 0;
   visibility: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 [data-aos="rotate-space"] {
   transform: rotate(-540deg);

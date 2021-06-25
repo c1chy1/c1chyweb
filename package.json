@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/proxy": "^2.1.0",
     "@nuxtjs/pwa": "^3.3.5",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
@@ -16,7 +17,7 @@
     "default-passive-events": "^2.0.0",
     "fullpage-nuxt": "0.0.3",
     "nuxt": "^2.14.7",
-    "nuxt-mail": "^3.0.4",
+    "nuxt-mail": "^3.0.6",
     "nuxt-purgecss": "^1.0.0",
     "nuxt-start": "^2.15.6",
     "velocity-animate": "^2.0.6",

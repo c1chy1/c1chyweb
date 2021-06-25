@@ -2,6 +2,8 @@ const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 
+
+
 export default {
 
 
@@ -217,7 +219,13 @@ export default {
 
     },
 
+    axios: {
+        proxy: true
+    },
 
+    proxy: {
+        '/api/': { target: 'https://c1chy.eu' , changeOrigin: true }
+    },
 
 
     modules: [
@@ -228,14 +236,14 @@ export default {
 
         ['nuxt-mail', {
             message: {
-                to: 'cichy08081987pp@gmail.com',
+                to: 'test@c1chyweb.de',
             },
             smtp: {
-                host: 'smtp.gmail.com',
-                port: "587",
+                host: 'roc130.rockinghoster.cloud',
+                port: "465",
                 auth: {
-                    user: 'cichy08081987pp@gmail.com',
-                    pass: '!!!!!!'
+                    user: 'test@c1chyweb.de',
+                    pass: '!!!!!'
                 },
             },
         }],
