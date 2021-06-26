@@ -321,11 +321,33 @@ export default {
           title: "New Portfolio",
           image: "https://c1chy.lima-city.de/graphic/nuxtportfolio.png",
           link: "https://c1chy.eu",
-          technology: "NUXT.vue",
+          technology: "NUXT.js",
           secondTechnology: "TAILWIND CSS",
           category: 'VUE',
           alt: 'New c1chy portfolio'
         },
+
+        {
+          title: "Configurator",
+          image: "https://c1chy.lima-city.de/graphic/ConfiguratorVuex.png",
+          link: "https://c1chyweb.de/dist/index.html",
+          technology: "Vue-router Axios",
+          secondTechnology: "VueX",
+          category: 'VUE',
+          alt: 'Configurator VueX'
+        },
+
+
+        {
+          title: "Quiz",
+          image: "https://c1chy.lima-city.de/graphic/quizVuex.png",
+          link: "https://web300421.roc130.rockinghoster.cloud/dist/index.html",
+          technology: "Vue-router Axios",
+          secondTechnology: "VueX",
+          category: 'VUE',
+          alt: 'Quiz VueX'
+        },
+
       ]
 
     }
