@@ -171,8 +171,8 @@
                 <li></li>
               </ul>
               <div class="social w-52 h-8 absolute top-2 left-4 flex justify-around items-center">
-                <i class="text-5xl">{{ project.technology }}</i>
-                <i class="text-5xl">SCSS</i>
+                <i class="text-5xl bg-black p-2 rounded-2xl z-50 ">{{ project.technology }}</i>
+                <i class="text-5xl bg-black p-2 rounded-2xl z-50">{{ project.thirdTechnology }}</i>
                 <i class="text-5xl"></i>
                 <i class="text-5xl"></i>
               </div>
@@ -242,6 +242,7 @@ export default {
           link: "https://c1chy.lima-city.de/Food/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
+          thirdTechnology: "JQUERY",
           category: 'WEBPACK',
           alt: 'Pizza Website'
         },
@@ -251,6 +252,7 @@ export default {
           link: "https://c1chy.lima-city.de/Portfolio2/index.html",
           technology: "ES6",
           secondTechnology: "WEBPACK",
+          thirdTechnology: "ANIMATE",
           category: 'WEBPACK',
           alt: 'Cube Website'
         },
@@ -259,7 +261,8 @@ export default {
           image: "https://c1chy.lima-city.de/graphic/bookstore.png",
           link: "https://bookstorec1chy.herokuapp.com/",
           technology: "FIREBASE",
-          secondTechnology: "DATABASE",
+          secondTechnology: "REACT",
+          thirdTechnology: "DATABASE",
           category: 'REACT',
           alt: 'React Bookstore Website'
         },
@@ -269,6 +272,7 @@ export default {
           link: "https://c1chy.lima-city.de/PaperGame/index.html",
           technology: "ES6",
           secondTechnology: "PURE CSS",
+          thirdTechnology: "PURE JS",
           category: 'ES6',
           alt: 'Paper Game Website'
         },
@@ -276,8 +280,9 @@ export default {
           title: "Avenue",
           image: "https://c1chy.lima-city.de/graphic/avenuefasion.png",
           link: "https://c1chy.lima-city.de/psdtohtml1/index.html",
-          technology: "PURE CSS",
+          technology: "PURE",
           secondTechnology: "CSS GRID",
+          thirdTechnology: "CSS",
           category: 'PURECSS',
           alt: 'Pure css layout example'
         },
@@ -287,6 +292,7 @@ export default {
           link: "https://c1chy.lima-city.de/FirebaseOrder/index.html",
           technology: "FIREBASE",
           secondTechnology: "DATABASE",
+          thirdTechnology: "ES6",
           category: 'DATABASE',
           alt: 'Firebase example'
         },
@@ -294,8 +300,9 @@ export default {
           title: "Panel",
           image: "https://c1chy.lima-city.de/graphic/bootstrap_4.png",
           link: "https://c1chy.lima-city.de/Bootstrap_4/index.html",
-          technology: "PURE CSS",
+          technology: "PURE",
           secondTechnology: "BOOTSTRAP 4",
+          thirdTechnology: "CSS",
           category: 'PURECSS',
           alt: 'Bootstrap 4 Panel'
         },
@@ -303,8 +310,9 @@ export default {
           title: "Old Portfolio",
           image: "https://c1chy.lima-city.de/graphic/c1chy_old.png",
           link: "https://web300421.roc130.rockinghoster.cloud/c1chy.old/index.html",
-          technology: "PURE CSS",
-          secondTechnology: "PORTFOLIO",
+          technology: "PURE",
+          secondTechnology: "ES 6",
+          thirdTechnology: "CSS",
           category: 'WEBPACK',
           alt: 'Old c1chy portfolio'
         },
@@ -312,8 +320,9 @@ export default {
           title: "API",
           image: "https://c1chy.lima-city.de/graphic/Blogc1chy.png",
           link: "https://c1chy.lima-city.de/Webcomponent/dist/index.html",
-          technology: "GITHUB API",
+          technology: "GITHUB",
           secondTechnology: "WEB COMPONENTS",
+          thirdTechnology: "API",
           category: 'ES6',
           alt: 'Api Example'
         },
@@ -321,8 +330,9 @@ export default {
           title: "New Portfolio",
           image: "https://c1chy.lima-city.de/graphic/nuxtportfolio.png",
           link: "https://c1chy.eu",
-          technology: "NUXT.js",
-          secondTechnology: "TAILWIND CSS",
+          technology: "TAILWIND",
+          secondTechnology: "PWA NUXT",
+          thirdTechnology: "VELOCITY",
           category: 'VUE',
           alt: 'New c1chy portfolio'
         },
@@ -331,8 +341,9 @@ export default {
           title: "Configurator",
           image: "https://c1chy.lima-city.de/graphic/ConfiguratorVuex.png",
           link: "https://c1chyweb.de/dist/index.html",
-          technology: "Vue-router Axios",
-          secondTechnology: "VueX",
+          technology: "ROUTER",
+          secondTechnology: "VUEX EXPRESS",
+          thirdTechnology: "AXIOS",
           category: 'VUE',
           alt: 'Configurator VueX'
         },
@@ -342,8 +353,9 @@ export default {
           title: "Quiz",
           image: "https://c1chy.lima-city.de/graphic/quizVuex.png",
           link: "https://web300421.roc130.rockinghoster.cloud/dist/index.html",
-          technology: "Vue-router Axios",
-          secondTechnology: "VueX",
+          technology: "ROUTER",
+          secondTechnology: "VUEX EXPRESS",
+          thirdTechnology: "AXIOS",
           category: 'VUE',
           alt: 'Quiz VueX'
         },
@@ -998,6 +1010,7 @@ header {
     .social i:nth-of-type(1) {
       -webkit-transition-delay: 0.4s;
       transition-delay: 0.4s;
+
     }
 
     .social i:nth-of-type(2) {

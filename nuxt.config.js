@@ -230,8 +230,6 @@ export default {
 
     modules: [
 
-
-
         ['@nuxtjs/axios'],
 
         ['nuxt-mail', {
@@ -248,6 +246,16 @@ export default {
             },
         }],
         ['@nuxtjs/pwa'],
+        ['@nuxtjs/robots', {
+
+            robots: {
+                UserAgent: '*',
+                Disallow: '/'
+            }
+
+        }
+
+        ],
         ['@nuxtjs/tailwindcss'],
         ['nuxt-font-loader'],
         ['@aceforth/nuxt-optimized-images'],
