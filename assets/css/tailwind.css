@@ -656,6 +656,14 @@
 
 
 
+        .light_background:before {
+
+
+            background-image: url('~assets/graphic/light_background.png?sizes[]=1280&format=webp');
+
+
+        }
+
 
         .slide {
 
@@ -677,22 +685,6 @@
 
 
 
-
-        .light_background:before {
-
-
-            background-image: url('~assets/graphic/light_background_medium.png?sizes[]=600&format=webp');
-
-
-        }
-
-
-        .ribbon figcaption {
-
-
-            font-size: 1.2vw ;
-
-        }
 
 
         .hat {
@@ -907,7 +899,7 @@
 
 
         #form {
-            height: 90vh;
+            height: 110vh;
 
         }
 

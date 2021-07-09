@@ -133,14 +133,14 @@
 
                   class="lazyload xl:text-center filter-shadow-black " >
               <figcaption
-                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-wide md:sm:tracking-widest xl:tracking-mega xl:mt-4 2xl:tracking-wider 2xl:text-4xl 2xl:mt-6 2xl:ml-2 ">
+                  class="w-full my-auto mt-3 block absolute text-xl text-center text-white sm:text-xl sm:tracking-wide md:tracking-widest lg:text-4xl lg:mt-6 xl:tracking-mega  xl:mt-4  2xl:tracking-wider 2xl:text-4xl 2xl:mt-6 2xl:ml-2 ">
                 ✪ ✪ ✪ ✪ ✪ ✪ ✪
               </figcaption>
             </figure>
           </article>
         </div>
         <div
-            class="scumbag w-full flex  flex-col  xl:flex-row  justify-center bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
+            class="scumbag w-full flex  flex-col  lg:flex-row  justify-center bg-repeat bg-auto bg-center z-2 xl:rounded-4xl">
 
           <div
 
@@ -148,7 +148,7 @@
               class="text-center mt-3 pt-1 xl:w-1/2 lg:w-2/3 2xl:w-1/2">
             <div>
               <h2
-                  class="text-xl md:text-4xl lg:text-5xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
+                  class="text-xl md:text-4xl lg:text-3xl  2xl:text-2xl 2xl:text-4xl 2xl:font-bold 2xl:text-center">
                 Klare Strategie , ausdrucksstarkes <br> Design & moderne Technologie. </h2>
             </div>
 
@@ -183,7 +183,7 @@
               :height="scumbag.height"
               sizes='(min-width: 1024px) 1024px, 100vw'
 
-              class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-2/5 2xl:w-1/4 opacity-0  z-10 "
+              class="wolf lazyload  w-1/2 rounded-4xl sm:hidden md:block xl:w-1/5 xl:w-2/5 2xl:w-1/4 opacity-0  z-10 "
               alt="vintage wolf">
 
           <div class="background h-2/5 absolute right-0 top-3/4 opacity-70 ">
@@ -272,7 +272,7 @@
             <img
 
                 ref="vintageMusic"
-                class="lazyload opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/2 2xl:w-1/4"
+                class="lazyload opacity-0 w-1/2 self-center rounded-3xl sm:w-1/4 md:w-1/2 lg:w-1/3 xl:w-1/3 2xl:w-1/4"
                 :data-src="require('~/assets/graphic/vintage_music.jpg?webp')"
                 :src="vintageMusic.src"
                 :srcSet="vintageMusic.srcSet"

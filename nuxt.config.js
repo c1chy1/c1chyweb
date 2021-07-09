@@ -1,14 +1,15 @@
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
-
+require('dotenv').config()
 
 
 export default {
 
 
-
-
+    render: {
+        resourceHints: false
+    },
 
     target: 'server',
 
@@ -23,7 +24,7 @@ export default {
 
             start_url: "/",
             name: 'c1chy.app',
-            description: "My Frontend experience and projects",
+            description: "Anwendung Webseite Lüdenscheid Website",
             display: 'standalone',
             lang: 'de',
             theme_color: '#40635b',
@@ -70,6 +71,72 @@ export default {
             }
         }
     },
+
+
+
+    modules: [
+
+        ['@nuxtjs/axios'],
+
+
+        ['nuxt-mail', {
+            message: {
+                to: 'test@c1chyweb.de',
+            },
+            smtp: {
+                host: 'roc130.rockinghoster.cloud',
+                port: "465",
+                auth: {
+                    user: 'test@c1chyweb.de',
+                    pass: '!!!!!'
+                },
+            },
+        }],
+        ['@nuxtjs/pwa'],
+        ['@nuxtjs/robots', {
+
+            robots: {
+                UserAgent: '*',
+                Allow: '/'
+            }
+
+        }
+
+        ],
+        ['@nuxtjs/tailwindcss'],
+        ['nuxt-font-loader'],
+        ['@aceforth/nuxt-optimized-images'],
+        ['nuxt-lazysizes'],
+        ['fullpage-nuxt'],
+        ['nuxt-purgecss',
+            {
+
+                enabled: ({isDev, isClient}) => (!isDev && isClient), // or `false` when in dev/debug mode
+                paths: [
+                    'components/**/*.vue',
+                    'layouts/**/*.vue',
+                    'pages/**/*.vue',
+                    'plugins/**/*.js'
+                ],
+                styleExtensions: ['.css'],
+                whitelist: ['body', 'html', 'nuxt-progress'],
+                extractors: [
+                    {
+                        extractor: content => content.match(/[A-z0-9-:\\/]+/g) || [],
+                        extensions: ['html', 'vue', 'js']
+                    }
+                ]
+
+
+            }],
+        ['nuxt-compress', {
+            gzip: {
+                threshold: 8192,
+            },
+        },
+        ]
+
+    ],
 
 
     router: {
@@ -166,7 +233,7 @@ export default {
     head: {
 
 
-        link: [
+      link: [
             {
                 rel: 'preconnect',
                 href: 'https://c1chy.eu',
@@ -188,9 +255,6 @@ export default {
         },
         meta: [
 
-            {
-                charset: 'utf-8'
-            },
             {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
@@ -223,112 +287,31 @@ export default {
         proxy: true
     },
 
-    proxy: {
+  proxy: {
         '/api/': { target: 'https://c1chy.eu' , changeOrigin: true }
     },
 
 
-    modules: [
-
-        ['@nuxtjs/axios'],
-
-        ['nuxt-mail', {
-            message: {
-                to: 'test@c1chyweb.de',
-            },
-            smtp: {
-                host: 'roc130.rockinghoster.cloud',
-                port: "465",
-                auth: {
-                    user: 'test@c1chyweb.de',
-                    pass: '!!!!!'
-                },
-            },
-        }],
-        ['@nuxtjs/pwa'],
-        ['@nuxtjs/robots', {
-
-            robots: {
-                UserAgent: '*',
-                Disallow: '/'
-            }
-
-        }
-
-        ],
-        ['@nuxtjs/tailwindcss'],
-        ['nuxt-font-loader'],
-        ['@aceforth/nuxt-optimized-images'],
-        ['nuxt-lazysizes'],
-        ['fullpage-nuxt'],
-        ['nuxt-purgecss',
-            {
-
-                enabled: ({isDev, isClient}) => (!isDev && isClient), // or `false` when in dev/debug mode
-                paths: [
-                    'components/**/*.vue',
-                    'layouts/**/*.vue',
-                    'pages/**/*.vue',
-                    'plugins/**/*.js'
-                ],
-                styleExtensions: ['.css'],
-                whitelist: ['body', 'html', 'nuxt-progress'],
-                extractors: [
-                    {
-                        extractor: content => content.match(/[A-z0-9-:\\/]+/g) || [],
-                        extensions: ['html', 'vue', 'js']
-                    }
-                ]
-
-
-            }],
-        ['nuxt-compress', {
-            gzip: {
-                threshold: 8192,
-            },
-            brotli: {
-                threshold: 8192,
-            },
-        },
-
-        ]
-
-    ],
 
     loading: '~/components/loading.vue',
-
-
 
 
     fontLoader: {
 
         url: {
-            local: '/fonts/font-face.css'
-        },
-
-
-        preload: {
-            local: {
-                hid: ['Barlow Condensed','Merriweather','Satisfy']
-            }
-        },
-
-        prefetch: {
-            local: {
-                hid: ['Barlow Condensed','Merriweather','Satisfy']
-            }
+            local: '/fonts/font-face.css',
+            crossorigin: 'anonymous',
         },
 
     },
-
 
 
     googleFonts: {
 
         base64: true,
         fontsPath: '~static/fonts',
-
-        preload: true,
+        crossorigin: 'anonymous',
+        preload: false,
         download: false,
         families: {
 

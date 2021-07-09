@@ -45,11 +45,11 @@
         class="page-spacing w-full h-20 absolute left-0 bg-repeat bg-center"
     ></div>
 
-    <section class="about_me w-full h-108 relative">
+    <section class="about_me w-full   relative">
 
       <div class=" w-3/4 h-28  items-center flex  mx-auto mt-20">
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
-        <h2 class=" lg:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
+        <h2 class=" lg:w-3/4  xl:w-1/2 2xl:w-3/12 font-bold text-3xl mt-4 text-center 2xl:mt-8"
 
         >WHAT I DO</h2>
         <span class="w-full inline-block relative 2xl:w-1/2"></span>
@@ -60,14 +60,14 @@
 
 
         <h1
-            class="text-11xl  text-center leading-tight uppercase filter-shadow-green"
+            class=" lg:text-8xl   2xl:text-11xl  text-center leading-tight uppercase filter-shadow-green"
         >WINNING DESIGN</h1>
 
 
 
     </section>
 
-    <section class="about_gallery h-auto grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center  2xl:pb-20">
+    <section class="about_gallery h-auto grid grid-rows-2 grid-cols-3  gap-x-0  gap-y-16 justify-items-center lg:pb-5 2xl:pb-20">
 
         <article class="bg-center bg-no-repeat">
 
@@ -112,7 +112,7 @@
                 alt="digital design">
 
 
-            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-center text-2xl font-semibold uppercase">
               Digital Design
             </h2>
           </div>
@@ -129,7 +129,7 @@
                 :data-src="require('~/assets/graphic/about_gallery_3.jpg?webp')" class="lazyload"
                  alt="branding">
 
-            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-center text-2xl font-semibold uppercase">
               Branding
             </h2>
           </div>
@@ -144,7 +144,7 @@
 
                 :data-src="require('~/assets/graphic/about_gallery_4.jpg?webp')" class="lazyload"
                 alt="graphic design">
-            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase"
+            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-center text-2xl font-semibold uppercase"
 
 
 
@@ -166,7 +166,7 @@
 
                 alt="mobile apps">
 
-            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-2xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2 mt-6 flex justify-center text-center text-2xl font-semibold uppercase">
               Mobile Apps
             </h2>
           </div>
@@ -190,7 +190,7 @@
 
 
             >
-            <h2 class="w-1/2 relative m-auto p-2  mt-6 flex justify-center text-2xl font-semibold uppercase">
+            <h2 class="w-1/2 relative m-auto p-2  mt-6 flex justify-center text-center text-2xl font-semibold uppercase">
               Design Concept
             </h2>
 
@@ -199,13 +199,13 @@
         </article>
 
     </section>
-    <section  class="mission h-auto flex   lg:pt-12 lg:mt-16  lg:pb-32  2xl:mt-0  2xl:pb-12">
+    <section  class="mission h-auto flex lg:pb-20  xl:h-full 2xl:mt-0  2xl:pb-12">
 
 
       <transition name="fade">
         <div
 
-            v-if="isShowing" ref="modal" class="lazyload modal flex w-full z-40 xl:mt-10 xl:ml-2"  >
+            v-if="isShowing" ref="modal" class="lazyload modal flex w-full z-40 xl:mt-10 xl:ml-2 2xl:mt-12"  >
 
           <img
               class="lazyload"
@@ -245,7 +245,7 @@
         <div class="flex"
 
         >
-          <h3 class="w-1/3 font-bold text-3xl mt-4 ml-2 text-left"
+          <h3 class="w-1/3 font-bold text-3xl mt-4 ml-2 text-left   "
 
           >CORE PRINCIPLES</h3>
           <span class="w-10/12 inline-block relative self-center"></span>
@@ -269,47 +269,47 @@
       <div class="mission_right w-1/2 grid grid-cols-2 grid-rows-2 gap-x-0"
 
       >
-        <div class="h-72 w-72 m-auto cursor-pointer">
+        <div class="lg:h-64 lg:w-64 xl:h-72 xl:w-72 m-auto cursor-pointer">
           <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lightbulb"
                class="svg-inline--fa fa-lightbulb fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
                viewBox="0 0 352 512">
             <path fill="#e9e4dc"
                   d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z"></path>
           </svg>
-          <h2 class=" relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-2xl xl2:text-4xl 2xl:w-full text-center font-semibold uppercase z-0 ">
+          <h2 class=" relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:w-full text-center font-semibold uppercase z-0 ">
             DRIVEN CREATIVE
           </h2>
         </div>
-        <div class="h-72 w-72 m-auto cursor-pointer">
+        <div class="lg:h-64 lg:w-64 xl:h-72 xl:w-72 m-auto cursor-pointer">
           <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="handshake"
                class="h-3/5 svg-inline--fa fa-handshake fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
                viewBox="0 0 640 512">
             <path fill="#e9e4dc"
                   d="M519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8 12.5 10.8 26 15.9 41.1 15.9 18.2 0 35.3-7.4 48.8-24 22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3 14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5 108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4 12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16z"></path>
           </svg>
-          <h2 class="w-full relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-2xl xl2:text-4xl 2xl:w-full text-center font-semibold uppercase z-0 ">
+          <h2 class="w-full relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:w-full text-center font-semibold uppercase z-0 ">
             HONEST WORK
           </h2>
         </div>
-        <div class="h-72 w-72 m-auto cursor-pointer">
+        <div class="lg:h-64 lg:w-64 xl:h-72 xl:w-72 m-auto cursor-pointer">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="laptop-house"
                class="svg-inline--fa fa-laptop-house fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
                viewBox="0 24 695 537">
             <path fill="#e9e4dc"
                   d="M272,288H208a16,16,0,0,1-16-16V208a16,16,0,0,1,16-16h64a16,16,0,0,1,16,16v37.12C299.11,232.24,315,224,332.8,224H469.74l6.65-7.53A16.51,16.51,0,0,0,480,207a16.31,16.31,0,0,0-4.75-10.61L416,144V48a16,16,0,0,0-16-16H368a16,16,0,0,0-16,16V87.3L263.5,8.92C258,4,247.45,0,240.05,0s-17.93,4-23.47,8.92L4.78,196.42A16.15,16.15,0,0,0,0,207a16.4,16.4,0,0,0,3.55,9.39L22.34,237.7A16.22,16.22,0,0,0,33,242.48,16.51,16.51,0,0,0,42.34,239L64,219.88V384a32,32,0,0,0,32,32H272ZM629.33,448H592V288c0-17.67-12.89-32-28.8-32H332.8c-15.91,0-28.8,14.33-28.8,32V448H266.67A10.67,10.67,0,0,0,256,458.67v10.66A42.82,42.82,0,0,0,298.6,512H597.4A42.82,42.82,0,0,0,640,469.33V458.67A10.67,10.67,0,0,0,629.33,448ZM544,448H352V304H544Z"></path>
           </svg>
-          <h2 class="w-full relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-2xl xl2:text-4xl 2xl:w-full text-center font-semibold uppercase z-0 ">
+          <h2 class="w-full relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:w-full text-center font-semibold uppercase z-0 ">
             MAKE AN IMPACT
           </h2>
         </div>
-        <div class="h-72 w-72 m-auto cursor-pointer">
+        <div class="lg:h-64 lg:w-64 xl:h-72 xl:w-72 m-auto cursor-pointer">
           <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="save"
                class="svg-inline--fa fa-save fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                viewBox="0 -15 420 585">
             <path fill="#e9e4dc"
                   d="M433.941 129.941l-83.882-83.882A48 48 0 0 0 316.118 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V163.882a48 48 0 0 0-14.059-33.941zM272 80v80H144V80h128zm122 352H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h42v104c0 13.255 10.745 24 24 24h176c13.255 0 24-10.745 24-24V83.882l78.243 78.243a6 6 0 0 1 1.757 4.243V426a6 6 0 0 1-6 6zM224 232c-48.523 0-88 39.477-88 88s39.477 88 88 88 88-39.477 88-88-39.477-88-88-88zm0 128c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z"></path>
           </svg>
-          <h2 class="w-full relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-2xl xl2:text-4xl 2xl:w-full text-center font-semibold uppercase z-0 ">
+          <h2 class="w-full relative justify-center m-auto top-4 p-1 lg:w-2/3 lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:w-full text-center font-semibold uppercase z-0 ">
             HUMBLE COURAGE
           </h2></div>
 
@@ -323,7 +323,7 @@
 
       <div class="about_me w-3/4 h-28  items-center flex  mx-auto mt-8  2xl:mt-0">
         <span class="w-full inline-block relative 2xl:w-2/3"></span>
-        <h3 class="w-1/2 font-bold text-3xl mt-4 text-center 2xl:mt-8"
+        <h3 class="w-1/2 font-bold text-3xl mt-4 text-center lg:w-3/4 2xl:mt-8"
 
         >WHAT I'M WORKING ON</h3>
         <span class="w-full inline-block relative 2xl:w-2/3"></span>
@@ -333,7 +333,7 @@
 
 
         <h1
-            class="text-11xl font-bold text-center leading-tight mb-20 filter-shadow-green"
+            class="lg:text-8xl 2xl:text-11xl font-bold text-center leading-tight mb-20 filter-shadow-green"
 
         >CORE PRINCIPLES</h1>
 
@@ -348,7 +348,7 @@
                    data-aos-anchor="#site-footer"
           >
 
-            <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
+            <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:w-1/2 lg:text-2xl 2xl:w-1/3 lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Verstehen
             </h2>
             <img class="lazyload m-auto"
@@ -371,7 +371,7 @@
                    data-aos="fade-up"
                    data-aos-anchor="#site-footer">
 
-            <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
+            <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:w-1/2 lg:text-2xl 2xl:w-1/3 2xl:text-3xl font-semibold uppercase">
               Entwickeln
             </h2>
             <img class="lazyload m-auto"
@@ -391,7 +391,7 @@
                    data-aos-delay="1750"
                    data-aos-anchor="#site-footer">
 
-            <h2 class="w-1/3 relative m-auto p-1 flex justify-center lg:text-2xl 2xl:text-3xl font-semibold uppercase">
+            <h2 class="w-1/3 relative m-auto p-1 flex justify-center  lg:w-1/2 lg:text-2xl 2xl:w-1/3 lg:text-2xl 2xl:text-3xl font-semibold uppercase">
               Umsetzen
             </h2>
             <img class="lazyload m-auto"
@@ -975,8 +975,6 @@ header {
       --ratio: 10 / 16;
       --width: 98vmin;
       --height: calc(var(--width) * var(--ratio));
-
-      width:100%;
       height: var(--height);
       overflow: hidden;
 

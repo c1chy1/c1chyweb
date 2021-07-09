@@ -41,19 +41,19 @@
         class="page-spacing w-full h-20 absolute left-0 bg-repeat bg-center"
     ></div>
 
-    <section class="section h-full mt-20 relative box-content bg-repeat bg-auto bg-center overflow-hidden z-0">
-      <div class="bg_stars w-full h-full flex">
+    <section class="section relative box-content bg-repeat bg-auto bg-center overflow-hidden z-0 xl:h-full 2xl:mt-20 ">
+      <div class="bg_stars w-full  flex ">
 
         <section class="w-1/2">
 
           <div class="h-full mx-auto w-2/3 flex flex-col justify-evenly">
             <h2
-                class=" pt-1 pr-5 pl-2 pb-1 relative top-2 left-4 inline text-center text-6xl xl:text-4xl font-semibold leading-tight">
+                class=" pt-1 pr-5 pl-2 pb-1 relative top-2 left-4 inline text-center text-6xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight">
               MY CULTURE IS TIMELESS <br> AGE IS JUST A NUMBER</h2>
 
             <p
 
-                class="mt-10 text-xl xl:mt-0 "
+                class="mt-10 text-xl lg:text-xs lg:mt-0 2xl:text-xl "
 
                v-bind:class="[isShowing ? blurClass : '', bkClass]"
             >Menschen zu bewegen, ihnen den Alltag zu erleichtern und sie für Marken zu begeistern, ist meine Mission. Dafür kümmere ich mich mit Hingabe auch um die kleinen Details, ohne das große Ganze aus dem Blick zu verlieren. Ich experimentiere, erfinde, erforsche. Deshalb gehört es für mich zum Alltag, Herangehensweisen immer wieder zu überdenken und mit neuen Technologien alternative Lösungen abseits der ausgetretenen Pfade zu entwickeln.</p>
@@ -73,7 +73,7 @@
 
                 >
 
-                <article class="flex flex-row-reverse leading-snug">
+                <article class="w-full flex flex-row-reverse leading-snug ">
                   <button
                       ref="button"
                       id="icon"
@@ -90,7 +90,7 @@
                   <section class="text flex flex-col justify-center text-center">
                     <h3>Hey everyone look at this</h3>
                     <h1>
-                      <span>Awesome Vintage Style</span>
+                      <span class="lg:text-xl 2xl:text-3xl">Awesome Vintage Style</span>
                     </h1>
                   </section>
 
@@ -126,7 +126,7 @@
       </div>
     </section>
 
-    <section id="contact_me" class="exclusive-paper w-full h-auto bg-black rounded-4xl relative">
+    <section id="contact_me" class="exclusive-paper w-full h-auto bg-black relative">
 
       <div class="contact_me w-3/4 h-28  items-center flex  mx-auto pt-20 ">
         <span class="w-full inline-block relative"></span>
@@ -140,7 +140,7 @@
 
       <div>
         <h1
-            class="text-11xl mb-20  text-center leading-tight "
+            class=" lg:text-8xl 2xl:text-11xl mb-20  text-center leading-tight "
 
         >GET IN TOUCH</h1>
 
@@ -175,7 +175,7 @@
         >
           <h2 class="w-9/12  mb-5 mx-auto p-1 relative flex justify-center  lg:text-xl 2xl:text-3xl font-semibold uppercase">
             LET ME KNOW!</h2>
-          <p class="lg:text-xl 2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
+          <p class=" lg:text-xs xl:text-xl  2xl:text-2xl text-center">Wenn Sie ein konkretes Anliegen haben, eine Idee besprechen möchten oder mich erst kennenlernen wollen, kontaktieren Sie mich einfach.</p>
 
           <form
               v-on:submit.prevent
@@ -186,7 +186,7 @@
                   type="text"
                   placeholder="Name*"
                   id="name"
-                  class="w-full h-12 mt-2 pl-1 text-2xl"
+                  class="w-full lg:h-8 2xl:h-12 mt-2 pl-1 lg:text-xs 2xl:text-2xl"
                   v-model="name"
                   autocomplete="off"
                   :disabled="button"
@@ -200,7 +200,7 @@
                   name="email"
                   id="email"
                   v-model="email"
-                  class="w-full h-12 mt-2 pl-1 text-2xl "
+                  class="w-full lg:h-8 2xl:h-12 mt-2 pl-1 lg:text-xs 2xl:text-2xl"
                   autocomplete="off"
                   :disabled="button"
                   :class="[button ? blurClass : '', bkClass]"
@@ -229,7 +229,7 @@
                   placeholder="Your message"
                   id="message"
                   v-model="message"
-                  class="w-full h-32 pl-1 mt-2 block text-2xl resize-none"
+                  class="w-full  lg:h-24 h-32 pl-1 mt-2 block lg:text-xs 2xl:text-2xl resize-none"
                   :disabled="button"
                   :class="[button ? blurClass : '', bkClass]"
               ></textarea>
@@ -246,7 +246,7 @@
               v-bind:disabled="button"
 
 
-              class="button_red text-center mt-8 w-1/3 self-center text-xl xl:w-1/2 xl:p-2 cursor-pointer">
+              class="button_red text-center p-2 mt-8 w-1/3 self-center text-xl lg:w-1/2 xl:w-1/2 xl:p-2 cursor-pointer">
 
 
 
@@ -1285,6 +1285,31 @@ aside {
   }
 
 }
+
+
+
+@media (min-width: 1024px) and (max-width:1280px)  {
+
+
+  div.modal {
+
+    h3:before, h3:after {
+
+      width: 0;
+
+    }
+
+
+    section.text {
+      position: relative;
+      width: 100%;
+      min-width: 0;
+
+
+    }
+  }
+}
+
 
 
 </style>

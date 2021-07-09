@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen w-screen">
+  <section class="h-full w-screen">
 
     <header class="exclusive-paper container  relative p-24 w-full flex flex-col justify-center grid grid-cols-1 justify-items-center h-112 max-w-full lg:max-w-max  mx-auto relative overflow-hidden">
 

@@ -1,6 +1,6 @@
 <template>
 
-  <nav class="fixed cursor-pointer w-full z-20 mt-3 hidden md:visible lg:hidden  xl:block">
+  <nav class="fixed cursor-pointer w-full z-20 mt-3 hidden md:visible lg:block ">
 
     <button class="toggle m-2 absolute">
 
@@ -18,11 +18,11 @@
 
       <ul class="w-full h-12 px-16 flex justify-evenly self-center flex-wrap ">
         <li @click.prevent="toTop">
-          <NuxtLink to="/" class="text-2xl spin circle cursor-pointer" prefetch>Home</NuxtLink>
+          <NuxtLink to="/" class="  lg:text-xl  xl:text-2xl spin circle cursor-pointer" prefetch>Home</NuxtLink>
         </li>
         <li @click.prevent="toTop"
         >
-          <NuxtLink to="/aboutme" class="text-2xl spin circle cursor-pointer" prefetch>
+          <NuxtLink to="/aboutme" class="lg:text-xl  xl:text-2xl spin circle cursor-pointer" prefetch>
             About Me
           </NuxtLink>
         </li>
@@ -36,10 +36,10 @@
         </li>
 
         <li @click.prevent="toTop">
-          <NuxtLink to="/portfolio" class="text-2xl spin circle cursor-pointer" prefetch>Portfolio</NuxtLink>
+          <NuxtLink to="/portfolio" class="lg:text-xl  xl:text-2xl spin circle cursor-pointer" prefetch>Portfolio</NuxtLink>
         </li>
         <li @click.prevent="toTop">
-          <NuxtLink to="/contact" class="text-2xl spin circle cursor-pointer" prefetch>Contact</NuxtLink>
+          <NuxtLink to="/contact" class="lg:text-xl  xl:text-2xl spin circle cursor-pointer" prefetch>Contact</NuxtLink>
         </li>
       </ul>
 
@@ -436,5 +436,32 @@ nav {
 
   }
 }
+
+
+@media (min-width: 1024px)  {
+
+  nav {
+
+
+    .nav {
+
+
+      ul {
+
+
+
+        li {
+
+          ::before {
+
+
+            margin-right: 0;
+
+          }
+
+
+        }}}}}
+
+
 
 </style>
