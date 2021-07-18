@@ -148,7 +148,7 @@ export default {
         extractCSS: true,
         optimizeCSS: true,
 
-        extend(config, {isDev, isClient}) {
+        extend(config) {
             config.module.rules.forEach(rule => {
                 if (String(rule.test) === String(/\.(png|jpeg|gif|svg|webp|ttf|js|woff(2))$/)) {
                     rule.use.push({

@@ -71,16 +71,18 @@ export default {
                         complete: () => {
 
                           this.$nuxt.$el.children[1].firstChild.children[1].classList.add('animate-border', 'divide')
-                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-1s')
-                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-2s')
-                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].classList.add('animate__animated', 'animate__bounceInLeft','animate__delay-3s')
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-1s')
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-2s')
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-3s')
                           this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[0].style.opacity = 1
                           this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[1].style.opacity = 1
                           this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[2].style.opacity = 1
 
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[6].classList.add('animate-top')
+
+                          this.$nuxt.$el.children[1].firstChild.children[1].children[0].children[1].children[6].style.opacity = 0
 
                         }
-
                       },
                   )
 
@@ -106,6 +108,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+
+
+
+
 
 
 .opacity {
@@ -210,6 +217,20 @@ export default {
 
   }
 
+
+  .animate-top {
+   animation: top 3s forwards linear;
+    animation-timing-function:ease;
+    animation-delay: 4s;
+    animation-iteration-count : 1 ;
+  }
+
+
+  @keyframes top {
+    75% { bottom:3rem; opacity: 0 }
+
+   to {bottom: 5rem;  opacity: 1 }
+  }
 
 }
 
